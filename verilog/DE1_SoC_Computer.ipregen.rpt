@@ -1,0 +1,510 @@
+IP Upgrade report for DE1_SoC_Computer
+Sun Feb 25 15:15:43 2018
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Failed Upgrade IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; IP Upgrade Summary                                                         ;
++------------------------------+---------------------------------------------+
+; IP Components Upgrade Status ; Passed - Sun Feb 25 15:15:43 2018           ;
+; Quartus Prime Version        ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Revision Name                ; DE1_SoC_Computer                            ;
+; Top-level Entity Name        ; DE1_SoC_Computer                            ;
+; Family                       ; Cyclone V                                   ;
++------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Failed Upgrade IP Components                                                                                                                                                           ;
++-----------------+----------------+---------+-----------------------------------------------+----------------------+-----------------+--------------------------------------------------+
+; Entity Name     ; Component Name ; Version ; Original Source File                          ; Generation File Path ; New Source File ; Message                                          ;
++-----------------+----------------+---------+-----------------------------------------------+----------------------+-----------------+--------------------------------------------------+
+; Computer_System ; Qsys           ; 15.0    ; Computer_System/synthesis/Computer_System.qip ; Computer_System.qsys ;                 ; Error upgrading Qsys file "Computer_System.qsys" ;
++-----------------+----------------+---------+-----------------------------------------------+----------------------+-----------------+--------------------------------------------------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "Computer_System.qsys" to "Computer_System.BAK.qsys"
+Info (11902): Backing up file "Computer_System/synthesis/Computer_System.v" to "Computer_System.BAK.v"
+Info (11837): Started upgrading IP component Qsys with file "Computer_System.qsys"
+Info: 2018.02.25.15:12:24 Info: Starting to upgrade the IP cores in the Qsys system
+Info: 2018.02.25.15:12:24 Info: Finished upgrading the ip cores
+Info: 2018.02.25.15:12:57 Info: Saving generation log to /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System
+Info: 2018.02.25.15:12:57 Info: Starting: Create simulation model
+Info: 2018.02.25.15:12:57 Info: Loading verilog
+Info: 2018.02.25.15:12:57 Info: Reading input file
+Info: 2018.02.25.15:12:57 Info: Adding ARM_A9_HPS [altera_hps 15.1]
+Info: 2018.02.25.15:12:57 Info: Parameterizing module ARM_A9_HPS
+Info: 2018.02.25.15:12:57 Info: Adding AV_Config [altera_up_avalon_audio_and_video_config 15.1]
+Info: 2018.02.25.15:12:57 Info: Parameterizing module AV_Config
+Info: 2018.02.25.15:12:57 Info: Adding Bus_master_video [altera_up_external_bus_to_avalon_bridge 15.1]
+Info: 2018.02.25.15:12:57 Info: Parameterizing module Bus_master_video
+Info: 2018.02.25.15:12:57 Info: Adding Onchip_SRAM [altera_avalon_onchip_memory2 15.1]
+Info: 2018.02.25.15:12:57 Info: Parameterizing module Onchip_SRAM
+Info: 2018.02.25.15:12:57 Info: Adding Pixel_DMA_Addr_Translation [altera_up_avalon_video_dma_ctrl_addr_trans 15.1]
+Info: 2018.02.25.15:12:57 Info: Parameterizing module Pixel_DMA_Addr_Translation
+Info: 2018.02.25.15:12:57 Info: Adding SDRAM [altera_avalon_new_sdram_controller 15.1]
+Info: 2018.02.25.15:12:57 Info: Parameterizing module SDRAM
+Info: 2018.02.25.15:12:57 Info: Adding System_PLL [altera_up_avalon_sys_sdram_pll 15.1]
+Info: 2018.02.25.15:12:57 Info: Parameterizing module System_PLL
+Info: 2018.02.25.15:12:57 Info: Adding VGA_Subsystem [VGA_Subsystem 1.0]
+Info: 2018.02.25.15:12:57 Info: Parameterizing module VGA_Subsystem
+Info: 2018.02.25.15:12:57 Info: Building connections
+Info: 2018.02.25.15:12:57 Info: Parameterizing connections
+Info: 2018.02.25.15:12:57 Info: Validating
+Info: 2018.02.25.15:13:05 Info: Done reading input file
+Info: 2018.02.25.15:13:07 Info: Computer_System.ARM_A9_HPS: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2018.02.25.15:13:07 Info: Computer_System.ARM_A9_HPS: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2018.02.25.15:13:07 Warning: Computer_System.ARM_A9_HPS: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: 2018.02.25.15:13:07 Warning: Computer_System.ARM_A9_HPS: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: 2018.02.25.15:13:07 Warning: Computer_System.Pixel_DMA_Addr_Translation.master: Master needs a minimum address width of 3 bits (has 2)
+Info: 2018.02.25.15:13:07 Info: Computer_System.VGA_Subsystem.VGA_Char_Buffer: Character Resolution: 80 x 60
+Info: 2018.02.25.15:13:07 Info: Computer_System.VGA_Subsystem.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+Info: 2018.02.25.15:13:07 Info: Computer_System.VGA_Subsystem.VGA_Pixel_RGB_Resampler: RGB Resampling: 8 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: 2018.02.25.15:13:11 Info: Computer_System: Generating Computer_System "Computer_System" for SIM_VERILOG
+Info: 2018.02.25.15:13:17 Info: Interconnect is inserted between master Pixel_DMA_Addr_Translation.master and slave VGA_Subsystem.pixel_dma_control_slave because the master has waitrequest signal 1 bit wide, but the slave is 0 bit wide.
+Warning: 2018.02.25.15:13:18 Warning: ARM_A9_HPS.f2h_irq0: Cannot connect clock for irq_mapper.sender
+Warning: 2018.02.25.15:13:18 Warning: ARM_A9_HPS.f2h_irq0: Cannot connect reset for irq_mapper.sender
+Warning: 2018.02.25.15:13:18 Warning: ARM_A9_HPS.f2h_irq1: Cannot connect clock for irq_mapper_001.sender
+Warning: 2018.02.25.15:13:18 Warning: ARM_A9_HPS.f2h_irq1: Cannot connect reset for irq_mapper_001.sender
+Info: 2018.02.25.15:13:23 Info: ARM_A9_HPS: "Running  for module: ARM_A9_HPS"
+Info: 2018.02.25.15:13:23 Info: ARM_A9_HPS: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2018.02.25.15:13:24 Info: ARM_A9_HPS: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2018.02.25.15:13:24 Warning: ARM_A9_HPS: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: 2018.02.25.15:13:24 Warning: ARM_A9_HPS: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: 2018.02.25.15:13:25 Info: ARM_A9_HPS: "Computer_System" instantiated altera_hps "ARM_A9_HPS"
+Info: 2018.02.25.15:13:25 Info: AV_Config: Starting Generation of Audio and Video Config
+Info: 2018.02.25.15:13:25 Info: AV_Config: "Computer_System" instantiated altera_up_avalon_audio_and_video_config "AV_Config"
+Info: 2018.02.25.15:13:25 Info: Bus_master_video: Starting Generation of External Bus to Avalon Bridge
+Info: 2018.02.25.15:13:25 Info: Bus_master_video: "Computer_System" instantiated altera_up_external_bus_to_avalon_bridge "Bus_master_video"
+Info: 2018.02.25.15:13:25 Info: Onchip_SRAM: Starting RTL generation for module 'Computer_System_Onchip_SRAM'
+Info: 2018.02.25.15:13:25 Info: Onchip_SRAM:   Generation command is [exec /home/matt/altera_lite/15.1/quartus/linux64/perl/bin/perl -I /home/matt/altera_lite/15.1/quartus/linux64/perl/lib -I /home/matt/altera_lite/15.1/quartus/sopc_builder/bin/europa -I /home/matt/altera_lite/15.1/quartus/sopc_builder/bin/perl_lib -I /home/matt/altera_lite/15.1/quartus/sopc_builder/bin -I /home/matt/altera_lite/15.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/matt/altera_lite/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/matt/altera_lite/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Computer_System_Onchip_SRAM --dir=/tmp/alt7587_7192798397463610442.dir/0003_Onchip_SRAM_gen/ --quartus_dir=/home/matt/altera_lite/15.1/quartus --verilog --config=/tmp/alt7587_7192798397463610442.dir/0003_Onchip_SRAM_gen//Computer_System_Onchip_SRAM_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt7587_7192798397463610442.dir/0003_Onchip_SRAM_gen
+Info: 2018.02.25.15:13:26 Info: Onchip_SRAM: Done RTL generation for module 'Computer_System_Onchip_SRAM'
+Info: 2018.02.25.15:13:26 Info: Onchip_SRAM: "Computer_System" instantiated altera_avalon_onchip_memory2 "Onchip_SRAM"
+Info: 2018.02.25.15:13:26 Info: Pixel_DMA_Addr_Translation: "Computer_System" instantiated altera_up_avalon_video_dma_ctrl_addr_trans "Pixel_DMA_Addr_Translation"
+Info: 2018.02.25.15:13:26 Info: SDRAM: Starting RTL generation for module 'Computer_System_SDRAM'
+Info: 2018.02.25.15:13:26 Info: SDRAM:   Generation command is [exec /home/matt/altera_lite/15.1/quartus/linux64/perl/bin/perl -I /home/matt/altera_lite/15.1/quartus/linux64/perl/lib -I /home/matt/altera_lite/15.1/quartus/sopc_builder/bin/europa -I /home/matt/altera_lite/15.1/quartus/sopc_builder/bin/perl_lib -I /home/matt/altera_lite/15.1/quartus/sopc_builder/bin -I /home/matt/altera_lite/15.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/matt/altera_lite/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- /home/matt/altera_lite/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=Computer_System_SDRAM --dir=/tmp/alt7587_7192798397463610442.dir/0005_SDRAM_gen/ --quartus_dir=/home/matt/altera_lite/15.1/quartus --verilog --config=/tmp/alt7587_7192798397463610442.dir/0005_SDRAM_gen//Computer_System_SDRAM_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt7587_7192798397463610442.dir/0005_SDRAM_gen
+Info: 2018.02.25.15:13:27 Info: SDRAM: Done RTL generation for module 'Computer_System_SDRAM'
+Info: 2018.02.25.15:13:27 Info: SDRAM: "Computer_System" instantiated altera_avalon_new_sdram_controller "SDRAM"
+Info: 2018.02.25.15:13:27 Info: System_PLL: "Computer_System" instantiated altera_up_avalon_sys_sdram_pll "System_PLL"
+Info: 2018.02.25.15:13:27 Info: VGA_Subsystem: "Computer_System" instantiated VGA_Subsystem "VGA_Subsystem"
+Info: 2018.02.25.15:13:28 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2018.02.25.15:13:28 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: 2018.02.25.15:13:28 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: 2018.02.25.15:13:28 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: 2018.02.25.15:13:29 Info: mm_interconnect_0: "Computer_System" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: 2018.02.25.15:13:29 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2018.02.25.15:13:29 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: 2018.02.25.15:13:29 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: 2018.02.25.15:13:30 Info: mm_interconnect_1: "Computer_System" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: 2018.02.25.15:13:30 Info: mm_interconnect_2: "Computer_System" instantiated altera_mm_interconnect "mm_interconnect_2"
+Info: 2018.02.25.15:13:30 Info: irq_mapper: "Computer_System" instantiated altera_irq_mapper "irq_mapper"
+Info: 2018.02.25.15:13:30 Info: rst_controller: "Computer_System" instantiated altera_reset_controller "rst_controller"
+Info: 2018.02.25.15:13:30 Info: fpga_interfaces: "ARM_A9_HPS" instantiated altera_interface_generator "fpga_interfaces"
+Info: 2018.02.25.15:13:30 Info: hps_io: "ARM_A9_HPS" instantiated altera_hps_io "hps_io"
+Info: 2018.02.25.15:13:30 Info: sys_pll: Generating simgen model
+Error: 2018.02.25.15:13:35 Error: sys_pll: Execution of script /tmp/alt7587_7192798397463610442.dir/0009_sys_pll_gen
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: *******************************************************************
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: Running Quartus Prime Shell
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: Version 15.1.0 Build 185 10/21
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: Your use of Altera Corporation's design tools, logic functions
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: and other software and tools, and its AMPP partner logic
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: functions, and any output files from any of the foregoing
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: (including device programming or simulation files), and any
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: associated documentation or information are expressly subject
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: to the terms and conditions of the Altera Program License
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: Subscription Agreement, the Altera Quartus Prime License Agreement,
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: the Altera MegaCore Function License Agreement, or other
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: applicable license agreement, including, without limitation,
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: that your use is for the sole purpose of programming logic
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: devices manufactured by Altera and sold by Altera or its
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: authorized distributors.  Please refer to the applicable
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: agreement for further details.
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: Processing started: Sun Feb 25 15:13:35 2018
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: Command: quartus_sh -t /tmp/alt7587_7192798397463610442.dir/0009_sys_pll_gen
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info (23030): Evaluation of Tcl script /tmp/alt7587_7192798397463610442.dir/0009_sys_pll_gen
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: Peak virtual memory: 991 megabytes
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: Processing ended: Sun Feb 25 15:13:35 2018
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: Elapsed time: 00:00:00
+Error: 2018.02.25.15:13:35 Error: sys_pll: Info: Total CPU time (on all processors): 00:00:00
+Error: 2018.02.25.15:13:35 Error: sys_pll: Inconsistency detected by ld.so: dl-close.c: 811: _dl_close: Assertion `map->l_init_called' failed!
+Error: 2018.02.25.15:13:59 Error: sys_pll: Execution of script run_simgen_cmd.tcl failed
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: *******************************************************************
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Running Quartus Prime Shell
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Version 15.1.0 Build 185 10/21
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Your use of Altera Corporation's design tools, logic functions
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: and other software and tools, and its AMPP partner logic
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: functions, and any output files from any of the foregoing
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: (including device programming or simulation files), and any
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: associated documentation or information are expressly subject
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: to the terms and conditions of the Altera Program License
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Subscription Agreement, the Altera Quartus Prime License Agreement,
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: the Altera MegaCore Function License Agreement, or other
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: applicable license agreement, including, without limitation,
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: that your use is for the sole purpose of programming logic
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: devices manufactured by Altera and sold by Altera or its
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: authorized distributors.  Please refer to the applicable
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: agreement for further details.
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Processing started: Sun Feb 25 15:13:40 2018
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Command: quartus_sh -t run_simgen_cmd.tcl
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: *******************************************************************
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Running Quartus Prime Analysis & Synthesis
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Version 15.1.0 Build 185 10/21
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Your use of Altera Corporation's design tools, logic functions
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: and other software and tools, and its AMPP partner logic
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: functions, and any output files from any of the foregoing
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: (including device programming or simulation files), and any
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: associated documentation or information are expressly subject
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: to the terms and conditions of the Altera Program License
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Subscription Agreement, the Altera Quartus Prime License Agreement,
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: the Altera MegaCore Function License Agreement, or other
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: applicable license agreement, including, without limitation,
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: that your use is for the sole purpose of programming logic
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: devices manufactured by Altera and sold by Altera or its
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: authorized distributors.  Please refer to the applicable
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: agreement for further details.
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Processing started: Sun Feb 25 15:13:44 2018
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Command: quartus_map Computer_System_System_PLL_sys_pll.qpf --simgen --ini=disable_check_quartus_compatibility_qsys_only=on --simgen_parameter=CBX_HDL_LANGUAGE=VERILOG
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (20034): Auto device selection is not supported for Cyclone V device family. The default device, 5CGXFC7C7F23C8, is set.
+Error: 2018.02.25.15:13:59 Error: sys_pll: Warning (20028): Parallel compilation is not licensed and has been disabled
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12021): Found 1 design units, including 1 entities, in source file Computer_System_System_PLL_sys_pll.v
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12023): Found entity 1: Computer_System_System_PLL_sys_pll File: /tmp/alt7587_7192798397463610442.dir/0009_sys_pll_gen
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12127): Elaborating entity "Computer_System_System_PLL_sys_pll" for the top level hierarchy
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12128): Elaborating entity "altera_pll" for hierarchy "altera_pll:altera_pll_i" File: /tmp/alt7587_7192798397463610442.dir/0009_sys_pll_gen
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12130): Elaborated megafunction instantiation "altera_pll:altera_pll_i" File: /tmp/alt7587_7192798397463610442.dir/0009_sys_pll_gen
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12133): Instantiated megafunction "altera_pll:altera_pll_i" with the following parameter: File: /tmp/alt7587_7192798397463610442.dir/0009_sys_pll_gen
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "fractional_vco_multiplier" = "false"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "operation_mode" = "direct"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "number_of_clocks" = "2"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency0" = "100.000000 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift0" = "0 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle0" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency1" = "100.000000 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift1" = "-3000 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle1" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency2" = "0 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift2" = "0 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle2" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency3" = "0 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift3" = "0 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle3" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency4" = "0 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift4" = "0 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle4" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency5" = "0 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift5" = "0 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle5" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency6" = "0 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift6" = "0 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle6" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency7" = "0 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift7" = "0 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle7" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency8" = "0 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift8" = "0 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle8" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency9" = "0 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift9" = "0 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle9" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency10" = "0 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift10" = "0 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle10" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency11" = "0 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift11" = "0 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle11" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency12" = "0 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift12" = "0 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle12" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency13" = "0 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift13" = "0 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle13" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency14" = "0 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift14" = "0 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle14" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency15" = "0 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift15" = "0 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle15" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency16" = "0 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift16" = "0 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle16" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "output_clock_frequency17" = "0 MHz"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "phase_shift17" = "0 ps"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "duty_cycle17" = "50"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "pll_type" = "General"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (12134): Parameter "pll_subtype" = "General"
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (281010): Generating sgate simulator netlist using Simgen
+Error: 2018.02.25.15:13:59 Error: sys_pll: SIMGEN_PROGRESS Start of Model generation -- 0% complete
+Error: 2018.02.25.15:13:59 Error: sys_pll: SIMGEN_PROGRESS Phase 1 : Internal Objects created -- 25% complete
+Error: 2018.02.25.15:13:59 Error: sys_pll: SIMGEN_PROGRESS Phase 2 : Connections between internal objects made -- 60% complete
+Error: 2018.02.25.15:13:59 Error: sys_pll: SIMGEN_PROGRESS Phase 3 : Netlist generated -- 100% complete
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Peak virtual memory: 1174 megabytes
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Processing ended: Sun Feb 25 15:13:58 2018
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Elapsed time: 00:00:14
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Total CPU time (on all processors): 00:00:33
+Error: 2018.02.25.15:13:59 Error: sys_pll: Inconsistency detected by ld.so: dl-close.c: 811: _dl_close: Assertion `map->l_init_called' failed!
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info (23030): Evaluation of Tcl script run_simgen_cmd.tcl was successful
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Peak virtual memory: 979 megabytes
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Processing ended: Sun Feb 25 15:13:58 2018
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Elapsed time: 00:00:18
+Error: 2018.02.25.15:13:59 Error: sys_pll: Info: Total CPU time (on all processors): 00:00:38
+Error: 2018.02.25.15:13:59 Error: sys_pll: Inconsistency detected by ld.so: dl-close.c: 811: _dl_close: Assertion `map->l_init_called' failed!
+Info:     Info: Processing ended: Sun Feb 25 15:13:58 2018
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:38
+Inconsistency detected by ld.so: dl-close.c: 811: _dl_close: Assertion `map->l_init_called' failed!
+2018.02.25.15:13:59 Info: sys_pll: Simgen was successful
+Error: 2018.02.25.15:13:59 Info: sys_pll: "System_PLL" instantiated altera_pll "sys_pll"
+2018.02.25.15:13:59 Error: Generation stopped, 126 or more modules remaining
+2018.02.25.15:13:59 Info: Computer_System: Done "Computer_System" with 64 modules, 44 files
+Error: 2018.02.25.15:13:59 Error: qsys-generate failed with exit code 1: 154 Errors, 11 Warnings
+Info: 2018.02.25.15:13:59 Info: Finished: Create simulation model
+Info: 2018.02.25.15:13:59 Info: Starting: Create Modelsim Project.
+Info: 2018.02.25.15:13:59 Info: sim-script-gen --spd=/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/Computer_System.spd --output-directory=/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation
+Info: 2018.02.25.15:13:59 Info: Doing: ip-make-simscript --spd=/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/Computer_System.spd --output-directory=/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation
+Info: 2018.02.25.15:14:04 Info: Generating the following file(s) for MODELSIM simulator in /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation
+Info: 2018.02.25.15:14:04 Info:     mentor
+Info: 2018.02.25.15:14:04 Info: Generating the following file(s) for VCS simulator in /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation
+Info: 2018.02.25.15:14:04 Info:     synopsys/vcs
+Info: 2018.02.25.15:14:04 Info: Generating the following file(s) for VCSMX simulator in /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation
+Info: 2018.02.25.15:14:04 Info:     synopsys/vcsmx
+Info: 2018.02.25.15:14:04 Info:     synopsys/vcsmx
+Info: 2018.02.25.15:14:04 Info: Generating the following file(s) for NCSIM simulator in /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation
+Info: 2018.02.25.15:14:04 Info:     cadence
+Info: 2018.02.25.15:14:04 Info:     cadence
+Info: 2018.02.25.15:14:04 Info:     cadence
+Info: 2018.02.25.15:14:04 Info:     17 .cds.lib files in cadence/cds_libs
+Info: 2018.02.25.15:14:04 Info: Generating the following file(s) for RIVIERA simulator in /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation
+Info: 2018.02.25.15:14:04 Info:     aldec
+Info: 2018.02.25.15:14:04 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation
+Info: 2018.02.25.15:14:04 Info: Finished: Create Modelsim Project.
+Info: 2018.02.25.15:14:04 Info: Starting: Create block symbol file (.bsf)
+Info: 2018.02.25.15:14:04 Info: Loading verilog
+Info: 2018.02.25.15:14:04 Info: Reading input file
+Info: 2018.02.25.15:14:04 Info: Adding ARM_A9_HPS [altera_hps 15.1]
+Info: 2018.02.25.15:14:04 Info: Parameterizing module ARM_A9_HPS
+Info: 2018.02.25.15:14:04 Info: Adding AV_Config [altera_up_avalon_audio_and_video_config 15.1]
+Info: 2018.02.25.15:14:04 Info: Parameterizing module AV_Config
+Info: 2018.02.25.15:14:04 Info: Adding Bus_master_video [altera_up_external_bus_to_avalon_bridge 15.1]
+Info: 2018.02.25.15:14:04 Info: Parameterizing module Bus_master_video
+Info: 2018.02.25.15:14:04 Info: Adding Onchip_SRAM [altera_avalon_onchip_memory2 15.1]
+Info: 2018.02.25.15:14:04 Info: Parameterizing module Onchip_SRAM
+Info: 2018.02.25.15:14:04 Info: Adding Pixel_DMA_Addr_Translation [altera_up_avalon_video_dma_ctrl_addr_trans 15.1]
+Info: 2018.02.25.15:14:04 Info: Parameterizing module Pixel_DMA_Addr_Translation
+Info: 2018.02.25.15:14:04 Info: Adding SDRAM [altera_avalon_new_sdram_controller 15.1]
+Info: 2018.02.25.15:14:04 Info: Parameterizing module SDRAM
+Info: 2018.02.25.15:14:04 Info: Adding System_PLL [altera_up_avalon_sys_sdram_pll 15.1]
+Info: 2018.02.25.15:14:04 Info: Parameterizing module System_PLL
+Info: 2018.02.25.15:14:04 Info: Adding VGA_Subsystem [VGA_Subsystem 1.0]
+Info: 2018.02.25.15:14:04 Info: Parameterizing module VGA_Subsystem
+Info: 2018.02.25.15:14:04 Info: Building connections
+Info: 2018.02.25.15:14:04 Info: Parameterizing connections
+Info: 2018.02.25.15:14:04 Info: Validating
+Info: 2018.02.25.15:14:12 Info: Done reading input file
+Info: 2018.02.25.15:14:14 Info: Computer_System.ARM_A9_HPS: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2018.02.25.15:14:14 Info: Computer_System.ARM_A9_HPS: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2018.02.25.15:14:14 Warning: Computer_System.ARM_A9_HPS: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: 2018.02.25.15:14:14 Warning: Computer_System.ARM_A9_HPS: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: 2018.02.25.15:14:14 Warning: Computer_System.Pixel_DMA_Addr_Translation.master: Master needs a minimum address width of 3 bits (has 2)
+Info: 2018.02.25.15:14:14 Info: Computer_System.VGA_Subsystem.VGA_Char_Buffer: Character Resolution: 80 x 60
+Info: 2018.02.25.15:14:14 Info: Computer_System.VGA_Subsystem.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+Info: 2018.02.25.15:14:14 Info: Computer_System.VGA_Subsystem.VGA_Pixel_RGB_Resampler: RGB Resampling: 8 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: 2018.02.25.15:14:18 Info: qsys-generate succeeded.
+Info: 2018.02.25.15:14:18 Info: Finished: Create block symbol file (.bsf)
+Info: 2018.02.25.15:14:18 Info:
+Info: 2018.02.25.15:14:18 Info: Starting: Create HDL design files for synthesis
+Info: 2018.02.25.15:14:18 Info: Loading verilog
+Info: 2018.02.25.15:14:18 Info: Reading input file
+Info: 2018.02.25.15:14:18 Info: Adding ARM_A9_HPS [altera_hps 15.1]
+Info: 2018.02.25.15:14:18 Info: Parameterizing module ARM_A9_HPS
+Info: 2018.02.25.15:14:19 Info: Adding AV_Config [altera_up_avalon_audio_and_video_config 15.1]
+Info: 2018.02.25.15:14:19 Info: Parameterizing module AV_Config
+Info: 2018.02.25.15:14:19 Info: Adding Bus_master_video [altera_up_external_bus_to_avalon_bridge 15.1]
+Info: 2018.02.25.15:14:19 Info: Parameterizing module Bus_master_video
+Info: 2018.02.25.15:14:19 Info: Adding Onchip_SRAM [altera_avalon_onchip_memory2 15.1]
+Info: 2018.02.25.15:14:19 Info: Parameterizing module Onchip_SRAM
+Info: 2018.02.25.15:14:19 Info: Adding Pixel_DMA_Addr_Translation [altera_up_avalon_video_dma_ctrl_addr_trans 15.1]
+Info: 2018.02.25.15:14:19 Info: Parameterizing module Pixel_DMA_Addr_Translation
+Info: 2018.02.25.15:14:19 Info: Adding SDRAM [altera_avalon_new_sdram_controller 15.1]
+Info: 2018.02.25.15:14:19 Info: Parameterizing module SDRAM
+Info: 2018.02.25.15:14:19 Info: Adding System_PLL [altera_up_avalon_sys_sdram_pll 15.1]
+Info: 2018.02.25.15:14:19 Info: Parameterizing module System_PLL
+Info: 2018.02.25.15:14:19 Info: Adding VGA_Subsystem [VGA_Subsystem 1.0]
+Info: 2018.02.25.15:14:19 Info: Parameterizing module VGA_Subsystem
+Info: 2018.02.25.15:14:19 Info: Building connections
+Info: 2018.02.25.15:14:19 Info: Parameterizing connections
+Info: 2018.02.25.15:14:19 Info: Validating
+Info: 2018.02.25.15:14:26 Info: Done reading input file
+Info: 2018.02.25.15:14:28 Info: Computer_System.ARM_A9_HPS: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2018.02.25.15:14:28 Info: Computer_System.ARM_A9_HPS: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2018.02.25.15:14:28 Warning: Computer_System.ARM_A9_HPS: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: 2018.02.25.15:14:28 Warning: Computer_System.ARM_A9_HPS: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: 2018.02.25.15:14:28 Warning: Computer_System.Pixel_DMA_Addr_Translation.master: Master needs a minimum address width of 3 bits (has 2)
+Info: 2018.02.25.15:14:28 Info: Computer_System.VGA_Subsystem.VGA_Char_Buffer: Character Resolution: 80 x 60
+Info: 2018.02.25.15:14:28 Info: Computer_System.VGA_Subsystem.VGA_Controller: Video Output Stream: Format: 640 x 480 with Color: 10 (bits) x 3 (planes) converted to 8 (bits) per color plane
+Info: 2018.02.25.15:14:28 Info: Computer_System.VGA_Subsystem.VGA_Pixel_RGB_Resampler: RGB Resampling: 8 (bits) x 1 (planes) -> 10 (bits) x 3 (planes)
+Info: 2018.02.25.15:14:50 Info: Computer_System: Generating Computer_System "Computer_System" for QUARTUS_SYNTH
+Info: 2018.02.25.15:14:55 Info: Interconnect is inserted between master Pixel_DMA_Addr_Translation.master and slave VGA_Subsystem.pixel_dma_control_slave because the master has waitrequest signal 1 bit wide, but the slave is 0 bit wide.
+Warning: 2018.02.25.15:14:55 Warning: ARM_A9_HPS.f2h_irq0: Cannot connect clock for irq_mapper.sender
+Warning: 2018.02.25.15:14:55 Warning: ARM_A9_HPS.f2h_irq0: Cannot connect reset for irq_mapper.sender
+Warning: 2018.02.25.15:14:55 Warning: ARM_A9_HPS.f2h_irq1: Cannot connect clock for irq_mapper_001.sender
+Warning: 2018.02.25.15:14:55 Warning: ARM_A9_HPS.f2h_irq1: Cannot connect reset for irq_mapper_001.sender
+Info: 2018.02.25.15:14:58 Info: ARM_A9_HPS: "Running  for module: ARM_A9_HPS"
+Info: 2018.02.25.15:14:59 Info: ARM_A9_HPS: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2018.02.25.15:15:00 Info: ARM_A9_HPS: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2018.02.25.15:15:00 Warning: ARM_A9_HPS: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: 2018.02.25.15:15:00 Warning: ARM_A9_HPS: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: 2018.02.25.15:15:00 Info: ARM_A9_HPS: "Computer_System" instantiated altera_hps "ARM_A9_HPS"
+Info: 2018.02.25.15:15:00 Info: AV_Config: Starting Generation of Audio and Video Config
+Info: 2018.02.25.15:15:00 Info: AV_Config: "Computer_System" instantiated altera_up_avalon_audio_and_video_config "AV_Config"
+Info: 2018.02.25.15:15:00 Info: Bus_master_video: Starting Generation of External Bus to Avalon Bridge
+Info: 2018.02.25.15:15:00 Info: Bus_master_video: "Computer_System" instantiated altera_up_external_bus_to_avalon_bridge "Bus_master_video"
+Info: 2018.02.25.15:15:00 Info: Onchip_SRAM: Starting RTL generation for module 'Computer_System_Onchip_SRAM'
+Info: 2018.02.25.15:15:00 Info: Onchip_SRAM:   Generation command is [exec /home/matt/altera_lite/15.1/quartus/linux64/perl/bin/perl -I /home/matt/altera_lite/15.1/quartus/linux64/perl/lib -I /home/matt/altera_lite/15.1/quartus/sopc_builder/bin/europa -I /home/matt/altera_lite/15.1/quartus/sopc_builder/bin/perl_lib -I /home/matt/altera_lite/15.1/quartus/sopc_builder/bin -I /home/matt/altera_lite/15.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/matt/altera_lite/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/matt/altera_lite/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Computer_System_Onchip_SRAM --dir=/tmp/alt7587_7192798397463610442.dir/0013_Onchip_SRAM_gen/ --quartus_dir=/home/matt/altera_lite/15.1/quartus --verilog --config=/tmp/alt7587_7192798397463610442.dir/0013_Onchip_SRAM_gen/
+Info: 2018.02.25.15:15:01 Info: Onchip_SRAM: Done RTL generation for module 'Computer_System_Onchip_SRAM'
+Info: 2018.02.25.15:15:01 Info: Onchip_SRAM: "Computer_System" instantiated altera_avalon_onchip_memory2 "Onchip_SRAM"
+Info: 2018.02.25.15:15:01 Info: Pixel_DMA_Addr_Translation: "Computer_System" instantiated altera_up_avalon_video_dma_ctrl_addr_trans "Pixel_DMA_Addr_Translation"
+Info: 2018.02.25.15:15:01 Info: SDRAM: Starting RTL generation for module 'Computer_System_SDRAM'
+Info: 2018.02.25.15:15:01 Info: SDRAM:   Generation command is [exec /home/matt/altera_lite/15.1/quartus/linux64/perl/bin/perl -I /home/matt/altera_lite/15.1/quartus/linux64/perl/lib -I /home/matt/altera_lite/15.1/quartus/sopc_builder/bin/europa -I /home/matt/altera_lite/15.1/quartus/sopc_builder/bin/perl_lib -I /home/matt/altera_lite/15.1/quartus/sopc_builder/bin -I /home/matt/altera_lite/15.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/matt/altera_lite/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- /home/matt/altera_lite/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=Computer_System_SDRAM --dir=/tmp/alt7587_7192798397463610442.dir/0015_SDRAM_gen/ --quartus_dir=/home/matt/altera_lite/15.1/quartus --verilog --config=/tmp/alt7587_7192798397463610442.dir/0015_SDRAM_gen/
+Info: 2018.02.25.15:15:02 Info: SDRAM: Done RTL generation for module 'Computer_System_SDRAM'
+Info: 2018.02.25.15:15:02 Info: SDRAM: "Computer_System" instantiated altera_avalon_new_sdram_controller "SDRAM"
+Info: 2018.02.25.15:15:02 Info: System_PLL: "Computer_System" instantiated altera_up_avalon_sys_sdram_pll "System_PLL"
+Info: 2018.02.25.15:15:02 Info: VGA_Subsystem: "Computer_System" instantiated VGA_Subsystem "VGA_Subsystem"
+Info: 2018.02.25.15:15:03 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2018.02.25.15:15:03 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: 2018.02.25.15:15:03 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: 2018.02.25.15:15:03 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: 2018.02.25.15:15:03 Info: mm_interconnect_0: "Computer_System" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: 2018.02.25.15:15:04 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2018.02.25.15:15:04 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: 2018.02.25.15:15:04 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: 2018.02.25.15:15:04 Info: mm_interconnect_1: "Computer_System" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: 2018.02.25.15:15:04 Info: mm_interconnect_2: "Computer_System" instantiated altera_mm_interconnect "mm_interconnect_2"
+Info: 2018.02.25.15:15:04 Info: irq_mapper: "Computer_System" instantiated altera_irq_mapper "irq_mapper"
+Info: 2018.02.25.15:15:04 Info: rst_controller: "Computer_System" instantiated altera_reset_controller "rst_controller"
+Info: 2018.02.25.15:15:04 Info: fpga_interfaces: "ARM_A9_HPS" instantiated altera_interface_generator "fpga_interfaces"
+Info: 2018.02.25.15:15:04 Info: hps_io: "ARM_A9_HPS" instantiated altera_hps_io "hps_io"
+Info: 2018.02.25.15:15:04 Info: sys_pll: "System_PLL" instantiated altera_pll "sys_pll"
+Info: 2018.02.25.15:15:04 Info: reset_from_locked: "System_PLL" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: 2018.02.25.15:15:04 Info: VGA_Alpha_Blender: Starting Generation of the Alpha Blender
+Info: 2018.02.25.15:15:04 Info: VGA_Alpha_Blender: "VGA_Subsystem" instantiated altera_up_avalon_video_alpha_blender "VGA_Alpha_Blender"
+Info: 2018.02.25.15:15:04 Info: VGA_Char_Buffer: Starting Generation of Character Buffer
+Info: 2018.02.25.15:15:04 Info: VGA_Char_Buffer: "VGA_Subsystem" instantiated altera_up_avalon_video_character_buffer_with_dma "VGA_Char_Buffer"
+Info: 2018.02.25.15:15:04 Info: VGA_Controller: Starting Generation of VGA Controller
+Info: 2018.02.25.15:15:05 Info: VGA_Controller: "VGA_Subsystem" instantiated altera_up_avalon_video_vga_controller "VGA_Controller"
+Info: 2018.02.25.15:15:05 Info: VGA_Dual_Clock_FIFO: Starting Generation of the Dual Clock Buffer
+Info: 2018.02.25.15:15:05 Info: VGA_Dual_Clock_FIFO: "VGA_Subsystem" instantiated altera_up_avalon_video_dual_clock_buffer "VGA_Dual_Clock_FIFO"
+Info: 2018.02.25.15:15:05 Info: VGA_PLL: "VGA_Subsystem" instantiated altera_up_avalon_video_pll "VGA_PLL"
+Info: 2018.02.25.15:15:05 Info: VGA_Pixel_DMA: Starting Generation of VGA Pixel Buffer
+Info: 2018.02.25.15:15:05 Info: VGA_Pixel_DMA: "VGA_Subsystem" instantiated altera_up_avalon_video_pixel_buffer_dma "VGA_Pixel_DMA"
+Info: 2018.02.25.15:15:05 Info: VGA_Pixel_FIFO: Starting Generation of the Dual Clock Buffer
+Info: 2018.02.25.15:15:05 Info: VGA_Pixel_FIFO: "VGA_Subsystem" instantiated altera_up_avalon_video_dual_clock_buffer "VGA_Pixel_FIFO"
+Info: 2018.02.25.15:15:05 Info: VGA_Pixel_RGB_Resampler: Starting Generation of Video RGB Resampler
+Info: 2018.02.25.15:15:05 Info: VGA_Pixel_RGB_Resampler: "VGA_Subsystem" instantiated altera_up_avalon_video_rgb_resampler "VGA_Pixel_RGB_Resampler"
+Info: 2018.02.25.15:15:05 Info: Bus_master_video_avalon_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "Bus_master_video_avalon_master_translator"
+Info: 2018.02.25.15:15:05 Info: Onchip_SRAM_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "Onchip_SRAM_s1_translator"
+Info: 2018.02.25.15:15:05 Info: ARM_A9_HPS_h2f_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "ARM_A9_HPS_h2f_axi_master_agent"
+Info: 2018.02.25.15:15:05 Info: Bus_master_video_avalon_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "Bus_master_video_avalon_master_agent"
+Info: 2018.02.25.15:15:05 Info: Onchip_SRAM_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "Onchip_SRAM_s1_agent"
+Info: 2018.02.25.15:15:05 Info: Onchip_SRAM_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "Onchip_SRAM_s1_agent_rsp_fifo"
+Info: 2018.02.25.15:15:05 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: 2018.02.25.15:15:05 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: 2018.02.25.15:15:05 Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: 2018.02.25.15:15:05 Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: 2018.02.25.15:15:05 Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: 2018.02.25.15:15:05 Info: router_006: "mm_interconnect_0" instantiated altera_merlin_router "router_006"
+Info: 2018.02.25.15:15:05 Info: router_007: "mm_interconnect_0" instantiated altera_merlin_router "router_007"
+Info: 2018.02.25.15:15:05 Info: ARM_A9_HPS_h2f_axi_master_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "ARM_A9_HPS_h2f_axi_master_wr_limiter"
+Info: 2018.02.25.15:15:05 Info: Reusing file /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules
+Info: 2018.02.25.15:15:05 Info: Onchip_SRAM_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "Onchip_SRAM_s1_burst_adapter"
+Info: 2018.02.25.15:15:05 Info: Reusing file /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules
+Info: 2018.02.25.15:15:05 Info: Reusing file /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules
+Info: 2018.02.25.15:15:05 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2018.02.25.15:15:05 Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: 2018.02.25.15:15:05 Info: cmd_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_003"
+Info: 2018.02.25.15:15:05 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2018.02.25.15:15:05 Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: 2018.02.25.15:15:05 Info: Reusing file /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules
+Info: 2018.02.25.15:15:05 Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: 2018.02.25.15:15:05 Info: Reusing file /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules
+Info: 2018.02.25.15:15:05 Info: cmd_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_003"
+Info: 2018.02.25.15:15:05 Info: Reusing file /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules
+Info: 2018.02.25.15:15:05 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2018.02.25.15:15:05 Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: 2018.02.25.15:15:05 Info: rsp_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_003"
+Info: 2018.02.25.15:15:05 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2018.02.25.15:15:05 Info: Reusing file /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules
+Info: 2018.02.25.15:15:05 Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: 2018.02.25.15:15:05 Info: Reusing file /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules
+Info: 2018.02.25.15:15:05 Info: ARM_A9_HPS_h2f_axi_master_wr_to_Onchip_SRAM_s1_cmd_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "ARM_A9_HPS_h2f_axi_master_wr_to_Onchip_SRAM_s1_cmd_width_adapter"
+Info: 2018.02.25.15:15:05 Info: Reusing file /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules
+Info: 2018.02.25.15:15:05 Info: Reusing file /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules
+Info: 2018.02.25.15:15:05 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: 2018.02.25.15:15:05 Info: avalon_st_adapter_001: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: 2018.02.25.15:15:05 Info: avalon_st_adapter_002: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_002"
+Info: 2018.02.25.15:15:05 Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: 2018.02.25.15:15:05 Info: router_002: "mm_interconnect_1" instantiated altera_merlin_router "router_002"
+Info: 2018.02.25.15:15:05 Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2018.02.25.15:15:05 Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2018.02.25.15:15:05 Info: Reusing file /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules
+Info: 2018.02.25.15:15:05 Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2018.02.25.15:15:06 Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2018.02.25.15:15:06 Info: Reusing file /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules
+Info: 2018.02.25.15:15:36 Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: 2018.02.25.15:15:36 Info: video_pll: "VGA_PLL" instantiated altera_pll "video_pll"
+Info: 2018.02.25.15:15:36 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: 2018.02.25.15:15:36 Info: error_adapter_0: "avalon_st_adapter_001" instantiated error_adapter "error_adapter_0"
+Info: 2018.02.25.15:15:36 Info: error_adapter_0: "avalon_st_adapter_002" instantiated error_adapter "error_adapter_0"
+Info: 2018.02.25.15:15:36 Info: Computer_System: Done "Computer_System" with 68 modules, 148 files
+Info: 2018.02.25.15:15:38 Info: qsys-generate succeeded.
+Info: 2018.02.25.15:15:38 Info: Finished: Create HDL design files for synthesis
+Info (11904): Restoring file "Computer_System.BAK.qsys" to "Computer_System.qsys"
+Error (14923): Error upgrading Qsys file "Computer_System.qsys"
+Error (11890): Unable to automatically upgrade Qsys component. Please manually upgrade "Computer_System.qsys" in Qsys
+Error (23031): Evaluation of Tcl script /home/matt/altera_lite/15.1/quartus/common/tcl/internal/ip_regen/ip_regen.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 158 errors, 26 warnings
+    Error: Peak virtual memory: 1346 megabytes
+    Error: Processing ended: Sun Feb 25 15:15:52 2018
+    Error: Elapsed time: 00:04:18
+    Error: Total CPU time (on all processors): 00:07:41
+
+
