@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 d/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/simulation/modelsim
 vDE1_SoC_Computer
-Z1 !s110 1519786938
+Z1 !s110 1520390859
 !i10b 1
 !s100 VEVFcI;j7b`lERXX>4EQ50
 IQAfPKLXPTMP652kV:Ijh03
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1519607129
+w1520311536
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer.v
 L0 3
@@ -23,13 +23,35 @@ Z3 OV;L;10.4b;61
 r1
 !s85 0
 31
-!s108 1519786937.000000
+Z4 !s108 1520390859.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer.v|
 !i113 1
-Z4 o-vlog01compat -work work
-Z5 !s92 -vlog01compat -work work +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog
 n@d@e1_@so@c_@computer
+vDE1_SoC_Computer_tb
+R1
+!i10b 1
+!s100 UDoWk9jlTC[R@5JUFoiDn1
+IPg_i;ADKz;^Xj[jMVfbb`1
+R2
+R0
+w1520390829
+8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer_tb.v
+F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer_tb.v|
+!i113 1
+R5
+R6
+n@d@e1_@so@c_@computer_tb
 vHexDigit
 R1
 !i10b 1
@@ -45,21 +67,21 @@ R3
 r1
 !s85 0
 31
-Z6 !s108 1519786938.000000
+R4
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/hex_decoder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/hex_decoder.v|
 !i113 1
-R4
 R5
+R6
 n@hex@digit
 vintegrator
-R1
+Z7 !s110 1520390860
 !i10b 1
-!s100 =bk8V[nR8=5Q@c`;UHz>P2
-I`gGN2E^FV5HjF`]6fPTH_0
+!s100 b1OGJ]2cl18bD2QO1aFNc0
+I1X?E:51821fFjj29VhbIN1
 R2
 R0
-Z7 w1519523415
+w1520311543
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/integrator.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/integrator.v
 L0 6
@@ -67,14 +89,35 @@ R3
 r1
 !s85 0
 31
-R6
+Z8 !s108 1520390860.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/integrator.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/integrator.v|
 !i113 1
-R4
 R5
+R6
+vintegrator_tb
+R7
+!i10b 1
+!s100 Y7^ilLM_697mYLc@`OTHZ0
+IokYHY]R^<oM1_`J`n?Gz]1
+R2
+R0
+w1520311548
+8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/integrator_tb.v
+F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/integrator_tb.v
+L0 9
+R3
+r1
+!s85 0
+31
+R8
+!s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/integrator_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/integrator_tb.v|
+!i113 1
+R5
+R6
 vmult_i5n
-R1
+R7
 !i10b 1
 !s100 <b[ee;kU;cEU^^EXd;34k1
 I<EX`LemM]a4SPP_UR1=g`0
@@ -88,20 +131,20 @@ R3
 r1
 !s85 0
 31
-R6
+R8
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/db/mult_i5n.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/db|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/db/mult_i5n.v|
 !i113 1
-R4
+R5
 !s92 -vlog01compat -work work +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/db
 vsigned_mult
-R1
+R7
 !i10b 1
 !s100 482L]@?d:D:7lJ2zIDXK43
 I9UIm<Ch<`0FnBWPPgT:`50
 R2
 R0
-R7
+w1520203411
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/signed_mult.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/signed_mult.v
 L0 5
@@ -109,9 +152,9 @@ R3
 r1
 !s85 0
 31
-R6
+R4
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/signed_mult.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/signed_mult.v|
 !i113 1
-R4
 R5
+R6

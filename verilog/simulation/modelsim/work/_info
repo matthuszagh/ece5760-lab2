@@ -2202,7 +2202,7 @@ R9
 !i113 1
 R10
 vDE1_SoC_Computer
-!s110 1519786541
+!s110 1520094396
 !i10b 1
 !s100 VEVFcI;j7b`lERXX>4EQ50
 IkKSEA=6GcRIXJ^>SNl^[`2
@@ -2216,12 +2216,33 @@ R6
 r1
 !s85 0
 31
-!s108 1519786541.000000
+!s108 1520094396.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer.v|
 !i113 1
 R10
 n@d@e1_@so@c_@computer
+vDE1_SoC_Computer_tb
+Z147 !s110 1520103567
+!i10b 1
+!s100 ^ZHXfjn@d06A_YU46DTnD1
+I@leokcJDaIGz8l=c?dAA91
+R2
+R0
+w1520102872
+8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer_tb.v
+F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer_tb.v
+L0 3
+R6
+r1
+!s85 0
+31
+Z148 !s108 1520103567.000000
+!s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer_tb.v|
+!i113 1
+R10
+n@d@e1_@so@c_@computer_tb
 vdffp
 R1
 !i10b 1
@@ -2303,7 +2324,7 @@ R9
 !i113 1
 R10
 vHexDigit
-Z147 !s110 1519785803
+R147
 !i10b 1
 !s100 FCA7Ee`D@EaGdW4_hN_hC0
 I7NHh]?>BQilE970Rn>1k01
@@ -2317,7 +2338,7 @@ R6
 r1
 !s85 0
 31
-Z148 !s108 1519785803.000000
+R148
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/hex_decoder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/hex_decoder.v|
 !i113 1

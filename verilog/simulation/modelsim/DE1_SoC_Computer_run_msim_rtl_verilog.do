@@ -5,8 +5,12 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+if {[file exists Computer_System]} {
+	vdel -lib Computer_System -all
+}
 vlib Computer_System
 vmap Computer_System Computer_System
+
 vlog -vlog01compat -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/Computer_System.v}
 vlog -vlog01compat -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_reset_controller.v}
 vlog -vlog01compat -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_reset_synchronizer.v}
@@ -55,9 +59,11 @@ vlog -vlog01compat -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Comp
 vlog -vlog01compat -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_acv_ldc.v}
 vlog -vlog01compat -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_clock_pair_generator.v}
 vlog -vlog01compat -work work +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer.v}
+vlog -vlog01compat -work work +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer_tb.v}
 vlog -vlog01compat -work work +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/hex_decoder.v}
 vlog -vlog01compat -work work +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/signed_mult.v}
 vlog -vlog01compat -work work +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/integrator.v}
+vlog -vlog01compat -work work +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/integrator_tb.v}
 vlog -vlog01compat -work work +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/db {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/db/mult_i5n.v}
 vlog -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_irq_mapper.sv}
 vlog -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_slave_translator.sv}
@@ -111,3 +117,76 @@ vlog -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_64
 vlog -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_ARM_A9_HPS_hps_io_border.sv}
 vlog -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_ARM_A9_HPS_fpga_interfaces.sv}
 
+vlog -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/verbosity_pkg.sv}
+vlog -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/avalon_mm_pkg.sv}
+vlog -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/avalon_utilities_pkg.sv}
+# vlog -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/Computer_System_ARM_A9_HPS_fpga_interfaces.sv}
+# vlog -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/Computer_System_irq_mapper.sv}
+# vlog -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/altera_avalon_clock_source.sv}
+# vlog -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/altera_avalon_interrupt_sink.sv}
+# vlog -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/altera_avalon_mm_slave_bfm.sv}
+# vlog -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/altera_avalon_reset_source.sv}
+# vlog -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/mgc_axi_master.sv}
+# vlog -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/mgc_axi_slave.sv}
+# vlog -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules {/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/mgc_common_axi.sv}
+
+
+if {[file exists HPS]} {
+	vdel -lib HPS -all
+}
+vlib HPS
+vmap HPS HPS
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/verbosity_pkg.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_boot_from_fpga.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_clocks_resets.sv} 
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_conduit_bfms.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_cross_trigger.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dbg_apb.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dma.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_fpga2hps.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga_light_weight.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_interrupts.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_loan_io.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_event_standby.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_general_purpose.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_can.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_emac.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_i2c.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_nand.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_qspi.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_sdmmc.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_master.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_slave.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_uart.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_usb.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_stm_event.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_tpiu_trace.sv}
+
+vlog -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation {/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_peripheral_gpio.sv}
