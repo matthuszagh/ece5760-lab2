@@ -1,0 +1,71 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/simulation/modelsim
+vFSM
+Z1 !s110 1520730576
+!i10b 1
+!s100 h==ZbzAPP6A4a1M;IU62b3
+ILI<V=6=58CXUGfXj=a6Z@0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1519358902
+Z4 8/home/matt/de1-soc/modelsim_tutorial2/serial.v
+Z5 F/home/matt/de1-soc/modelsim_tutorial2/serial.v
+L0 63
+Z6 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z7 !s108 1520730576.000000
+Z8 !s107 /home/matt/de1-soc/modelsim_tutorial2/serial.v|
+Z9 !s90 -reportprogress|300|-work|tutorial|-stats=none|/home/matt/de1-soc/modelsim_tutorial2/serial.v|
+!i113 1
+Z10 o-work tutorial
+n@f@s@m
+vserial
+R1
+!i10b 1
+!s100 M2MMIbW@zhC;Y_8OcdNh[0
+I?Ya;m947azK]IQYR;CU7I0
+R2
+R0
+R3
+R4
+R5
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vshift_reg
+R1
+!i10b 1
+!s100 ch]P01Kmh8TG?[SX<O1[C1
+IZKeITLiQ8=ggPkAeZLn101
+R2
+R0
+R3
+R4
+R5
+L0 37
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

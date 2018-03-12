@@ -1,7 +1,7 @@
 `timescale 1ps / 1ps
 
 
-module DE1_SoC_Computer_tb ();
+module DE1_SoC_Computer_tb();
 
 //=======================================================
 //  PARAMETER declarations
@@ -14,33 +14,33 @@ module DE1_SoC_Computer_tb ();
 
 reg	signed	[17:0]	v1			;
 wire	signed	[17:0]	v1new			;
-reg	signed	[17:0]	v1dot			;
+reg	signed	[17:0]	v1dot	 		;
 wire	signed	[17:0]	v1dotnew		;
-wire	signed	[17:0]	k1_m = 18'h1_0000	;
+reg	signed	[17:0]	k1_m = 18'h1_0000	;
 wire	signed	[17:0]	k1_mxv1			;
-wire	signed	[17:0]	D1_m = 18'h0_4000	;
+reg	signed	[17:0]	D1_m = 18'h0_4000	;
 wire	signed	[17:0]	D1_mxv1dot		;
-reg 	signed	[17:0]	func1			;
+wire 	signed	[17:0]	func1			;
 
 reg	signed	[17:0]	v2			;
 wire	signed	[17:0]	v2new			;
-reg	signed	[17:0]	v2dot			;
+reg	signed	[17:0]	v2dot 			;
 wire	signed	[17:0]	v2dotnew		;
-wire	signed	[17:0]	k2_m = 18'h1_0000	;
+reg	signed	[17:0]	k2_m = 18'h1_0000	;
 wire	signed	[17:0]	k2_mxv2			;
-wire	signed	[17:0]	D2_m = 18'h0_4000	;
+reg	signed	[17:0]	D2_m = 18'h0_4000	;
 wire	signed	[17:0]	D2_mxv2dot		;
-reg	signed	[17:0]	func2			;
+wire	signed	[17:0]	func2			;
 
-wire		[ 3:0]	dt = 4'd9		;
-wire	signed	[17:0]	kmid_m = 18'h1_0000	;
+reg		[ 3:0]	dt = 4'd6		;
+reg	signed	[17:0]	kmid_m = 18'h1_0000	;
 wire	signed	[17:0]	kmid_mxv1		;
 wire	signed	[17:0]	kmid_mxv2		;
 
 // Bus master
 wire	[31:0]	bus_addr			;
 wire	[31:0]	video_base_addr = 32'h800_0000	;	/* address of the onchip
-							 * SRAM that we will be
+							 * SRAM that will be
 							 * loaded into the pixel
 							 * buffer */
 wire	[ 3:0]	bus_byte_enable			;	/* specifies that data is being transferred */
@@ -59,6 +59,7 @@ reg 	[ 9:0]	x_coord, y_coord		;
 
 // Simulation variables
 reg		clk_ = 0			;
+reg		clk_slow_ = 0			;
 reg	[ 3:0]	key_ = 4'b0000			;
 wire		vga_hs_ = 0			;
 wire		vga_vs_ = 0			;
@@ -108,7 +109,7 @@ integrator int1 (
 	.reset(key_[3]),
 	.clock(clk_),
 	.dt(dt),
-	.x(v1),
+	.x(v1dot),
 	.func(func1)
 );
 integrator int2 (
@@ -116,7 +117,7 @@ integrator int2 (
 	.reset(key_[3]),
 	.clock(clk_),
 	.dt(dt),
-	.x(v2),
+	.x(v2dot),
 	.func(func2)
 );
 
@@ -126,7 +127,7 @@ integrator int12 (
 	.clock(clk_),
 	.dt(dt),
 	.x(v1),
-	.func(v1dotnew)
+	.func(v1dot)
 );
 integrator int22 (
 	.xnew(v2new),
@@ -134,85 +135,60 @@ integrator int22 (
 	.clock(clk_),
 	.dt(dt),
 	.x(v2),
-	.func(v2dotnew)
+	.func(v2dot)
 );
 
+assign func1 = -k1_mxv1 + (kmid_mxv2 - kmid_mxv1) - D1_mxv1dot;
+assign func2 = -k2_mxv2 - (kmid_mxv2 - kmid_mxv1) - D2_mxv2dot;
+
+
 always clk_ = #100 ~clk_;
-
-initial #105 key_ = 4'b0001;
-
+always clk_slow_ = #400 ~clk_slow_;
 
 // assign bus_addr to pixel address
 assign bus_addr = video_base_addr + {22'b0, x_coord} + ({22'b0, y_coord}<<10);
 assign bus_byte_enable = 4'b0001;
 
 always @ (posedge clk_) begin	// on VGA sync signal...
-	$display("key: ", key_);
-	$display("state: ", state);
-	$display("vga_vs: ", vga_vs_);
-	$display("vga_hs: ", vga_hs_);
-
 	// if pushbutton 1 (furthest right) is pushed, reset state
 	if (~key_[0]) begin
-		$display("begin");
 		state <= 0;	
 		bus_read <= 0;
 		bus_write <= 0;
 		// pixel address at upper left corner
 		x_coord <= 0;
-		y_coord <= 10'd100;
+		//y_coord <= 0; /*10'd128;*/
 		timer <= 0;
-		// set starting values
+		// set initial conditions
 		v1 <= 18'h3_8000;	// 18'h3_8000
 		v2 <= 18'h0_8000;
 		v1dot <= 0;
 		v2dot <= 0;
-		func1 <= 0;
-		func2 <= 0;
+		key_ <= 4'b1001;
 	end
 	else begin	// increment timer
 		timer <= timer + 1;
 	end
 
 	// write to bus master if VGA is not reading
-	if (state==0 && (~vga_vs_ | ~vga_hs_)) begin
-		$display("continuing");
-		state <= 2;		// why do i need this????
-
-		func1 <= -k1_mxv1 + (kmid_mxv2 - kmid_mxv1) - D1_mxv1dot;
-		func2 <= -k2_mxv2 - (kmid_mxv2 - kmid_mxv1) - D2_mxv2dot;
-		
-		$display("func1: ", func1);
-		$display("func2: ", func2);
-
-		$display("vlnew: ", v1new);
-		$display("v2new: ", v2new);
+	if (state==0 && timer==3 && (~vga_vs_ | ~vga_hs_)) begin
+		state <= 2;	// why do i need this????
+		key_ <= 4'b0001;
+		timer <= 0;
 
 		v1 <= v1new;
 		v2 <= v2new;
 
-		$display("v1: ", v1);
-		$display("v2: ", v2);
+		v1dot <= v1dotnew;
+		v2dot <= v2dotnew;
 
 		x_coord <= x_coord + 10'd1;
 		if (x_coord > 10'd639) begin
 			x_coord <= 10'd0;
 		end
 		
-		if (v1[17]) begin
-			y_coord <= y_coord - v1[16:13];
-		end
-		else begin
-			y_coord <= y_coord + v1[16:13];
-		end
-		$display("v1: ", v1);
-		$display("v1[16:13]: ", v1[16:13]);
-		$display("y_coord + v1[16:13]: ", y_coord + v1[16:13]);
-		if (y_coord > 10'd399) begin
-			$display("Got too big");
-			y_coord <= 0;
-		end
-
+		y_coord <= (v1>>>12)+32;
+	
 		bus_write_data <= 8'h03;
 		bus_write <= 1'b1;
 	end
@@ -220,7 +196,6 @@ always @ (posedge clk_) begin	// on VGA sync signal...
 	// detect bus-transaction-complete ACK
 	// You MUST do this check
 	if (state==2) begin
-		$display("ACK");
 		state <= 0;
 		bus_write <= 0;
 	end

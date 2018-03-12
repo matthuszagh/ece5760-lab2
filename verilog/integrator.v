@@ -29,11 +29,13 @@ reg			start_ = 1			;
 //=======================================================
 always @ (posedge clock)
 begin
-	if (reset | start_) begin
+	if (reset/* | (start_ && x)*/) begin
 		start_ <= 0	;
 		xreg_ <= x	;
 	end
-	else xreg_ <= xnew_;
+	else begin
+		xreg_ <= xnew_;
+	end
 end
 
 assign xnew = xreg_;

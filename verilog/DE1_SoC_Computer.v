@@ -26,43 +26,43 @@ module DE1_SoC_Computer (
 	output			AUD_XCK			,
 
 	// SDRAM
-	output	[12: 0]	DRAM_ADDR		,
-	output	[ 1: 0]	DRAM_BA			,
+	output	[12: 0]		DRAM_ADDR		,
+	output	[ 1: 0]		DRAM_BA			,
 	output			DRAM_CAS_N		,
 	output			DRAM_CKE		,
 	output			DRAM_CLK		,
 	output			DRAM_CS_N		,
-	inout	[15: 0]	DRAM_DQ			,
+	inout	[15: 0]		DRAM_DQ			,
 	output			DRAM_LDQM		,
 	output			DRAM_RAS_N		,
 	output			DRAM_UDQM		,
 	output			DRAM_WE_N		,
 
 	// I2C Bus for Configuration of the Audio and Video-In Chips
-	output			FPGA_I2C_SCLK	,
-	inout			FPGA_I2C_SDAT	,
+	output			FPGA_I2C_SCLK		,
+	inout			FPGA_I2C_SDAT		,
 
 	// 40-pin headers
-	inout	[35: 0]	GPIO_0			,
-	inout	[35: 0]	GPIO_1			,
+	inout	[35: 0]		GPIO_0			,
+	inout	[35: 0]		GPIO_1			,
 
 	// Seven Segment Displays
-	output	[ 6: 0]	HEX0			,
-	output	[ 6: 0]	HEX1			,
-	output	[ 6: 0]	HEX2			,
-	output	[ 6: 0]	HEX3			,
-	output	[ 6: 0]	HEX4			,
-	output	[ 6: 0]	HEX5			,
+	output	[ 6: 0]		HEX0			,
+	output	[ 6: 0]		HEX1			,
+	output	[ 6: 0]		HEX2			,
+	output	[ 6: 0]		HEX3			,
+	output	[ 6: 0]		HEX4			,
+	output	[ 6: 0]		HEX5			,
 
 	// IR
 	input			IRDA_RXD		,
 	output			IRDA_TXD		,
 
 	// Pushbuttons
-	input	[ 3: 0]	KEY				,
+	input	[ 3: 0]		KEY			,
 
 	// LEDs
-	output	[ 9: 0]	LEDR			,
+	output	[ 9: 0]		LEDR			,
 
 	// PS2 Ports
 	inout			PS2_CLK			,
@@ -72,22 +72,22 @@ module DE1_SoC_Computer (
 	inout			PS2_DAT2		,
 
 	// Slider Switches
-	input	[ 9: 0]	SW				,
+	input	[ 9: 0]		SW			,
 
 	// Video-In
 	input			TD_CLK27		,
-	input	[ 7: 0]	TD_DATA			,
+	input	[ 7: 0]		TD_DATA			,
 	input			TD_HS			,
 	output			TD_RESET_N		,
 	input			TD_VS			,
 
 	// VGA
-	output	[ 7: 0]	VGA_B			,	// blue line
+	output	[ 7: 0]		VGA_B			,	// blue line
 	output			VGA_BLANK_N		,
 	output			VGA_CLK			,	// clock
-	output	[ 7: 0]	VGA_G			,	// green line
+	output	[ 7: 0]		VGA_G			,	// green line
 	output			VGA_HS			,	// hsync
-	output	[ 7: 0]	VGA_R			,	// red line
+	output	[ 7: 0]		VGA_R			,	// red line
 	output			VGA_SYNC_N		,
 	output			VGA_VS			,	// vsync
 
@@ -98,51 +98,51 @@ module DE1_SoC_Computer (
 	////////////////////////////////////
 		
 	// DDR3 SDRAM
-	output	[14: 0]	HPS_DDR3_ADDR	,
-	output	[ 2: 0]	HPS_DDR3_BA		,
-	output			HPS_DDR3_CAS_N	,
-	output			HPS_DDR3_CKE	,
-	output			HPS_DDR3_CK_N	,
-	output			HPS_DDR3_CK_P	,
-	output			HPS_DDR3_CS_N	,
-	output	[ 3: 0]	HPS_DDR3_DM		,
-	inout	[31: 0]	HPS_DDR3_DQ		,
-	inout	[ 3: 0]	HPS_DDR3_DQS_N	,
-	inout	[ 3: 0]	HPS_DDR3_DQS_P	,
-	output			HPS_DDR3_ODT	,
-	output			HPS_DDR3_RAS_N	,
-	output			HPS_DDR3_RESET_N,
-	input			HPS_DDR3_RZQ	,
-	output			HPS_DDR3_WE_N	,
+	output	[14: 0]		HPS_DDR3_ADDR		,
+	output	[ 2: 0]		HPS_DDR3_BA		,
+	output			HPS_DDR3_CAS_N		,
+	output			HPS_DDR3_CKE		,
+	output			HPS_DDR3_CK_N		,
+	output			HPS_DDR3_CK_P		,
+	output			HPS_DDR3_CS_N		,
+	output	[ 3: 0]		HPS_DDR3_DM		,
+	inout	[31: 0]		HPS_DDR3_DQ		,
+	inout	[ 3: 0]		HPS_DDR3_DQS_N		,
+	inout	[ 3: 0]		HPS_DDR3_DQS_P		,
+	output			HPS_DDR3_ODT		,
+	output			HPS_DDR3_RAS_N		,
+	output			HPS_DDR3_RESET_N	,
+	input			HPS_DDR3_RZQ		,
+	output			HPS_DDR3_WE_N		,
 
 	// Ethernet
-	output			HPS_ENET_GTX_CLK,
-	inout			HPS_ENET_INT_N	,
-	output			HPS_ENET_MDC	,
-	inout			HPS_ENET_MDIO	,
-	input			HPS_ENET_RX_CLK	,
-	input	[ 3: 0]	HPS_ENET_RX_DATA,
-	input			HPS_ENET_RX_DV	,
-	output	[ 3: 0]	HPS_ENET_TX_DATA,
-	output			HPS_ENET_TX_EN	,
+	output			HPS_ENET_GTX_CLK	,
+	inout			HPS_ENET_INT_N		,
+	output			HPS_ENET_MDC		,
+	inout			HPS_ENET_MDIO		,
+	input			HPS_ENET_RX_CLK		,
+	input	[ 3: 0]		HPS_ENET_RX_DATA	,
+	input			HPS_ENET_RX_DV		,
+	output	[ 3: 0]		HPS_ENET_TX_DATA	,
+	output			HPS_ENET_TX_EN		,
 
 	// Flash
-	inout	[ 3: 0]	HPS_FLASH_DATA	,
-	output			HPS_FLASH_DCLK	,
-	output			HPS_FLASH_NCSO	,
+	inout	[ 3: 0]		HPS_FLASH_DATA		,
+	output			HPS_FLASH_DCLK		,
+	output			HPS_FLASH_NCSO		,
 
 	// Accelerometer
-	inout			HPS_GSENSOR_INT	,
+	inout			HPS_GSENSOR_INT		,
 
 	// General Purpose I/O
-	inout	[ 1: 0]	HPS_GPIO		,
+	inout	[ 1: 0]		HPS_GPIO		,
 
 	// I2C
-	inout			HPS_I2C_CONTROL	,
-	inout			HPS_I2C1_SCLK	,
-	inout			HPS_I2C1_SDAT	,
-	inout			HPS_I2C2_SCLK	,
-	inout			HPS_I2C2_SDAT	,
+	inout			HPS_I2C_CONTROL		,
+	inout			HPS_I2C1_SCLK		,
+	inout			HPS_I2C1_SDAT		,
+	inout			HPS_I2C2_SCLK		,
+	inout			HPS_I2C2_SDAT		,
 
 	// Pushbutton
 	inout			HPS_KEY			,
@@ -153,12 +153,12 @@ module DE1_SoC_Computer (
 	// SD Card
 	output			HPS_SD_CLK		,
 	inout			HPS_SD_CMD		,
-	inout	[ 3: 0]	HPS_SD_DATA		,
+	inout	[ 3: 0]		HPS_SD_DATA		,
 
 	// SPI
-	output			HPS_SPIM_CLK	,
-	input			HPS_SPIM_MISO	,
-	output			HPS_SPIM_MOSI	,
+	output			HPS_SPIM_CLK		,
+	input			HPS_SPIM_MISO		,
+	output			HPS_SPIM_MOSI		,
 	inout			HPS_SPIM_SS		,
 
 	// UART
@@ -166,9 +166,9 @@ module DE1_SoC_Computer (
 	output			HPS_UART_TX		,
 
 	// USB
-	inout			HPS_CONV_USB_N	,
-	input			HPS_USB_CLKOUT	,
-	inout	[ 7: 0]	HPS_USB_DATA	,
+	inout			HPS_CONV_USB_N		,
+	input			HPS_USB_CLKOUT		,
+	inout	[ 7: 0]		HPS_USB_DATA		,
 	input			HPS_USB_DIR		,
 	input			HPS_USB_NXT		,
 	output			HPS_USB_STP
@@ -184,49 +184,51 @@ module DE1_SoC_Computer (
 //  Internal REG/WIRE declarations
 //=======================================================
 
-reg		signed	[17:0]	v1					;
+reg	signed	[17:0]	v1				;
 wire	signed	[17:0]	v1new				;
-reg		signed	[17:0]	v1dot				;
+reg	signed	[17:0]	v1dot				;
 wire	signed	[17:0]	v1dotnew			;
-wire	signed	[17:0]	k1_m = 18'h1_0000	;
+reg	signed	[17:0]	k1_m = 18'h1_0000		;
 wire	signed	[17:0]	k1_mxv1				;
-wire	signed	[17:0]	D1_m = 18'h0_4000	;
+reg	signed	[17:0]	D1_m = 18'h0_4000		;
 wire	signed	[17:0]	D1_mxv1dot			;
-reg 	signed	[17:0]	func1				;
+wire 	signed	[17:0]	func1				;
 
-reg		signed	[17:0]	v2					;
+reg	signed	[17:0]	v2				;
 wire	signed	[17:0]	v2new				;
-reg		signed	[17:0]	v2dot				;
+reg	signed	[17:0]	v2dot				;
 wire	signed	[17:0]	v2dotnew			;
-wire	signed	[17:0]	k2_m = 18'h1_0000	;
+reg	signed	[17:0]	k2_m = 18'h1_0000		;
 wire	signed	[17:0]	k2_mxv2				;
-wire	signed	[17:0]	D2_m = 18'h0_4000	;
+reg	signed	[17:0]	D2_m = 18'h0_4000		;
 wire	signed	[17:0]	D2_mxv2dot			;
-reg		signed	[17:0]	func2				;
+wire	signed	[17:0]	func2				;
 
-wire			[ 3:0]	dt = 4'd9			;
-wire	signed	[17:0]	kmid_m = 18'h1_0000	;
+reg		[ 3:0]	dt = 4'd9			;
+reg	signed	[17:0]	kmid_m = 18'h1_0000		;
 wire	signed	[17:0]	kmid_mxv1			;
 wire	signed	[17:0]	kmid_mxv2			;
 
 // Bus master
-wire	[31:0]	bus_addr						;
-wire	[31:0]	video_base_addr = 32'h800_0000	;	/* address of the onchip
-													 * SRAM that we will be
-													 * loaded into the pixel
-													 * buffer */
-wire	[ 3:0]	bus_byte_enable					;	/* specifies that data is being transferred */
-reg 			bus_read						;	/* high when requesting data */
-reg 			bus_write						;	/* high when writing data */
-reg 	[31:0]	bus_write_data					;	/* data to send to Avalon bus */
-wire			bus_ack							; 	/* Avalon bus raises this when done */
-wire	[31:0]	bus_read_data					;	/* data from Avalon bus */
-reg 	[30:0]	timer							;
-reg 	[ 3:0]	state							;
-wire			state_clock						;
+wire	[31:0]	bus_addr				;
+wire	[31:0]	video_base_addr = 32'h800_0000		;	/* address of the onchip
+								 * SRAM that we will be
+								 * loaded into the pixel
+								 * buffer */
+wire	[ 3:0]	bus_byte_enable				;	/* specifies that data is being transferred */
+reg 		bus_read				;	/* high when requesting data */
+reg 		bus_write				;	/* high when writing data */
+reg 	[31:0]	bus_write_data				;	/* data to send to Avalon bus */
+wire		bus_ack					; 	/* Avalon bus raises this when done */
+wire	[31:0]	bus_read_data				;	/* data from Avalon bus */
+reg 	[30:0]	timer					;
+reg 	[ 3:0]	state					;
+wire		state_clock				;
+reg		integrator_reset_			;	/* used to specify when the integrators should be
+								 * initialized */
 
 // Pixel address
-reg 	[ 9:0]	x_coord, y_coord				;
+reg 	[ 9:0]	x_coord, y_coord			;
 
 
 //=======================================================
@@ -270,7 +272,7 @@ signed_mult kmid_m2 (
 // integrate
 integrator int1 (
 	.xnew(v1dotnew),
-	.reset(KEY[3]),
+	.reset(integrator_reset_),
 	.clock(CLOCK2_50),
 	.dt(dt),
 	.x(v1),
@@ -278,7 +280,7 @@ integrator int1 (
 );
 integrator int2 (
 	.xnew(v2dotnew),
-	.reset(KEY[3]),
+	.reset(integrator_reset_),
 	.clock(CLOCK2_50),
 	.dt(dt),
 	.x(v2),
@@ -287,7 +289,7 @@ integrator int2 (
 
 integrator int12 (
 	.xnew(v1new),
-	.reset(KEY[3]),
+	.reset(integrator_reset_),
 	.clock(CLOCK2_50),
 	.dt(dt),
 	.x(v1),
@@ -295,24 +297,27 @@ integrator int12 (
 );
 integrator int22 (
 	.xnew(v2new),
-	.reset(KEY[3]),
+	.reset(integrator_reset_),
 	.clock(CLOCK2_50),
 	.dt(dt),
 	.x(v2),
 	.func(v2dotnew)
 );
 
+assign func1 = -k1_mxv1 + (kmid_mxv2 - kmid_mxv1) - D1_mxv1dot;
+assign func2 = -k2_mxv2 - (kmid_mxv2 - kmid_mxv1) - D2_mxv2dot;
+
 // assign bus_addr to pixel address
 assign bus_addr = video_base_addr + {22'b0, x_coord} + ({22'b0, y_coord}<<10);
 assign bus_byte_enable = 4'b0001;
 
 // set all hex digits to  0
-HexDigit set_hex_0(HEX0, 0);
-HexDigit set_hex_1(HEX1, 1);
-HexDigit set_hex_2(HEX2, 2);
-HexDigit set_hex_3(HEX3, 3);
-HexDigit set_hex_4(HEX4, 4);
-HexDigit set_hex_5(HEX5, y_coord[3:0]);
+HexDigit set_hex_0(HEX0, x_coord[0]);
+HexDigit set_hex_1(HEX1, x_coord[1]);
+HexDigit set_hex_2(HEX2, x_coord[2]);
+HexDigit set_hex_3(HEX3, x_coord[3]);
+HexDigit set_hex_4(HEX4, x_coord[4]);
+HexDigit set_hex_5(HEX5, x_coord[5]);
 
 always @ (posedge CLOCK2_50) begin	// on VGA sync signal...
 	// if pushbutton 1 (furthest right) is pushed, reset state
@@ -322,41 +327,39 @@ always @ (posedge CLOCK2_50) begin	// on VGA sync signal...
 		bus_write <= 0;
 		// pixel address at upper left corner
 		x_coord <= 0;
-		y_coord <= 10'd100;
+		//y_coord <= 10'd100;
 		timer <= 0;
 		// set starting values
 		v1 <= 18'h3_8000;
 		v2 <= 18'h0_8000;
 		v1dot <= 0;
 		v2dot <= 0;
-		func1 <= 0;
-		func2 <= 0;
+		integrator_reset_ <= 1;
 	end
 	else begin	// increment timer
 		timer <= timer + 1;
 	end
 
 	// write to bus master if VGA is not reading
-	if (state==0 && (~VGA_VS | ~VGA_HS)) begin
+	if (state==0 && timer==3 && (~VGA_VS | ~VGA_HS)) begin
 		state <= 2;		// why do i need this????
-
-		func1 <= -k1_mxv1 + (kmid_mxv2 - kmid_mxv1) - D1_mxv1dot;
-		func2 <= -k2_mxv2 - (kmid_mxv2 - kmid_mxv1) - D2_mxv2dot;
-		
+		integrator_reset_ <= 0;
+		timer <= 0;	
+	
 		v1 <= v1new;
 		v2 <= v2new;
+
+		v1dot <= v1dotnew;
+		v2dot <= v2dotnew;
 
 		x_coord <= x_coord + 10'd1;
 		if (x_coord > 10'd639) begin
 			x_coord <= 10'd0;
 		end
-		
-		y_coord <= v1;
-		if (y_coord > 10'd399) begin
-			y_coord <= 0;
-		end
 
-		bus_write_data <= 8'h03;
+		y_coord <= (v1>>>12)+32;
+
+		bus_write_data <= 8'hff;
 		bus_write <= 1'b1;
 	end
 

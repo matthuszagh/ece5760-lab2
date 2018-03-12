@@ -18,9 +18,9 @@ reg	signed	[17:0]	func_		;
 initial begin
 	reset_	= 0		;
 	clk_	= 0		;
-	dt_	= 9		;
+	dt_	= 8		;
 	x_	= -32768	;
-	func_	= 18'h0_8000	;
+	func_	= 0 /*18'h0_8000*/	;
 end
 
 always clk_ = #100 ~clk_;

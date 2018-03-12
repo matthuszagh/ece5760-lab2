@@ -116,7 +116,9 @@ set_output_delay -min -clock clk_vga -1.485 [get_ports VGA_BLANK_N]
 #**************************************************************
 # Set Maximum Delay
 #**************************************************************
-
+set_max_delay -from The_System|vga_subsystem|vga_pll|video_pll|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk -to clk_vga 13
+set_max_delay -from The_System|system_pll|sys_pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk -to clk_dram 14
+set_min_delay -from clk_dram -to The_System|system_pll|sys_pll|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk -5
 
 
 #**************************************************************
