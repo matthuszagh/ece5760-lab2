@@ -12,30 +12,36 @@ module DE1_SoC_Computer_tb();
 //  Internal REG/WIRE declarations
 //=======================================================
 
-reg	signed	[17:0]	v1			;
-wire	signed	[17:0]	v1new			;
-reg	signed	[17:0]	v1dot	 		;
-wire	signed	[17:0]	v1dotnew		;
-reg	signed	[17:0]	k1_m = 18'h1_0000	;
-wire	signed	[17:0]	k1_mxv1			;
-reg	signed	[17:0]	D1_m = 18'h0_4000	;
-wire	signed	[17:0]	D1_mxv1dot		;
-wire 	signed	[17:0]	func1			;
+reg     signed  [17:0]  v1                              ;
+wire    signed  [17:0]  v1new                           ;
+reg     signed  [17:0]  v1dot                           ;
+wire    signed  [17:0]  v1dotnew                        ;
+reg     signed  [17:0]  k1_m = 18'h1_0000               ;
+wire    signed  [17:0]  k1_mxv1                         ;
+reg     signed  [17:0]  k1_mxv1_reg                     ;
+reg     signed  [17:0]  D1_m = 18'h0_4000               ;
+wire    signed  [17:0]  D1_mxv1dot                      ;
+reg     signed  [17:0]  D1_mxv1dot_reg                  ;
+wire    signed  [17:0]  func1                           ;
 
-reg	signed	[17:0]	v2			;
-wire	signed	[17:0]	v2new			;
-reg	signed	[17:0]	v2dot 			;
-wire	signed	[17:0]	v2dotnew		;
-reg	signed	[17:0]	k2_m = 18'h1_0000	;
-wire	signed	[17:0]	k2_mxv2			;
-reg	signed	[17:0]	D2_m = 18'h0_4000	;
-wire	signed	[17:0]	D2_mxv2dot		;
-wire	signed	[17:0]	func2			;
+reg     signed  [17:0]  v2                              ;
+wire    signed  [17:0]  v2new                           ;
+reg     signed  [17:0]  v2dot                           ;
+wire    signed  [17:0]  v2dotnew                        ;
+reg     signed  [17:0]  k2_m = 18'h1_0000               ;
+wire    signed  [17:0]  k2_mxv2                         ;
+reg     signed  [17:0]  k2_mxv2_reg                     ;
+reg     signed  [17:0]  D2_m = 18'h0_4000               ;
+wire    signed  [17:0]  D2_mxv2dot                      ;
+reg     signed  [17:0]  D2_mxv2dot_reg                  ;
+wire    signed  [17:0]  func2                           ;
 
-reg		[ 3:0]	dt = 4'd6		;
-reg	signed	[17:0]	kmid_m = 18'h1_0000	;
-wire	signed	[17:0]	kmid_mxv1		;
-wire	signed	[17:0]	kmid_mxv2		;
+reg             [ 3:0]  dt = 4'd9                       ;
+reg     signed  [17:0]  kmid_m = 18'h1_0000             ;
+wire    signed  [17:0]  kmid_mxv1                       ;
+reg     signed  [17:0]  kmid_mxv1_reg                   ;
+wire    signed  [17:0]  kmid_mxv2                       ;
+reg     signed  [17:0]  kmid_mxv2_reg                   ;
 
 // Bus master
 wire	[31:0]	bus_addr			;
@@ -138,12 +144,10 @@ integrator int22 (
 	.func(v2dot)
 );
 
-assign func1 = -k1_mxv1 + (kmid_mxv2 - kmid_mxv1) - D1_mxv1dot;
-assign func2 = -k2_mxv2 - (kmid_mxv2 - kmid_mxv1) - D2_mxv2dot;
-
+assign func1 = -k1_mxv1_reg + (kmid_mxv2_reg - kmid_mxv1_reg) - D1_mxv1dot_reg;
+assign func2 = -k2_mxv2_reg - (kmid_mxv2_reg - kmid_mxv1_reg) - D2_mxv2dot_reg;
 
 always clk_ = #100 ~clk_;
-always clk_slow_ = #400 ~clk_slow_;
 
 // assign bus_addr to pixel address
 assign bus_addr = video_base_addr + {22'b0, x_coord} + ({22'b0, y_coord}<<10);
@@ -175,6 +179,17 @@ always @ (posedge clk_) begin	// on VGA sync signal...
 		state <= 2;	// why do i need this????
 		key_ <= 4'b0001;
 		timer <= 0;
+		
+		// update regs for func
+                k1_mxv1_reg <= k1_mxv1;
+                kmid_mxv2_reg <= kmid_mxv2;
+                kmid_mxv1_reg <= kmid_mxv1;
+                D1_mxv1dot_reg <= D1_mxv1dot;
+
+                k2_mxv2_reg <= k2_mxv2;
+                kmid_mxv2_reg <= kmid_mxv2;
+                kmid_mxv1_reg <= kmid_mxv1;
+                D2_mxv2dot_reg <= D2_mxv2dot;
 
 		v1 <= v1new;
 		v2 <= v2new;
@@ -189,7 +204,7 @@ always @ (posedge clk_) begin	// on VGA sync signal...
 		
 		y_coord <= (v1>>>12)+32;
 	
-		bus_write_data <= 8'h03;
+		bus_write_data <= 8'hff;
 		bus_write <= 1'b1;
 	end
 

@@ -190,8 +190,10 @@ reg	signed	[17:0]	v1dot				;
 wire	signed	[17:0]	v1dotnew			;
 reg	signed	[17:0]	k1_m = 18'h1_0000		;
 wire	signed	[17:0]	k1_mxv1				;
+reg	signed	[17:0]	k1_mxv1_reg			;
 reg	signed	[17:0]	D1_m = 18'h0_4000		;
 wire	signed	[17:0]	D1_mxv1dot			;
+reg	signed	[17:0]	D1_mxv1dot_reg			;
 wire 	signed	[17:0]	func1				;
 
 reg	signed	[17:0]	v2				;
@@ -200,14 +202,18 @@ reg	signed	[17:0]	v2dot				;
 wire	signed	[17:0]	v2dotnew			;
 reg	signed	[17:0]	k2_m = 18'h1_0000		;
 wire	signed	[17:0]	k2_mxv2				;
+reg	signed	[17:0]	k2_mxv2_reg			;
 reg	signed	[17:0]	D2_m = 18'h0_4000		;
 wire	signed	[17:0]	D2_mxv2dot			;
+reg	signed	[17:0]	D2_mxv2dot_reg			;
 wire	signed	[17:0]	func2				;
 
 reg		[ 3:0]	dt = 4'd9			;
 reg	signed	[17:0]	kmid_m = 18'h1_0000		;
 wire	signed	[17:0]	kmid_mxv1			;
+reg	signed	[17:0]	kmid_mxv1_reg			;
 wire	signed	[17:0]	kmid_mxv2			;
+reg	signed	[17:0]	kmid_mxv2_reg			;
 
 // Bus master
 wire	[31:0]	bus_addr				;
@@ -304,20 +310,20 @@ integrator int22 (
 	.func(v2dotnew)
 );
 
-assign func1 = -k1_mxv1 + (kmid_mxv2 - kmid_mxv1) - D1_mxv1dot;
-assign func2 = -k2_mxv2 - (kmid_mxv2 - kmid_mxv1) - D2_mxv2dot;
+assign func1 = -k1_mxv1_reg + (kmid_mxv2_reg - kmid_mxv1_reg) - D1_mxv1dot_reg;
+assign func2 = -k2_mxv2_reg - (kmid_mxv2_reg - kmid_mxv1_reg) - D2_mxv2dot_reg;
 
 // assign bus_addr to pixel address
 assign bus_addr = video_base_addr + {22'b0, x_coord} + ({22'b0, y_coord}<<10);
 assign bus_byte_enable = 4'b0001;
 
 // set all hex digits to  0
-HexDigit set_hex_0(HEX0, x_coord[0]);
-HexDigit set_hex_1(HEX1, x_coord[1]);
-HexDigit set_hex_2(HEX2, x_coord[2]);
-HexDigit set_hex_3(HEX3, x_coord[3]);
-HexDigit set_hex_4(HEX4, x_coord[4]);
-HexDigit set_hex_5(HEX5, x_coord[5]);
+HexDigit set_hex_0(HEX0, state[0]);
+HexDigit set_hex_1(HEX1, state[1]);
+HexDigit set_hex_2(HEX2, state[2]);
+HexDigit set_hex_3(HEX3, state[3]);
+HexDigit set_hex_4(HEX4, 0);
+HexDigit set_hex_5(HEX5, 0);
 
 always @ (posedge CLOCK2_50) begin	// on VGA sync signal...
 	// if pushbutton 1 (furthest right) is pushed, reset state
@@ -346,6 +352,17 @@ always @ (posedge CLOCK2_50) begin	// on VGA sync signal...
 		integrator_reset_ <= 0;
 		timer <= 0;	
 	
+		// update regs for func
+		k1_mxv1_reg <= k1_mxv1;
+		kmid_mxv2_reg <= kmid_mxv2;
+		kmid_mxv1_reg <= kmid_mxv1;
+		D1_mxv1dot_reg <= D1_mxv1dot;
+
+		k2_mxv2_reg <= k2_mxv2;
+		kmid_mxv2_reg <= kmid_mxv2;
+		kmid_mxv1_reg <= kmid_mxv1;
+		D2_mxv2dot_reg <= D2_mxv2dot;
+
 		v1 <= v1new;
 		v2 <= v2new;
 
