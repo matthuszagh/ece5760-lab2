@@ -5,3 +5,7 @@ verilog/*.map.*
 verilog/*.fit.*
 *.rpt
 *.done
+*summary
+*_info
+*_lib*
+*.xrf
