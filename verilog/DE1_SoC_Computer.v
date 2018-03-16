@@ -281,7 +281,7 @@ integrator int1 (
 	.reset(integrator_reset_),
 	.clock(CLOCK2_50),
 	.dt(dt),
-	.x(v1),
+	.x(v1dot),
 	.func(func1)
 );
 integrator int2 (
@@ -289,7 +289,7 @@ integrator int2 (
 	.reset(integrator_reset_),
 	.clock(CLOCK2_50),
 	.dt(dt),
-	.x(v2),
+	.x(v2dot),
 	.func(func2)
 );
 
@@ -299,7 +299,7 @@ integrator int12 (
 	.clock(CLOCK2_50),
 	.dt(dt),
 	.x(v1),
-	.func(v1dotnew)
+	.func(v1dot)
 );
 integrator int22 (
 	.xnew(v2new),
@@ -307,11 +307,11 @@ integrator int22 (
 	.clock(CLOCK2_50),
 	.dt(dt),
 	.x(v2),
-	.func(v2dotnew)
+	.func(v2dot)
 );
 
-assign func1 = -k1_mxv1_reg + (kmid_mxv2_reg - kmid_mxv1_reg) - D1_mxv1dot_reg;
-assign func2 = -k2_mxv2_reg - (kmid_mxv2_reg - kmid_mxv1_reg) - D2_mxv2dot_reg;
+assign func1 = -k1_mxv1 + (kmid_mxv2 - kmid_mxv1) - D1_mxv1dot;
+assign func2 = -k2_mxv2 - (kmid_mxv2 - kmid_mxv1) - D2_mxv2dot;
 
 // assign bus_addr to pixel address
 assign bus_addr = video_base_addr + {22'b0, x_coord} + ({22'b0, y_coord}<<10);
@@ -347,22 +347,11 @@ always @ (posedge CLOCK2_50) begin	// on VGA sync signal...
 	end
 
 	// write to bus master if VGA is not reading
-	if (state==0 && timer==3 && (~VGA_VS | ~VGA_HS)) begin
+	if (state==0 && timer==2 && (~VGA_VS | ~VGA_HS)) begin
 		state <= 2;		// why do i need this????
 		integrator_reset_ <= 0;
 		timer <= 0;	
 	
-		// update regs for func
-		k1_mxv1_reg <= k1_mxv1;
-		kmid_mxv2_reg <= kmid_mxv2;
-		kmid_mxv1_reg <= kmid_mxv1;
-		D1_mxv1dot_reg <= D1_mxv1dot;
-
-		k2_mxv2_reg <= k2_mxv2;
-		kmid_mxv2_reg <= kmid_mxv2;
-		kmid_mxv1_reg <= kmid_mxv1;
-		D2_mxv2dot_reg <= D2_mxv2dot;
-
 		v1 <= v1new;
 		v2 <= v2new;
 

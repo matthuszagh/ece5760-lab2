@@ -10,7 +10,7 @@ cModel Technology
 Z0 d/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/simulation/modelsim
 varriav_hps_interface_boot_from_fpga
 Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
-Z2 !s110 1520822400
+Z2 !s110 1521163316
 !i10b 1
 !s100 l7fe;YzEkY]46RE`Fcl]_3
 I<a=JFCU=hN`@K6]ncLid=3
@@ -26,7 +26,7 @@ Z8 OV;L;10.4b;61
 r1
 !s85 0
 31
-Z9 !s108 1520822400.000000
+Z9 !s108 1521163316.000000
 Z10 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_boot_from_fpga.sv|
 Z11 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_boot_from_fpga.sv|
 !i113 1
@@ -34,583 +34,583 @@ Z12 o-sv -work HPS
 Z13 !s92 -sv -work HPS +incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation
 varriav_hps_interface_clocks_resets
 R1
-Z14 !s110 1520822401
+R2
 !i10b 1
 !s100 EdEJ9N<Q^PidFnk=Ll:_b0
 I:i]7M6GQlFHA>NkYRg[gg0
 R3
-Z15 !s105 hps_interface_clocks_resets_sv_unit
+Z14 !s105 hps_interface_clocks_resets_sv_unit
 S1
 R0
 R5
-Z16 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_clocks_resets.sv
-Z17 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_clocks_resets.sv
+Z15 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_clocks_resets.sv
+Z16 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_clocks_resets.sv
 L0 90
 R8
 r1
 !s85 0
 31
-Z18 !s108 1520822401.000000
-Z19 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_clocks_resets.sv|
-Z20 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_clocks_resets.sv|
+R9
+Z17 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_clocks_resets.sv|
+Z18 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_clocks_resets.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_cross_trigger
 R1
-Z21 !s110 1520822403
+Z19 !s110 1521163317
 !i10b 1
 !s100 P60EIAj@=Whz2PCOfnXQB2
 I5VQHV6h5<5o5LzAo:_Xd[1
 R3
-Z22 !s105 hps_interface_cross_trigger_sv_unit
+Z20 !s105 hps_interface_cross_trigger_sv_unit
 S1
 R0
 R5
-Z23 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_cross_trigger.sv
-Z24 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_cross_trigger.sv
+Z21 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_cross_trigger.sv
+Z22 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_cross_trigger.sv
 L0 249
 R8
 r1
 !s85 0
 31
-Z25 !s108 1520822403.000000
-Z26 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_cross_trigger.sv|
-Z27 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_cross_trigger.sv|
+Z23 !s108 1521163317.000000
+Z24 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_cross_trigger.sv|
+Z25 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_cross_trigger.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_dbg_apb
 R1
-R21
+R19
 !i10b 1
 !s100 I@DEziF@z=_jz5CATJ[fT2
 IJAXU6G7L>]o0;:0fAD07<3
 R3
-Z28 !s105 hps_interface_dbg_apb_sv_unit
+Z26 !s105 hps_interface_dbg_apb_sv_unit
 S1
 R0
 R5
-Z29 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dbg_apb.sv
-Z30 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dbg_apb.sv
+Z27 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dbg_apb.sv
+Z28 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dbg_apb.sv
 L0 397
 R8
 r1
 !s85 0
 31
-R25
-Z31 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dbg_apb.sv|
-Z32 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dbg_apb.sv|
+R23
+Z29 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dbg_apb.sv|
+Z30 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dbg_apb.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_dma
 R1
-Z33 !s110 1520822404
+R19
 !i10b 1
 !s100 c6a1;]eY=DzGXnCVnF3<N3
 I=VQVXm4Ziml?B?B@<GJ6F0
 R3
-Z34 !s105 hps_interface_dma_sv_unit
+Z31 !s105 hps_interface_dma_sv_unit
 S1
 R0
 R5
-Z35 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dma.sv
-Z36 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dma.sv
+Z32 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dma.sv
+Z33 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dma.sv
 L0 91
 R8
 r1
 !s85 0
 31
-Z37 !s108 1520822404.000000
-Z38 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dma.sv|
-Z39 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dma.sv|
+R23
+Z34 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dma.sv|
+Z35 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_dma.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_fpga2hps
 R1
-R33
+R19
 !i10b 1
 !s100 `NKLhnnlfLmackCc5`RL71
 IVRg?QffV2oFj@m63C?PWT1
 R3
-Z40 !s105 hps_interface_fpga2hps_sv_unit
+Z36 !s105 hps_interface_fpga2hps_sv_unit
 S1
 R0
 R5
-Z41 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_fpga2hps.sv
-Z42 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_fpga2hps.sv
+Z37 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_fpga2hps.sv
+Z38 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_fpga2hps.sv
 L0 131
 R8
 r1
 !s85 0
 31
-R37
-Z43 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_fpga2hps.sv|
-Z44 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_fpga2hps.sv|
+R23
+Z39 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_fpga2hps.sv|
+Z40 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_fpga2hps.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_hps2fpga
 R1
-Z45 !s110 1520822405
+R19
 !i10b 1
 !s100 ii18YT08QEe0O1VEYObiD0
 IW2U8ECXgYa6IAkZcz]k^z0
 R3
-Z46 !s105 hps_interface_hps2fpga_sv_unit
+Z41 !s105 hps_interface_hps2fpga_sv_unit
 S1
 R0
 R5
-Z47 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga.sv
-Z48 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga.sv
+Z42 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga.sv
+Z43 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga.sv
 L0 129
 R8
 r1
 !s85 0
 31
-Z49 !s108 1520822405.000000
-Z50 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga.sv|
-Z51 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga.sv|
+R23
+Z44 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga.sv|
+Z45 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_hps2fpga_light_weight
 R1
-R45
+R19
 !i10b 1
 !s100 JDden1c2fK>iLOnz=U@HS1
 IN5>VW`_BVzazVCD@]^B8C3
 R3
-Z52 !s105 hps_interface_hps2fpga_light_weight_sv_unit
+Z46 !s105 hps_interface_hps2fpga_light_weight_sv_unit
 S1
 R0
 R5
-Z53 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga_light_weight.sv
-Z54 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga_light_weight.sv
+Z47 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga_light_weight.sv
+Z48 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga_light_weight.sv
 L0 112
 R8
 r1
 !s85 0
 31
-R49
-Z55 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga_light_weight.sv|
-Z56 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga_light_weight.sv|
+R23
+Z49 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga_light_weight.sv|
+Z50 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_hps2fpga_light_weight.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_interrupts
 R1
-Z57 !s110 1520822406
+Z51 !s110 1521163318
 !i10b 1
 !s100 NB5_gig;1CIW:0[0igMz=0
 I<YDD;ne7FkE1TQ:T[_8U81
 R3
-Z58 !s105 hps_interface_interrupts_sv_unit
+Z52 !s105 hps_interface_interrupts_sv_unit
 S1
 R0
 R5
-Z59 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_interrupts.sv
-Z60 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_interrupts.sv
+Z53 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_interrupts.sv
+Z54 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_interrupts.sv
 L0 504
 R8
 r1
 !s85 0
 31
-Z61 !s108 1520822406.000000
-Z62 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_interrupts.sv|
-Z63 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_interrupts.sv|
+Z55 !s108 1521163318.000000
+Z56 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_interrupts.sv|
+Z57 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_interrupts.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_loan_io
 R1
-Z64 !s110 1520822407
+R51
 !i10b 1
 !s100 A?P0K::SeG3l?>0T`g`S:1
 INAXbKcGe::zz7aAPE^SnW2
 R3
-Z65 !s105 hps_interface_loan_io_sv_unit
+Z58 !s105 hps_interface_loan_io_sv_unit
 S1
 R0
 R5
-Z66 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_loan_io.sv
-Z67 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_loan_io.sv
+Z59 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_loan_io.sv
+Z60 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_loan_io.sv
 L0 156
 R8
 r1
 !s85 0
 31
-R61
-Z68 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_loan_io.sv|
-Z69 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_loan_io.sv|
+R55
+Z61 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_loan_io.sv|
+Z62 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_loan_io.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_mpu_event_standby
 R1
-R64
+R51
 !i10b 1
 !s100 HJB6HH0UBGP=?@zSm3Io?3
 I<5k590EFn[7[1jSdkPW]o2
 R3
-Z70 !s105 hps_interface_mpu_event_standby_sv_unit
+Z63 !s105 hps_interface_mpu_event_standby_sv_unit
 S1
 R0
 R5
-Z71 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_event_standby.sv
-Z72 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_event_standby.sv
+Z64 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_event_standby.sv
+Z65 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_event_standby.sv
 L0 165
 R8
 r1
 !s85 0
 31
-Z73 !s108 1520822407.000000
-Z74 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_event_standby.sv|
-Z75 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_event_standby.sv|
+R55
+Z66 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_event_standby.sv|
+Z67 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_event_standby.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_mpu_general_purpose
 R1
-Z76 !s110 1520822408
+R51
 !i10b 1
 !s100 jZe^I2Y:56[E2oR4Xbb:L2
 I6kN>3fj_n8boP5MFzTn<_3
 R3
-Z77 !s105 hps_interface_mpu_general_purpose_sv_unit
+Z68 !s105 hps_interface_mpu_general_purpose_sv_unit
 S1
 R0
 R5
-Z78 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_general_purpose.sv
-Z79 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_general_purpose.sv
+Z69 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_general_purpose.sv
+Z70 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_general_purpose.sv
 L0 122
 R8
 r1
 !s85 0
 31
-Z80 !s108 1520822408.000000
-Z81 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_general_purpose.sv|
-Z82 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_general_purpose.sv|
+R55
+Z71 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_general_purpose.sv|
+Z72 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_mpu_general_purpose.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_peripheral_can
 R1
-R76
+R51
 !i10b 1
 !s100 E=PUE3c?@UmGCA6Xj`g7`1
 I@cTQ[6kXQVl0IkVJ0G]jJ0
 R3
-Z83 !s105 hps_interface_peripheral_can_sv_unit
+Z73 !s105 hps_interface_peripheral_can_sv_unit
 S1
 R0
 R5
-Z84 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_can.sv
-Z85 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_can.sv
+Z74 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_can.sv
+Z75 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_can.sv
 L0 119
 R8
 r1
 !s85 0
 31
-R80
-Z86 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_can.sv|
-Z87 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_can.sv|
+R55
+Z76 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_can.sv|
+Z77 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_can.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_peripheral_emac
 R1
-Z88 !s110 1520822409
+Z78 !s110 1521163319
 !i10b 1
 !s100 AXTIDQ9S@7NM`o`M4>XPA3
 Im^?oR?ojdgMdf@JGC]?0j3
 R3
-Z89 !s105 hps_interface_peripheral_emac_sv_unit
+Z79 !s105 hps_interface_peripheral_emac_sv_unit
 S1
 R0
 R5
-Z90 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_emac.sv
-Z91 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_emac.sv
+Z80 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_emac.sv
+Z81 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_emac.sv
 L0 542
 R8
 r1
 !s85 0
 31
-Z92 !s108 1520822409.000000
-Z93 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_emac.sv|
-Z94 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_emac.sv|
+Z82 !s108 1521163319.000000
+Z83 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_emac.sv|
+Z84 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_emac.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_peripheral_i2c
 R1
-R88
+R78
 !i10b 1
 !s100 lWSho;ETldX];T@KHSENH3
 I_>Y^a55RjKQnZE;>iYGa62
 R3
-Z95 !s105 hps_interface_peripheral_i2c_sv_unit
+Z85 !s105 hps_interface_peripheral_i2c_sv_unit
 S1
 R0
 R5
-Z96 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_i2c.sv
-Z97 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_i2c.sv
+Z86 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_i2c.sv
+Z87 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_i2c.sv
 L0 169
 R8
 r1
 !s85 0
 31
-R92
-Z98 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_i2c.sv|
-Z99 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_i2c.sv|
+R82
+Z88 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_i2c.sv|
+Z89 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_i2c.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_peripheral_nand
 R1
-Z100 !s110 1520822410
+R78
 !i10b 1
 !s100 BQD3>n:>lNR8adAecC`4m1
 IF;i<Vd:8glY=HfY>T0;OH3
 R3
-Z101 !s105 hps_interface_peripheral_nand_sv_unit
+Z90 !s105 hps_interface_peripheral_nand_sv_unit
 S1
 R0
 R5
-Z102 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_nand.sv
-Z103 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_nand.sv
+Z91 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_nand.sv
+Z92 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_nand.sv
 L0 307
 R8
 r1
 !s85 0
 31
-Z104 !s108 1520822410.000000
-Z105 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_nand.sv|
-Z106 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_nand.sv|
+R82
+Z93 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_nand.sv|
+Z94 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_nand.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_peripheral_qspi
 R1
-R100
+R78
 !i10b 1
 !s100 06k?f4fjJ9^7jVfTemLo52
 ITZKG?0VkAnaDG=GonG74I0
 R3
-Z107 !s105 hps_interface_peripheral_qspi_sv_unit
+Z95 !s105 hps_interface_peripheral_qspi_sv_unit
 S1
 R0
 R5
-Z108 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_qspi.sv
-Z109 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_qspi.sv
+Z96 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_qspi.sv
+Z97 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_qspi.sv
 L0 338
 R8
 r1
 !s85 0
 31
-R104
-Z110 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_qspi.sv|
-Z111 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_qspi.sv|
+R82
+Z98 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_qspi.sv|
+Z99 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_qspi.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_peripheral_sdmmc
 R1
-Z112 !s110 1520822411
+R78
 !i10b 1
 !s100 7kLVTz1CYYK5;PHGDTDC91
 IX>SIL>J2ORI1f>gbEcjhQ3
 R3
-Z113 !s105 hps_interface_peripheral_sdmmc_sv_unit
+Z100 !s105 hps_interface_peripheral_sdmmc_sv_unit
 S1
 R0
 R5
-Z114 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_sdmmc.sv
-Z115 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_sdmmc.sv
+Z101 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_sdmmc.sv
+Z102 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_sdmmc.sv
 L0 415
 R8
 r1
 !s85 0
 31
-Z116 !s108 1520822411.000000
-Z117 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_sdmmc.sv|
-Z118 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_sdmmc.sv|
+R82
+Z103 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_sdmmc.sv|
+Z104 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_sdmmc.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_peripheral_spi_master
 R1
-Z119 !s110 1520822412
+Z105 !s110 1521163320
 !i10b 1
 !s100 mMKfQN^;9<94B;anS:nBW3
 IPdHeF]9LGHiPC;IDh_`>o0
 R3
-Z120 !s105 hps_interface_peripheral_spi_master_sv_unit
+Z106 !s105 hps_interface_peripheral_spi_master_sv_unit
 S1
 R0
 R5
-Z121 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_master.sv
-Z122 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_master.sv
+Z107 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_master.sv
+Z108 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_master.sv
 L0 284
 R8
 r1
 !s85 0
 31
-Z123 !s108 1520822412.000000
-Z124 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_master.sv|
-Z125 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_master.sv|
+Z109 !s108 1521163320.000000
+Z110 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_master.sv|
+Z111 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_master.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_peripheral_spi_slave
 R1
-R119
+R105
 !i10b 1
 !s100 2B9E_lMUAo5QnKR]I6z_R1
 ITji3C651@<XMj8ZWgGcAG3
 R3
-Z126 !s105 hps_interface_peripheral_spi_slave_sv_unit
+Z112 !s105 hps_interface_peripheral_spi_slave_sv_unit
 S1
 R0
 R5
-Z127 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_slave.sv
-Z128 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_slave.sv
+Z113 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_slave.sv
+Z114 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_slave.sv
 L0 196
 R8
 r1
 !s85 0
 31
-R123
-Z129 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_slave.sv|
-Z130 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_slave.sv|
+R109
+Z115 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_slave.sv|
+Z116 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_spi_slave.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_peripheral_uart
 R1
-Z131 !s110 1520822413
+R105
 !i10b 1
 !s100 m[1PImgi88FX1j`;U0d:40
 ImA68Ne=4XBXNcZGoQ@PiI3
 R3
-Z132 !s105 hps_interface_peripheral_uart_sv_unit
+Z117 !s105 hps_interface_peripheral_uart_sv_unit
 S1
 R0
 R5
-Z133 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_uart.sv
-Z134 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_uart.sv
+Z118 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_uart.sv
+Z119 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_uart.sv
 L0 319
 R8
 r1
 !s85 0
 31
-Z135 !s108 1520822413.000000
-Z136 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_uart.sv|
-Z137 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_uart.sv|
+R109
+Z120 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_uart.sv|
+Z121 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_uart.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_peripheral_usb
 R1
-R131
+R105
 !i10b 1
 !s100 G99M:>1nE>KQ3;F@0U@l[0
 I7VhYPcckiFgBH^LHKkoXQ3
 R3
-Z138 !s105 hps_interface_peripheral_usb_sv_unit
+Z122 !s105 hps_interface_peripheral_usb_sv_unit
 S1
 R0
 R5
-Z139 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_usb.sv
-Z140 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_usb.sv
+Z123 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_usb.sv
+Z124 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_usb.sv
 L0 246
 R8
 r1
 !s85 0
 31
-R135
-Z141 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_usb.sv|
-Z142 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_usb.sv|
+R109
+Z125 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_usb.sv|
+Z126 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_peripheral_usb.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_stm_event
 R1
-Z143 !s110 1520822414
+R105
 !i10b 1
 !s100 b97PzY=D4:cLeeAkVz29k3
 IE]BEEDQo>V<YajaXJWbca1
 R3
-Z144 !s105 hps_interface_stm_event_sv_unit
+Z127 !s105 hps_interface_stm_event_sv_unit
 S1
 R0
 R5
-Z145 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_stm_event.sv
-Z146 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_stm_event.sv
+Z128 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_stm_event.sv
+Z129 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_stm_event.sv
 L0 99
 R8
 r1
 !s85 0
 31
-Z147 !s108 1520822414.000000
-Z148 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_stm_event.sv|
-Z149 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_stm_event.sv|
+R109
+Z130 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_stm_event.sv|
+Z131 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_stm_event.sv|
 !i113 1
 R12
 R13
 varriav_hps_interface_tpiu_trace
 R1
-R143
+R105
 !i10b 1
 !s100 JX66f0?=34?d2T1f7MdE42
 I=KK:7<7?AF6N2K35BO]@;1
 R3
-Z150 !s105 hps_interface_tpiu_trace_sv_unit
+Z132 !s105 hps_interface_tpiu_trace_sv_unit
 S1
 R0
 R5
-Z151 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_tpiu_trace.sv
-Z152 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_tpiu_trace.sv
+Z133 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_tpiu_trace.sv
+Z134 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_tpiu_trace.sv
 L0 121
 R8
 r1
 !s85 0
 31
-R147
-Z153 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_tpiu_trace.sv|
-Z154 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_tpiu_trace.sv|
+R109
+Z135 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_tpiu_trace.sv|
+Z136 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_tpiu_trace.sv|
 !i113 1
 R12
 R13
 varriav_hps_peripheral_gpio
 R1
-Z155 !s110 1520822415
+Z137 !s110 1521163321
 !i10b 1
 !s100 iHS:A:=zmV1SYQ>e:dWl80
 IE524M04J:PBGCHRDDc6Kj2
 R3
-Z156 !s105 hps_peripheral_gpio_sv_unit
+Z138 !s105 hps_peripheral_gpio_sv_unit
 S1
 R0
 R5
-Z157 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_peripheral_gpio.sv
-Z158 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_peripheral_gpio.sv
+Z139 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_peripheral_gpio.sv
+Z140 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_peripheral_gpio.sv
 L0 53
 R8
 r1
 !s85 0
 31
-Z159 !s108 1520822415.000000
-Z160 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_peripheral_gpio.sv|
-Z161 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_peripheral_gpio.sv|
+Z141 !s108 1521163321.000000
+Z142 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_peripheral_gpio.sv|
+Z143 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_peripheral_gpio.sv|
 !i113 1
 R12
 R13
 vboot_from_fpga_bfm
 R1
-Z162 DXx4 work 13 verbosity_pkg 0 22 j4h53HDoenXAHm5EBSJj`2
+Z144 DXx4 work 13 verbosity_pkg 0 22 j4h53HDoenXAHm5EBSJj`2
 R2
 !i10b 1
 !s100 8GdJNiTd?lZc9WEnO?8>K3
@@ -622,7 +622,7 @@ R0
 R5
 R6
 R7
-Z163 L0 14
+Z145 L0 14
 R8
 r1
 !s85 0
@@ -635,51 +635,51 @@ R12
 R13
 vcan_bfm
 R1
-R162
-R76
+R144
+R51
 !i10b 1
 !s100 PkB9je:Kc42OjC=4RN03O1
 IoWWEZ9LXoXVTbL]9S>?Bg2
 R3
-R83
+R73
 S1
 R0
 R5
-R84
-R85
-R163
+R74
+R75
+R145
 R8
 r1
 !s85 0
 31
-R80
-R86
-R87
+R55
+R76
+R77
 !i113 1
 R12
 R13
 vcti_bfm
 R1
-R162
-R21
+R144
+R19
 !i10b 1
 !s100 MHfWKb:S=A?<f3`gWR1P61
 I`PGhag_N[A:8PJR<n^ESG0
 R3
-R22
+R20
 S1
 R0
 R5
-R23
-R24
-R163
+R21
+R22
+R145
 R8
 r1
 !s85 0
 31
+R23
+R24
 R25
-R26
-R27
 !i113 1
 R12
 R13
@@ -709,130 +709,154 @@ R12
 R13
 vcyclonev_hps_interface_clocks_resets
 R1
-R14
+R2
 !i10b 1
 !s100 gfePS]Ree]nc0Eoc@imN=1
 I4Z`dfekXU8kPlMn1Uk`<z3
 R3
-R15
+R14
 S1
 R0
 R5
+R15
 R16
-R17
-R163
+R145
 R8
 r1
 !s85 0
 31
+R9
+R17
 R18
-R19
-R20
 !i113 1
 R12
 R13
 vcyclonev_hps_interface_cross_trigger
 R1
-R21
+R19
 !i10b 1
 !s100 UiGKJn[BizWoh@PmX1VSA0
 I=7^YEm75YE4J[PX`KQI2N0
 R3
-R22
+R20
 S1
 R0
 R5
-R23
-R24
-Z164 L0 224
+R21
+R22
+Z146 L0 224
 R8
 r1
 !s85 0
 31
+R23
+R24
 R25
-R26
-R27
 !i113 1
 R12
 R13
 vcyclonev_hps_interface_dbg_apb
 R1
-R21
+R19
 !i10b 1
 !s100 ?DEIjX[[GFl2n<joY^QGW2
 I<j3Z91?hhFXSn[bb8bOgg3
 R3
-R28
+R26
 S1
 R0
 R5
-R29
-R30
+R27
+R28
 L0 359
 R8
 r1
 !s85 0
 31
-R25
-R31
-R32
+R23
+R29
+R30
 !i113 1
 R12
 R13
 vcyclonev_hps_interface_dma
 R1
-R33
+R19
 !i10b 1
 !s100 42`HYA5V]lSfUXHYQVO9T1
 IF7LCUTKaTfDm23h2c000O2
 R3
-R34
+R31
 S1
 R0
 R5
-R35
-R36
-R163
+R32
+R33
+R145
 R8
 r1
 !s85 0
 31
-R37
-R38
-R39
+R23
+R34
+R35
 !i113 1
 R12
 R13
 vcyclonev_hps_interface_fpga2hps
 R1
-R33
+R19
 !i10b 1
 !s100 gmicQfYPQG]AaG9;RE>Z:3
 I<cmgJPJ9T]=L]C`_K5<hQ1
 R3
-R40
+R36
 S1
 R0
 R5
-R41
-R42
-R163
+R37
+R38
+R145
 R8
 r1
 !s85 0
 31
-R37
-R43
-R44
+R23
+R39
+R40
 !i113 1
 R12
 R13
 vcyclonev_hps_interface_hps2fpga
 R1
-R45
+R19
 !i10b 1
 !s100 @fHSb`d?hj^5Y3``Xhdn_0
 IElCZl=2IcXH6^]2<_iBdH2
+R3
+R41
+S1
+R0
+R5
+R42
+R43
+R145
+R8
+r1
+!s85 0
+31
+R23
+R44
+R45
+!i113 1
+R12
+R13
+vcyclonev_hps_interface_hps2fpga_light_weight
+R1
+R19
+!i10b 1
+!s100 476S;4N2mf6]zQ8CV_<YJ3
+IaM?d?fK^`UCZ3ZT_=e;dE2
 R3
 R46
 S1
@@ -840,23 +864,23 @@ R0
 R5
 R47
 R48
-R163
+R145
 R8
 r1
 !s85 0
 31
+R23
 R49
 R50
-R51
 !i113 1
 R12
 R13
-vcyclonev_hps_interface_hps2fpga_light_weight
+vcyclonev_hps_interface_interrupts
 R1
-R45
+R51
 !i10b 1
-!s100 476S;4N2mf6]zQ8CV_<YJ3
-IaM?d?fK^`UCZ3ZT_=e;dE2
+!s100 5=aLhlNY>R6d:9zge_DdO3
+I3TCRmkAkh>f5YU?BlbR5@1
 R3
 R52
 S1
@@ -864,23 +888,23 @@ R0
 R5
 R53
 R54
-R163
+R145
 R8
 r1
 !s85 0
 31
-R49
 R55
 R56
+R57
 !i113 1
 R12
 R13
-vcyclonev_hps_interface_interrupts
+vcyclonev_hps_interface_loan_io
 R1
-R57
+R51
 !i10b 1
-!s100 5=aLhlNY>R6d:9zge_DdO3
-I3TCRmkAkh>f5YU?BlbR5@1
+!s100 lb0UXam]^8Q=W:FzG@aU61
+Il3Y=kSC6C5:BE`9_3m7h=2
 R3
 R58
 S1
@@ -888,783 +912,167 @@ R0
 R5
 R59
 R60
-R163
-R8
-r1
-!s85 0
-31
-R61
-R62
-R63
-!i113 1
-R12
-R13
-vcyclonev_hps_interface_loan_io
-R1
-R64
-!i10b 1
-!s100 lb0UXam]^8Q=W:FzG@aU61
-Il3Y=kSC6C5:BE`9_3m7h=2
-R3
-R65
-S1
-R0
-R5
-R66
-R67
 L0 132
 R8
 r1
 !s85 0
 31
+R55
 R61
-R68
-R69
+R62
 !i113 1
 R12
 R13
 vcyclonev_hps_interface_mpu_event_standby
 R1
-R64
+R51
 !i10b 1
 !s100 k7P`mX03l1FIUQ;_DnYzj1
 IZ17?Pn28m9_gB8X`Si3db1
 R3
-R70
+R63
 S1
 R0
 R5
-R71
-R72
+R64
+R65
 L0 149
 R8
 r1
 !s85 0
 31
-R73
-R74
-R75
+R55
+R66
+R67
 !i113 1
 R12
 R13
 vcyclonev_hps_interface_mpu_general_purpose
 R1
-R76
+R51
 !i10b 1
 !s100 KOUSijZj_HaR@d`<S?5bJ1
 IY=3j^JS>`O:Ld2;]2I:Z`3
 R3
-R77
+R68
 S1
 R0
 R5
-R78
-R79
-Z165 L0 107
+R69
+R70
+Z147 L0 107
 R8
 r1
 !s85 0
 31
-R80
-R81
-R82
+R55
+R71
+R72
 !i113 1
 R12
 R13
 vcyclonev_hps_interface_peripheral_can
 R1
-R76
+R51
 !i10b 1
 !s100 b>UWNJ[TAY:VOOWnfW^BY1
 Ih_Y>S?mQg^`0EB2NVzj4n3
 R3
-R83
+R73
 S1
 R0
 R5
-R84
-R85
-R165
+R74
+R75
+R147
 R8
 r1
 !s85 0
 31
-R80
-R86
-R87
+R55
+R76
+R77
 !i113 1
 R12
 R13
 vcyclonev_hps_interface_peripheral_emac
 R1
-R88
+R78
 !i10b 1
 !s100 9O3M7SzjaMW=f^3Ke9a[`1
 Ic^k<CGgSg;jAb8`do3Fhm0
 R3
-R89
+R79
 S1
 R0
 R5
-R90
-R91
+R80
+R81
 L0 496
 R8
 r1
 !s85 0
 31
-R92
-R93
-R94
+R82
+R83
+R84
 !i113 1
 R12
 R13
 vcyclonev_hps_interface_peripheral_i2c
 R1
-R88
+R78
 !i10b 1
 !s100 <a8hbhfW@5L`JPCV6`W=U0
 IReZ>:JeR2j[f;EOj0N90Y3
 R3
-R95
+R85
 S1
 R0
 R5
-R96
-R97
+R86
+R87
 L0 153
 R8
 r1
 !s85 0
 31
-R92
-R98
-R99
+R82
+R88
+R89
 !i113 1
 R12
 R13
 vcyclonev_hps_interface_peripheral_nand
 R1
-R100
+R78
 !i10b 1
 !s100 <dP?cUK`:G1K_f9CfCKE22
 IUOD6Min7^fig^Joi?5]8F2
 R3
-R101
+R90
 S1
 R0
 R5
-R102
-R103
+R91
+R92
 L0 279
 R8
 r1
 !s85 0
 31
-R104
-R105
-R106
-!i113 1
-R12
-R13
-vcyclonev_hps_interface_peripheral_qspi
-R1
-R100
-!i10b 1
-!s100 d0hn2nDFdkVM5KnJU67Jm2
-ICzK2a3<SYNZ@;R7zoLM1W0
-R3
-R107
-S1
-R0
-R5
-R108
-R109
-L0 308
-R8
-r1
-!s85 0
-31
-R104
-R110
-R111
-!i113 1
-R12
-R13
-vcyclonev_hps_interface_peripheral_sdmmc
-R1
-R112
-!i10b 1
-!s100 C93lQf=^XIjD0L@eZ8k]c3
-IIf95<f@Tzh]4hh3@DzC>K0
-R3
-R113
-S1
-R0
-R5
-R114
-R115
-L0 379
-R8
-r1
-!s85 0
-31
-R116
-R117
-R118
-!i113 1
-R12
-R13
-vcyclonev_hps_interface_peripheral_spi_master
-R1
-R119
-!i10b 1
-!s100 ndGI1=zh`SLZiBGTzB?D[1
-ILQgza:Yg=?mgz5V2O_OLo3
-R3
-R120
-S1
-R0
-R5
-R121
-R122
-L0 258
-R8
-r1
-!s85 0
-31
-R123
-R124
-R125
-!i113 1
-R12
-R13
-vcyclonev_hps_interface_peripheral_spi_slave
-R1
-R119
-!i10b 1
-!s100 ;]^O0zj?ULOPNa;@4l[n61
-Ib8Y7C2O;Tg7542^jTY3kz2
-R3
-R126
-S1
-R0
-R5
-R127
-R128
-L0 178
-R8
-r1
-!s85 0
-31
-R123
-R129
-R130
-!i113 1
-R12
-R13
-vcyclonev_hps_interface_peripheral_uart
-R1
-R131
-!i10b 1
-!s100 zE]`feOc@nD9Sl1Sgz49d2
-I:igED=ClGJ8lS;c7[43`B0
-R3
-R132
-S1
-R0
-R5
-R133
-R134
-L0 291
-R8
-r1
-!s85 0
-31
-R135
-R136
-R137
-!i113 1
-R12
-R13
-vcyclonev_hps_interface_peripheral_usb
-R1
-R131
-!i10b 1
-!s100 kfkY<i^l>_a9b00DPz3NQ3
-I=6TkO1oXcomnWLe8zeR;f0
-R3
-R138
-S1
-R0
-R5
-R139
-R140
-R164
-R8
-r1
-!s85 0
-31
-R135
-R141
-R142
-!i113 1
-R12
-R13
-vcyclonev_hps_interface_stm_event
-R1
-R143
-!i10b 1
-!s100 mT:<>5OQ<F?aG[TQDO>G>1
-IRe8H[HiiPENiR;OS2N@Fz0
-R3
-R144
-S1
-R0
-R5
-R145
-R146
-L0 86
-R8
-r1
-!s85 0
-31
-R147
-R148
-R149
-!i113 1
-R12
-R13
-vcyclonev_hps_interface_tpiu_trace
-R1
-R143
-!i10b 1
-!s100 >`f?@MQagGQTaDICiOd`j3
-I6Q?QKFQ]GOd;=O>Ua?<<42
-R3
-R150
-S1
-R0
-R5
-R151
-R152
-R165
-R8
-r1
-!s85 0
-31
-R147
-R153
-R154
-!i113 1
-R12
-R13
-vcyclonev_hps_peripheral_gpio
-R1
-R155
-!i10b 1
-!s100 gib[TFOCMEP@<Q0UKXold1
-IgCnfEfz8K;WAkz>F3i=:A1
-R3
-R156
-S1
-R0
-R5
-R157
-R158
-R163
-R8
-r1
-!s85 0
-31
-R159
-R160
-R161
-!i113 1
-R12
-R13
-vdebug_apb_bfm
-R1
-R162
-R21
-!i10b 1
-!s100 R@53`amC;nYXWcKGbOhM=3
-I?Q;YFli]Gi0LVfN35[WDI1
-R3
-R28
-S1
-R0
-R5
-R29
-R30
-R163
-R8
-r1
-!s85 0
-31
-R25
-R31
-R32
-!i113 1
-R12
-R13
-vdebug_apb_sideband_bfm
-R1
-R162
-R21
-!i10b 1
-!s100 U^7=`0c[D:=P_gW7eBzk52
-Ij:V76TI?^dU=?WE3Da2DQ3
-R3
-R28
-S1
-R0
-R5
-R29
-R30
-L0 262
-R8
-r1
-!s85 0
-31
-R25
-R31
-R32
-!i113 1
-R12
-R13
-vdma_channel0_bfm
-R1
-R162
-R14
-!i10b 1
-!s100 C^bT=Odl>fP=c2zF;V90m2
-I2l`V1Z?zO>Z_>C6^>eVG32
-R3
-Z166 !s105 hps_interface_conduit_bfms_sv_unit
-S1
-R0
-R5
-Z167 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_conduit_bfms.sv
-Z168 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_conduit_bfms.sv
-L0 323
-R8
-r1
-!s85 0
-31
-R18
-Z169 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_conduit_bfms.sv|
-Z170 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_conduit_bfms.sv|
-!i113 1
-R12
-R13
-vdma_channel1_bfm
-R1
-R162
-R14
-!i10b 1
-!s100 >?zC8;nX>@[d:nPn<@TM<3
-ICV?nL5FY`OUH5L5I6mS=O2
-R3
-R166
-S1
-R0
-R5
-R167
-R168
-L0 441
-R8
-r1
-!s85 0
-31
-R18
-R169
-R170
-!i113 1
-R12
-R13
-vdma_channel2_bfm
-R1
-R162
-R14
-!i10b 1
-!s100 0iVK7FMCP;7hBzN22JO;>1
-INLm`R0n6ROozm__CL:Q8Y1
-R3
-R166
-S1
-R0
-R5
-R167
-R168
-L0 559
-R8
-r1
-!s85 0
-31
-R18
-R169
-R170
-!i113 1
-R12
-R13
-vdma_channel3_bfm
-R1
-R162
-R14
-!i10b 1
-!s100 JUge4beI^ZLUHDm@A^5gB1
-Ili^]<LV5EhWXjVNLh2fQ30
-R3
-R166
-S1
-R0
-R5
-R167
-R168
-L0 677
-R8
-r1
-!s85 0
-31
-R18
-R169
-R170
-!i113 1
-R12
-R13
-vdma_channel4_bfm
-R1
-R162
-R14
-!i10b 1
-!s100 6Q_0MW2;m1Q<>D2oTnPzT3
-IDX>kW2:B5>z<nkU[Pn3W]3
-R3
-R166
-S1
-R0
-R5
-R167
-R168
-L0 795
-R8
-r1
-!s85 0
-31
-R18
-R169
-R170
-!i113 1
-R12
-R13
-vdma_channel5_bfm
-R1
-R162
-R14
-!i10b 1
-!s100 ``cI>IFSB==J9MG4VKKW^1
-IF@>YRdjo0]2b:@gcYhSHn1
-R3
-R166
-S1
-R0
-R5
-R167
-R168
-L0 913
-R8
-r1
-!s85 0
-31
-R18
-R169
-R170
-!i113 1
-R12
-R13
-vdma_channel6_bfm
-R1
-R162
-R14
-!i10b 1
-!s100 Cg:S11eQ=R5lE8@X4@bJQ2
-IjhjkP2n`X<ZLm_Y@nRcc:0
-R3
-R166
-S1
-R0
-R5
-R167
-R168
-L0 1031
-R8
-r1
-!s85 0
-31
-R18
-R169
-R170
-!i113 1
-R12
-R13
-vdma_channel7_bfm
-R1
-R162
-R14
-!i10b 1
-!s100 Ve0zNZ9iD3>FHbaLc[c=X1
-ImZIVRo?<e_P_TH[n2f1^z2
-R3
-R166
-S1
-R0
-R5
-R167
-R168
-L0 1149
-R8
-r1
-!s85 0
-31
-R18
-R169
-R170
-!i113 1
-R12
-R13
-vemac_bfm
-R1
-R162
-R88
-!i10b 1
-!s100 `33A1h8@3aQke`n`n3Qfg1
-I5WIkdJM@5d?oiNJn4`S981
-R3
-R89
-S1
-R0
-R5
-R90
-R91
-R163
-R8
-r1
-!s85 0
-31
-R92
+R82
 R93
 R94
 !i113 1
 R12
 R13
-vf2h_cold_reset_req_bfm
+vcyclonev_hps_interface_peripheral_qspi
 R1
-R162
-R14
+R78
 !i10b 1
-!s100 A0Df;@jC7oh18[9ZSXV6R2
-IcUh7;P041Qa[cOE?PdP<@2
-R3
-R166
-S1
-R0
-R5
-R167
-R168
-R165
-R8
-r1
-!s85 0
-31
-R18
-R169
-R170
-!i113 1
-R12
-R13
-vf2h_debug_reset_req_bfm
-R1
-R162
-R14
-!i10b 1
-!s100 dePj=Ld2oi@oMP;03NBL^1
-IAoaRzRK5RFn7N=?D4EkOK2
-R3
-R166
-S1
-R0
-R5
-R167
-R168
-L0 179
-R8
-r1
-!s85 0
-31
-R18
-R169
-R170
-!i113 1
-R12
-R13
-vf2h_warm_reset_req_bfm
-R1
-R162
-R14
-!i10b 1
-!s100 XLC[XmblbRFB=2CQIOeBM3
-IkLRVB3j?TnESY@f4AMUhZ0
-R3
-R166
-S1
-R0
-R5
-R167
-R168
-L0 251
-R8
-r1
-!s85 0
-31
-R18
-R169
-R170
-!i113 1
-R12
-R13
-vh2f_warm_reset_handshake_bfm
-R1
-R162
-R14
-!i10b 1
-!s100 Ub?@e[5G6?[695hk;S0H90
-I9mHDHj`A@RI;cVc_:Zj`i2
-R3
-R166
-S1
-R0
-R5
-R167
-R168
-R163
-R8
-r1
-!s85 0
-31
-R18
-R169
-R170
-!i113 1
-R12
-R13
-vi2c_bfm
-R1
-R162
-R88
-!i10b 1
-!s100 BO>MWI_9]2H_BiIaWbdLE3
-IQ4RChX]Y10=^fEU6h?hfi1
+!s100 d0hn2nDFdkVM5KnJU67Jm2
+ICzK2a3<SYNZ@;R7zoLM1W0
 R3
 R95
 S1
@@ -1672,274 +1080,167 @@ R0
 R5
 R96
 R97
-R163
+L0 308
 R8
 r1
 !s85 0
 31
-R92
+R82
 R98
 R99
 !i113 1
 R12
 R13
-vloanio_bfm
+vcyclonev_hps_interface_peripheral_sdmmc
 R1
-R162
-R64
-!i10b 1
-!s100 nBAAF[852a;K7g5WSST?c2
-I3_kCmERzRW?AOS<?S1kXm0
-R3
-R65
-S1
-R0
-R5
-R66
-R67
-R163
-R8
-r1
-!s85 0
-31
-R61
-R68
-R69
-!i113 1
-R12
-R13
-vmpu_events_bfm
-R1
-R162
-R64
-!i10b 1
-!s100 `OdhenhaLc]lF9f^AzjH>2
-I[HZA[UlADzo_WlQg>k9aB3
-R3
-R70
-S1
-R0
-R5
-R71
-R72
-R163
-R8
-r1
-!s85 0
-31
-R73
-R74
-R75
-!i113 1
-R12
-R13
-vmpu_gp_bfm
-R1
-R162
-R76
-!i10b 1
-!s100 HG?XbG::Hg3S6k1XN;JJF2
-IMjAfjjbelV6eT31Q7g27e1
-R3
-R77
-S1
-R0
-R5
 R78
-R79
-R163
-R8
-r1
-!s85 0
-31
-R80
-R81
-R82
-!i113 1
-R12
-R13
-vnand_bfm
-R1
-R162
-R100
 !i10b 1
-!s100 FCBHG_>o_[Ho;oCcmbkAC3
-IfLT4maTePYR`:jD@LPVok0
+!s100 C93lQf=^XIjD0L@eZ8k]c3
+IIf95<f@Tzh]4hh3@DzC>K0
 R3
+R100
+S1
+R0
+R5
 R101
-S1
-R0
-R5
 R102
-R103
-R163
+L0 379
 R8
 r1
 !s85 0
 31
+R82
+R103
 R104
-R105
-R106
 !i113 1
 R12
 R13
-vqspi_bfm
+vcyclonev_hps_interface_peripheral_spi_master
 R1
-R162
-R100
+R105
 !i10b 1
-!s100 bSQGbD3EC_^>Db]4a0Ag:0
-ISBPaK_5DK4OYV6_Ih?M2M3
+!s100 ndGI1=zh`SLZiBGTzB?D[1
+ILQgza:Yg=?mgz5V2O_OLo3
 R3
-R107
+R106
 S1
 R0
 R5
+R107
 R108
-R109
-R163
+L0 258
 R8
 r1
 !s85 0
 31
-R104
+R109
 R110
 R111
 !i113 1
 R12
 R13
-vsdmmc_bfm
+vcyclonev_hps_interface_peripheral_spi_slave
 R1
-R162
-R112
+R105
 !i10b 1
-!s100 B35EmFHh2mRmWOa<4J9R22
-IIX^8]O_L9c`8ZhVGOjLj<1
+!s100 ;]^O0zj?ULOPNa;@4l[n61
+Ib8Y7C2O;Tg7542^jTY3kz2
 R3
-R113
+R112
 S1
 R0
 R5
+R113
 R114
-R115
-R163
+L0 178
 R8
 r1
 !s85 0
 31
+R109
+R115
 R116
-R117
-R118
 !i113 1
 R12
 R13
-vspim_bfm
+vcyclonev_hps_interface_peripheral_uart
 R1
-R162
-R119
+R105
 !i10b 1
-!s100 0?TN5;4R<^e1[lK<km=b01
-IdWJL>=_?je<Qm>:VcWeg;1
+!s100 zE]`feOc@nD9Sl1Sgz49d2
+I:igED=ClGJ8lS;c7[43`B0
 R3
-R120
+R117
 S1
 R0
 R5
-R121
-R122
-R163
+R118
+R119
+L0 291
 R8
 r1
 !s85 0
 31
+R109
+R120
+R121
+!i113 1
+R12
+R13
+vcyclonev_hps_interface_peripheral_usb
+R1
+R105
+!i10b 1
+!s100 kfkY<i^l>_a9b00DPz3NQ3
+I=6TkO1oXcomnWLe8zeR;f0
+R3
+R122
+S1
+R0
+R5
 R123
 R124
-R125
-!i113 1
-R12
-R13
-vspis_bfm
-R1
-R162
-R119
-!i10b 1
-!s100 0RX:2JIUIb@^[X_AO0h1z0
-IlUSXNOh4a`>_?]l_QX[MV2
-R3
-R126
-S1
-R0
-R5
-R127
-R128
-R163
-R8
-r1
-!s85 0
-31
-R123
-R129
-R130
-!i113 1
-R12
-R13
-vstm_events_bfm
-R1
-R162
-R143
-!i10b 1
-!s100 mCHDV^?Qb]Nk;;NIB2cR]3
-IkOSRmOE^H1<G?4[D>YlkX3
-R3
-R144
-S1
-R0
-R5
-R145
 R146
-R163
 R8
 r1
 !s85 0
 31
-R147
-R148
-R149
+R109
+R125
+R126
 !i113 1
 R12
 R13
-vtpiu_bfm
+vcyclonev_hps_interface_stm_event
 R1
-R162
-R143
+R105
 !i10b 1
-!s100 JVIDkYEg]IXiClXMcTnU]2
-IO:L:0OdbD8`kfHQ=TfZ[h3
+!s100 mT:<>5OQ<F?aG[TQDO>G>1
+IRe8H[HiiPENiR;OS2N@Fz0
 R3
-R150
+R127
 S1
 R0
 R5
-R151
-R152
-R163
+R128
+R129
+L0 86
 R8
 r1
 !s85 0
 31
-R147
-R153
-R154
+R109
+R130
+R131
 !i113 1
 R12
 R13
-vuart_bfm
+vcyclonev_hps_interface_tpiu_trace
 R1
-R162
-R131
+R105
 !i10b 1
-!s100 l?]cTEMnIL7QHiCYR4Vlm1
-IOTfCEiPUBEJNYAYm<hJ2o2
+!s100 >`f?@MQagGQTaDICiOd`j3
+I6Q?QKFQ]GOd;=O>Ua?<<42
 R3
 R132
 S1
@@ -1947,24 +1248,23 @@ R0
 R5
 R133
 R134
-R163
+R147
 R8
 r1
 !s85 0
 31
+R109
 R135
 R136
-R137
 !i113 1
 R12
 R13
-vusb_bfm
+vcyclonev_hps_peripheral_gpio
 R1
-R162
-R131
+R137
 !i10b 1
-!s100 ^>I=oRm_3Vz;HRYaSgclg2
-I<:EdYhoCSY?<Vea<Ki9Oa3
+!s100 gib[TFOCMEP@<Q0UKXold1
+IgCnfEfz8K;WAkz>F3i=:A1
 R3
 R138
 S1
@@ -1972,14 +1272,714 @@ R0
 R5
 R139
 R140
-R163
+R145
 R8
 r1
 !s85 0
 31
-R135
 R141
 R142
+R143
+!i113 1
+R12
+R13
+vdebug_apb_bfm
+R1
+R144
+R19
+!i10b 1
+!s100 R@53`amC;nYXWcKGbOhM=3
+I?Q;YFli]Gi0LVfN35[WDI1
+R3
+R26
+S1
+R0
+R5
+R27
+R28
+R145
+R8
+r1
+!s85 0
+31
+R23
+R29
+R30
+!i113 1
+R12
+R13
+vdebug_apb_sideband_bfm
+R1
+R144
+R19
+!i10b 1
+!s100 U^7=`0c[D:=P_gW7eBzk52
+Ij:V76TI?^dU=?WE3Da2DQ3
+R3
+R26
+S1
+R0
+R5
+R27
+R28
+L0 262
+R8
+r1
+!s85 0
+31
+R23
+R29
+R30
+!i113 1
+R12
+R13
+vdma_channel0_bfm
+R1
+R144
+R2
+!i10b 1
+!s100 C^bT=Odl>fP=c2zF;V90m2
+I2l`V1Z?zO>Z_>C6^>eVG32
+R3
+Z148 !s105 hps_interface_conduit_bfms_sv_unit
+S1
+R0
+R5
+Z149 8/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_conduit_bfms.sv
+Z150 F/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_conduit_bfms.sv
+L0 323
+R8
+r1
+!s85 0
+31
+R9
+Z151 !s107 /home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_conduit_bfms.sv|
+Z152 !s90 -reportprogress|300|-sv|-work|HPS|+incdir+/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation|/home/matt/altera_lite/15.1/ip/altera/hps/postfitter_simulation/hps_interface_conduit_bfms.sv|
+!i113 1
+R12
+R13
+vdma_channel1_bfm
+R1
+R144
+R2
+!i10b 1
+!s100 >?zC8;nX>@[d:nPn<@TM<3
+ICV?nL5FY`OUH5L5I6mS=O2
+R3
+R148
+S1
+R0
+R5
+R149
+R150
+L0 441
+R8
+r1
+!s85 0
+31
+R9
+R151
+R152
+!i113 1
+R12
+R13
+vdma_channel2_bfm
+R1
+R144
+R2
+!i10b 1
+!s100 0iVK7FMCP;7hBzN22JO;>1
+INLm`R0n6ROozm__CL:Q8Y1
+R3
+R148
+S1
+R0
+R5
+R149
+R150
+L0 559
+R8
+r1
+!s85 0
+31
+R9
+R151
+R152
+!i113 1
+R12
+R13
+vdma_channel3_bfm
+R1
+R144
+R2
+!i10b 1
+!s100 JUge4beI^ZLUHDm@A^5gB1
+Ili^]<LV5EhWXjVNLh2fQ30
+R3
+R148
+S1
+R0
+R5
+R149
+R150
+L0 677
+R8
+r1
+!s85 0
+31
+R9
+R151
+R152
+!i113 1
+R12
+R13
+vdma_channel4_bfm
+R1
+R144
+R2
+!i10b 1
+!s100 6Q_0MW2;m1Q<>D2oTnPzT3
+IDX>kW2:B5>z<nkU[Pn3W]3
+R3
+R148
+S1
+R0
+R5
+R149
+R150
+L0 795
+R8
+r1
+!s85 0
+31
+R9
+R151
+R152
+!i113 1
+R12
+R13
+vdma_channel5_bfm
+R1
+R144
+R2
+!i10b 1
+!s100 ``cI>IFSB==J9MG4VKKW^1
+IF@>YRdjo0]2b:@gcYhSHn1
+R3
+R148
+S1
+R0
+R5
+R149
+R150
+L0 913
+R8
+r1
+!s85 0
+31
+R9
+R151
+R152
+!i113 1
+R12
+R13
+vdma_channel6_bfm
+R1
+R144
+R2
+!i10b 1
+!s100 Cg:S11eQ=R5lE8@X4@bJQ2
+IjhjkP2n`X<ZLm_Y@nRcc:0
+R3
+R148
+S1
+R0
+R5
+R149
+R150
+L0 1031
+R8
+r1
+!s85 0
+31
+R9
+R151
+R152
+!i113 1
+R12
+R13
+vdma_channel7_bfm
+R1
+R144
+R2
+!i10b 1
+!s100 Ve0zNZ9iD3>FHbaLc[c=X1
+ImZIVRo?<e_P_TH[n2f1^z2
+R3
+R148
+S1
+R0
+R5
+R149
+R150
+L0 1149
+R8
+r1
+!s85 0
+31
+R9
+R151
+R152
+!i113 1
+R12
+R13
+vemac_bfm
+R1
+R144
+R78
+!i10b 1
+!s100 `33A1h8@3aQke`n`n3Qfg1
+I5WIkdJM@5d?oiNJn4`S981
+R3
+R79
+S1
+R0
+R5
+R80
+R81
+R145
+R8
+r1
+!s85 0
+31
+R82
+R83
+R84
+!i113 1
+R12
+R13
+vf2h_cold_reset_req_bfm
+R1
+R144
+R2
+!i10b 1
+!s100 A0Df;@jC7oh18[9ZSXV6R2
+IcUh7;P041Qa[cOE?PdP<@2
+R3
+R148
+S1
+R0
+R5
+R149
+R150
+R147
+R8
+r1
+!s85 0
+31
+R9
+R151
+R152
+!i113 1
+R12
+R13
+vf2h_debug_reset_req_bfm
+R1
+R144
+R2
+!i10b 1
+!s100 dePj=Ld2oi@oMP;03NBL^1
+IAoaRzRK5RFn7N=?D4EkOK2
+R3
+R148
+S1
+R0
+R5
+R149
+R150
+L0 179
+R8
+r1
+!s85 0
+31
+R9
+R151
+R152
+!i113 1
+R12
+R13
+vf2h_warm_reset_req_bfm
+R1
+R144
+R2
+!i10b 1
+!s100 XLC[XmblbRFB=2CQIOeBM3
+IkLRVB3j?TnESY@f4AMUhZ0
+R3
+R148
+S1
+R0
+R5
+R149
+R150
+L0 251
+R8
+r1
+!s85 0
+31
+R9
+R151
+R152
+!i113 1
+R12
+R13
+vh2f_warm_reset_handshake_bfm
+R1
+R144
+R2
+!i10b 1
+!s100 Ub?@e[5G6?[695hk;S0H90
+I9mHDHj`A@RI;cVc_:Zj`i2
+R3
+R148
+S1
+R0
+R5
+R149
+R150
+R145
+R8
+r1
+!s85 0
+31
+R9
+R151
+R152
+!i113 1
+R12
+R13
+vi2c_bfm
+R1
+R144
+R78
+!i10b 1
+!s100 BO>MWI_9]2H_BiIaWbdLE3
+IQ4RChX]Y10=^fEU6h?hfi1
+R3
+R85
+S1
+R0
+R5
+R86
+R87
+R145
+R8
+r1
+!s85 0
+31
+R82
+R88
+R89
+!i113 1
+R12
+R13
+vloanio_bfm
+R1
+R144
+R51
+!i10b 1
+!s100 nBAAF[852a;K7g5WSST?c2
+I3_kCmERzRW?AOS<?S1kXm0
+R3
+R58
+S1
+R0
+R5
+R59
+R60
+R145
+R8
+r1
+!s85 0
+31
+R55
+R61
+R62
+!i113 1
+R12
+R13
+vmpu_events_bfm
+R1
+R144
+R51
+!i10b 1
+!s100 `OdhenhaLc]lF9f^AzjH>2
+I[HZA[UlADzo_WlQg>k9aB3
+R3
+R63
+S1
+R0
+R5
+R64
+R65
+R145
+R8
+r1
+!s85 0
+31
+R55
+R66
+R67
+!i113 1
+R12
+R13
+vmpu_gp_bfm
+R1
+R144
+R51
+!i10b 1
+!s100 HG?XbG::Hg3S6k1XN;JJF2
+IMjAfjjbelV6eT31Q7g27e1
+R3
+R68
+S1
+R0
+R5
+R69
+R70
+R145
+R8
+r1
+!s85 0
+31
+R55
+R71
+R72
+!i113 1
+R12
+R13
+vnand_bfm
+R1
+R144
+R78
+!i10b 1
+!s100 FCBHG_>o_[Ho;oCcmbkAC3
+IfLT4maTePYR`:jD@LPVok0
+R3
+R90
+S1
+R0
+R5
+R91
+R92
+R145
+R8
+r1
+!s85 0
+31
+R82
+R93
+R94
+!i113 1
+R12
+R13
+vqspi_bfm
+R1
+R144
+R78
+!i10b 1
+!s100 bSQGbD3EC_^>Db]4a0Ag:0
+ISBPaK_5DK4OYV6_Ih?M2M3
+R3
+R95
+S1
+R0
+R5
+R96
+R97
+R145
+R8
+r1
+!s85 0
+31
+R82
+R98
+R99
+!i113 1
+R12
+R13
+vsdmmc_bfm
+R1
+R144
+R78
+!i10b 1
+!s100 B35EmFHh2mRmWOa<4J9R22
+IIX^8]O_L9c`8ZhVGOjLj<1
+R3
+R100
+S1
+R0
+R5
+R101
+R102
+R145
+R8
+r1
+!s85 0
+31
+R82
+R103
+R104
+!i113 1
+R12
+R13
+vspim_bfm
+R1
+R144
+R105
+!i10b 1
+!s100 0?TN5;4R<^e1[lK<km=b01
+IdWJL>=_?je<Qm>:VcWeg;1
+R3
+R106
+S1
+R0
+R5
+R107
+R108
+R145
+R8
+r1
+!s85 0
+31
+R109
+R110
+R111
+!i113 1
+R12
+R13
+vspis_bfm
+R1
+R144
+R105
+!i10b 1
+!s100 0RX:2JIUIb@^[X_AO0h1z0
+IlUSXNOh4a`>_?]l_QX[MV2
+R3
+R112
+S1
+R0
+R5
+R113
+R114
+R145
+R8
+r1
+!s85 0
+31
+R109
+R115
+R116
+!i113 1
+R12
+R13
+vstm_events_bfm
+R1
+R144
+R105
+!i10b 1
+!s100 mCHDV^?Qb]Nk;;NIB2cR]3
+IkOSRmOE^H1<G?4[D>YlkX3
+R3
+R127
+S1
+R0
+R5
+R128
+R129
+R145
+R8
+r1
+!s85 0
+31
+R109
+R130
+R131
+!i113 1
+R12
+R13
+vtpiu_bfm
+R1
+R144
+R105
+!i10b 1
+!s100 JVIDkYEg]IXiClXMcTnU]2
+IO:L:0OdbD8`kfHQ=TfZ[h3
+R3
+R132
+S1
+R0
+R5
+R133
+R134
+R145
+R8
+r1
+!s85 0
+31
+R109
+R135
+R136
+!i113 1
+R12
+R13
+vuart_bfm
+R1
+R144
+R105
+!i10b 1
+!s100 l?]cTEMnIL7QHiCYR4Vlm1
+IOTfCEiPUBEJNYAYm<hJ2o2
+R3
+R117
+S1
+R0
+R5
+R118
+R119
+R145
+R8
+r1
+!s85 0
+31
+R109
+R120
+R121
+!i113 1
+R12
+R13
+vusb_bfm
+R1
+R144
+R105
+!i10b 1
+!s100 ^>I=oRm_3Vz;HRYaSgclg2
+I<:EdYhoCSY?<Vea<Ki9Oa3
+R3
+R122
+S1
+R0
+R5
+R123
+R124
+R145
+R8
+r1
+!s85 0
+31
+R109
+R125
+R126
 !i113 1
 R12
 R13

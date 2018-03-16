@@ -144,8 +144,8 @@ integrator int22 (
 	.func(v2dot)
 );
 
-assign func1 = -k1_mxv1_reg + (kmid_mxv2_reg - kmid_mxv1_reg) - D1_mxv1dot_reg;
-assign func2 = -k2_mxv2_reg - (kmid_mxv2_reg - kmid_mxv1_reg) - D2_mxv2dot_reg;
+assign func1 = -k1_mxv1 + (kmid_mxv2 - kmid_mxv1) - D1_mxv1dot;
+assign func2 = -k2_mxv2 - (kmid_mxv2 - kmid_mxv1) - D2_mxv2dot;
 
 always clk_ = #100 ~clk_;
 
@@ -175,22 +175,11 @@ always @ (posedge clk_) begin	// on VGA sync signal...
 	end
 
 	// write to bus master if VGA is not reading
-	if (state==0 && timer==3 && (~vga_vs_ | ~vga_hs_)) begin
+	if (state==0 && timer==2 && (~vga_vs_ | ~vga_hs_)) begin
 		state <= 2;	// why do i need this????
 		key_ <= 4'b0001;
 		timer <= 0;
 		
-		// update regs for func
-                k1_mxv1_reg <= k1_mxv1;
-                kmid_mxv2_reg <= kmid_mxv2;
-                kmid_mxv1_reg <= kmid_mxv1;
-                D1_mxv1dot_reg <= D1_mxv1dot;
-
-                k2_mxv2_reg <= k2_mxv2;
-                kmid_mxv2_reg <= kmid_mxv2;
-                kmid_mxv1_reg <= kmid_mxv1;
-                D2_mxv2dot_reg <= D2_mxv2dot;
-
 		v1 <= v1new;
 		v2 <= v2new;
 
