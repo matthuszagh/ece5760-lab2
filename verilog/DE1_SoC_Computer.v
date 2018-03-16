@@ -190,10 +190,8 @@ reg	signed	[17:0]	v1dot				;
 wire	signed	[17:0]	v1dotnew			;
 reg	signed	[17:0]	k1_m = 18'h1_0000		;
 wire	signed	[17:0]	k1_mxv1				;
-reg	signed	[17:0]	k1_mxv1_reg			;
 reg	signed	[17:0]	D1_m = 18'h0_4000		;
 wire	signed	[17:0]	D1_mxv1dot			;
-reg	signed	[17:0]	D1_mxv1dot_reg			;
 wire 	signed	[17:0]	func1				;
 
 reg	signed	[17:0]	v2				;
@@ -202,18 +200,14 @@ reg	signed	[17:0]	v2dot				;
 wire	signed	[17:0]	v2dotnew			;
 reg	signed	[17:0]	k2_m = 18'h1_0000		;
 wire	signed	[17:0]	k2_mxv2				;
-reg	signed	[17:0]	k2_mxv2_reg			;
 reg	signed	[17:0]	D2_m = 18'h0_4000		;
 wire	signed	[17:0]	D2_mxv2dot			;
-reg	signed	[17:0]	D2_mxv2dot_reg			;
 wire	signed	[17:0]	func2				;
 
-reg		[ 3:0]	dt = 4'd9			;
+reg		[ 3:0]	dt = 4'd6			;
 reg	signed	[17:0]	kmid_m = 18'h1_0000		;
 wire	signed	[17:0]	kmid_mxv1			;
-reg	signed	[17:0]	kmid_mxv1_reg			;
 wire	signed	[17:0]	kmid_mxv2			;
-reg	signed	[17:0]	kmid_mxv2_reg			;
 
 // Bus master
 wire	[31:0]	bus_addr				;

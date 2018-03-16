@@ -10,7 +10,7 @@ cModel Technology
 Z0 d/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/simulation/modelsim
 valtdq_dqs2_acv_connect_to_hard_phy_cyclonev
 Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
-Z2 !s110 1521163314
+Z2 !s110 1521165529
 !i10b 1
 !s100 L@LBY8?m2K81I=]<dLF[?0
 I7]9^?E<P2Ln2ZM7j>oYFz2
@@ -26,14 +26,14 @@ Z5 OV;L;10.4b;61
 r1
 !s85 0
 31
-Z6 !s108 1521163314.000000
+Z6 !s108 1521165529.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altdq_dqs2_acv_connect_to_hard_phy_cyclonev.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altdq_dqs2_acv_connect_to_hard_phy_cyclonev.sv|
 !i113 1
 Z7 o-sv -work Computer_System
 Z8 !s92 -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules
 valtera_avalon_sc_fifo
-Z9 !s110 1521163309
+Z9 !s110 1521165523
 !i10b 1
 !s100 4mK@em][G=j]om3zJIhOc0
 I?@aG3k_K;SEiLSL[lGLTV0
@@ -47,7 +47,7 @@ R5
 r1
 !s85 0
 31
-Z12 !s108 1521163309.000000
+Z12 !s108 1521165523.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_avalon_sc_fifo.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_avalon_sc_fifo.v|
 !i113 1
@@ -55,7 +55,7 @@ Z13 o-vlog01compat -work Computer_System
 Z14 !s92 -vlog01compat -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules
 valtera_mem_if_dll_cyclonev
 R1
-Z15 !s110 1521163315
+R2
 !i10b 1
 !s100 0MWogadkZMZ8BUWGkA6Rm2
 IGNWzK68W;d<^RMzHSfKVJ3
@@ -66,12 +66,12 @@ R0
 R4
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_mem_if_dll_cyclonev.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_mem_if_dll_cyclonev.sv
-Z16 L0 23
+Z15 L0 23
 R5
 r1
 !s85 0
 31
-Z17 !s108 1521163315.000000
+R6
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_mem_if_dll_cyclonev.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_mem_if_dll_cyclonev.sv|
 !i113 1
@@ -79,7 +79,7 @@ R7
 R8
 valtera_mem_if_hard_memory_controller_top_cyclonev
 R1
-Z18 !s110 1521163313
+Z16 !s110 1521165528
 !i10b 1
 !s100 PV@kBzX4E7SXn_NC4_1fM3
 I]kHgQO1BXdZ2Y@Y6ZEHZ<2
@@ -90,19 +90,19 @@ R0
 R4
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_mem_if_hard_memory_controller_top_cyclonev.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_mem_if_hard_memory_controller_top_cyclonev.sv
-Z19 L0 18
+Z17 L0 18
 R5
 r1
 !s85 0
 31
-Z20 !s108 1521163313.000000
+Z18 !s108 1521165528.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_mem_if_hard_memory_controller_top_cyclonev.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_mem_if_hard_memory_controller_top_cyclonev.sv|
 !i113 1
 R7
 R8
 valtera_mem_if_hhp_qseq_synth_top
-Z21 !s110 1521163305
+Z19 !s110 1521165519
 !i10b 1
 !s100 N_QfhY9G55ERAG1GzlAo@2
 I;BS?JTY[Z7E;gi82WOI990
@@ -116,7 +116,7 @@ R5
 r1
 !s85 0
 31
-Z22 !s108 1521163305.000000
+Z20 !s108 1521165519.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_mem_if_hhp_qseq_synth_top.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_mem_if_hhp_qseq_synth_top.v|
 !i113 1
@@ -124,7 +124,7 @@ R13
 R14
 valtera_mem_if_oct_cyclonev
 R1
-R18
+R16
 !i10b 1
 !s100 >;bO]7VNzB;fMZEPbWNdY2
 I93896a01[XH0Sa`9QOQ2h2
@@ -135,12 +135,12 @@ R0
 R4
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_mem_if_oct_cyclonev.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_mem_if_oct_cyclonev.sv
-R16
+R15
 R5
 r1
 !s85 0
 31
-R20
+R18
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_mem_if_oct_cyclonev.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_mem_if_oct_cyclonev.sv|
 !i113 1
@@ -148,7 +148,7 @@ R7
 R8
 valtera_merlin_address_alignment
 R1
-Z23 !s110 1521163308
+Z21 !s110 1521165522
 !i10b 1
 !s100 ;A9^i^d]cR@BAQXEG>h_<3
 I7?J0O75Z:2C5N5L0Re4F23
@@ -164,7 +164,7 @@ R5
 r1
 !s85 0
 31
-Z24 !s108 1521163308.000000
+Z22 !s108 1521165522.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_address_alignment.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_address_alignment.sv|
 !i113 1
@@ -172,55 +172,55 @@ R7
 R8
 valtera_merlin_arb_adder
 R1
-Z25 !s110 1521163307
+Z23 !s110 1521165521
 !i10b 1
 !s100 1Jn[a;@5nZmTN?DFKQNzj2
 I;9EKN2C>RGhinEZ?nA7gA1
 R3
-Z26 !s105 altera_merlin_arbitrator_sv_unit
+Z24 !s105 altera_merlin_arbitrator_sv_unit
 S1
 R0
 R10
-Z27 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_arbitrator.sv
-Z28 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_arbitrator.sv
+Z25 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_arbitrator.sv
+Z26 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_arbitrator.sv
 L0 228
 R5
 r1
 !s85 0
 31
-Z29 !s108 1521163307.000000
-Z30 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_arbitrator.sv|
-Z31 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_arbitrator.sv|
+Z27 !s108 1521165521.000000
+Z28 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_arbitrator.sv|
+Z29 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_arbitrator.sv|
 !i113 1
 R7
 R8
 valtera_merlin_arbitrator
 R1
-R25
+R23
 !i10b 1
 !s100 NQTehjm2fNQROUMUzShGa1
 I]if8zR03[ZmPWh`8Z=f[L3
 R3
-R26
+R24
 S1
 R0
 R10
-R27
-R28
+R25
+R26
 L0 103
 R5
 r1
 !s85 0
 31
+R27
+R28
 R29
-R30
-R31
 !i113 1
 R7
 R8
 valtera_merlin_axi_master_ni
 R1
-R9
+Z30 !s110 1521165524
 !i10b 1
 !s100 3_AI>HiSXNYzWC0UYFJ8?0
 IIYe19gB5f`:4L5TFiY5P:0
@@ -236,7 +236,7 @@ R5
 r1
 !s85 0
 31
-R12
+Z31 !s108 1521165524.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_axi_master_ni.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_axi_master_ni.sv|
 !i113 1
@@ -244,7 +244,7 @@ R7
 R8
 valtera_merlin_burst_adapter
 R1
-R23
+R21
 !i10b 1
 !s100 OCc70X^k:B?GW6i71n`L_3
 I5g[2GhhV[db^^mGmPEID22
@@ -260,7 +260,7 @@ R5
 r1
 !s85 0
 31
-R24
+R22
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_burst_adapter.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_burst_adapter.sv|
 !i113 1
@@ -268,7 +268,7 @@ R7
 R8
 valtera_merlin_burst_adapter_13_1
 R1
-R23
+R21
 !i10b 1
 !s100 iQDJAL[b9z>XeokOb35D]1
 IJ^:lRo`2mC7DE?z3j^A>P2
@@ -284,7 +284,7 @@ R5
 r1
 !s85 0
 31
-R24
+R22
 Z35 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv|
 Z36 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv|
 !i113 1
@@ -292,7 +292,7 @@ R7
 R8
 valtera_merlin_burst_adapter_adder
 R1
-R23
+R21
 !i10b 1
 !s100 cJB8e]Mn>T^mE[9iEE1jk1
 ID]DdZ83NlE5XaO9n9S3VL3
@@ -308,7 +308,7 @@ R5
 r1
 !s85 0
 31
-R24
+R22
 R35
 R36
 !i113 1
@@ -316,7 +316,7 @@ R7
 R8
 valtera_merlin_burst_adapter_burstwrap_increment
 R1
-R23
+R21
 !i10b 1
 !s100 ILP^RoOQ^]Ef]XAJeF<SX0
 I4BAaN;?]KlKPfM1`R9IJE0
@@ -332,7 +332,7 @@ R5
 r1
 !s85 0
 31
-R24
+R22
 R35
 R36
 !i113 1
@@ -340,7 +340,7 @@ R7
 R8
 valtera_merlin_burst_adapter_min
 R1
-R23
+R21
 !i10b 1
 !s100 5OK?oF?>S0i7IYQi<IKhS1
 IQ78Odb8<5zSBP;WS`?`>S2
@@ -356,7 +356,7 @@ R5
 r1
 !s85 0
 31
-R24
+R22
 R35
 R36
 !i113 1
@@ -364,7 +364,7 @@ R7
 R8
 valtera_merlin_burst_adapter_subtractor
 R1
-R23
+R21
 !i10b 1
 !s100 3nMfY`gC_:azzfSULAX8f2
 Id:beTQDLmJndWCTDK80>Y3
@@ -380,7 +380,7 @@ R5
 r1
 !s85 0
 31
-R24
+R22
 R35
 R36
 !i113 1
@@ -388,7 +388,7 @@ R7
 R8
 valtera_merlin_burst_adapter_uncompressed_only
 R1
-R23
+R21
 !i10b 1
 !s100 STH]BdUM[JDMJZNJGXCd>0
 IoCT?OB86jc[[^N^zC4H=R2
@@ -404,7 +404,7 @@ R5
 r1
 !s85 0
 31
-R24
+R22
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv|
 !i113 1
@@ -412,7 +412,7 @@ R7
 R8
 valtera_merlin_burst_uncompressor
 R1
-R9
+R30
 !i10b 1
 !s100 f1?Rb<=9U?R9LJoHl;7>T3
 IN?TG`fEjEk^Nc3kOD=aJ40
@@ -428,7 +428,7 @@ R5
 r1
 !s85 0
 31
-R12
+R31
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
 !i113 1
@@ -436,7 +436,7 @@ R7
 R8
 valtera_merlin_master_agent
 R1
-R18
+R16
 !i10b 1
 !s100 dS6@BGJLYTJ71Y^2oj:8i3
 I2?dJA>hChXDEVdYC``XKW1
@@ -452,7 +452,7 @@ R5
 r1
 !s85 0
 31
-R20
+R18
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_master_agent.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_master_agent.sv|
 !i113 1
@@ -460,7 +460,7 @@ R7
 R8
 valtera_merlin_master_translator
 R1
-R25
+R23
 !i10b 1
 !s100 NdRk@]3fC2C@V7Rm;dQM31
 I5bAFKb][k]=TIMIAZ>Y851
@@ -476,7 +476,7 @@ R5
 r1
 !s85 0
 31
-R29
+R27
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_master_translator.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_master_translator.sv|
 !i113 1
@@ -484,7 +484,7 @@ R7
 R8
 valtera_merlin_slave_agent
 R1
-R9
+R30
 !i10b 1
 !s100 ePZN1d?B062J`OBb?blff3
 I?_koAa4XLL3k[l6NRFUiI2
@@ -500,7 +500,7 @@ R5
 r1
 !s85 0
 31
-R12
+R31
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_slave_agent.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_slave_agent.sv|
 !i113 1
@@ -508,7 +508,7 @@ R7
 R8
 valtera_merlin_slave_translator
 R1
-R25
+R23
 !i10b 1
 !s100 k`9[YAn_dLTkg;GE`mOb61
 I_GV7E:SI=Ob44m?WzoTL73
@@ -524,7 +524,7 @@ R5
 r1
 !s85 0
 31
-R29
+R27
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_slave_translator.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_slave_translator.sv|
 !i113 1
@@ -532,7 +532,7 @@ R7
 R8
 valtera_merlin_traffic_limiter
 R1
-R23
+R9
 !i10b 1
 !s100 0h4;DR_^c13j]SXILa7d?1
 IBS7B@^`NjGbGM3>ozbnZ<3
@@ -548,7 +548,7 @@ R5
 r1
 !s85 0
 31
-R24
+R12
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_traffic_limiter.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_traffic_limiter.sv|
 !i113 1
@@ -556,7 +556,7 @@ R7
 R8
 valtera_merlin_width_adapter
 R1
-Z41 !s110 1521163310
+Z41 !s110 1521165525
 !i10b 1
 !s100 QzdA5DP6CReOTH<9QzODa3
 IFHZPmnbm3k9IR5M>f;S:i1
@@ -572,14 +572,14 @@ R5
 r1
 !s85 0
 31
-Z43 !s108 1521163310.000000
+Z43 !s108 1521165525.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_width_adapter.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_merlin_width_adapter.sv|
 !i113 1
 R7
 R8
 valtera_reset_controller
-Z44 !s110 1521163292
+Z44 !s110 1521165513
 !i10b 1
 !s100 z[H_hRO9gO=:^2E3_jWH03
 I2cdm;:=E<HoNd6M7aMkg@1
@@ -593,14 +593,14 @@ R5
 r1
 !s85 0
 31
-Z46 !s108 1521163292.000000
+Z46 !s108 1521165513.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_reset_controller.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_reset_controller.v|
 !i113 1
 R13
 R14
 valtera_reset_synchronizer
-Z47 !s110 1521163293
+R44
 !i10b 1
 !s100 oWLYmSO[EOX[G0PgQhZ2=0
 I3CF=WcFQMaQ0GU2NakT=33
@@ -614,41 +614,41 @@ R5
 r1
 !s85 0
 31
-Z48 !s108 1521163293.000000
+R46
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_reset_synchronizer.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_reset_synchronizer.v|
 !i113 1
 R13
 R14
 valtera_up_av_config_auto_init
-Z49 !s110 1521163303
+Z47 !s110 1521165518
 !i10b 1
 !s100 llVi9JhWEDV8H5NR35H^R2
 I1]Ue4iOOo?l3jLEk>jA421
 R3
 R0
-Z50 w1519589700
+Z48 w1519589700
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_auto_init.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_auto_init.v
-Z51 L0 29
+Z49 L0 29
 R5
 r1
 !s85 0
 31
-Z52 !s108 1521163303.000000
+Z50 !s108 1521165518.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_auto_init.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_auto_init.v|
 !i113 1
 R13
 R14
 valtera_up_av_config_auto_init_ob_adv7180
-Z53 !s110 1521163304
+R47
 !i10b 1
 !s100 9B@1knAJ3l;2AE@4FH^z42
 IhCfOX<2CSHWQ9R=GlRAIF2
 R3
 R0
-R50
+R48
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_auto_init_ob_adv7180.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_auto_init_ob_adv7180.v
 R38
@@ -656,20 +656,20 @@ R5
 r1
 !s85 0
 31
-Z54 !s108 1521163304.000000
+R50
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_auto_init_ob_adv7180.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_auto_init_ob_adv7180.v|
 !i113 1
 R13
 R14
 valtera_up_av_config_auto_init_ob_audio
-R53
+R47
 !i10b 1
 !s100 >EzfYjamhP3m1[SLlcc@G0
 I31VZ4UTPJMgfm5m2fYb1j3
 R3
 R0
-R50
+R48
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_auto_init_ob_audio.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_auto_init_ob_audio.v
 R38
@@ -677,56 +677,56 @@ R5
 r1
 !s85 0
 31
-R54
+R50
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_auto_init_ob_audio.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_auto_init_ob_audio.v|
 !i113 1
 R13
 R14
 valtera_up_av_config_auto_init_ob_de1_soc
-R49
+R47
 !i10b 1
 !s100 W@JdEdAQcW1Y:eLclH=h63
 I3h@4S>9jZ]jUTJCmIcaTn2
 R3
 R0
-R50
+R48
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_auto_init_ob_de1_soc.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_auto_init_ob_de1_soc.v
-R51
+R49
 R5
 r1
 !s85 0
 31
-R52
+R50
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_auto_init_ob_de1_soc.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_auto_init_ob_de1_soc.v|
 !i113 1
 R13
 R14
 valtera_up_av_config_serial_bus_controller
-Z55 !s110 1521163302
+Z51 !s110 1521165517
 !i10b 1
 !s100 XDSjk8^6l9VTIENMO[PEF1
 IzgIBI7Z]h]Q7:<Pz]gOCl3
 R3
 R0
-R50
+R48
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_serial_bus_controller.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_serial_bus_controller.v
-R51
+R49
 R5
 r1
 !s85 0
 31
-Z56 !s108 1521163302.000000
+Z52 !s108 1521165517.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_serial_bus_controller.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_av_config_serial_bus_controller.v|
 !i113 1
 R13
 R14
 valtera_up_avalon_reset_from_locked_signal
-Z57 !s110 1521163297
+Z53 !s110 1521165515
 !i10b 1
 !s100 21LY9FTb`4C4iU[D9:fdD3
 IebbooWLhXAWbM1NiR<o?Y2
@@ -740,20 +740,20 @@ R5
 r1
 !s85 0
 31
-Z58 !s108 1521163297.000000
+Z54 !s108 1521165515.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v|
 !i113 1
 R13
 R14
 valtera_up_avalon_video_dma_ctrl_addr_trans
-Z59 !s110 1521163301
+R51
 !i10b 1
 !s100 YcM1;m09XTOO@^=e00XnB1
 IIdeIe7Rk?]4[FjZ@2H;:10
 R3
 R0
-Z60 w1519589701
+Z55 w1519589701
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_avalon_video_dma_ctrl_addr_trans.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_avalon_video_dma_ctrl_addr_trans.v
 L0 63
@@ -761,14 +761,14 @@ R5
 r1
 !s85 0
 31
-Z61 !s108 1521163301.000000
+R52
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_avalon_video_dma_ctrl_addr_trans.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_avalon_video_dma_ctrl_addr_trans.v|
 !i113 1
 R13
 R14
 valtera_up_avalon_video_vga_timing
-Z62 !s110 1521163298
+Z56 !s110 1521165516
 !i10b 1
 !s100 f77gT?TV7S[KXD:O7VH0H1
 IoMgHb<8@PcY:eJ070NJH90
@@ -782,20 +782,20 @@ R5
 r1
 !s85 0
 31
-Z63 !s108 1521163298.000000
+Z57 !s108 1521165516.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_avalon_video_vga_timing.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_avalon_video_vga_timing.v|
 !i113 1
 R13
 R14
 valtera_up_slow_clock_generator
-R49
+R51
 !i10b 1
 !s100 YXh=3j7I_EN:]o_[QD[]70
 IEa]=7ei?Tz8=QUDO35Uek3
 R3
 R0
-R50
+R48
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_slow_clock_generator.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_slow_clock_generator.v
 R39
@@ -810,7 +810,7 @@ R52
 R13
 R14
 valtera_up_video_128_character_rom
-Z64 !s110 1521163299
+R56
 !i10b 1
 !s100 :fAOWXBVoQ5_U^dM5<^Lc1
 I>GY]E4<R9P?^eI9lgi;Q]3
@@ -824,14 +824,14 @@ R5
 r1
 !s85 0
 31
-Z65 !s108 1521163299.000000
+R57
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_video_128_character_rom.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_video_128_character_rom.v|
 !i113 1
 R13
 R14
 valtera_up_video_alpha_blender_normal
-Z66 !s110 1521163300
+R56
 !i10b 1
 !s100 HTHFDh14cm63=75LbdoLz2
 Iaz`2UZm=JhA?UN@iE3P`L1
@@ -845,7 +845,7 @@ R5
 r1
 !s85 0
 31
-Z67 !s108 1521163300.000000
+R57
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_video_alpha_blender_normal.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/altera_up_video_alpha_blender_normal.v|
 !i113 1
@@ -854,14 +854,14 @@ R14
 Xavalon_mm_pkg
 R1
 DXx4 work 13 verbosity_pkg 0 22 Sk2;UnNEY1>=:@_G4Qb9G1
-R15
+Z58 !s110 1521165531
 !i10b 1
 !s100 b7iU1h5jjgJgXBW]O0>eP3
 I;bdgXYb_fd07bb:kOhoa?0
 V;bdgXYb_fd07bb:kOhoa?0
 S1
 R0
-Z68 w1519589610
+Z59 w1519589610
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/avalon_mm_pkg.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/avalon_mm_pkg.sv
 R37
@@ -869,22 +869,22 @@ R5
 r1
 !s85 0
 31
-R17
+Z60 !s108 1521165531.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/avalon_mm_pkg.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/avalon_mm_pkg.sv|
 !i113 1
 R7
-Z69 !s92 -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules
+Z61 !s92 -sv -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules
 Xavalon_utilities_pkg
 R1
-!s110 1521163316
+!s110 1521165532
 !i10b 1
 !s100 7Z6I@>cG<^^zXcl1Q`88O0
 ICVmUXTVZl33:ShD2X7R2g1
 VCVmUXTVZl33:ShD2X7R2g1
 S1
 R0
-R68
+R59
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/avalon_utilities_pkg.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/avalon_utilities_pkg.sv
 R37
@@ -892,12 +892,12 @@ R5
 r1
 !s85 0
 31
-!s108 1521163316.000000
+!s108 1521165532.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/avalon_utilities_pkg.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/avalon_utilities_pkg.sv|
 !i113 1
 R7
-R69
+R61
 vComputer_System
 R44
 !i10b 1
@@ -921,13 +921,13 @@ R13
 !s92 -vlog01compat -work Computer_System +incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis
 n@computer_@system
 vComputer_System_ARM_A9_HPS
-R53
+R47
 !i10b 1
 !s100 _afVY_J0@ak?CKAH>H:R<0
 I8?a07dVI89oP5D^C@DJ9Z0
 R3
 R0
-R50
+R48
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_ARM_A9_HPS.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_ARM_A9_HPS.v
 L0 9
@@ -935,7 +935,7 @@ R5
 r1
 !s85 0
 31
-R54
+R50
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_ARM_A9_HPS.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_ARM_A9_HPS.v|
 !i113 1
@@ -944,7 +944,7 @@ R14
 n@computer_@system_@a@r@m_@a9_@h@p@s
 vComputer_System_ARM_A9_HPS_fpga_interfaces
 R1
-R15
+!s110 1521165530
 !i10b 1
 !s100 Ti;FU9kefHGeijakMDb1<3
 I[V0io>dZdTR]RIIDlmM:L1
@@ -955,12 +955,12 @@ R0
 w1519705663
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_ARM_A9_HPS_fpga_interfaces.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_ARM_A9_HPS_fpga_interfaces.sv
-Z70 L0 14
+Z62 L0 14
 R5
 r1
 !s85 0
 31
-R17
+!s108 1521165530.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_ARM_A9_HPS_fpga_interfaces.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_ARM_A9_HPS_fpga_interfaces.sv|
 !i113 1
@@ -968,7 +968,7 @@ R7
 R8
 n@computer_@system_@a@r@m_@a9_@h@p@s_fpga_interfaces
 vComputer_System_ARM_A9_HPS_hps_io
-R53
+R47
 !i10b 1
 !s100 M2]S4X1k]dVTKaTm4MQ9:2
 IOl>G`DMCJC?J8a_oQfUM73
@@ -982,7 +982,7 @@ R5
 r1
 !s85 0
 31
-R54
+R50
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_ARM_A9_HPS_hps_io.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_ARM_A9_HPS_hps_io.v|
 !i113 1
@@ -991,7 +991,7 @@ R14
 n@computer_@system_@a@r@m_@a9_@h@p@s_hps_io
 vComputer_System_ARM_A9_HPS_hps_io_border
 R1
-R15
+R2
 !i10b 1
 !s100 Q_a<oO2^Yl[^2041B;^6M1
 IfE`al;L09c;HNT0F=@8KH0
@@ -1002,12 +1002,12 @@ R0
 w1519705649
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_ARM_A9_HPS_hps_io_border.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_ARM_A9_HPS_hps_io_border.sv
-R70
+R62
 R5
 r1
 !s85 0
 31
-R17
+R6
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_ARM_A9_HPS_hps_io_border.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_ARM_A9_HPS_hps_io_border.sv|
 !i113 1
@@ -1015,13 +1015,13 @@ R7
 R8
 n@computer_@system_@a@r@m_@a9_@h@p@s_hps_io_border
 vComputer_System_AV_Config
-R53
+R47
 !i10b 1
 !s100 `FIKNlcNUe`NoZdXa_6NY3
 I6R6a:QSiJ1Xh6^L6C=6R;2
 R3
 R0
-R50
+R48
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_AV_Config.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_AV_Config.v
 R40
@@ -1029,7 +1029,7 @@ R5
 r1
 !s85 0
 31
-R54
+R50
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_AV_Config.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_AV_Config.v|
 !i113 1
@@ -1037,13 +1037,13 @@ R13
 R14
 n@computer_@system_@a@v_@config
 vComputer_System_Bus_master_video
-R55
+R51
 !i10b 1
 !s100 [X]4eGb0JL=I6C[@PIR500
 I27L9LVlPNG9IkQPU2k^l21
 R3
 R0
-R50
+R48
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_Bus_master_video.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_Bus_master_video.v
 L0 30
@@ -1051,7 +1051,7 @@ R5
 r1
 !s85 0
 31
-R56
+R52
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_Bus_master_video.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_Bus_master_video.v|
 !i113 1
@@ -1060,7 +1060,7 @@ R14
 n@computer_@system_@bus_master_video
 vComputer_System_irq_mapper
 R1
-!s110 1521163306
+R23
 !i10b 1
 !s100 oBDFoCK3RWNi]FdnEVo`=1
 IG:5UW:^6Vd?gnI1oLT1J92
@@ -1076,7 +1076,7 @@ R5
 r1
 !s85 0
 31
-!s108 1521163306.000000
+R27
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_irq_mapper.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_irq_mapper.sv|
 !i113 1
@@ -1084,7 +1084,7 @@ R7
 R8
 n@computer_@system_irq_mapper
 vComputer_System_mm_interconnect_0
-Z71 !s110 1521163294
+Z63 !s110 1521165514
 !i10b 1
 !s100 ^QW0kmV`MQz^[1OKXYYU_3
 ILA[K4VFMQAcYQ2kDm9`1I3
@@ -1098,7 +1098,7 @@ R5
 r1
 !s85 0
 31
-Z72 !s108 1521163294.000000
+Z64 !s108 1521165514.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0.v|
 !i113 1
@@ -1106,7 +1106,7 @@ R13
 R14
 n@computer_@system_mm_interconnect_0
 vComputer_System_mm_interconnect_0_avalon_st_adapter
-R71
+R63
 !i10b 1
 !s100 :akHZ;CD94?YWGUN]6ac82
 Ifho:b1X[d2QJ2Tn^T0XUB1
@@ -1120,7 +1120,7 @@ R5
 r1
 !s85 0
 31
-R72
+R64
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_avalon_st_adapter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_avalon_st_adapter.v|
 !i113 1
@@ -1128,7 +1128,7 @@ R13
 R14
 n@computer_@system_mm_interconnect_0_avalon_st_adapter
 vComputer_System_mm_interconnect_0_avalon_st_adapter_001
-Z73 !s110 1521163295
+R63
 !i10b 1
 !s100 MXK_DoF]`lTjT^X><e^l51
 IfbZl2TfGiV6j@<oWmg6j03
@@ -1142,7 +1142,7 @@ R5
 r1
 !s85 0
 31
-Z74 !s108 1521163295.000000
+R64
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_avalon_st_adapter_001.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_avalon_st_adapter_001.v|
 !i113 1
@@ -1162,7 +1162,7 @@ R0
 R4
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_avalon_st_adapter_001_error_adapter_0.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_avalon_st_adapter_001_error_adapter_0.sv
-Z75 L0 66
+Z65 L0 66
 R5
 r1
 !s85 0
@@ -1175,7 +1175,7 @@ R7
 R8
 n@computer_@system_mm_interconnect_0_avalon_st_adapter_001_error_adapter_0
 vComputer_System_mm_interconnect_0_avalon_st_adapter_002
-R73
+R63
 !i10b 1
 !s100 jCmULeVE4EE7DK5ALAz8j1
 In0onMI?ZdZFgMhAOO@<hd2
@@ -1189,7 +1189,7 @@ R5
 r1
 !s85 0
 31
-R74
+R64
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_avalon_st_adapter_002.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_avalon_st_adapter_002.v|
 !i113 1
@@ -1209,7 +1209,7 @@ R0
 R4
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_avalon_st_adapter_002_error_adapter_0.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_avalon_st_adapter_002_error_adapter_0.sv
-R75
+R65
 R5
 r1
 !s85 0
@@ -1223,7 +1223,7 @@ R8
 n@computer_@system_mm_interconnect_0_avalon_st_adapter_002_error_adapter_0
 vComputer_System_mm_interconnect_0_avalon_st_adapter_error_adapter_0
 R1
-R25
+R23
 !i10b 1
 !s100 Lc>zT0ERU^eAIBeRHbLBA0
 IBf6OFoKj1EgjUz10@SQaG0
@@ -1234,12 +1234,12 @@ R0
 R4
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
-R75
+R65
 R5
 r1
 !s85 0
 31
-R29
+R27
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
 !i113 1
@@ -1248,7 +1248,7 @@ R8
 n@computer_@system_mm_interconnect_0_avalon_st_adapter_error_adapter_0
 vComputer_System_mm_interconnect_0_cmd_demux
 R1
-Z76 !s110 1521163312
+Z66 !s110 1521165527
 !i10b 1
 !s100 a4k;kH6XOUn4>>YEQU@ib1
 IoK@@KZCG1H<CChLZgAEc:3
@@ -1259,12 +1259,12 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_demux.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_demux.sv
-Z77 L0 43
+Z67 L0 43
 R5
 r1
 !s85 0
 31
-Z78 !s108 1521163312.000000
+Z68 !s108 1521165527.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_demux.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_demux.sv|
 !i113 1
@@ -1273,7 +1273,7 @@ R8
 n@computer_@system_mm_interconnect_0_cmd_demux
 vComputer_System_mm_interconnect_0_cmd_demux_002
 R1
-Z79 !s110 1521163311
+R66
 !i10b 1
 !s100 Z6D4Dn4?0d>NdGd;[gAHV3
 IZF>ljF1HXf`7BIag`U=LJ1
@@ -1284,12 +1284,12 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_demux_002.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_demux_002.sv
-R77
+R67
 R5
 r1
 !s85 0
 31
-Z80 !s108 1521163311.000000
+R68
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_demux_002.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_demux_002.sv|
 !i113 1
@@ -1298,7 +1298,7 @@ R8
 n@computer_@system_mm_interconnect_0_cmd_demux_002
 vComputer_System_mm_interconnect_0_cmd_demux_003
 R1
-R79
+R66
 !i10b 1
 !s100 [hQJj]5[8AX:We]U80h5H2
 IH9ljC6bjVmha5l^=n370a0
@@ -1309,12 +1309,12 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_demux_003.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_demux_003.sv
-R77
+R67
 R5
 r1
 !s85 0
 31
-R80
+Z69 !s108 1521165526.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_demux_003.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_demux_003.sv|
 !i113 1
@@ -1323,7 +1323,7 @@ R8
 n@computer_@system_mm_interconnect_0_cmd_demux_003
 vComputer_System_mm_interconnect_0_cmd_mux
 R1
-R79
+Z70 !s110 1521165526
 !i10b 1
 !s100 i>NS2>n=04X?WI3gkWd;=1
 Ijj9`<G5SPP<6E9dZ=?Vf33
@@ -1334,12 +1334,12 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_mux.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_mux.sv
-Z81 L0 51
+Z71 L0 51
 R5
 r1
 !s85 0
 31
-R80
+R69
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_mux.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_mux.sv|
 !i113 1
@@ -1348,7 +1348,7 @@ R8
 n@computer_@system_mm_interconnect_0_cmd_mux
 vComputer_System_mm_interconnect_0_cmd_mux_001
 R1
-R79
+R70
 !i10b 1
 !s100 AFbZQ?mcNif0mDm1aTj>O1
 In7H2E>59DaOOhT^4lc6Do0
@@ -1359,12 +1359,12 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_mux_001.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_mux_001.sv
-R81
+R71
 R5
 r1
 !s85 0
 31
-R80
+R69
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_mux_001.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_mux_001.sv|
 !i113 1
@@ -1373,7 +1373,7 @@ R8
 n@computer_@system_mm_interconnect_0_cmd_mux_001
 vComputer_System_mm_interconnect_0_cmd_mux_002
 R1
-R79
+R70
 !i10b 1
 !s100 K7G^6=ef72C2iL6]0cQX03
 ISO4kH^_`l=5[9Em]GR`9Y0
@@ -1384,12 +1384,12 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_mux_002.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_mux_002.sv
-R81
+R71
 R5
 r1
 !s85 0
 31
-R80
+R69
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_mux_002.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_mux_002.sv|
 !i113 1
@@ -1398,7 +1398,7 @@ R8
 n@computer_@system_mm_interconnect_0_cmd_mux_002
 vComputer_System_mm_interconnect_0_cmd_mux_003
 R1
-R79
+R70
 !i10b 1
 !s100 E>Q7AdI3aOgbLGWadm`Qo1
 ImGdOBOh_<`PVG7G_CFl2T2
@@ -1409,12 +1409,12 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_mux_003.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_mux_003.sv
-R81
+R71
 R5
 r1
 !s85 0
 31
-R80
+R69
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_mux_003.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_cmd_mux_003.sv|
 !i113 1
@@ -1423,110 +1423,210 @@ R8
 n@computer_@system_mm_interconnect_0_cmd_mux_003
 vComputer_System_mm_interconnect_0_router
 R1
-R18
+R16
 !i10b 1
 !s100 k]LbP6C>gRl9OAn_Njf;H3
 I1MFZSi;l9OLP1zV6=fb7f0
 R3
-Z82 !s105 Computer_System_mm_interconnect_0_router_sv_unit
+Z72 !s105 Computer_System_mm_interconnect_0_router_sv_unit
 S1
 R0
 R10
-Z83 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router.sv
-Z84 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router.sv
-Z85 L0 84
+Z73 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router.sv
+Z74 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router.sv
+Z75 L0 84
 R5
 r1
 !s85 0
 31
-R20
-Z86 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router.sv|
-Z87 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router.sv|
+R18
+Z76 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router.sv|
+Z77 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router.sv|
 !i113 1
 R7
 R8
 n@computer_@system_mm_interconnect_0_router
 vComputer_System_mm_interconnect_0_router_002
 R1
-R76
+R16
 !i10b 1
 !s100 Q_SBi^>?65U=i[;n_C9Z]3
 I0:WbZG?cVjiQhVW2km]g]2
 R3
-Z88 !s105 Computer_System_mm_interconnect_0_router_002_sv_unit
+Z78 !s105 Computer_System_mm_interconnect_0_router_002_sv_unit
 S1
 R0
 R10
-Z89 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_002.sv
-Z90 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_002.sv
-R85
+Z79 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_002.sv
+Z80 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_002.sv
+R75
 R5
 r1
 !s85 0
 31
-R78
-Z91 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_002.sv|
-Z92 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_002.sv|
+R18
+Z81 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_002.sv|
+Z82 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_002.sv|
 !i113 1
 R7
 R8
 n@computer_@system_mm_interconnect_0_router_002
 vComputer_System_mm_interconnect_0_router_002_default_decode
 R1
-R76
+R16
 !i10b 1
 !s100 7N:]YW10[Q]i`;0oWT6dL3
 I3Vnm9lji4gQ_@2B5PaC]m1
 R3
-R88
+R78
 S1
 R0
 R10
-R89
-R90
-Z93 L0 45
+R79
+R80
+Z83 L0 45
 R5
 r1
 !s85 0
 31
-R78
-R91
-R92
+R18
+R81
+R82
 !i113 1
 R7
 R8
 n@computer_@system_mm_interconnect_0_router_002_default_decode
 vComputer_System_mm_interconnect_0_router_003
 R1
-R76
+R16
 !i10b 1
 !s100 P8RHE1BSF>9HER3TS^96S2
 IIm;^_8LJ>1WWX6m8NiiA62
 R3
-Z94 !s105 Computer_System_mm_interconnect_0_router_003_sv_unit
+Z84 !s105 Computer_System_mm_interconnect_0_router_003_sv_unit
 S1
 R0
 R10
-Z95 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_003.sv
-Z96 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_003.sv
-R85
+Z85 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_003.sv
+Z86 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_003.sv
+R75
 R5
 r1
 !s85 0
 31
-R78
-Z97 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_003.sv|
-Z98 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_003.sv|
+R18
+Z87 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_003.sv|
+Z88 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_003.sv|
 !i113 1
 R7
 R8
 n@computer_@system_mm_interconnect_0_router_003
 vComputer_System_mm_interconnect_0_router_003_default_decode
 R1
-R76
+R16
 !i10b 1
 !s100 nImmcecNAGzLTa]BKUHMW2
 I>k32>0CdoR`m_TT<<QMm:1
+R3
+R84
+S1
+R0
+R10
+R85
+R86
+R83
+R5
+r1
+!s85 0
+31
+R18
+R87
+R88
+!i113 1
+R7
+R8
+n@computer_@system_mm_interconnect_0_router_003_default_decode
+vComputer_System_mm_interconnect_0_router_004
+R1
+R66
+!i10b 1
+!s100 CQQ5C:?YKhkmE:ejNgjh41
+ICbz59]97BbPM`^>ZnnOYf0
+R3
+Z89 !s105 Computer_System_mm_interconnect_0_router_004_sv_unit
+S1
+R0
+R10
+Z90 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_004.sv
+Z91 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_004.sv
+R75
+R5
+r1
+!s85 0
+31
+R68
+Z92 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_004.sv|
+Z93 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_004.sv|
+!i113 1
+R7
+R8
+n@computer_@system_mm_interconnect_0_router_004
+vComputer_System_mm_interconnect_0_router_004_default_decode
+R1
+R66
+!i10b 1
+!s100 fYWG@PiAL^9[0M;Q^AB<h0
+IQ4^Onck1<]C:cF8:jo?Sb2
+R3
+R89
+S1
+R0
+R10
+R90
+R91
+R83
+R5
+r1
+!s85 0
+31
+R68
+R92
+R93
+!i113 1
+R7
+R8
+n@computer_@system_mm_interconnect_0_router_004_default_decode
+vComputer_System_mm_interconnect_0_router_005
+R1
+R66
+!i10b 1
+!s100 =:biY=]?D=UXP91l;_oU]1
+IM6LZfS>iA88Th[Y0f:fz>3
+R3
+Z94 !s105 Computer_System_mm_interconnect_0_router_005_sv_unit
+S1
+R0
+R10
+Z95 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_005.sv
+Z96 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_005.sv
+R75
+R5
+r1
+!s85 0
+31
+R68
+Z97 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_005.sv|
+Z98 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_005.sv|
+!i113 1
+R7
+R8
+n@computer_@system_mm_interconnect_0_router_005
+vComputer_System_mm_interconnect_0_router_005_default_decode
+R1
+R66
+!i10b 1
+!s100 VXl8=h]fOZaL1ZDfXTY`C0
+IBPKMz6BNmXCU]j5[3C:PR1
 R3
 R94
 S1
@@ -1534,49 +1634,49 @@ R0
 R10
 R95
 R96
-R93
+R83
 R5
 r1
 !s85 0
 31
-R78
+R68
 R97
 R98
 !i113 1
 R7
 R8
-n@computer_@system_mm_interconnect_0_router_003_default_decode
-vComputer_System_mm_interconnect_0_router_004
+n@computer_@system_mm_interconnect_0_router_005_default_decode
+vComputer_System_mm_interconnect_0_router_006
 R1
-R76
+R66
 !i10b 1
-!s100 CQQ5C:?YKhkmE:ejNgjh41
-ICbz59]97BbPM`^>ZnnOYf0
+!s100 fB@5_H:ZOVeX^e]Tk8jDD0
+Il_?_mXe4803EIgZd`=9<10
 R3
-Z99 !s105 Computer_System_mm_interconnect_0_router_004_sv_unit
+Z99 !s105 Computer_System_mm_interconnect_0_router_006_sv_unit
 S1
 R0
 R10
-Z100 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_004.sv
-Z101 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_004.sv
-R85
+Z100 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_006.sv
+Z101 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_006.sv
+R75
 R5
 r1
 !s85 0
 31
-R78
-Z102 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_004.sv|
-Z103 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_004.sv|
+R68
+Z102 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_006.sv|
+Z103 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_006.sv|
 !i113 1
 R7
 R8
-n@computer_@system_mm_interconnect_0_router_004
-vComputer_System_mm_interconnect_0_router_004_default_decode
+n@computer_@system_mm_interconnect_0_router_006
+vComputer_System_mm_interconnect_0_router_006_default_decode
 R1
-R76
+R66
 !i10b 1
-!s100 fYWG@PiAL^9[0M;Q^AB<h0
-IQ4^Onck1<]C:cF8:jo?Sb2
+!s100 Fj>hR1k]PicXH3JJY0iWZ1
+I:0Y16gzVK7?3Y<zljW>ZV1
 R3
 R99
 S1
@@ -1584,49 +1684,49 @@ R0
 R10
 R100
 R101
-R93
+R83
 R5
 r1
 !s85 0
 31
-R78
+R68
 R102
 R103
 !i113 1
 R7
 R8
-n@computer_@system_mm_interconnect_0_router_004_default_decode
-vComputer_System_mm_interconnect_0_router_005
+n@computer_@system_mm_interconnect_0_router_006_default_decode
+vComputer_System_mm_interconnect_0_router_007
 R1
-R76
+R66
 !i10b 1
-!s100 =:biY=]?D=UXP91l;_oU]1
-IM6LZfS>iA88Th[Y0f:fz>3
+!s100 [cgJR2MUcak5ioAXfh>cM3
+ITWj:Ib@[hTk:1F4gZ2zi93
 R3
-Z104 !s105 Computer_System_mm_interconnect_0_router_005_sv_unit
+Z104 !s105 Computer_System_mm_interconnect_0_router_007_sv_unit
 S1
 R0
 R10
-Z105 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_005.sv
-Z106 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_005.sv
-R85
+Z105 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_007.sv
+Z106 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_007.sv
+R75
 R5
 r1
 !s85 0
 31
-R78
-Z107 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_005.sv|
-Z108 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_005.sv|
+R68
+Z107 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_007.sv|
+Z108 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_007.sv|
 !i113 1
 R7
 R8
-n@computer_@system_mm_interconnect_0_router_005
-vComputer_System_mm_interconnect_0_router_005_default_decode
+n@computer_@system_mm_interconnect_0_router_007
+vComputer_System_mm_interconnect_0_router_007_default_decode
 R1
-R76
+R66
 !i10b 1
-!s100 VXl8=h]fOZaL1ZDfXTY`C0
-IBPKMz6BNmXCU]j5[3C:PR1
+!s100 NFFTK?3ed@b<QaBJfa3k01
+I5LnDWTVQ[BXgT=K3Y=[cC1
 R3
 R104
 S1
@@ -1634,146 +1734,46 @@ R0
 R10
 R105
 R106
-R93
+R83
 R5
 r1
 !s85 0
 31
-R78
+R68
 R107
 R108
-!i113 1
-R7
-R8
-n@computer_@system_mm_interconnect_0_router_005_default_decode
-vComputer_System_mm_interconnect_0_router_006
-R1
-R76
-!i10b 1
-!s100 fB@5_H:ZOVeX^e]Tk8jDD0
-Il_?_mXe4803EIgZd`=9<10
-R3
-Z109 !s105 Computer_System_mm_interconnect_0_router_006_sv_unit
-S1
-R0
-R10
-Z110 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_006.sv
-Z111 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_006.sv
-R85
-R5
-r1
-!s85 0
-31
-R78
-Z112 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_006.sv|
-Z113 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_006.sv|
-!i113 1
-R7
-R8
-n@computer_@system_mm_interconnect_0_router_006
-vComputer_System_mm_interconnect_0_router_006_default_decode
-R1
-R76
-!i10b 1
-!s100 Fj>hR1k]PicXH3JJY0iWZ1
-I:0Y16gzVK7?3Y<zljW>ZV1
-R3
-R109
-S1
-R0
-R10
-R110
-R111
-R93
-R5
-r1
-!s85 0
-31
-R78
-R112
-R113
-!i113 1
-R7
-R8
-n@computer_@system_mm_interconnect_0_router_006_default_decode
-vComputer_System_mm_interconnect_0_router_007
-R1
-R76
-!i10b 1
-!s100 [cgJR2MUcak5ioAXfh>cM3
-ITWj:Ib@[hTk:1F4gZ2zi93
-R3
-Z114 !s105 Computer_System_mm_interconnect_0_router_007_sv_unit
-S1
-R0
-R10
-Z115 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_007.sv
-Z116 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_007.sv
-R85
-R5
-r1
-!s85 0
-31
-R78
-Z117 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_007.sv|
-Z118 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_router_007.sv|
-!i113 1
-R7
-R8
-n@computer_@system_mm_interconnect_0_router_007
-vComputer_System_mm_interconnect_0_router_007_default_decode
-R1
-R76
-!i10b 1
-!s100 NFFTK?3ed@b<QaBJfa3k01
-I5LnDWTVQ[BXgT=K3Y=[cC1
-R3
-R114
-S1
-R0
-R10
-R115
-R116
-R93
-R5
-r1
-!s85 0
-31
-R78
-R117
-R118
 !i113 1
 R7
 R8
 n@computer_@system_mm_interconnect_0_router_007_default_decode
 vComputer_System_mm_interconnect_0_router_default_decode
 R1
-R18
+R16
 !i10b 1
 !s100 O`2Ed]i8g5oD@gOJlgHC10
 I]aa;]ZUXB9bLl?M98jZco2
 R3
-R82
+R72
 S1
 R0
 R10
+R73
+R74
 R83
-R84
-R93
 R5
 r1
 !s85 0
 31
-R20
-R86
-R87
+R18
+R76
+R77
 !i113 1
 R7
 R8
 n@computer_@system_mm_interconnect_0_router_default_decode
 vComputer_System_mm_interconnect_0_rsp_demux
 R1
-R79
+R70
 !i10b 1
 !s100 XCON]3038Tk:5EUzV[oSO3
 IK6XH5fcDm<mUf>o_YelFK3
@@ -1784,12 +1784,12 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_rsp_demux.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_rsp_demux.sv
-R77
+R67
 R5
 r1
 !s85 0
 31
-R80
+R69
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_rsp_demux.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_rsp_demux.sv|
 !i113 1
@@ -1798,7 +1798,7 @@ R8
 n@computer_@system_mm_interconnect_0_rsp_demux
 vComputer_System_mm_interconnect_0_rsp_demux_001
 R1
-R79
+R70
 !i10b 1
 !s100 d]3Pge01z;9<O:^R6D>`k3
 IDjJ6J3fHefmVnaNOE_=m70
@@ -1809,12 +1809,12 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_rsp_demux_001.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_rsp_demux_001.sv
-R77
+R67
 R5
 r1
 !s85 0
 31
-R80
+R69
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_rsp_demux_001.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_rsp_demux_001.sv|
 !i113 1
@@ -1823,7 +1823,7 @@ R8
 n@computer_@system_mm_interconnect_0_rsp_demux_001
 vComputer_System_mm_interconnect_0_rsp_demux_003
 R1
-R41
+R70
 !i10b 1
 !s100 1TC3SG;aWMz^ObLW5M4_L2
 IVXKL_5iY3b7?@X@lo2z<N1
@@ -1834,12 +1834,12 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_rsp_demux_003.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_rsp_demux_003.sv
-R77
+R67
 R5
 r1
 !s85 0
 31
-R43
+R69
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_rsp_demux_003.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_rsp_demux_003.sv|
 !i113 1
@@ -1859,7 +1859,7 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_rsp_mux.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_rsp_mux.sv
-R81
+R71
 R5
 r1
 !s85 0
@@ -1884,7 +1884,7 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_rsp_mux_002.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_0_rsp_mux_002.sv
-R81
+R71
 R5
 r1
 !s85 0
@@ -1897,7 +1897,7 @@ R7
 R8
 n@computer_@system_mm_interconnect_0_rsp_mux_002
 vComputer_System_mm_interconnect_1
-R71
+R63
 !i10b 1
 !s100 Agm7TSQVd[X:n<doa[czI0
 I0hd>FomXdB5TKejO8[IDj0
@@ -1911,7 +1911,7 @@ R5
 r1
 !s85 0
 31
-R48
+R64
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1.v|
 !i113 1
@@ -1920,7 +1920,7 @@ R14
 n@computer_@system_mm_interconnect_1
 vComputer_System_mm_interconnect_1_cmd_demux
 R1
-R23
+R21
 !i10b 1
 !s100 ZQa=SD2aMWncVO;=nFodP3
 I@M3I7lNIOc[[>ROVGm?o63
@@ -1931,12 +1931,12 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_cmd_demux.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_cmd_demux.sv
-R77
+R67
 R5
 r1
 !s85 0
 31
-R24
+R22
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_cmd_demux.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_cmd_demux.sv|
 !i113 1
@@ -1945,7 +1945,7 @@ R8
 n@computer_@system_mm_interconnect_1_cmd_demux
 vComputer_System_mm_interconnect_1_cmd_mux
 R1
-R25
+R21
 !i10b 1
 !s100 VIkINn^Z8jh14J;5HOX[l2
 IQgWgAo5bCfhWnz7L?YHhc0
@@ -1956,12 +1956,12 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_cmd_mux.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_cmd_mux.sv
-R81
+R71
 R5
 r1
 !s85 0
 31
-R29
+R22
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_cmd_mux.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_cmd_mux.sv|
 !i113 1
@@ -1975,20 +1975,20 @@ R9
 !s100 H>moa0KVJ[E^S4SLZzCK:3
 Iz=n;e;9RhB3oN0<9NEgi63
 R3
-Z119 !s105 Computer_System_mm_interconnect_1_router_sv_unit
+Z109 !s105 Computer_System_mm_interconnect_1_router_sv_unit
 S1
 R0
 R10
-Z120 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_router.sv
-Z121 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_router.sv
-R85
+Z110 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_router.sv
+Z111 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_router.sv
+R75
 R5
 r1
 !s85 0
 31
 R12
-Z122 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_router.sv|
-Z123 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_router.sv|
+Z112 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_router.sv|
+Z113 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_router.sv|
 !i113 1
 R7
 R8
@@ -2000,20 +2000,20 @@ R9
 !s100 dA[oC9=DZ=1Ok6Z:THNL]1
 I12NH@XnR0bcR31hfZ2Md40
 R3
-Z124 !s105 Computer_System_mm_interconnect_1_router_002_sv_unit
+Z114 !s105 Computer_System_mm_interconnect_1_router_002_sv_unit
 S1
 R0
 R10
-Z125 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_router_002.sv
-Z126 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_router_002.sv
-R85
+Z115 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_router_002.sv
+Z116 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_router_002.sv
+R75
 R5
 r1
 !s85 0
 31
 R12
-Z127 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_router_002.sv|
-Z128 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_router_002.sv|
+Z117 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_router_002.sv|
+Z118 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_router_002.sv|
 !i113 1
 R7
 R8
@@ -2025,20 +2025,20 @@ R9
 !s100 a>ggg8M;334nBNVa6bMTG2
 Ief]J=m^84e>S=l1;B6K352
 R3
-R124
+R114
 S1
 R0
 R10
-R125
-R126
-R93
+R115
+R116
+R83
 R5
 r1
 !s85 0
 31
 R12
-R127
-R128
+R117
+R118
 !i113 1
 R7
 R8
@@ -2050,27 +2050,27 @@ R9
 !s100 DD]hiG@c9J^WDEz^@@:162
 IjdDz^=iSXz4B_^LaeTMcc3
 R3
-R119
+R109
 S1
 R0
 R10
-R120
-R121
-R93
+R110
+R111
+R83
 R5
 r1
 !s85 0
 31
 R12
-R122
-R123
+R112
+R113
 !i113 1
 R7
 R8
 n@computer_@system_mm_interconnect_1_router_default_decode
 vComputer_System_mm_interconnect_1_rsp_demux
 R1
-R25
+R21
 !i10b 1
 !s100 @TPj_YVPkXKA^^2[B3PXH3
 IUQQ;j[URK6H4ZE_:Z6XU51
@@ -2081,12 +2081,12 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_rsp_demux.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_rsp_demux.sv
-R77
+R67
 R5
 r1
 !s85 0
 31
-R29
+R22
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_rsp_demux.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_rsp_demux.sv|
 !i113 1
@@ -2095,7 +2095,7 @@ R8
 n@computer_@system_mm_interconnect_1_rsp_demux
 vComputer_System_mm_interconnect_1_rsp_mux
 R1
-R25
+R23
 !i10b 1
 !s100 YOJnY;F5^E1fg?G2dfleW0
 I^;BANc6Ak^eKXncBeAKf^0
@@ -2106,12 +2106,12 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_rsp_mux.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_rsp_mux.sv
-R81
+R71
 R5
 r1
 !s85 0
 31
-R29
+R27
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_rsp_mux.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_1_rsp_mux.sv|
 !i113 1
@@ -2119,7 +2119,7 @@ R7
 R8
 n@computer_@system_mm_interconnect_1_rsp_mux
 vComputer_System_mm_interconnect_2
-R47
+R63
 !i10b 1
 !s100 Kld5WAT=_M_Ja=R;DG0hc2
 IA1^ObQFJ4GOZG29CLkLQB0
@@ -2133,7 +2133,7 @@ R5
 r1
 !s85 0
 31
-R48
+R64
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_2.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_mm_interconnect_2.v|
 !i113 1
@@ -2141,13 +2141,13 @@ R13
 R14
 n@computer_@system_mm_interconnect_2
 vComputer_System_Onchip_SRAM
-R55
+R51
 !i10b 1
 !s100 l[4C<oO`]oeFZnVL^gBGi1
 IP`d_]8GH_cgzJM5_>0dkh1
 R3
 R0
-R60
+R55
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_Onchip_SRAM.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_Onchip_SRAM.v
 R11
@@ -2155,7 +2155,7 @@ R5
 r1
 !s85 0
 31
-R56
+R52
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_Onchip_SRAM.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_Onchip_SRAM.v|
 !i113 1
@@ -2163,57 +2163,57 @@ R13
 R14
 n@computer_@system_@onchip_@s@r@a@m
 vComputer_System_SDRAM
-R59
+R51
 !i10b 1
 !s100 5B2DDG_dDNJYlQzJ>URZ12
 IW?1?:E8I41_8c73FhC;1U3
 R3
 R0
-Z129 w1519589702
-Z130 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_SDRAM.v
-Z131 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_SDRAM.v
+Z119 w1519589702
+Z120 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_SDRAM.v
+Z121 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_SDRAM.v
 L0 158
 R5
 r1
 !s85 0
 31
-R61
-Z132 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_SDRAM.v|
-Z133 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_SDRAM.v|
+R52
+Z122 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_SDRAM.v|
+Z123 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_SDRAM.v|
 !i113 1
 R13
 R14
 n@computer_@system_@s@d@r@a@m
 vComputer_System_SDRAM_input_efifo_module
-R59
+R51
 !i10b 1
 !s100 <z6BEJS7LBIFd08gOFBM;3
 I43^BhNz<KPAVDg:XMRGY[2
 R3
 R0
-R129
-R130
-R131
+R119
+R120
+R121
 R11
 R5
 r1
 !s85 0
 31
-R61
-R132
-R133
+R52
+R122
+R123
 !i113 1
 R13
 R14
 n@computer_@system_@s@d@r@a@m_input_efifo_module
 vComputer_System_System_PLL
-R66
+R56
 !i10b 1
 !s100 O]5>?2li_AnF`9R5RW7@o3
 I2X7Bb8KfQ4^3]Z:WLW9;c2
 R3
 R0
-R129
+R119
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_System_PLL.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_System_PLL.v
 L0 9
@@ -2221,7 +2221,7 @@ R5
 r1
 !s85 0
 31
-R67
+R57
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_System_PLL.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_System_PLL.v|
 !i113 1
@@ -2229,7 +2229,7 @@ R13
 R14
 n@computer_@system_@system_@p@l@l
 vComputer_System_System_PLL_sys_pll
-R59
+R51
 !i10b 1
 !s100 OQ9hC`EPn;^aTzSWGjWM`2
 IJTU^lkM2nCHHX[l@B?j5<1
@@ -2243,7 +2243,7 @@ R5
 r1
 !s85 0
 31
-R61
+R52
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_System_PLL_sys_pll.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_System_PLL_sys_pll.v|
 !i113 1
@@ -2251,13 +2251,13 @@ R13
 R14
 n@computer_@system_@system_@p@l@l_sys_pll
 vComputer_System_VGA_Subsystem
-R73
+R63
 !i10b 1
 !s100 zzAkPk>UVK1:4:RlT^n8=2
 I1<GoAlPGVb_oNIShgkkXi2
 R3
 R0
-R129
+R119
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem.v
 L0 6
@@ -2265,7 +2265,7 @@ R5
 r1
 !s85 0
 31
-R74
+R64
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem.v|
 !i113 1
@@ -2273,7 +2273,7 @@ R13
 R14
 n@computer_@system_@v@g@a_@subsystem
 vComputer_System_VGA_Subsystem_VGA_Alpha_Blender
-R66
+R56
 !i10b 1
 !s100 ODa3MGfVI]QNT0hm=l<Sg3
 IjgN7T5<9XQOZKBIeeDKhB1
@@ -2287,7 +2287,7 @@ R5
 r1
 !s85 0
 31
-R67
+R57
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Alpha_Blender.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Alpha_Blender.v|
 !i113 1
@@ -2295,7 +2295,7 @@ R13
 R14
 n@computer_@system_@v@g@a_@subsystem_@v@g@a_@alpha_@blender
 vComputer_System_VGA_Subsystem_VGA_Char_Buffer
-R64
+R56
 !i10b 1
 !s100 jkC@LW]H4:8nEalR3AHac0
 In;kI`SPRUeWCLz4`SU<QF3
@@ -2304,12 +2304,12 @@ R0
 R45
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Char_Buffer.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Char_Buffer.v
-R51
+R49
 R5
 r1
 !s85 0
 31
-R65
+R57
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Char_Buffer.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Char_Buffer.v|
 !i113 1
@@ -2317,7 +2317,7 @@ R13
 R14
 n@computer_@system_@v@g@a_@subsystem_@v@g@a_@char_@buffer
 vComputer_System_VGA_Subsystem_VGA_Controller
-R64
+R56
 !i10b 1
 !s100 [NDC;E1hDWJDGG2Z>iWol1
 InHO9_ZFzW>c5Wi7@Il5`A3
@@ -2331,7 +2331,7 @@ R5
 r1
 !s85 0
 31
-R65
+R57
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Controller.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Controller.v|
 !i113 1
@@ -2339,7 +2339,7 @@ R13
 R14
 n@computer_@system_@v@g@a_@subsystem_@v@g@a_@controller
 vComputer_System_VGA_Subsystem_VGA_Dual_Clock_FIFO
-R62
+R53
 !i10b 1
 !s100 <NYzM7D34RJQ0[kDMC[YR3
 IAWa^J?c`iRCVMTh9J=XG43
@@ -2348,12 +2348,12 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Dual_Clock_FIFO.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Dual_Clock_FIFO.v
-R51
+R49
 R5
 r1
 !s85 0
 31
-R63
+R54
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Dual_Clock_FIFO.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Dual_Clock_FIFO.v|
 !i113 1
@@ -2361,7 +2361,7 @@ R13
 R14
 n@computer_@system_@v@g@a_@subsystem_@v@g@a_@dual_@clock_@f@i@f@o
 vComputer_System_VGA_Subsystem_VGA_Pixel_DMA
-R57
+R53
 !i10b 1
 !s100 VWEiblbhKm]49OF6bLO^C2
 IdYZ>j7UY7blTWJKznAn150
@@ -2370,12 +2370,12 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Pixel_DMA.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Pixel_DMA.v
-R51
+R49
 R5
 r1
 !s85 0
 31
-Z134 !s108 1521163296.000000
+R54
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Pixel_DMA.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Pixel_DMA.v|
 !i113 1
@@ -2383,7 +2383,7 @@ R13
 R14
 n@computer_@system_@v@g@a_@subsystem_@v@g@a_@pixel_@d@m@a
 vComputer_System_VGA_Subsystem_VGA_Pixel_FIFO
-Z135 !s110 1521163296
+R53
 !i10b 1
 !s100 G0mVocRAYjzVjQAg^FiLm0
 I^>mGXQ_`7>zF6hn=LlAWU3
@@ -2392,12 +2392,12 @@ R0
 R10
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Pixel_FIFO.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Pixel_FIFO.v
-R51
+R49
 R5
 r1
 !s85 0
 31
-R134
+R54
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Pixel_FIFO.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Pixel_FIFO.v|
 !i113 1
@@ -2405,7 +2405,7 @@ R13
 R14
 n@computer_@system_@v@g@a_@subsystem_@v@g@a_@pixel_@f@i@f@o
 vComputer_System_VGA_Subsystem_VGA_Pixel_RGB_Resampler
-R135
+R53
 !i10b 1
 !s100 cUEkWEhB:Q9B8CRdA67Oe2
 IfHMOEo]9cHj3eTX:Ml68H2
@@ -2419,7 +2419,7 @@ R5
 r1
 !s85 0
 31
-R134
+R54
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Pixel_RGB_Resampler.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_Pixel_RGB_Resampler.v|
 !i113 1
@@ -2427,7 +2427,7 @@ R13
 R14
 n@computer_@system_@v@g@a_@subsystem_@v@g@a_@pixel_@r@g@b_@resampler
 vComputer_System_VGA_Subsystem_VGA_PLL
-R57
+R53
 !i10b 1
 !s100 P;7XO`M09SEk=Sbg97`EG1
 I[8QVeM1niLTT;20RR11oT1
@@ -2441,7 +2441,7 @@ R5
 r1
 !s85 0
 31
-R58
+R54
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_PLL.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_PLL.v|
 !i113 1
@@ -2449,7 +2449,7 @@ R13
 R14
 n@computer_@system_@v@g@a_@subsystem_@v@g@a_@p@l@l
 vComputer_System_VGA_Subsystem_VGA_PLL_video_pll
-R62
+R53
 !i10b 1
 !s100 UcFbYc=>PT<?11mSh`LRO0
 I`c_FQ_eM_J?39IAAUVLN>2
@@ -2463,7 +2463,7 @@ R5
 r1
 !s85 0
 31
-R58
+R54
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_PLL_video_pll.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/Computer_System_VGA_Subsystem_VGA_PLL_video_pll.v|
 !i113 1
@@ -2471,7 +2471,7 @@ R13
 R14
 n@computer_@system_@v@g@a_@subsystem_@v@g@a_@p@l@l_video_pll
 vhps_sdram
-R53
+R19
 !i10b 1
 !s100 jbW90WZhb:4iXkRi;gdi^0
 Ic;hDHkKH2WD6ncT=K5M:32
@@ -2485,7 +2485,7 @@ R5
 r1
 !s85 0
 31
-R54
+R20
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram.v|
 !i113 1
@@ -2493,7 +2493,7 @@ R13
 R14
 vhps_sdram_p0
 R1
-R2
+R16
 !i10b 1
 !s100 0aBa?A2_:WcP=:II412ZJ1
 IOleQ2[lm390WE_4`iQ_500
@@ -2504,19 +2504,19 @@ R0
 R4
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0.sv
-R19
+R17
 R5
 r1
 !s85 0
 31
-R6
+R18
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0.sv|
 !i113 1
 R7
 R8
 vhps_sdram_p0_acv_hard_addr_cmd_pads
-R21
+R19
 !i10b 1
 !s100 JDiQYD`mV<S3ZbNU2oLkD2
 IEk6ERXKHnXT==Ke=aZUHQ2
@@ -2525,19 +2525,19 @@ R0
 R4
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_acv_hard_addr_cmd_pads.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_acv_hard_addr_cmd_pads.v
-Z136 L0 17
+Z124 L0 17
 R5
 r1
 !s85 0
 31
-R22
+R20
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_acv_hard_addr_cmd_pads.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_acv_hard_addr_cmd_pads.v|
 !i113 1
 R13
 R14
 vhps_sdram_p0_acv_hard_io_pads
-R21
+R19
 !i10b 1
 !s100 SfJ5bje>CFhFCXN8?j91<1
 I1R@MjG3a_kj7FRnM[m;WB2
@@ -2546,19 +2546,19 @@ R0
 R4
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_acv_hard_io_pads.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_acv_hard_io_pads.v
-R136
+R124
 R5
 r1
 !s85 0
 31
-R22
+R20
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_acv_hard_io_pads.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_acv_hard_io_pads.v|
 !i113 1
 R13
 R14
 vhps_sdram_p0_acv_hard_memphy
-R21
+R19
 !i10b 1
 !s100 YZmZZ30=2fY45]I4U[QfM1
 IOz6jAUZaD[^K>9R3YezW:0
@@ -2572,14 +2572,14 @@ R5
 r1
 !s85 0
 31
-R22
+R20
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_acv_hard_memphy.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_acv_hard_memphy.v|
 !i113 1
 R13
 R14
 vhps_sdram_p0_acv_ldc
-R21
+Z125 !s110 1521165520
 !i10b 1
 !s100 SK2LP`?Ld8_6n1Ui2PFoz1
 Id:QT[df=C8jI>bYB0cGbQ1
@@ -2588,19 +2588,19 @@ R0
 R4
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_acv_ldc.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_acv_ldc.v
-R136
+R124
 R5
 r1
 !s85 0
 31
-R22
+Z126 !s108 1521165520.000000
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_acv_ldc.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_acv_ldc.v|
 !i113 1
 R13
 R14
 vhps_sdram_p0_altdqdqs
-R21
+R19
 !i10b 1
 !s100 Xk]PjMGV;<WQjf6YEGK3:1
 Ih>h]NKSg1Y:8Z@CHKh9N>2
@@ -2609,19 +2609,19 @@ R0
 R4
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_altdqdqs.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_altdqdqs.v
-R136
+R124
 R5
 r1
 !s85 0
 31
-R22
+R20
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_altdqdqs.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_altdqdqs.v|
 !i113 1
 R13
 R14
 vhps_sdram_p0_clock_pair_generator
-R21
+R125
 !i10b 1
 !s100 _R4W?Gz]?;bEWHjnK9ME`1
 IC>2FfX`@6VB:8fKieZZVP2
@@ -2630,19 +2630,19 @@ R0
 R4
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_clock_pair_generator.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_clock_pair_generator.v
-R51
+R49
 R5
 r1
 !s85 0
 31
-R22
+R126
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_clock_pair_generator.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_clock_pair_generator.v|
 !i113 1
 R13
 R14
 vhps_sdram_p0_generic_ddio
-R21
+R19
 !i10b 1
 !s100 MEaB39e4Y6@9cRdAAXSbL3
 IHdbc8BUAcg0eSW9?U9_db2
@@ -2651,12 +2651,12 @@ R0
 R4
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_generic_ddio.v
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_generic_ddio.v
-R136
+R124
 R5
 r1
 !s85 0
 31
-R22
+R20
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_generic_ddio.v|
 !s90 -reportprogress|300|-vlog01compat|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_p0_generic_ddio.v|
 !i113 1
@@ -2664,7 +2664,7 @@ R13
 R14
 vhps_sdram_pll
 R1
-R15
+R2
 !i10b 1
 !s100 V7c`R[VFgV@fH9Gm07kS;2
 I6oJnCLck7YbF12bg58:dQ1
@@ -2680,7 +2680,7 @@ R5
 r1
 !s85 0
 31
-R17
+R6
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_pll.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/synthesis/submodules/hps_sdram_pll.sv|
 !i113 1
@@ -2688,14 +2688,14 @@ R7
 R8
 Xverbosity_pkg
 R1
-R15
+R58
 !i10b 1
 !s100 1LKXk98oFzia^4f:_THR]1
 ISk2;UnNEY1>=:@_G4Qb9G1
 VSk2;UnNEY1>=:@_G4Qb9G1
 S1
 R0
-R68
+R59
 8/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/verbosity_pkg.sv
 F/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/verbosity_pkg.sv
 L0 61
@@ -2703,9 +2703,9 @@ R5
 r1
 !s85 0
 31
-R17
+R60
 !s107 /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/verbosity_pkg.sv|
 !s90 -reportprogress|300|-sv|-work|Computer_System|+incdir+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules|/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/Computer_System/simulation/submodules/verbosity_pkg.sv|
 !i113 1
 R7
-R69
+R61

@@ -18,10 +18,8 @@ reg     signed  [17:0]  v1dot                           ;
 wire    signed  [17:0]  v1dotnew                        ;
 reg     signed  [17:0]  k1_m = 18'h1_0000               ;
 wire    signed  [17:0]  k1_mxv1                         ;
-reg     signed  [17:0]  k1_mxv1_reg                     ;
 reg     signed  [17:0]  D1_m = 18'h0_4000               ;
 wire    signed  [17:0]  D1_mxv1dot                      ;
-reg     signed  [17:0]  D1_mxv1dot_reg                  ;
 wire    signed  [17:0]  func1                           ;
 
 reg     signed  [17:0]  v2                              ;
@@ -30,45 +28,41 @@ reg     signed  [17:0]  v2dot                           ;
 wire    signed  [17:0]  v2dotnew                        ;
 reg     signed  [17:0]  k2_m = 18'h1_0000               ;
 wire    signed  [17:0]  k2_mxv2                         ;
-reg     signed  [17:0]  k2_mxv2_reg                     ;
 reg     signed  [17:0]  D2_m = 18'h0_4000               ;
 wire    signed  [17:0]  D2_mxv2dot                      ;
-reg     signed  [17:0]  D2_mxv2dot_reg                  ;
 wire    signed  [17:0]  func2                           ;
 
-reg             [ 3:0]  dt = 4'd9                       ;
+reg             [ 3:0]  dt = 4'd6                       ;
 reg     signed  [17:0]  kmid_m = 18'h1_0000             ;
 wire    signed  [17:0]  kmid_mxv1                       ;
-reg     signed  [17:0]  kmid_mxv1_reg                   ;
 wire    signed  [17:0]  kmid_mxv2                       ;
-reg     signed  [17:0]  kmid_mxv2_reg                   ;
 
 // Bus master
-wire	[31:0]	bus_addr			;
-wire	[31:0]	video_base_addr = 32'h800_0000	;	/* address of the onchip
-							 * SRAM that will be
-							 * loaded into the pixel
-							 * buffer */
-wire	[ 3:0]	bus_byte_enable			;	/* specifies that data is being transferred */
-reg 		bus_read			;	/* high when requesting data */
-reg 		bus_write			;	/* high when writing data */
-reg 	[31:0]	bus_write_data			;	/* data to send to Avalon bus */
-wire		bus_ack				; 	/* Avalon bus raises this when done */
-wire	[31:0]	bus_read_data			;	/* data from Avalon bus */
-reg 	[30:0]	timer				;
-reg 	[ 3:0]	state				;
-wire		state_clock			;
+wire	[31:0]	bus_addr				;
+wire	[31:0]	video_base_addr = 32'h800_0000		;	/* address of the onchip
+								 * SRAM that will be
+								 * loaded into the pixel
+								 * buffer */
+wire	[ 3:0]	bus_byte_enable				;	/* specifies that data is being transferred */
+reg 		bus_read				;	/* high when requesting data */
+reg 		bus_write				;	/* high when writing data */
+reg 	[31:0]	bus_write_data				;	/* data to send to Avalon bus */
+wire		bus_ack					; 	/* Avalon bus raises this when done */
+wire	[31:0]	bus_read_data				;	/* data from Avalon bus */
+reg 	[30:0]	timer					;
+reg 	[ 3:0]	state					;
+wire		state_clock				;
 
 // Pixel address
-reg 	[ 9:0]	x_coord, y_coord		;
+reg 	[ 9:0]	x_coord, y_coord			;
 
 
 // Simulation variables
-reg		clk_ = 0			;
-reg		clk_slow_ = 0			;
-reg	[ 3:0]	key_ = 4'b0000			;
-wire		vga_hs_ = 0			;
-wire		vga_vs_ = 0			;
+reg		clk_ = 0				;
+reg		clk_slow_ = 0				;
+reg	[ 3:0]	key_ = 4'b0000				;
+wire		vga_hs_ = 0				;
+wire		vga_vs_ = 0				;
 
 
 //=======================================================
