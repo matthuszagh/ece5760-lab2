@@ -1,1 +1,7 @@
 *.v.swp
+verilog/db/*
+verilog/incremental_db/*
+verilog/*.map.*
+verilog/*.fit.*
+*.rpt
+*.done
