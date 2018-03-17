@@ -188,9 +188,9 @@ reg	signed	[17:0]	v1				;
 wire	signed	[17:0]	v1new				;
 reg	signed	[17:0]	v1dot				;
 wire	signed	[17:0]	v1dotnew			;
-reg	signed	[17:0]	k1_m = 18'h1_0000		;
+wire	signed	[17:0]	k1_m = 18'h1_0000		;
 wire	signed	[17:0]	k1_mxv1				;
-reg	signed	[17:0]	D1_m = 18'h0_4000		;
+wire	signed	[17:0]	D1_m = 18'h0_4000		;
 wire	signed	[17:0]	D1_mxv1dot			;
 wire 	signed	[17:0]	func1				;
 
@@ -198,14 +198,14 @@ reg	signed	[17:0]	v2				;
 wire	signed	[17:0]	v2new				;
 reg	signed	[17:0]	v2dot				;
 wire	signed	[17:0]	v2dotnew			;
-reg	signed	[17:0]	k2_m = 18'h1_0000		;
+wire	signed	[17:0]	k2_m = 18'h1_0000		;
 wire	signed	[17:0]	k2_mxv2				;
-reg	signed	[17:0]	D2_m = 18'h0_4000		;
+wire	signed	[17:0]	D2_m = 18'h0_4000		;
 wire	signed	[17:0]	D2_mxv2dot			;
 wire	signed	[17:0]	func2				;
 
-reg		[ 3:0]	dt = 4'd6			;
-reg	signed	[17:0]	kmid_m = 18'h1_0000		;
+wire		[ 3:0]	dt = 4'd4			;
+wire	signed	[17:0]	kmid_m = 18'h1_0000		;
 wire	signed	[17:0]	kmid_mxv1			;
 wire	signed	[17:0]	kmid_mxv2			;
 
@@ -221,8 +221,8 @@ reg 		bus_write				;	/* high when writing data */
 reg 	[31:0]	bus_write_data				;	/* data to send to Avalon bus */
 wire		bus_ack					; 	/* Avalon bus raises this when done */
 wire	[31:0]	bus_read_data				;	/* data from Avalon bus */
-reg 	[30:0]	timer					;
-reg 	[ 3:0]	state					;
+reg 	[15:0]	timer					;
+reg 	[ 3:0]	state = 4'd0				;
 wire		state_clock				;
 reg		integrator_reset_			;	/* used to specify when the integrators should be
 								 * initialized */
@@ -270,7 +270,7 @@ signed_mult kmid_m2 (
 );
 
 // integrate
-integrator int1 (
+/*integrator int1 (
 	.xnew(v1dotnew),
 	.reset(integrator_reset_),
 	.clock(CLOCK2_50),
@@ -302,33 +302,39 @@ integrator int22 (
 	.dt(dt),
 	.x(v2),
 	.func(v2dot)
-);
+);*/
 
 assign func1 = -k1_mxv1 + (kmid_mxv2 - kmid_mxv1) - D1_mxv1dot;
 assign func2 = -k2_mxv2 - (kmid_mxv2 - kmid_mxv1) - D2_mxv2dot;
+
+assign v1new = v1 + (v1dot>>>dt);
+assign v2new = v2 + (v2dot>>>dt);
+assign v1dotnew = v1dot + (func1>>>dt);
+assign v2dotnew = v2dot + (func2>>>dt);
 
 // assign bus_addr to pixel address
 assign bus_addr = video_base_addr + {22'b0, x_coord} + ({22'b0, y_coord}<<10);
 assign bus_byte_enable = 4'b0001;
 
 // set all hex digits to  0
-HexDigit set_hex_0(HEX0, state[0]);
-HexDigit set_hex_1(HEX1, state[1]);
-HexDigit set_hex_2(HEX2, state[2]);
-HexDigit set_hex_3(HEX3, state[3]);
-HexDigit set_hex_4(HEX4, 0);
-HexDigit set_hex_5(HEX5, 0);
+HexDigit set_hex_0(HEX0, func1[0]);
+HexDigit set_hex_1(HEX1, func1[1]);
+HexDigit set_hex_2(HEX2, func1[2]);
+HexDigit set_hex_3(HEX3, func1[3]);
+HexDigit set_hex_4(HEX4, func1[4]);
+HexDigit set_hex_5(HEX5, func1[5]);
 
 always @ (posedge CLOCK2_50) begin	// on VGA sync signal...
 	// if pushbutton 1 (furthest right) is pushed, reset state
-	if (~KEY[0]) begin
-		state <= 0;	
+	timer <= timer + 1;
+	if (KEY[0]==0) begin
+		state <= 1;	
 		bus_read <= 0;
 		bus_write <= 0;
 		// pixel address at upper left corner
 		x_coord <= 0;
 		//y_coord <= 10'd100;
-		timer <= 0;
+		timer <= 1;
 		// set starting values
 		v1 <= 18'h3_8000;
 		v2 <= 18'h0_8000;
@@ -336,15 +342,15 @@ always @ (posedge CLOCK2_50) begin	// on VGA sync signal...
 		v2dot <= 0;
 		integrator_reset_ <= 1;
 	end
-	else begin	// increment timer
+	/*else begin	// increment timer
 		timer <= timer + 1;
-	end
+	end*/
 
 	// write to bus master if VGA is not reading
-	if (state==0 && timer==2 && (~VGA_VS | ~VGA_HS)) begin
-		state <= 2;		// why do i need this????
+	if (state==1 && timer==0 && (~VGA_VS | ~VGA_HS)) begin
+		state <= 2;	// why do i need this????
 		integrator_reset_ <= 0;
-		timer <= 0;	
+		//timer <= 0;	
 	
 		v1 <= v1new;
 		v2 <= v2new;
@@ -357,7 +363,7 @@ always @ (posedge CLOCK2_50) begin	// on VGA sync signal...
 			x_coord <= 10'd0;
 		end
 
-		y_coord <= (v1>>>12)+32;
+		y_coord <= (v1new>>>12)+128;
 
 		bus_write_data <= 8'hff;
 		bus_write <= 1'b1;
@@ -366,7 +372,7 @@ always @ (posedge CLOCK2_50) begin	// on VGA sync signal...
 	// detect bus-transaction-complete ACK
 	// You MUST do this check
 	if (state==2 && bus_ack==1) begin
-		state <= 0;
+		state <= 1;
 		bus_write <= 0;
 	end
 end

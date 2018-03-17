@@ -1,16 +1,16 @@
-/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/integrator_tb.v {1 {vlog -work work -stats=none /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/integrator_tb.v
-Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
--- Compiling module integrator_tb
-
-Top level modules:
-	integrator_tb
-
-} {} {}} /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer.v {1 {vlog -work work -stats=none /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer.v
+/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer.v {1 {vlog -work work -stats=none /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/DE1_SoC_Computer.v
 Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
 -- Compiling module DE1_SoC_Computer
 
 Top level modules:
 	DE1_SoC_Computer
+
+} {} {}} /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/integrator_tb.v {1 {vlog -work work -stats=none /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/integrator_tb.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module integrator_tb
+
+Top level modules:
+	integrator_tb
 
 } {} {}} /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/hex_decoder.v {1 {vlog -work work -stats=none /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/hex_decoder.v
 Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
@@ -19,18 +19,18 @@ Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
 Top level modules:
 	HexDigit
 
-} {} {}} /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/signed_mult.v {1 {vlog -work work -stats=none /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/signed_mult.v
-Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
--- Compiling module signed_mult
-
-Top level modules:
-	signed_mult
-
 } {} {}} /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/integrator.v {1 {vlog -work work -stats=none /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/integrator.v
 Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
 -- Compiling module integrator
 
 Top level modules:
 	integrator
+
+} {} {}} /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/signed_mult.v {1 {vlog -work work -stats=none /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/signed_mult.v
+Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+-- Compiling module signed_mult
+
+Top level modules:
+	signed_mult
 
 } {} {}}

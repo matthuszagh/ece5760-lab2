@@ -20,25 +20,28 @@ module integrator (
 //=======================================================
 //  Internals
 //=======================================================
-reg	signed	[17:0]	xreg_				;
-wire	signed	[17:0]	xnew_ = xreg_ + (func>>>dt)	;
-reg			start_ = 1			;
+//reg	signed	[17:0]	xreg_				;
+//wire	signed	[17:0]	xnew_ = xreg_ + (func>>>dt)	;
+//reg			start_ = 1			;
+
+assign xnew = x + (func>>>dt);
 
 //=======================================================
 //  Behavioral Modelling
 //=======================================================
-always @ (posedge clock)
+/*always @ (posedge clock)
 begin
-	if (reset/* | (start_ && x)*/) begin
+	/*if (reset/* | (start_ && x)''') begin
 		start_ <= 0	;
 		xreg_ <= x	;
 	end
 	else begin
 		xreg_ <= xnew_;
-	end
-end
+	end*/
+//	xreg_ = x + (func>>>dt);
+//end
 
-assign xnew = xreg_;
+//assign xnew = xreg_;
 		
 
 endmodule
