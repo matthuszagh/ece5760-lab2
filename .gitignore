@@ -1,17 +1,17 @@
-*.v.swp
-verilog/db/*
-verilog/incremental_db/*
-verilog/*.map.*
-verilog/*.fit.*
-*.rpt
-*.done
-*summary
-*_info
-*_lib*
-*.xrf
-*.xml
-*.nlv
-*.bsf
-*.cdf
-*.jdi
-*transcript
+# *.v.swp
+# verilog/db/*
+# verilog/incremental_db/*
+# verilog/*.map.*
+# verilog/*.fit.*
+# *.rpt
+# *.done
+# *summary
+# *_info
+# *_lib*
+# *.xrf
+# *.xml
+# *.nlv
+# *.bsf
+# *.cdf
+# *.jdi
+# *transcript
