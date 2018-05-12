@@ -9,3 +9,9 @@ verilog/*.fit.*
 *_info
 *_lib*
 *.xrf
+*.xml
+*.nlv
+*.bsf
+*.cdf
+*.jdi
+*transcript

@@ -221,11 +221,12 @@ reg 		bus_write				;	/* high when writing data */
 reg 	[31:0]	bus_write_data				;	/* data to send to Avalon bus */
 wire		bus_ack					; 	/* Avalon bus raises this when done */
 wire	[31:0]	bus_read_data				;	/* data from Avalon bus */
-reg 	[15:0]	timer					;
+reg 	[20:0]	timer					;
 reg 	[ 3:0]	state = 4'd0				;
 wire		state_clock				;
-reg		integrator_reset_			;	/* used to specify when the integrators should be
-								 * initialized */
+// reg		integrator_reset_			;	/* used to specify when the integrators should be
+								//  * initialized */
+reg		[ 2:0]	debug = 3'b0		;
 
 // Pixel address
 reg 	[ 9:0]	x_coord, y_coord			;
@@ -270,18 +271,18 @@ signed_mult kmid_m2 (
 );
 
 // integrate
-/*integrator int1 (
+integrator int1 (
 	.xnew(v1dotnew),
-	.reset(integrator_reset_),
-	.clock(CLOCK2_50),
+	// .reset(integrator_reset_),
+	// .clock(CLOCK2_50),
 	.dt(dt),
 	.x(v1dot),
 	.func(func1)
 );
 integrator int2 (
 	.xnew(v2dotnew),
-	.reset(integrator_reset_),
-	.clock(CLOCK2_50),
+	// .reset(integrator_reset_),
+	// .clock(CLOCK2_50),
 	.dt(dt),
 	.x(v2dot),
 	.func(func2)
@@ -289,45 +290,41 @@ integrator int2 (
 
 integrator int12 (
 	.xnew(v1new),
-	.reset(integrator_reset_),
-	.clock(CLOCK2_50),
+	// .reset(integrator_reset_),
+	// .clock(CLOCK2_50),
 	.dt(dt),
 	.x(v1),
 	.func(v1dot)
 );
 integrator int22 (
 	.xnew(v2new),
-	.reset(integrator_reset_),
-	.clock(CLOCK2_50),
+	// .reset(integrator_reset_),
+	// .clock(CLOCK2_50),
 	.dt(dt),
 	.x(v2),
 	.func(v2dot)
-);*/
+);
 
 assign func1 = -k1_mxv1 + (kmid_mxv2 - kmid_mxv1) - D1_mxv1dot;
 assign func2 = -k2_mxv2 - (kmid_mxv2 - kmid_mxv1) - D2_mxv2dot;
-
-assign v1new = v1 + (v1dot>>>dt);
-assign v2new = v2 + (v2dot>>>dt);
-assign v1dotnew = v1dot + (func1>>>dt);
-assign v2dotnew = v2dot + (func2>>>dt);
 
 // assign bus_addr to pixel address
 assign bus_addr = video_base_addr + {22'b0, x_coord} + ({22'b0, y_coord}<<10);
 assign bus_byte_enable = 4'b0001;
 
 // set all hex digits to  0
-HexDigit set_hex_0(HEX0, func1[0]);
-HexDigit set_hex_1(HEX1, func1[1]);
-HexDigit set_hex_2(HEX2, func1[2]);
-HexDigit set_hex_3(HEX3, func1[3]);
-HexDigit set_hex_4(HEX4, func1[4]);
-HexDigit set_hex_5(HEX5, func1[5]);
+HexDigit set_hex_0(HEX0, debug[0]);
+HexDigit set_hex_1(HEX1, debug[1]);
+HexDigit set_hex_2(HEX2, debug[2]);
+HexDigit set_hex_3(HEX3, 0);
+HexDigit set_hex_4(HEX4, 0);
+HexDigit set_hex_5(HEX5, 0);
 
 always @ (posedge CLOCK2_50) begin	// on VGA sync signal...
 	// if pushbutton 1 (furthest right) is pushed, reset state
 	timer <= timer + 1;
 	if (KEY[0]==0) begin
+		debug[0] = 1;
 		state <= 1;	
 		bus_read <= 0;
 		bus_write <= 0;
@@ -340,16 +337,14 @@ always @ (posedge CLOCK2_50) begin	// on VGA sync signal...
 		v2 <= 18'h0_8000;
 		v1dot <= 0;
 		v2dot <= 0;
-		integrator_reset_ <= 1;
+		// integrator_reset_ <= 1;
 	end
-	/*else begin	// increment timer
-		timer <= timer + 1;
-	end*/
 
 	// write to bus master if VGA is not reading
-	if (state==1 && timer==0 && (~VGA_VS | ~VGA_HS)) begin
+	else if (state==1 && timer==0 && ~VGA_VS) begin
+		debug[1] = 1;
 		state <= 2;	// why do i need this????
-		integrator_reset_ <= 0;
+		// integrator_reset_ <= 0;
 		//timer <= 0;	
 	
 		v1 <= v1new;
@@ -363,7 +358,7 @@ always @ (posedge CLOCK2_50) begin	// on VGA sync signal...
 			x_coord <= 10'd0;
 		end
 
-		y_coord <= (v1new>>>12)+128;
+		y_coord <= (v1new>>>10)+128;
 
 		bus_write_data <= 8'hff;
 		bus_write <= 1'b1;
@@ -371,9 +366,13 @@ always @ (posedge CLOCK2_50) begin	// on VGA sync signal...
 
 	// detect bus-transaction-complete ACK
 	// You MUST do this check
-	if (state==2 && bus_ack==1) begin
+	else if (state==2 && bus_ack==1) begin
+		debug[2] = 1;
 		state <= 1;
 		bus_write <= 0;
+	end
+	else begin
+		timer <= timer - 1;
 	end
 end
 
