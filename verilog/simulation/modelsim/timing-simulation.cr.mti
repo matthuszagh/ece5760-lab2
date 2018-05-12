@@ -1,8 +1,0 @@
-/home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/simulation/modelsim/DE1_SoC_Computer.vo {1 {vlog -work timing -stats=none /home/matt/de1-soc/DE1-SoC_Computer_15_640_video_only/verilog/simulation/modelsim/DE1_SoC_Computer.vo
-Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
--- Compiling module DE1_SoC_Computer
-
-Top level modules:
-	DE1_SoC_Computer
-
-} {} {}}
