@@ -32,6 +32,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "VGA_G[7]",
+					"strict" : false
+				},
+				{
 					"name" : "VGA_B[0]",
 					"strict" : false
 				},
@@ -60,6 +64,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "VGA_B[7]",
+					"strict" : false
+				},
+				{
 					"name" : "VGA_R[0]",
 					"strict" : false
 				},
@@ -85,6 +93,10 @@
 				},
 				{
 					"name" : "VGA_R[6]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[7]",
 					"strict" : false
 				},
 				{
