@@ -59,9 +59,4 @@ set_output_delay -clock clk_vga -min [expr -$vga_th_ext+$vga_min_fpga2ext] [get_
 # VGA_VS
 set_output_delay -clock clk_vga -max [expr $vga_tsu_ext+$vga_max_fpga2ext] [get_ports VGA_VS]
 set_output_delay -clock clk_vga -min [expr -$vga_th_ext+$vga_min_fpga2ext] [get_ports VGA_VS]
-# VGA_SYNC_N
-set_output_delay -clock clk_vga -max [expr $vga_tsu_ext+$vga_max_fpga2ext] [get_ports VGA_SYNC_N]
-set_output_delay -clock clk_vga -min [expr -$vga_th_ext+$vga_min_fpga2ext] [get_ports VGA_SYNC_N]
-
-# HEX
 

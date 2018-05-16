@@ -1,6 +1,6 @@
 *.v.swp
-*/db/*
-*/incremental_db/*
+db/
+incremental_db/
 */*.map.*
 */*.fit.*
 *.rpt
@@ -27,8 +27,14 @@
 *.sh
 *.lib
 *PLLJ_PLLSPE_INFO.txt
-*/aldec/*
-*/mentor/*
-*/synopsys/*
+aldec/
+mentor/
+synopsys/
 *.bak
 *.pin
+work/
+*.v~
+*.sdc~
+*.hex
+*.mti
+greybox_tmp/
