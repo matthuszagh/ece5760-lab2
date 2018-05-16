@@ -21,14 +21,6 @@
    {
       datum _sortIndex
       {
-         value = "2";
-         type = "int";
-      }
-   }
-   element video_pll_0
-   {
-      datum _sortIndex
-      {
          value = "1";
          type = "int";
       }
@@ -56,10 +48,8 @@
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
- <interface name="vga_clk" internal="video_pll_0.vga_clk" />
  <interface name="vga_clk_ext" internal="pll_0.outclk1" type="clock" dir="start" />
  <interface name="vga_clk_int" internal="pll_0.outclk0" type="clock" dir="start" />
- <interface name="vga_reset" internal="video_pll_0.reset_source" />
  <module name="clk_0" kind="clock_source" version="15.1" enabled="1">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />
@@ -222,7 +212,7 @@
   <parameter name="gui_phase_shift8" value="0" />
   <parameter name="gui_phase_shift9" value="0" />
   <parameter name="gui_phase_shift_deg0" value="0.0" />
-  <parameter name="gui_phase_shift_deg1" value="270.0" />
+  <parameter name="gui_phase_shift_deg1" value="225.0" />
   <parameter name="gui_phase_shift_deg10" value="0.0" />
   <parameter name="gui_phase_shift_deg11" value="0.0" />
   <parameter name="gui_phase_shift_deg12" value="0.0" />
@@ -269,33 +259,7 @@
   <parameter name="gui_switchover_mode">Automatic Switchover</parameter>
   <parameter name="gui_use_locked" value="false" />
  </module>
- <module
-   name="video_pll_0"
-   kind="altera_up_avalon_video_pll"
-   version="15.1"
-   enabled="0">
-  <parameter name="AUTO_DEVICE" value="5CSEMA5F31C6" />
-  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6" />
-  <parameter name="camera" value="5MP Digital Camera" />
-  <parameter name="device_family" value="Cyclone V" />
-  <parameter name="gui_refclk" value="50.0" />
-  <parameter name="gui_resolution" value="SXGA 1280x1024" />
-  <parameter name="lcd">7" LCD on VEEK-MT and MTL Module</parameter>
-  <parameter name="lcd_clk_en" value="false" />
-  <parameter name="vga_clk_en" value="true" />
-  <parameter name="video_in_clk_en" value="false" />
- </module>
- <connection
-   kind="clock"
-   version="15.1"
-   start="clk_0.clk"
-   end="video_pll_0.ref_clk" />
  <connection kind="clock" version="15.1" start="clk_0.clk" end="pll_0.refclk" />
- <connection
-   kind="reset"
-   version="15.1"
-   start="clk_0.clk_reset"
-   end="video_pll_0.ref_reset" />
  <connection kind="reset" version="15.1" start="clk_0.clk_reset" end="pll_0.reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />

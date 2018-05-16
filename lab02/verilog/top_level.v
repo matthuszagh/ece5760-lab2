@@ -16,7 +16,6 @@ module top_level (
 		  output       VGA_CLK,
 		  output       VGA_HS,
 		  output       VGA_VS,
-		  output       VGA_SYNC_N,
 
 		  // // HEX pins.
 		  // output [6:0] HEX0,
@@ -52,7 +51,7 @@ module top_level (
    reg [ 7:0] 		       r_color = 8'b1111_1111;
    reg [ 7:0] 		       g_color = 8'b1111_1111;
    reg [ 7:0] 		       b_color = 8'b1111_1111;
-   reg 			       draw = 0;
+   reg        		       draw = 0;
 
    always @ (posedge vga_clk_int) begin
       // Keep the horizontal position within its limits.
@@ -74,7 +73,7 @@ module top_level (
 	 v_pos <= 0;
       end
    end
-   
+
    // IP core instantiation.
    system pll (
 	       .clk_clk(CLOCK_50),
@@ -95,6 +94,5 @@ module top_level (
    assign VGA_BLANK_N = ~((h_pos >= hdisplay & h_pos < hback_porch) | (v_pos >= vdisplay & v_pos < vback_porch));
    assign VGA_HS = ~(h_pos >= hfront_porch & h_pos < hsync);
    assign VGA_VS = ~(v_pos >= vfront_porch & v_pos < vsync);
-   assign VGA_SYNC_N = VGA_HS ^ VGA_VS;
 
 endmodule
