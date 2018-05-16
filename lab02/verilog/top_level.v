@@ -42,34 +42,31 @@ module top_level (
    localparam vfront_porch = vdisplay + 1;
    localparam vsync        = vfront_porch + 3;
    localparam vback_porch  = vsync + 38;
-
-   // Color initialization
-   localparam r_initial = 0;
-   localparam g_initial = 85;
-   localparam b_initial = 170;
    
    // Internal signals.
    wire 		       reset = ~KEY[0];
-   wire 		       vga_clk;
+   wire 		       vga_clk_int;
+   wire 		       vga_clk_ext;
    reg [10:0]		       h_pos = 0;
    reg [10:0] 		       v_pos = 0;
-   reg [ 7:0] 		       r_color = r_initial;
-   reg [ 7:0] 		       g_color = g_initial;
-   reg [ 7:0] 		       b_color = b_initial;
+   reg [ 7:0] 		       r_color = 8'b1111_1111;
+   reg [ 7:0] 		       g_color = 8'b1111_1111;
+   reg [ 7:0] 		       b_color = 8'b1111_1111;
+   reg 			       draw = 0;
 
-   always @ (posedge vga_clk) begin
+   always @ (posedge vga_clk_int) begin
       // Keep the horizontal position within its limits.
       if (h_pos < horiz_len) begin
 	 h_pos <= h_pos + 1;
-	 r_color <= r_color + 1;
-	 g_color <= g_color + 1;
-	 b_color <= b_color + 1;
+	 if (h_pos == v_pos) begin
+	    draw = 1'b1;
+	 end
+	 else begin
+	    draw = 1'b0;
+	 end
       end
       else begin
 	 h_pos <= 0;
-	 r_color <= r_initial;
-	 g_color <= g_initial;
-	 b_color <= b_initial;
 	 v_pos <= v_pos + 1;
       end
       // Keep the vertical position within its limits.
@@ -82,17 +79,18 @@ module top_level (
    system pll (
 	       .clk_clk(CLOCK_50),
 	       .reset_reset_n(~reset),
-	       .vga_clk_clk(vga_clk)
+	       .vga_clk_int_clk(vga_clk_int),
+	       .vga_clk_ext_clk(vga_clk_ext)
 	       );
 
    // HexDigit hex0(HEX0, vga_clk);
    // HexDigit hex1(HEX1, CLOCK_50);
 
-   assign VGA_CLK = ~vga_clk;
+   assign VGA_CLK = vga_clk_ext;
       
-   assign VGA_R = (h_pos < hdisplay) ? r_color : 0;
-   assign VGA_B = (h_pos < hdisplay) ? b_color : 0;
-   assign VGA_G = (h_pos < hdisplay) ? g_color : 0;
+   assign VGA_R = (draw & (h_pos < hdisplay)) ? r_color : 0;
+   assign VGA_B = (draw & (h_pos < hdisplay)) ? b_color : 0;
+   assign VGA_G = (draw & (h_pos < hdisplay)) ? g_color : 0;
 
    assign VGA_BLANK_N = ~((h_pos >= hdisplay & h_pos < hback_porch) | (v_pos >= vdisplay & v_pos < vback_porch));
    assign VGA_HS = ~(h_pos >= hfront_porch & h_pos < hsync);

@@ -4,17 +4,18 @@
 
 `timescale 1 ps / 1 ps
 module system (
-		input  wire  clk_clk,         //       clk.clk
-		input  wire  reset_reset_n,   //     reset.reset_n
-		output wire  vga_clk_clk,     //   vga_clk.clk
-		output wire  vga_reset_reset  // vga_reset.reset
+		input  wire  clk_clk,         //         clk.clk
+		input  wire  reset_reset_n,   //       reset.reset_n
+		output wire  vga_clk_ext_clk, // vga_clk_ext.clk
+		output wire  vga_clk_int_clk  // vga_clk_int.clk
 	);
 
-	system_video_pll_0 video_pll_0 (
-		.ref_clk_clk        (clk_clk),         //      ref_clk.clk
-		.ref_reset_reset    (~reset_reset_n),  //    ref_reset.reset
-		.vga_clk_clk        (vga_clk_clk),     //      vga_clk.clk
-		.reset_source_reset (vga_reset_reset)  // reset_source.reset
+	system_pll_0 pll_0 (
+		.refclk   (clk_clk),         //  refclk.clk
+		.rst      (~reset_reset_n),  //   reset.reset
+		.outclk_0 (vga_clk_int_clk), // outclk0.clk
+		.outclk_1 (vga_clk_ext_clk), // outclk1.clk
+		.locked   ()                 // (terminated)
 	);
 
 endmodule

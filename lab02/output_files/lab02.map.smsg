@@ -1,1 +1,0 @@
-Info (10281): Verilog HDL Declaration information at top_level.v(16): object "VGA_CLK" differs only in case from object "vga_clk" in the same scope File: /home/matt/de1-soc/ece5760/lab02/verilog/top_level.v Line: 16

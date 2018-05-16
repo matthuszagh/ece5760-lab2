@@ -2,9 +2,7 @@
 WORK > DEFAULT
 DEFAULT:               ./libraries/work/                 
 work:                  ./libraries/work/                 
-reset_from_locked:     ./libraries/reset_from_locked/    
-video_pll:             ./libraries/video_pll/            
-video_pll_0:           ./libraries/video_pll_0/          
+pll_0:                 ./libraries/pll_0/                
 altera_ver:            ./libraries/altera_ver/           
 lpm_ver:               ./libraries/lpm_ver/              
 sgate_ver:             ./libraries/sgate_ver/            

@@ -2,11 +2,11 @@
 module system (
 	clk_clk,
 	reset_reset_n,
-	vga_clk_clk,
-	vga_reset_reset);	
+	vga_clk_ext_clk,
+	vga_clk_int_clk);	
 
 	input		clk_clk;
 	input		reset_reset_n;
-	output		vga_clk_clk;
-	output		vga_reset_reset;
+	output		vga_clk_ext_clk;
+	output		vga_clk_int_clk;
 endmodule
