@@ -37,4 +37,5 @@ work/
 *.sdc~
 *.hex
 *.mti
+*.wlf
 greybox_tmp/

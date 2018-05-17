@@ -55,19 +55,26 @@ module top_level (
    reg [ 7:0] 		       r_color = black;
    reg [ 7:0] 		       g_color = black;
    reg [ 7:0] 		       b_color = black;
-//   reg        		       draw = 0;
-   wire [10:0] 		       write_address = h_pos;
-   wire [10:0] 		       read_address = h_pos;
-   reg 			       write = 0;
-   reg [7:0] 		       write_data;
-   wire [7:0] 		       read_data;
 
+   reg [7:0] 		       screen_buf [0:1279];   // Screen display is 1280 pixels wide.
+   reg [18:0] 		       count = 0;             // Adjust this based on desired frame rate.
+   reg 			       slow_clk = 0;
+   reg [7:0] 		       val = 0;
+   integer 		       i;                     // Index for shift register.
+
+   // Display the frame.
    always @ (posedge vga_clk_int) begin
+      // Create slow clock that will be used to write new values to the frame.
+      count <= count + 1;
+      if (count == 0) begin
+	 slow_clk = ~slow_clk;
+      end
+
       // Keep the horizontal position within its limits.
       if (h_pos < horiz_len) begin
 	 h_pos <= h_pos + 1;
 	 // Output data to screen.
-	 if (v_pos == {3'b0, read_data}) begin
+	 if (v_pos == {3'b0, screen_buf[h_pos]}) begin
 	    r_color <= white;
 	    b_color <= white;
 	    g_color <= white;
@@ -77,14 +84,6 @@ module top_level (
 	    b_color <= black;
 	    g_color <= black;
 	 end
-	 // Write data to memory that we want to output to screen.
-	 if (h_pos == v_pos) begin
-	    write <= 1;
-	    write_data <= v_pos[7:0];
-	 end
-	 else begin
-	    write <= 0;
-	 end
       end
       else begin
 	 h_pos <= 0;
@@ -93,6 +92,49 @@ module top_level (
       // Keep the vertical position within its limits.
       if (v_pos == vert_len) begin
 	 v_pos <= 0;
+      end
+   end // always @ (posedge vga_clk_int)
+
+
+   // Data.
+   wire signed [8:0] k1_m1 = 9'b0_0000_0001;    //1;1;   // k1/m1 = spring constant of spring 1 divided by mass 1.
+   wire signed [8:0] k2_m2 = 9'b0_0000_0001;    //1;1;
+   wire signed [8:0] km_m1 = 9'b0_0000_0001;    //1;1;   // km/m1 ; km = spring constant of middle spring.
+   wire signed [8:0] km_m2 = 9'b0_0000_0001;    //1;1;
+   localparam x1_i = 50; //8'b0011_0010;  //50;   // initial x1 position.
+   localparam x2_i = 200; //8'b1010_1010;   // 170;
+   localparam v1_i = 0; //8'b0000_0000;    // initial velocity of x1.
+   localparam v2_i = 0; //8'b0000_0000;
+   wire signed [8:0] x1_0 = 9'b0_0101_0101; //85;   // origin of x1 mass (i.e. where spring 1 does not exert a force.
+   wire signed [8:0] x2_0 = 9'b0_1010_1010;   //170;
+   wire signed [8:0] d1 = 9'b0_0000_0000;    //1;      // damping coefficient of the 1st mass (proportional to its velocity)
+   wire signed [8:0] d2 = 9'b0_0000_0000;    //1;
+   wire [3:0] dt = 4'd4;      // time step. will perform arithmetic right shift, so equal to multiply by 2^(-dt)
+   
+   // Position and velocity.
+   reg signed [8:0] x1 = x1_i;
+   reg signed [8:0] v1 = v1_i;
+   reg signed [8:0] x2 = x2_i;
+   reg signed [8:0] v2 = v2_i;
+
+   // Update the frame.
+   always @ (posedge slow_clk) begin
+      if ((x1 + (v1>>>dt)) > 255) x1 <= 255;
+      else if ((x1 + (v1>>>dt)) < 0) x1 <= 0;
+      else x1 <= x1 + (v1>>>dt);
+
+      if ((x2 + (v2>>>dt)) > 255) x2 <= 255;
+      else if ((x2 + (v2>>>dt)) < 0) x2 <= 0;
+      else x2 <= x2 + (v2>>>dt);
+
+      v1 <= v1 - ((k1_m1*(x1-x1_0))>>>dt) + ((km_m1*(x2-x2_0 - x1+x1_0))>>>dt) - ((d1*v1)>>>dt);
+      v2 <= v2 - ((k2_m2*(x2-x2_0))>>>dt) + ((km_m2*(x1-x1_0 - x2+x2_0))>>>dt) - ((d2*v2)>>>dt);
+
+      // New value put in.
+      val <= x1[7:0];
+      screen_buf[1279] <= val;
+      for (i=1279; i>0; i=i-1) begin
+	 screen_buf[i-1] <= screen_buf[i];
       end
    end
 
@@ -104,16 +146,6 @@ module top_level (
 	       .vga_clk_int_clk(vga_clk_int),
 	       .vga_clk_ext_clk(vga_clk_ext)
 	       );
-
-   ram ram_inst (
-		 .aclr(reset),
-		 .clock(vga_clk_int),
-		 .data(write_data),
-		 .rdaddress(read_address),
-		 .wraddress(write_address),
-		 .wren(write),
-		 .q(read_data)
-		 );
 
    // HexDigit hex0(HEX0, vga_clk);
    // HexDigit hex1(HEX1, CLOCK_50);

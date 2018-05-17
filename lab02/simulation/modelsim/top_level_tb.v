@@ -8,38 +8,55 @@
 module top_level_tb ();
 
    reg clk_tb = 0;
-   reg vga_g_tb;
-   reg vga_b_tb;
-   reg vga_r_tb;
-   reg vga_blank_tb;
-   reg vga_clk_tb;
-   reg vga_hs_tb;
-   reg vga_vs_tb;
 
-   initial begin
-      clk_tb = 0;
-      vga_g_tb = 0;
-      vga_b_tb = 0;
-      vga_r_tb = 0;
-      vga_blank_tb = 0;
-      vga_clk_tb = 0;
-      vga_hs_tb = 0;
-      vga_vs_tb = 0;
-   end
+   integer i;
+
+   reg [7:0] val;
+   reg [7:0] screen_buf[0:1279];
    
+   wire signed [8:0] k1_m1 = 9'b0_0000_0001;    //1;1;   // k1/m1 = spring constant of spring 1 divided by mass 1.
+   wire signed [8:0] k2_m2 = 9'b0_0000_0001;    //1;1;
+   wire signed [8:0] km_m1 = 9'b0_0000_0001;    //1;1;   // km/m1 ; km = spring constant of middle spring.
+   wire signed [8:0] km_m2 = 9'b0_0000_0001;    //1;1;
+   localparam x1_i = 50; //8'b0011_0010;  //50;   // initial x1 position.
+   localparam x2_i = 200; //8'b1010_1010;   // 170;
+   localparam v1_i = 0; //8'b0000_0000;    // initial velocity of x1.
+   localparam v2_i = 0; //8'b0000_0000;
+   wire signed [8:0] x1_0 = 9'b0_0101_0101; //85;   // origin of x1 mass (i.e. where spring 1 does not exert a force.
+   wire signed [8:0] x2_0 = 9'b0_1010_1010;   //170;
+   wire signed [8:0] d1 = 9'b0_0000_0000;    //1;      // damping coefficient of the 1st mass (proportional to its velocity)
+   wire signed [8:0] d2 = 9'b0_0000_0000;    //1;
+   wire [3:0] dt = 4'd4;      // time step. will perform arithmetic right shift, so equal to multiply by 2^(-dt)
+   
+   // Position and velocity.
+   reg signed [8:0] x1 = x1_i;
+   reg signed [8:0] v1 = v1_i;
+   reg signed [8:0] x2 = x2_i;
+   reg signed [8:0] v2 = v2_i;
+
+   // Update the frame.
+   always @ (posedge clk_tb) begin
+      if ((x1 + (v1>>>dt)) > 255) x1 <= 255;
+      else if ((x1 + (v1>>>dt)) < 0) x1 <= 0;
+      else x1 <= x1 + (v1>>>dt);
+
+      if ((x2 + (v2>>>dt)) > 255) x2 <= 255;
+      else if ((x2 + (v2>>>dt)) < 0) x2 <= 0;
+      else x2 <= x2 + (v2>>>dt);
+
+      v1 <= v1 - ((k1_m1*(x1-x1_0))>>>dt) + ((km_m1*(x2-x2_0 - x1+x1_0))>>>dt) - ((d1*v1)>>>dt);
+      v2 <= v2 - ((k2_m2*(x2-x2_0))>>>dt) + ((km_m2*(x1-x1_0 - x2+x2_0))>>>dt) - ((d2*v2)>>>dt);
+
+      // New value put in.
+      val <= x1[7:0];
+      screen_buf[1279] <= val;
+      for (i=1279; i>0; i=i-1) begin
+	 screen_buf[i-1] <= screen_buf[i];
+      end
+   end
+
    always begin
       #1 clk_tb = !clk_tb;
    end
    
-   top_level tb (
-		 .CLOCK_50(clk_tb),
-		 .VGA_G(vga_g_tb),
-		 .VGA_B(vga_b_tb),
-		 .VGA_R(vga_r_tb),
-		 .VGA_BLANK_N(vga_blank_tb),
-		 .VGA_CLK(vga_clk_tb),
-		 .VGA_HS(vga_hs_tb),
-		 .VGA_VS(vga_vs_tb)
-		 );
-
 endmodule

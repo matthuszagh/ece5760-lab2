@@ -12,6 +12,8 @@ derive_pll_clocks
 
 create_generated_clock -source [get_pins {pll|pll_0|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk}] -name clk_vga [get_ports {VGA_CLK}]
 
+create_generated_clock -name slow_clk -multiply_by 262144 -source clk_vga [get_pins slow_clk]
+
 
 #**************************************************************
 # Set Clock Latency

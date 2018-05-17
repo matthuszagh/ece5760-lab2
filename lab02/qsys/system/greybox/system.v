@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition"
 
-// DATE "05/16/2018 14:35:28"
+// DATE "05/16/2018 16:29:13"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -137,7 +137,7 @@ defparam \general[1].gpll .clock_name_global = "false";
 defparam \general[1].gpll .duty_cycle = 50;
 defparam \general[1].gpll .fractional_vco_multiplier = "false";
 defparam \general[1].gpll .output_clock_frequency = "108.0 mhz";
-defparam \general[1].gpll .phase_shift = "5787 ps";
+defparam \general[1].gpll .phase_shift = "6944 ps";
 defparam \general[1].gpll .reference_clock_frequency = "50.0 mhz";
 defparam \general[1].gpll .simulation_type = "timing";
 
