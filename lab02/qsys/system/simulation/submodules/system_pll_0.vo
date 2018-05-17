@@ -248,7 +248,7 @@ module  system_pll_0
 		system_pll_0_altera_pll_altera_pll_i_1098.output_clock_frequency8 = "0 MHz",
 		system_pll_0_altera_pll_altera_pll_i_1098.output_clock_frequency9 = "0 MHz",
 		system_pll_0_altera_pll_altera_pll_i_1098.phase_shift0 = "0 ps",
-		system_pll_0_altera_pll_altera_pll_i_1098.phase_shift1 = "6944 ps",
+		system_pll_0_altera_pll_altera_pll_i_1098.phase_shift1 = "8796 ps",
 		system_pll_0_altera_pll_altera_pll_i_1098.phase_shift10 = "0 ps",
 		system_pll_0_altera_pll_altera_pll_i_1098.phase_shift11 = "0 ps",
 		system_pll_0_altera_pll_altera_pll_i_1098.phase_shift12 = "0 ps",

@@ -1,7 +1,7 @@
 #**************************************************************
 # Create Clock
 #**************************************************************
-create_clock -period 20 [get_ports CLOCK_50]
+create_clock -period 20 [get_ports CLOCK_50] -name clk_50
 
 
 
@@ -12,7 +12,12 @@ derive_pll_clocks
 
 create_generated_clock -source [get_pins {pll|pll_0|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk}] -name clk_vga [get_ports {VGA_CLK}]
 
-create_generated_clock -name slow_clk -multiply_by 262144 -source clk_vga [get_pins slow_clk]
+# create_generated_clock [get_pins {slow_clk|*}] \
+# 		       -name slow_clk \
+# 		       -divide_by 262144 \
+# 		       -source [get_pins {pll|pll_0|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk}]
+
+# set_clock_groups -asynchronous -group {clk_50 clk_vga} -group {[get_clocks {slow_clk}]}
 
 
 #**************************************************************
@@ -21,8 +26,8 @@ create_generated_clock -name slow_clk -multiply_by 262144 -source clk_vga [get_p
 set max_ref_clk 2.0;	# Best guess of max time for input reference clock to reach source reg.
 set min_ref_clk 1.8;	# Best guess of min time for input reference clock to reach source reg.
 
-set_clock_latency -source -late $max_ref_clk [get_clocks CLOCK_50]
-set_clock_latency -source -early $min_ref_clk [get_clocks CLOCK_50]
+set_clock_latency -source -late $max_ref_clk [get_clocks clk_50]
+set_clock_latency -source -early $min_ref_clk [get_clocks clk_50]
 
 
 

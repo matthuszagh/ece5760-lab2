@@ -45,6 +45,9 @@ module top_level (
    // Color params
    localparam white        = 8'b1111_1111;
    localparam black        = 8'b0000_0000;
+   localparam turquoise_r  = 8'b0010_0100;
+   localparam turquoise_g  = 8'b1110_1011;
+   localparam turquoise_b  = 8'b1100_1001;
    
    // Internal signals.
    wire 		       reset = ~KEY[0];
@@ -56,11 +59,11 @@ module top_level (
    reg [ 7:0] 		       g_color = black;
    reg [ 7:0] 		       b_color = black;
 
-   reg [7:0] 		       screen_buf [0:1279];   // Screen display is 1280 pixels wide.
+   reg [17:0] 		       screen_buf [0:1279];   // Screen display is 1280 pixels wide.
    reg [18:0] 		       count = 0;             // Adjust this based on desired frame rate.
    reg 			       slow_clk = 0;
-   reg [7:0] 		       val = 0;
-   integer 		       i;                     // Index for shift register.
+   reg [17:0] 		       val = 0;
+   integer 		       index;                 // Index for shift register.
 
    // Display the frame.
    always @ (posedge vga_clk_int) begin
@@ -74,10 +77,15 @@ module top_level (
       if (h_pos < horiz_len) begin
 	 h_pos <= h_pos + 1;
 	 // Output data to screen.
-	 if (v_pos == {3'b0, screen_buf[h_pos]}) begin
+	 if ((v_pos == {2'b0, screen_buf[h_pos][8:0]}) && (v_pos != 0)) begin
 	    r_color <= white;
 	    b_color <= white;
 	    g_color <= white;
+	 end
+	 else if ((v_pos == {2'b0, screen_buf[h_pos][17:9]}) && (v_pos != 0)) begin
+	    r_color <= turquoise_r;
+	    b_color <= turquoise_b;
+	    g_color <= turquoise_g;
 	 end
 	 else begin
 	    r_color <= black;
@@ -97,50 +105,52 @@ module top_level (
 
 
    // Data.
-   wire signed [8:0] k1_m1 = 9'b0_0000_0001;    //1;1;   // k1/m1 = spring constant of spring 1 divided by mass 1.
-   wire signed [8:0] k2_m2 = 9'b0_0000_0001;    //1;1;
-   wire signed [8:0] km_m1 = 9'b0_0000_0001;    //1;1;   // km/m1 ; km = spring constant of middle spring.
-   wire signed [8:0] km_m2 = 9'b0_0000_0001;    //1;1;
-   localparam x1_i = 50; //8'b0011_0010;  //50;   // initial x1 position.
-   localparam x2_i = 200; //8'b1010_1010;   // 170;
-   localparam v1_i = 0; //8'b0000_0000;    // initial velocity of x1.
-   localparam v2_i = 0; //8'b0000_0000;
-   wire signed [8:0] x1_0 = 9'b0_0101_0101; //85;   // origin of x1 mass (i.e. where spring 1 does not exert a force.
-   wire signed [8:0] x2_0 = 9'b0_1010_1010;   //170;
-   wire signed [8:0] d1 = 9'b0_0000_0000;    //1;      // damping coefficient of the 1st mass (proportional to its velocity)
-   wire signed [8:0] d2 = 9'b0_0000_0000;    //1;
-   wire [3:0] dt = 4'd4;      // time step. will perform arithmetic right shift, so equal to multiply by 2^(-dt)
+   wire signed [9:0] k1_m1 = 10'd2;      // k1/m1 = spring constant of spring 1 divided by mass 1.
+   wire signed [9:0] k2_m2 = 10'd2;
+   wire signed [9:0] km_m1 = 10'd2;      // km/m1 ; km = spring constant of middle spring.
+   wire signed [9:0] km_m2 = 10'd2;
+   wire signed [9:0] k13_m1 = 10'd16;    // cubic spring term.
+   wire signed [9:0] k23_m2 = 10'd16;
+   localparam x1_i = 130;                // initial x1 position.
+   localparam x2_i = 310;
+   localparam v1_i = 0;                  // initial velocity of x1.
+   localparam v2_i = 0;
+   wire signed [9:0] x1_0 = 10'd150;     // 150 - origin of x1 mass (i.e. where spring 1 does not exert a force.
+   wire signed [9:0] x2_0 = 10'd300;     // 300
+   wire signed [9:0] d1 = 10'd1;         // damping coefficient of the 1st mass (proportional to its velocity)
+   wire signed [9:0] d2 = 10'd1;
+   wire [3:0] dt = 4'd5;                 // time step. will perform arithmetic right shift, so equal to multiply by 2^(-dt)
+   wire [3:0] d_scale_fact = 4'd2;       // scale the damping coefficient.
    
    // Position and velocity.
-   reg signed [8:0] x1 = x1_i;
-   reg signed [8:0] v1 = v1_i;
-   reg signed [8:0] x2 = x2_i;
-   reg signed [8:0] v2 = v2_i;
+   reg signed [9:0] x1 = x1_i;
+   reg signed [9:0] v1 = v1_i;
+   reg signed [9:0] x2 = x2_i;
+   reg signed [9:0] v2 = v2_i;
 
    // Update the frame.
    always @ (posedge slow_clk) begin
-      if ((x1 + (v1>>>dt)) > 255) x1 <= 255;
+      if ((x1 + (v1>>>dt)) > 511) x1 <= 511;
       else if ((x1 + (v1>>>dt)) < 0) x1 <= 0;
       else x1 <= x1 + (v1>>>dt);
 
-      if ((x2 + (v2>>>dt)) > 255) x2 <= 255;
+      if ((x2 + (v2>>>dt)) > 511) x2 <= 511;
       else if ((x2 + (v2>>>dt)) < 0) x2 <= 0;
       else x2 <= x2 + (v2>>>dt);
 
-      v1 <= v1 - ((k1_m1*(x1-x1_0))>>>dt) + ((km_m1*(x2-x2_0 - x1+x1_0))>>>dt) - ((d1*v1)>>>dt);
-      v2 <= v2 - ((k2_m2*(x2-x2_0))>>>dt) + ((km_m2*(x1-x1_0 - x2+x2_0))>>>dt) - ((d2*v2)>>>dt);
+      v1 <= v1 - ((k1_m1*(x1-x1_0))>>>dt) + ((km_m1*(x2-x2_0 - x1+x1_0))>>>dt) - (((d1*v1)>>>dt)>>>d_scale_fact) - ((k13_m1*((x1-x1_0)**3))>>>dt);
+      v2 <= v2 - ((k2_m2*(x2-x2_0))>>>dt) + ((km_m2*(x1-x1_0 - x2+x2_0))>>>dt) - (((d2*v2)>>>dt)>>>d_scale_fact) - ((k23_m2*((x2-x2_0)**3))>>>dt);
 
       // New value put in.
-      val <= x1[7:0];
+      val <= {x2[8:0], x1[8:0]};
       screen_buf[1279] <= val;
-      for (i=1279; i>0; i=i-1) begin
-	 screen_buf[i-1] <= screen_buf[i];
+      for (index=1279; index>0; index=index-1) begin
+	 screen_buf[index-1] <= screen_buf[index];
       end
    end
 
    // IP core instantiation.
    system pll (
-	       // PLL
 	       .clk_clk(CLOCK_50),
 	       .reset_reset_n(~reset),
 	       .vga_clk_int_clk(vga_clk_int),

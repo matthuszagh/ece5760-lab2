@@ -212,7 +212,7 @@
   <parameter name="gui_phase_shift8" value="0" />
   <parameter name="gui_phase_shift9" value="0" />
   <parameter name="gui_phase_shift_deg0" value="0.0" />
-  <parameter name="gui_phase_shift_deg1" value="270.0" />
+  <parameter name="gui_phase_shift_deg1" value="342.0" />
   <parameter name="gui_phase_shift_deg10" value="0.0" />
   <parameter name="gui_phase_shift_deg11" value="0.0" />
   <parameter name="gui_phase_shift_deg12" value="0.0" />
