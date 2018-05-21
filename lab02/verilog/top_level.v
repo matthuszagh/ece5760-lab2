@@ -6,7 +6,6 @@
 module top_level (
 		  // Clock pins.
 		  input        CLOCK_50,
-		  // input        CLOCK2_50,
 
 		  // VGA pins.
 		  output [7:0] VGA_G,
@@ -16,14 +15,6 @@ module top_level (
 		  output       VGA_CLK,
 		  output       VGA_HS,
 		  output       VGA_VS,
-
-		  // // HEX pins.
-		  // output [6:0] HEX0,
-		  // output [6:0] HEX1,
-		  // output [6:0] HEX2,
-		  // output [6:0] HEX3,
-		  // output [6:0] HEX4,
-		  // output [6:0] HEX5,
 
 		  // Push buttons.
 		  input [3:0]  KEY
@@ -103,24 +94,30 @@ module top_level (
       end
    end // always @ (posedge vga_clk_int)
 
-
    // Data.
-   wire signed [9:0] k1_m1 = 10'd2;      // k1/m1 = spring constant of spring 1 divided by mass 1.
-   wire signed [9:0] k2_m2 = 10'd2;
-   wire signed [9:0] km_m1 = 10'd2;      // km/m1 ; km = spring constant of middle spring.
-   wire signed [9:0] km_m2 = 10'd2;
-   wire signed [9:0] k13_m1 = 10'd16;    // cubic spring term.
-   wire signed [9:0] k23_m2 = 10'd16;
-   localparam x1_i = 130;                // initial x1 position.
+   reg signed [9:0] k1_m1;// = 10'd2;                     // k1/m1 = spring constant of spring 1 divided by mass 1.
+   reg signed [9:0] k2_m2;// = 10'd2;
+   reg signed [9:0] km_m1;// = 10'd2;                     // km/m1 ; km = spring constant of middle spring.
+   reg signed [9:0] km_m2;// = 10'd2;
+   reg signed [9:0] k13_m1;// = 10'd16;                   // cubic spring term.
+   reg signed [9:0] k23_m2;// = 10'd16;
+   localparam x1_i = 130;
    localparam x2_i = 310;
-   localparam v1_i = 0;                  // initial velocity of x1.
+   localparam v1_i = 0;
    localparam v2_i = 0;
-   wire signed [9:0] x1_0 = 10'd150;     // 150 - origin of x1 mass (i.e. where spring 1 does not exert a force.
-   wire signed [9:0] x2_0 = 10'd300;     // 300
-   wire signed [9:0] d1 = 10'd1;         // damping coefficient of the 1st mass (proportional to its velocity)
-   wire signed [9:0] d2 = 10'd1;
-   wire [3:0] dt = 4'd5;                 // time step. will perform arithmetic right shift, so equal to multiply by 2^(-dt)
-   wire [3:0] d_scale_fact = 4'd2;       // scale the damping coefficient.
+   // reg signed [9:0] x1_i = 10'd130;                    // initial x1 position.
+   // reg signed [9:0] x2_i = 10'd310;
+   // reg signed [9:0] v1_i = 10'd0;                      // initial velocity of x1.
+   // reg signed [9:0] v2_i = 10'd0;
+   reg signed [9:0] x1_0;// = 10'd150;                    // origin of x1 mass (i.e. where spring 1 does not exert a force.
+   reg signed [9:0] x2_0;// = 10'd300;
+   reg signed [9:0] d1;// = 10'd1;                        // damping coefficient of the 1st mass (proportional to its velocity)
+   reg signed [9:0] d2;// = 10'd1;
+   reg [3:0] 	    dt;// = 4'd5;                         // time step. will perform arithmetic right shift, so equal to multiply by 2^(-dt)
+   reg [3:0] 	    d_scale_fact;// = 4'd2;               // scale the damping coefficient.
+   reg [3:0] 	    mem_read_count = 3'd0;             // select signal to sequentially parameters specified by the HPS.
+   wire [3:0] 	    read_address = mem_read_count;  // address to read parameter from
+   wire [15:0] 	    read_data;                         // data to read from mem
    
    // Position and velocity.
    reg signed [9:0] x1 = x1_i;
@@ -147,18 +144,42 @@ module top_level (
       for (index=1279; index>0; index=index-1) begin
 	 screen_buf[index-1] <= screen_buf[index];
       end
-   end
+   end // always @ (posedge slow_clk)
 
+   // Read parameters from HPS.
+   always @ (posedge CLOCK_50) begin
+      mem_read_count <= mem_read_count + 1;
+      case (mem_read_count)
+	5'd00 : k1_m1 <= read_data[9:0];
+	5'd01 : k2_m2 <= read_data[9:0];
+	5'd02 : km_m1 <= read_data[9:0];
+	5'd03 : km_m2 <= read_data[9:0];
+	5'd04 : k13_m1 <= read_data[9:0];
+	5'd05 : k23_m2 <= read_data[9:0];
+	// 5'd12 : x1_i <= read_data[9:0];
+	// 5'd14 : x2_i <= read_data[9:0];
+	// 5'd16 : v1_i <= read_data[9:0];
+	// 5'd18 : v2_i <= read_data[9:0];
+	5'd10 : x1_0 <= read_data[9:0];
+	5'd11 : x2_0 <= read_data[9:0];
+	5'd12 : d1 <= read_data[9:0];
+	5'd13 : d2 <= read_data[9:0];
+	5'd14 : dt <= read_data[3:0];
+	5'd15 : d_scale_fact <= read_data[3:0];
+      endcase // case (mem_read_count)
+   end // always @ (posedge CLOCK_50)
+	
    // IP core instantiation.
    system pll (
 	       .clk_clk(CLOCK_50),
 	       .reset_reset_n(~reset),
+	       // PLL
 	       .vga_clk_int_clk(vga_clk_int),
-	       .vga_clk_ext_clk(vga_clk_ext)
+	       .vga_clk_ext_clk(vga_clk_ext),
+	       // RAM
+	       .ram_conduit_address(read_address),
+	       .ram_conduit_readdata(read_data)
 	       );
-
-   // HexDigit hex0(HEX0, vga_clk);
-   // HexDigit hex1(HEX1, CLOCK_50);
 
    assign VGA_CLK = vga_clk_ext;
       
