@@ -5,28 +5,56 @@
 
 module top_level (
 		  // Clock pins.
-		  input        CLOCK_50,
+		  input         CLOCK_50,
 
 		  // VGA pins.
-		  output [7:0] VGA_G,
-		  output [7:0] VGA_B,
-		  output [7:0] VGA_R,
-		  output       VGA_BLANK_N,
-		  output       VGA_CLK,
-		  output       VGA_HS,
-		  output       VGA_VS,
+		  output [7:0]  VGA_G,
+		  output [7:0]  VGA_B,
+		  output [7:0]  VGA_R,
+		  output        VGA_BLANK_N,
+		  output        VGA_CLK,
+		  output        VGA_HS,
+		  output        VGA_VS,
 
 		  // Push buttons.
-		  input [3:0]  KEY
+		  input [3:0]   KEY,
+
+/* -----\/----- EXCLUDED -----\/-----
+                  // HEX
+                  output [6:0]  HEX0,
+                  output [6:0]  HEX1,
+                  output [6:0]  HEX2,
+                  output [6:0]  HEX3,
+                  output [6:0]  HEX4,
+                  output [6:0]  HEX5,
+ -----/\----- EXCLUDED -----/\----- */
+
+                  // Memory
+                  output [14:0] hps_memory_mem_a,
+		  output [2:0]  hps_memory_mem_ba,
+		  output        hps_memory_mem_ck,
+		  output        hps_memory_mem_ck_n,
+		  output        hps_memory_mem_cke,
+		  output        hps_memory_mem_cs_n,
+		  output        hps_memory_mem_ras_n,
+		  output        hps_memory_mem_cas_n,
+		  output        hps_memory_mem_we_n,
+		  output        hps_memory_mem_reset_n,
+		  inout [31:0]  hps_memory_mem_dq,
+		  inout [3:0]   hps_memory_mem_dqs,
+		  inout [3:0]   hps_memory_mem_dqs_n,
+		  output        hps_memory_mem_odt,
+		  output [3:0]  hps_memory_mem_dm,
+		  input         hps_memory_oct_rzqin
 		  );
-   
+
    // VGA parameters.
    localparam horiz_len    = 1688;
    localparam hdisplay     = 1280;
    localparam hfront_porch = hdisplay + 161;
    localparam hsync        = hfront_porch + 112;
    localparam hback_porch  = hsync + 135;
-   
+
    localparam vert_len     = 1066;
    localparam vdisplay     = 1024;
    localparam vfront_porch = vdisplay + 1;
@@ -39,7 +67,7 @@ module top_level (
    localparam turquoise_r  = 8'b0010_0100;
    localparam turquoise_g  = 8'b1110_1011;
    localparam turquoise_b  = 8'b1100_1001;
-   
+
    // Internal signals.
    wire 		       reset = ~KEY[0];
    wire 		       vga_clk_int;
@@ -52,7 +80,7 @@ module top_level (
 
    reg [17:0] 		       screen_buf [0:1279];   // Screen display is 1280 pixels wide.
    reg [18:0] 		       count = 0;             // Adjust this based on desired frame rate.
-   reg 			       slow_clk = 0;
+   reg                         slow_clk = 0;
    reg [17:0] 		       val = 0;
    integer 		       index;                 // Index for shift register.
 
@@ -105,20 +133,17 @@ module top_level (
    localparam x2_i = 310;
    localparam v1_i = 0;
    localparam v2_i = 0;
-   // reg signed [9:0] x1_i = 10'd130;                    // initial x1 position.
-   // reg signed [9:0] x2_i = 10'd310;
-   // reg signed [9:0] v1_i = 10'd0;                      // initial velocity of x1.
-   // reg signed [9:0] v2_i = 10'd0;
    reg signed [9:0] x1_0;// = 10'd150;                    // origin of x1 mass (i.e. where spring 1 does not exert a force.
    reg signed [9:0] x2_0;// = 10'd300;
    reg signed [9:0] d1;// = 10'd1;                        // damping coefficient of the 1st mass (proportional to its velocity)
    reg signed [9:0] d2;// = 10'd1;
    reg [3:0] 	    dt;// = 4'd5;                         // time step. will perform arithmetic right shift, so equal to multiply by 2^(-dt)
    reg [3:0] 	    d_scale_fact;// = 4'd2;               // scale the damping coefficient.
-   reg [3:0] 	    mem_read_count = 3'd0;             // select signal to sequentially parameters specified by the HPS.
-   wire [3:0] 	    read_address = mem_read_count;  // address to read parameter from
-   wire [15:0] 	    read_data;                         // data to read from mem
-   
+
+   reg [3:0] 	    mem_read_count = 3'd0;                // select signal to sequentially parameters specified by the HPS.
+   wire [3:0] 	    read_address = mem_read_count;        // address to read parameter from
+   wire [15:0]      read_data;                            // data to read from mem
+
    // Position and velocity.
    reg signed [9:0] x1 = x1_i;
    reg signed [9:0] v1 = v1_i;
@@ -150,25 +175,22 @@ module top_level (
    always @ (posedge CLOCK_50) begin
       mem_read_count <= mem_read_count + 1;
       case (mem_read_count)
-	5'd00 : k1_m1 <= read_data[9:0];
-	5'd01 : k2_m2 <= read_data[9:0];
-	5'd02 : km_m1 <= read_data[9:0];
-	5'd03 : km_m2 <= read_data[9:0];
-	5'd04 : k13_m1 <= read_data[9:0];
-	5'd05 : k23_m2 <= read_data[9:0];
-	// 5'd12 : x1_i <= read_data[9:0];
-	// 5'd14 : x2_i <= read_data[9:0];
-	// 5'd16 : v1_i <= read_data[9:0];
-	// 5'd18 : v2_i <= read_data[9:0];
-	5'd10 : x1_0 <= read_data[9:0];
-	5'd11 : x2_0 <= read_data[9:0];
-	5'd12 : d1 <= read_data[9:0];
-	5'd13 : d2 <= read_data[9:0];
-	5'd14 : dt <= read_data[3:0];
-	5'd15 : d_scale_fact <= read_data[3:0];
+	4'd01 : k1_m1 <= read_data[9:0];
+	4'd02 : k2_m2 <= read_data[9:0];
+	4'd03 : km_m1 <= read_data[9:0];
+	4'd04 : km_m2 <= read_data[9:0];
+	4'd05 : k13_m1 <= read_data[9:0];
+
+	4'd10 : k23_m2 <= read_data[9:0];
+	4'd11 : x1_0 <= read_data[9:0];
+	4'd12 : x2_0 <= read_data[9:0];
+	4'd13 : d1 <= read_data[9:0];
+	4'd14 : d2 <= read_data[9:0];
+	4'd15 : dt <= read_data[3:0];
+	4'd00 : d_scale_fact <= read_data[3:0];
       endcase // case (mem_read_count)
    end // always @ (posedge CLOCK_50)
-	
+
    // IP core instantiation.
    system pll (
 	       .clk_clk(CLOCK_50),
@@ -178,11 +200,40 @@ module top_level (
 	       .vga_clk_ext_clk(vga_clk_ext),
 	       // RAM
 	       .ram_conduit_address(read_address),
-	       .ram_conduit_readdata(read_data)
+	       .ram_conduit_readdata(read_data),
+               .ram_conduit_clken(1'b1),
+               .ram_conduit_write(1'b0),
+               .ram_conduit_byteenable(2'b11),
+               // Memory
+               .memory_mem_a(hps_memory_mem_a),             //      memory.mem_a
+	       .memory_mem_ba(hps_memory_mem_ba),           //            .mem_ba
+	       .memory_mem_ck(hps_memory_mem_ck),           //            .mem_ck
+	       .memory_mem_ck_n(hps_memory_mem_ck_n),       //            .mem_ck_n
+	       .memory_mem_cke(hps_memory_mem_cke),         //            .mem_cke
+	       .memory_mem_cs_n(hps_memory_mem_cs_n),       //            .mem_cs_n
+	       .memory_mem_ras_n(hps_memory_mem_ras_n),     //            .mem_ras_n
+	       .memory_mem_cas_n(hps_memory_mem_cas_n),     //            .mem_cas_n
+	       .memory_mem_we_n(hps_memory_mem_we_n),       //            .mem_we_n
+	       .memory_mem_reset_n(hps_memory_mem_reset_n), //            .mem_reset_n
+	       .memory_mem_dq(hps_memory_mem_dq),           //            .mem_dq
+	       .memory_mem_dqs(hps_memory_mem_dqs),         //            .mem_dqs
+	       .memory_mem_dqs_n(hps_memory_mem_dqs_n),     //            .mem_dqs_n
+	       .memory_mem_odt(hps_memory_mem_odt),         //            .mem_odt
+	       .memory_mem_dm(hps_memory_mem_dm),           //            .mem_dm
+	       .memory_oct_rzqin(hps_memory_oct_rzqin)      //            .oct_rzqin
 	       );
 
+/* -----\/----- EXCLUDED -----\/-----
+   HexDigit set_hex0(HEX0, k13_m1[3:0]);
+   HexDigit set_hex1(HEX1, k13_m1[7:4]);
+   HexDigit set_hex2(HEX2, k13_m1[9:8]);
+   HexDigit set_hex3(HEX3, x2_0[3:0]);
+   HexDigit set_hex4(HEX4, x2_0[7:4]);
+   HexDigit set_hex5(HEX5, x2_0[9:8]);
+ -----/\----- EXCLUDED -----/\----- */
+
    assign VGA_CLK = vga_clk_ext;
-      
+
    assign VGA_R = (h_pos < hdisplay) ? r_color : 0;
    assign VGA_B = (h_pos < hdisplay) ? b_color : 0;
    assign VGA_G = (h_pos < hdisplay) ? g_color : 0;

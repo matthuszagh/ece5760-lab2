@@ -79,7 +79,7 @@
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
- <interface name="hps_io" internal="hps_0.hps_io" type="conduit" dir="end" />
+ <interface name="hps_io" internal="hps_0.hps_io" />
  <interface name="memory" internal="hps_0.memory" type="conduit" dir="end" />
  <interface name="ram_conduit" internal="ram.s2" type="avalon" dir="end" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
@@ -167,8 +167,8 @@
   <parameter name="ED_EXPORT_SEQ_DEBUG" value="false" />
   <parameter name="EMAC0_Mode" value="N/A" />
   <parameter name="EMAC0_PinMuxing" value="Unused" />
-  <parameter name="EMAC1_Mode" value="RGMII" />
-  <parameter name="EMAC1_PinMuxing" value="HPS I/O Set 0" />
+  <parameter name="EMAC1_Mode" value="N/A" />
+  <parameter name="EMAC1_PinMuxing" value="Unused" />
   <parameter name="ENABLE_ABS_RAM_MEM_INIT" value="false" />
   <parameter name="ENABLE_BONDING" value="false" />
   <parameter name="ENABLE_BURST_MERGE" value="false" />
@@ -185,7 +185,7 @@
   <parameter name="ENABLE_USER_ECC" value="false" />
   <parameter name="EXPORT_AFI_HALF_CLK" value="false" />
   <parameter name="EXTRA_SETTINGS" value="" />
-  <parameter name="F2H_AXI_CLOCK_FREQ" value="50000000" />
+  <parameter name="F2H_AXI_CLOCK_FREQ" value="100" />
   <parameter name="F2H_SDRAM0_CLOCK_FREQ" value="100" />
   <parameter name="F2H_SDRAM1_CLOCK_FREQ" value="100" />
   <parameter name="F2H_SDRAM2_CLOCK_FREQ" value="100" />
@@ -201,8 +201,8 @@
   <parameter name="F2SCLK_WARMRST_Enable" value="false" />
   <parameter name="F2SDRAM_Type" value="" />
   <parameter name="F2SDRAM_Width" value="" />
-  <parameter name="F2SINTERRUPT_Enable" value="true" />
-  <parameter name="F2S_Width" value="2" />
+  <parameter name="F2SINTERRUPT_Enable" value="false" />
+  <parameter name="F2S_Width" value="0" />
   <parameter name="FORCED_NON_LDC_ADDR_CMD_MEM_CK_INVERT" value="false" />
   <parameter name="FORCED_NUM_WRITE_FR_CYCLE_SHIFTS" value="0" />
   <parameter name="FORCE_DQS_TRACKING" value="AUTO" />
@@ -240,7 +240,7 @@
   <parameter name="FPGA_PERIPHERAL_OUTPUT_CLOCK_FREQ_SPIM1_SCLK_OUT" value="100" />
   <parameter name="GPIO_Enable">No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No</parameter>
   <parameter name="GP_Enable" value="false" />
-  <parameter name="H2F_AXI_CLOCK_FREQ" value="50000000" />
+  <parameter name="H2F_AXI_CLOCK_FREQ" value="100" />
   <parameter name="H2F_CTI_CLOCK_FREQ" value="100" />
   <parameter name="H2F_DEBUG_APB_CLOCK_FREQ" value="100" />
   <parameter name="H2F_LW_AXI_CLOCK_FREQ" value="50000000" />
@@ -252,10 +252,10 @@
   <parameter name="HHP_HPS_VERIFICATION" value="false" />
   <parameter name="HLGPI_Enable" value="false" />
   <parameter name="HPS_PROTOCOL" value="DDR3" />
-  <parameter name="I2C0_Mode" value="I2C" />
-  <parameter name="I2C0_PinMuxing" value="HPS I/O Set 0" />
-  <parameter name="I2C1_Mode" value="I2C" />
-  <parameter name="I2C1_PinMuxing" value="HPS I/O Set 0" />
+  <parameter name="I2C0_Mode" value="N/A" />
+  <parameter name="I2C0_PinMuxing" value="Unused" />
+  <parameter name="I2C1_Mode" value="N/A" />
+  <parameter name="I2C1_PinMuxing" value="Unused" />
   <parameter name="I2C2_Mode" value="N/A" />
   <parameter name="I2C2_PinMuxing" value="Unused" />
   <parameter name="I2C3_Mode" value="N/A" />
@@ -422,8 +422,8 @@
   <parameter name="PLL_WRITE_CLK_PHASE_PS_SIM_STR_PARAM" value="" />
   <parameter name="POWER_OF_TWO_BUS" value="false" />
   <parameter name="PRIORITY_PORT" value="1,1,1,1,1,1" />
-  <parameter name="QSPI_Mode" value="1 SS" />
-  <parameter name="QSPI_PinMuxing" value="HPS I/O Set 0" />
+  <parameter name="QSPI_Mode" value="N/A" />
+  <parameter name="QSPI_PinMuxing" value="Unused" />
   <parameter name="RATE" value="Full" />
   <parameter name="RDIMM_CONFIG" value="0000000000000000" />
   <parameter name="READ_DQ_DQS_CLOCK_SOURCE" value="INVERTED_DQS_BUS" />
@@ -461,9 +461,9 @@
   <parameter name="S2FINTERRUPT_UART_Enable" value="false" />
   <parameter name="S2FINTERRUPT_USB_Enable" value="false" />
   <parameter name="S2FINTERRUPT_WATCHDOG_Enable" value="false" />
-  <parameter name="S2F_Width" value="3" />
-  <parameter name="SDIO_Mode" value="4-bit Data" />
-  <parameter name="SDIO_PinMuxing" value="HPS I/O Set 0" />
+  <parameter name="S2F_Width" value="0" />
+  <parameter name="SDIO_Mode" value="N/A" />
+  <parameter name="SDIO_PinMuxing" value="Unused" />
   <parameter name="SEQUENCER_TYPE" value="NIOS" />
   <parameter name="SEQ_MODE" value="0" />
   <parameter name="SKIP_MEM_INIT" value="true" />
@@ -471,8 +471,8 @@
   <parameter name="SPEED_GRADE" value="7" />
   <parameter name="SPIM0_Mode" value="N/A" />
   <parameter name="SPIM0_PinMuxing" value="Unused" />
-  <parameter name="SPIM1_Mode" value="Single Slave Select" />
-  <parameter name="SPIM1_PinMuxing" value="HPS I/O Set 0" />
+  <parameter name="SPIM1_Mode" value="N/A" />
+  <parameter name="SPIM1_PinMuxing" value="Unused" />
   <parameter name="SPIS0_Mode" value="N/A" />
   <parameter name="SPIS0_PinMuxing" value="Unused" />
   <parameter name="SPIS1_Mode" value="N/A" />
@@ -531,14 +531,14 @@
   <parameter name="TRACKING_WATCH_TEST" value="false" />
   <parameter name="TREFI" value="35100" />
   <parameter name="TRFC" value="350" />
-  <parameter name="UART0_Mode" value="No Flow Control" />
-  <parameter name="UART0_PinMuxing" value="HPS I/O Set 0" />
+  <parameter name="UART0_Mode" value="N/A" />
+  <parameter name="UART0_PinMuxing" value="Unused" />
   <parameter name="UART1_Mode" value="N/A" />
   <parameter name="UART1_PinMuxing" value="Unused" />
   <parameter name="USB0_Mode" value="N/A" />
   <parameter name="USB0_PinMuxing" value="Unused" />
-  <parameter name="USB1_Mode" value="SDR" />
-  <parameter name="USB1_PinMuxing" value="HPS I/O Set 0" />
+  <parameter name="USB1_Mode" value="N/A" />
+  <parameter name="USB1_PinMuxing" value="Unused" />
   <parameter name="USER_DEBUG_LEVEL" value="1" />
   <parameter name="USE_AXI_ADAPTOR" value="false" />
   <parameter name="USE_FAKE_PHY" value="false" />
@@ -866,21 +866,9 @@
    kind="clock"
    version="15.1"
    start="clk_0.clk"
-   end="hps_0.f2h_axi_clock" />
- <connection
-   kind="clock"
-   version="15.1"
-   start="clk_0.clk"
-   end="hps_0.h2f_axi_clock" />
- <connection
-   kind="clock"
-   version="15.1"
-   start="clk_0.clk"
    end="hps_0.h2f_lw_axi_clock" />
  <connection kind="clock" version="15.1" start="clk_0.clk" end="pll_0.refclk" />
  <connection kind="reset" version="15.1" start="clk_0.clk_reset" end="pll_0.reset" />
- <connection kind="reset" version="15.1" start="clk_0.clk_reset" end="ram.reset1" />
- <connection kind="reset" version="15.1" start="clk_0.clk_reset" end="ram.reset2" />
  <connection kind="reset" version="15.1" start="hps_0.h2f_reset" end="pll_0.reset" />
  <connection kind="reset" version="15.1" start="hps_0.h2f_reset" end="ram.reset1" />
  <connection kind="reset" version="15.1" start="hps_0.h2f_reset" end="ram.reset2" />

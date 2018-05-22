@@ -39,3 +39,6 @@ work/
 *.mti
 *.wlf
 greybox_tmp/
+*.qws
+*.regmap
+*.setup

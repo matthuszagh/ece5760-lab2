@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition"
 
-// DATE "05/18/2018 14:43:58"
+// DATE "05/21/2018 18:16:34"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -31,54 +31,6 @@
 
 module system (
 	clk_clk,
-	hps_io_hps_io_emac1_inst_TX_CLK,
-	hps_io_hps_io_emac1_inst_TXD0,
-	hps_io_hps_io_emac1_inst_TXD1,
-	hps_io_hps_io_emac1_inst_TXD2,
-	hps_io_hps_io_emac1_inst_TXD3,
-	hps_io_hps_io_emac1_inst_RXD0,
-	hps_io_hps_io_emac1_inst_MDIO,
-	hps_io_hps_io_emac1_inst_MDC,
-	hps_io_hps_io_emac1_inst_RX_CTL,
-	hps_io_hps_io_emac1_inst_TX_CTL,
-	hps_io_hps_io_emac1_inst_RX_CLK,
-	hps_io_hps_io_emac1_inst_RXD1,
-	hps_io_hps_io_emac1_inst_RXD2,
-	hps_io_hps_io_emac1_inst_RXD3,
-	hps_io_hps_io_qspi_inst_IO0,
-	hps_io_hps_io_qspi_inst_IO1,
-	hps_io_hps_io_qspi_inst_IO2,
-	hps_io_hps_io_qspi_inst_IO3,
-	hps_io_hps_io_qspi_inst_SS0,
-	hps_io_hps_io_qspi_inst_CLK,
-	hps_io_hps_io_sdio_inst_CMD,
-	hps_io_hps_io_sdio_inst_D0,
-	hps_io_hps_io_sdio_inst_D1,
-	hps_io_hps_io_sdio_inst_CLK,
-	hps_io_hps_io_sdio_inst_D2,
-	hps_io_hps_io_sdio_inst_D3,
-	hps_io_hps_io_usb1_inst_D0,
-	hps_io_hps_io_usb1_inst_D1,
-	hps_io_hps_io_usb1_inst_D2,
-	hps_io_hps_io_usb1_inst_D3,
-	hps_io_hps_io_usb1_inst_D4,
-	hps_io_hps_io_usb1_inst_D5,
-	hps_io_hps_io_usb1_inst_D6,
-	hps_io_hps_io_usb1_inst_D7,
-	hps_io_hps_io_usb1_inst_CLK,
-	hps_io_hps_io_usb1_inst_STP,
-	hps_io_hps_io_usb1_inst_DIR,
-	hps_io_hps_io_usb1_inst_NXT,
-	hps_io_hps_io_spim1_inst_CLK,
-	hps_io_hps_io_spim1_inst_MOSI,
-	hps_io_hps_io_spim1_inst_MISO,
-	hps_io_hps_io_spim1_inst_SS0,
-	hps_io_hps_io_uart0_inst_RX,
-	hps_io_hps_io_uart0_inst_TX,
-	hps_io_hps_io_i2c0_inst_SDA,
-	hps_io_hps_io_i2c0_inst_SCL,
-	hps_io_hps_io_i2c1_inst_SDA,
-	hps_io_hps_io_i2c1_inst_SCL,
 	memory_mem_a,
 	memory_mem_ba,
 	memory_mem_ck,
@@ -106,54 +58,6 @@ module system (
 	vga_clk_ext_clk,
 	vga_clk_int_clk)/* synthesis synthesis_greybox=0 */;
 input 	clk_clk;
-output 	hps_io_hps_io_emac1_inst_TX_CLK;
-output 	hps_io_hps_io_emac1_inst_TXD0;
-output 	hps_io_hps_io_emac1_inst_TXD1;
-output 	hps_io_hps_io_emac1_inst_TXD2;
-output 	hps_io_hps_io_emac1_inst_TXD3;
-input 	hps_io_hps_io_emac1_inst_RXD0;
-inout 	hps_io_hps_io_emac1_inst_MDIO;
-output 	hps_io_hps_io_emac1_inst_MDC;
-input 	hps_io_hps_io_emac1_inst_RX_CTL;
-output 	hps_io_hps_io_emac1_inst_TX_CTL;
-input 	hps_io_hps_io_emac1_inst_RX_CLK;
-input 	hps_io_hps_io_emac1_inst_RXD1;
-input 	hps_io_hps_io_emac1_inst_RXD2;
-input 	hps_io_hps_io_emac1_inst_RXD3;
-inout 	hps_io_hps_io_qspi_inst_IO0;
-inout 	hps_io_hps_io_qspi_inst_IO1;
-inout 	hps_io_hps_io_qspi_inst_IO2;
-inout 	hps_io_hps_io_qspi_inst_IO3;
-output 	hps_io_hps_io_qspi_inst_SS0;
-output 	hps_io_hps_io_qspi_inst_CLK;
-inout 	hps_io_hps_io_sdio_inst_CMD;
-inout 	hps_io_hps_io_sdio_inst_D0;
-inout 	hps_io_hps_io_sdio_inst_D1;
-output 	hps_io_hps_io_sdio_inst_CLK;
-inout 	hps_io_hps_io_sdio_inst_D2;
-inout 	hps_io_hps_io_sdio_inst_D3;
-inout 	hps_io_hps_io_usb1_inst_D0;
-inout 	hps_io_hps_io_usb1_inst_D1;
-inout 	hps_io_hps_io_usb1_inst_D2;
-inout 	hps_io_hps_io_usb1_inst_D3;
-inout 	hps_io_hps_io_usb1_inst_D4;
-inout 	hps_io_hps_io_usb1_inst_D5;
-inout 	hps_io_hps_io_usb1_inst_D6;
-inout 	hps_io_hps_io_usb1_inst_D7;
-input 	hps_io_hps_io_usb1_inst_CLK;
-output 	hps_io_hps_io_usb1_inst_STP;
-input 	hps_io_hps_io_usb1_inst_DIR;
-input 	hps_io_hps_io_usb1_inst_NXT;
-output 	hps_io_hps_io_spim1_inst_CLK;
-output 	hps_io_hps_io_spim1_inst_MOSI;
-input 	hps_io_hps_io_spim1_inst_MISO;
-output 	hps_io_hps_io_spim1_inst_SS0;
-input 	hps_io_hps_io_uart0_inst_RX;
-output 	hps_io_hps_io_uart0_inst_TX;
-inout 	hps_io_hps_io_i2c0_inst_SDA;
-inout 	hps_io_hps_io_i2c0_inst_SCL;
-inout 	hps_io_hps_io_i2c1_inst_SDA;
-inout 	hps_io_hps_io_i2c1_inst_SCL;
 output 	[14:0] memory_mem_a;
 output 	[2:0] memory_mem_ba;
 output 	memory_mem_ck;
@@ -395,64 +299,7 @@ wire \mm_interconnect_0|ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.bu
 wire \mm_interconnect_0|ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|source0_data[17]~1_combout ;
 wire \rst_controller|merged_reset~0_combout ;
 wire \rst_controller_001|r_sync_rst~q ;
-wire \rst_controller_002|alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out~q ;
 wire \~GND~combout ;
-wire \hps_0|hps_io|border|emac1_inst~O_EMAC_CLK_TX ;
-wire \hps_0|hps_io|border|emac1_inst~O_EMAC_PHY_TX_OE ;
-wire \hps_0|hps_io|border|intermediate[0] ;
-wire \hps_0|hps_io|border|intermediate[1] ;
-wire \hps_0|hps_io|border|emac1_inst~O_EMAC_GMII_MDC ;
-wire \hps_0|hps_io|border|emac1_inst~emac_phy_txd ;
-wire \hps_0|hps_io|border|emac1_inst~O_EMAC_PHY_TXD1 ;
-wire \hps_0|hps_io|border|emac1_inst~O_EMAC_PHY_TXD2 ;
-wire \hps_0|hps_io|border|emac1_inst~O_EMAC_PHY_TXD3 ;
-wire \hps_0|hps_io|border|qspi_inst~O_QSPI_SCLK ;
-wire \hps_0|hps_io|border|intermediate[2] ;
-wire \hps_0|hps_io|border|intermediate[4] ;
-wire \hps_0|hps_io|border|intermediate[6] ;
-wire \hps_0|hps_io|border|intermediate[8] ;
-wire \hps_0|hps_io|border|intermediate[3] ;
-wire \hps_0|hps_io|border|intermediate[5] ;
-wire \hps_0|hps_io|border|intermediate[7] ;
-wire \hps_0|hps_io|border|intermediate[9] ;
-wire \hps_0|hps_io|border|qspi_inst~O_QSPI_SS_N0 ;
-wire \hps_0|hps_io|border|sdio_inst~sdmmc_cclk ;
-wire \hps_0|hps_io|border|intermediate[10] ;
-wire \hps_0|hps_io|border|intermediate[11] ;
-wire \hps_0|hps_io|border|intermediate[12] ;
-wire \hps_0|hps_io|border|intermediate[14] ;
-wire \hps_0|hps_io|border|intermediate[16] ;
-wire \hps_0|hps_io|border|intermediate[18] ;
-wire \hps_0|hps_io|border|intermediate[13] ;
-wire \hps_0|hps_io|border|intermediate[15] ;
-wire \hps_0|hps_io|border|intermediate[17] ;
-wire \hps_0|hps_io|border|intermediate[19] ;
-wire \hps_0|hps_io|border|usb1_inst~usb_ulpi_stp ;
-wire \hps_0|hps_io|border|intermediate[20] ;
-wire \hps_0|hps_io|border|intermediate[22] ;
-wire \hps_0|hps_io|border|intermediate[24] ;
-wire \hps_0|hps_io|border|intermediate[26] ;
-wire \hps_0|hps_io|border|intermediate[28] ;
-wire \hps_0|hps_io|border|intermediate[30] ;
-wire \hps_0|hps_io|border|intermediate[32] ;
-wire \hps_0|hps_io|border|intermediate[34] ;
-wire \hps_0|hps_io|border|intermediate[21] ;
-wire \hps_0|hps_io|border|intermediate[23] ;
-wire \hps_0|hps_io|border|intermediate[25] ;
-wire \hps_0|hps_io|border|intermediate[27] ;
-wire \hps_0|hps_io|border|intermediate[29] ;
-wire \hps_0|hps_io|border|intermediate[31] ;
-wire \hps_0|hps_io|border|intermediate[33] ;
-wire \hps_0|hps_io|border|intermediate[35] ;
-wire \hps_0|hps_io|border|spim1_inst~O_SPI_MASTER_SCLK ;
-wire \hps_0|hps_io|border|spim1_inst~O_SPI_MASTER_SS_0_N ;
-wire \hps_0|hps_io|border|intermediate[36] ;
-wire \hps_0|hps_io|border|intermediate[37] ;
-wire \hps_0|hps_io|border|uart0_inst~uart_txd ;
-wire \hps_0|hps_io|border|intermediate[39] ;
-wire \hps_0|hps_io|border|intermediate[38] ;
-wire \hps_0|hps_io|border|intermediate[41] ;
-wire \hps_0|hps_io|border|intermediate[40] ;
 wire \hps_0|hps_io|border|hps_sdram_inst|oct|parallelterminationcontrol[0] ;
 wire \hps_0|hps_io|border|hps_sdram_inst|oct|parallelterminationcontrol[1] ;
 wire \hps_0|hps_io|border|hps_sdram_inst|oct|parallelterminationcontrol[2] ;
@@ -646,41 +493,8 @@ wire \hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|dq_ddio[3].ubidir_d
 wire \hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|dq_ddio[3].ubidir_dq_dqs|altdq_dqs2_inst|diff_oe_bar ;
 wire \hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|dq_ddio[3].ubidir_dq_dqs|altdq_dqs2_inst|diff_dtc ;
 wire \hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|dq_ddio[3].ubidir_dq_dqs|altdq_dqs2_inst|diff_dtc_bar ;
-wire \hps_0|hps_io|border|hps_io_emac1_inst_MDIO[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_qspi_inst_IO0[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_qspi_inst_IO1[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_qspi_inst_IO2[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_qspi_inst_IO3[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_sdio_inst_CMD[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_sdio_inst_D0[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_sdio_inst_D1[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_sdio_inst_D2[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_sdio_inst_D3[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_usb1_inst_D0[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_usb1_inst_D1[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_usb1_inst_D2[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_usb1_inst_D3[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_usb1_inst_D4[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_usb1_inst_D5[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_usb1_inst_D6[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_usb1_inst_D7[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_i2c0_inst_SDA[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_i2c0_inst_SCL[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_i2c1_inst_SDA[0]~input_o ;
-wire \hps_0|hps_io|border|hps_io_i2c1_inst_SCL[0]~input_o ;
-wire \clk_clk~input_o ;
-wire \hps_io_hps_io_emac1_inst_RXD0~input_o ;
-wire \hps_io_hps_io_emac1_inst_RXD1~input_o ;
-wire \hps_io_hps_io_emac1_inst_RXD2~input_o ;
-wire \hps_io_hps_io_emac1_inst_RXD3~input_o ;
-wire \hps_io_hps_io_emac1_inst_RX_CLK~input_o ;
-wire \hps_io_hps_io_emac1_inst_RX_CTL~input_o ;
-wire \hps_io_hps_io_spim1_inst_MISO~input_o ;
-wire \hps_io_hps_io_uart0_inst_RX~input_o ;
-wire \hps_io_hps_io_usb1_inst_CLK~input_o ;
-wire \hps_io_hps_io_usb1_inst_DIR~input_o ;
-wire \hps_io_hps_io_usb1_inst_NXT~input_o ;
 wire \memory_oct_rzqin~input_o ;
+wire \clk_clk~input_o ;
 wire \ram_conduit_chipselect~input_o ;
 wire \ram_conduit_write~input_o ;
 wire \ram_conduit_clken~input_o ;
@@ -708,6 +522,17 @@ wire \ram_conduit_writedata[14]~input_o ;
 wire \ram_conduit_writedata[15]~input_o ;
 wire \reset_reset_n~input_o ;
 
+
+system_altera_reset_controller_1 rst_controller_001(
+	.h2f_rst_n_0(\hps_0|fpga_interfaces|h2f_rst_n[0] ),
+	.r_early_rst1(\rst_controller_001|r_early_rst~q ),
+	.r_sync_rst1(\rst_controller_001|r_sync_rst~q ),
+	.clk_clk(\clk_clk~input_o ));
+
+system_altera_reset_controller rst_controller(
+	.h2f_rst_n_0(\hps_0|fpga_interfaces|h2f_rst_n[0] ),
+	.merged_reset(\rst_controller|merged_reset~0_combout ),
+	.reset_reset_n(\reset_reset_n~input_o ));
 
 system_system_mm_interconnect_0 mm_interconnect_0(
 	.h2f_lw_ARVALID_0(\hps_0|fpga_interfaces|h2f_lw_ARVALID[0] ),
@@ -894,7 +719,6 @@ system_system_mm_interconnect_0 mm_interconnect_0(
 	.source0_data_16(\mm_interconnect_0|ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|source0_data[16]~0_combout ),
 	.source0_data_17(\mm_interconnect_0|ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|source0_data[17]~1_combout ),
 	.r_sync_rst(\rst_controller_001|r_sync_rst~q ),
-	.altera_reset_synchronizer_int_chain_out(\rst_controller_002|alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out~q ),
 	.GND_port(\~GND~combout ),
 	.clk_clk(\clk_clk~input_o ));
 
@@ -987,22 +811,6 @@ system_system_pll_0 pll_0(
 	.outclk_wire_0(\pll_0|altera_pll_i|outclk_wire[0] ),
 	.merged_reset(\rst_controller|merged_reset~0_combout ),
 	.clk_clk(\clk_clk~input_o ));
-
-system_altera_reset_controller_2 rst_controller_002(
-	.h2f_rst_n_0(\hps_0|fpga_interfaces|h2f_rst_n[0] ),
-	.altera_reset_synchronizer_int_chain_out(\rst_controller_002|alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out~q ),
-	.clk_clk(\clk_clk~input_o ));
-
-system_altera_reset_controller_1 rst_controller_001(
-	.r_early_rst1(\rst_controller_001|r_early_rst~q ),
-	.merged_reset(\rst_controller|merged_reset~0_combout ),
-	.r_sync_rst1(\rst_controller_001|r_sync_rst~q ),
-	.clk_clk(\clk_clk~input_o ));
-
-system_altera_reset_controller rst_controller(
-	.h2f_rst_n_0(\hps_0|fpga_interfaces|h2f_rst_n[0] ),
-	.merged_reset(\rst_controller|merged_reset~0_combout ),
-	.reset_reset_n(\reset_reset_n~input_o ));
 
 system_system_hps_0 hps_0(
 	.h2f_rst_n_0(\hps_0|fpga_interfaces|h2f_rst_n[0] ),
@@ -1150,62 +958,6 @@ system_system_hps_0 hps_0(
 	.ShiftLeft213(\mm_interconnect_0|ram_s1_rsp_width_adapter|ShiftLeft2~29_combout ),
 	.ShiftLeft214(\mm_interconnect_0|ram_s1_rsp_width_adapter|ShiftLeft2~30_combout ),
 	.ShiftLeft215(\mm_interconnect_0|ram_s1_rsp_width_adapter|ShiftLeft2~31_combout ),
-	.emac1_inst(\hps_0|hps_io|border|emac1_inst~O_EMAC_CLK_TX ),
-	.emac1_inst1(\hps_0|hps_io|border|emac1_inst~O_EMAC_PHY_TX_OE ),
-	.intermediate_0(\hps_0|hps_io|border|intermediate[0] ),
-	.intermediate_1(\hps_0|hps_io|border|intermediate[1] ),
-	.emac1_inst2(\hps_0|hps_io|border|emac1_inst~O_EMAC_GMII_MDC ),
-	.emac1_inst3(\hps_0|hps_io|border|emac1_inst~emac_phy_txd ),
-	.emac1_inst4(\hps_0|hps_io|border|emac1_inst~O_EMAC_PHY_TXD1 ),
-	.emac1_inst5(\hps_0|hps_io|border|emac1_inst~O_EMAC_PHY_TXD2 ),
-	.emac1_inst6(\hps_0|hps_io|border|emac1_inst~O_EMAC_PHY_TXD3 ),
-	.qspi_inst(\hps_0|hps_io|border|qspi_inst~O_QSPI_SCLK ),
-	.intermediate_2(\hps_0|hps_io|border|intermediate[2] ),
-	.intermediate_4(\hps_0|hps_io|border|intermediate[4] ),
-	.intermediate_6(\hps_0|hps_io|border|intermediate[6] ),
-	.intermediate_8(\hps_0|hps_io|border|intermediate[8] ),
-	.intermediate_3(\hps_0|hps_io|border|intermediate[3] ),
-	.intermediate_5(\hps_0|hps_io|border|intermediate[5] ),
-	.intermediate_7(\hps_0|hps_io|border|intermediate[7] ),
-	.intermediate_9(\hps_0|hps_io|border|intermediate[9] ),
-	.qspi_inst1(\hps_0|hps_io|border|qspi_inst~O_QSPI_SS_N0 ),
-	.sdio_inst(\hps_0|hps_io|border|sdio_inst~sdmmc_cclk ),
-	.intermediate_10(\hps_0|hps_io|border|intermediate[10] ),
-	.intermediate_11(\hps_0|hps_io|border|intermediate[11] ),
-	.intermediate_12(\hps_0|hps_io|border|intermediate[12] ),
-	.intermediate_14(\hps_0|hps_io|border|intermediate[14] ),
-	.intermediate_16(\hps_0|hps_io|border|intermediate[16] ),
-	.intermediate_18(\hps_0|hps_io|border|intermediate[18] ),
-	.intermediate_13(\hps_0|hps_io|border|intermediate[13] ),
-	.intermediate_15(\hps_0|hps_io|border|intermediate[15] ),
-	.intermediate_17(\hps_0|hps_io|border|intermediate[17] ),
-	.intermediate_19(\hps_0|hps_io|border|intermediate[19] ),
-	.usb1_inst(\hps_0|hps_io|border|usb1_inst~usb_ulpi_stp ),
-	.intermediate_20(\hps_0|hps_io|border|intermediate[20] ),
-	.intermediate_22(\hps_0|hps_io|border|intermediate[22] ),
-	.intermediate_24(\hps_0|hps_io|border|intermediate[24] ),
-	.intermediate_26(\hps_0|hps_io|border|intermediate[26] ),
-	.intermediate_28(\hps_0|hps_io|border|intermediate[28] ),
-	.intermediate_30(\hps_0|hps_io|border|intermediate[30] ),
-	.intermediate_32(\hps_0|hps_io|border|intermediate[32] ),
-	.intermediate_34(\hps_0|hps_io|border|intermediate[34] ),
-	.intermediate_21(\hps_0|hps_io|border|intermediate[21] ),
-	.intermediate_23(\hps_0|hps_io|border|intermediate[23] ),
-	.intermediate_25(\hps_0|hps_io|border|intermediate[25] ),
-	.intermediate_27(\hps_0|hps_io|border|intermediate[27] ),
-	.intermediate_29(\hps_0|hps_io|border|intermediate[29] ),
-	.intermediate_31(\hps_0|hps_io|border|intermediate[31] ),
-	.intermediate_33(\hps_0|hps_io|border|intermediate[33] ),
-	.intermediate_35(\hps_0|hps_io|border|intermediate[35] ),
-	.spim1_inst(\hps_0|hps_io|border|spim1_inst~O_SPI_MASTER_SCLK ),
-	.spim1_inst1(\hps_0|hps_io|border|spim1_inst~O_SPI_MASTER_SS_0_N ),
-	.intermediate_36(\hps_0|hps_io|border|intermediate[36] ),
-	.intermediate_37(\hps_0|hps_io|border|intermediate[37] ),
-	.uart0_inst(\hps_0|hps_io|border|uart0_inst~uart_txd ),
-	.intermediate_39(\hps_0|hps_io|border|intermediate[39] ),
-	.intermediate_38(\hps_0|hps_io|border|intermediate[38] ),
-	.intermediate_41(\hps_0|hps_io|border|intermediate[41] ),
-	.intermediate_40(\hps_0|hps_io|border|intermediate[40] ),
 	.parallelterminationcontrol_0(\hps_0|hps_io|border|hps_sdram_inst|oct|parallelterminationcontrol[0] ),
 	.parallelterminationcontrol_1(\hps_0|hps_io|border|hps_sdram_inst|oct|parallelterminationcontrol[1] ),
 	.parallelterminationcontrol_2(\hps_0|hps_io|border|hps_sdram_inst|oct|parallelterminationcontrol[2] ),
@@ -1399,41 +1151,8 @@ system_system_hps_0 hps_0(
 	.diff_oe_bar3(\hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|dq_ddio[3].ubidir_dq_dqs|altdq_dqs2_inst|diff_oe_bar ),
 	.diff_dtc3(\hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|dq_ddio[3].ubidir_dq_dqs|altdq_dqs2_inst|diff_dtc ),
 	.diff_dtc_bar3(\hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|dq_ddio[3].ubidir_dq_dqs|altdq_dqs2_inst|diff_dtc_bar ),
-	.hps_io_emac1_inst_MDIO_0(\hps_0|hps_io|border|hps_io_emac1_inst_MDIO[0]~input_o ),
-	.hps_io_qspi_inst_IO0_0(\hps_0|hps_io|border|hps_io_qspi_inst_IO0[0]~input_o ),
-	.hps_io_qspi_inst_IO1_0(\hps_0|hps_io|border|hps_io_qspi_inst_IO1[0]~input_o ),
-	.hps_io_qspi_inst_IO2_0(\hps_0|hps_io|border|hps_io_qspi_inst_IO2[0]~input_o ),
-	.hps_io_qspi_inst_IO3_0(\hps_0|hps_io|border|hps_io_qspi_inst_IO3[0]~input_o ),
-	.hps_io_sdio_inst_CMD_0(\hps_0|hps_io|border|hps_io_sdio_inst_CMD[0]~input_o ),
-	.hps_io_sdio_inst_D0_0(\hps_0|hps_io|border|hps_io_sdio_inst_D0[0]~input_o ),
-	.hps_io_sdio_inst_D1_0(\hps_0|hps_io|border|hps_io_sdio_inst_D1[0]~input_o ),
-	.hps_io_sdio_inst_D2_0(\hps_0|hps_io|border|hps_io_sdio_inst_D2[0]~input_o ),
-	.hps_io_sdio_inst_D3_0(\hps_0|hps_io|border|hps_io_sdio_inst_D3[0]~input_o ),
-	.hps_io_usb1_inst_D0_0(\hps_0|hps_io|border|hps_io_usb1_inst_D0[0]~input_o ),
-	.hps_io_usb1_inst_D1_0(\hps_0|hps_io|border|hps_io_usb1_inst_D1[0]~input_o ),
-	.hps_io_usb1_inst_D2_0(\hps_0|hps_io|border|hps_io_usb1_inst_D2[0]~input_o ),
-	.hps_io_usb1_inst_D3_0(\hps_0|hps_io|border|hps_io_usb1_inst_D3[0]~input_o ),
-	.hps_io_usb1_inst_D4_0(\hps_0|hps_io|border|hps_io_usb1_inst_D4[0]~input_o ),
-	.hps_io_usb1_inst_D5_0(\hps_0|hps_io|border|hps_io_usb1_inst_D5[0]~input_o ),
-	.hps_io_usb1_inst_D6_0(\hps_0|hps_io|border|hps_io_usb1_inst_D6[0]~input_o ),
-	.hps_io_usb1_inst_D7_0(\hps_0|hps_io|border|hps_io_usb1_inst_D7[0]~input_o ),
-	.hps_io_i2c0_inst_SDA_0(\hps_0|hps_io|border|hps_io_i2c0_inst_SDA[0]~input_o ),
-	.hps_io_i2c0_inst_SCL_0(\hps_0|hps_io|border|hps_io_i2c0_inst_SCL[0]~input_o ),
-	.hps_io_i2c1_inst_SDA_0(\hps_0|hps_io|border|hps_io_i2c1_inst_SDA[0]~input_o ),
-	.hps_io_i2c1_inst_SCL_0(\hps_0|hps_io|border|hps_io_i2c1_inst_SCL[0]~input_o ),
-	.clk_clk(\clk_clk~input_o ),
-	.hps_io_hps_io_emac1_inst_RXD0(\hps_io_hps_io_emac1_inst_RXD0~input_o ),
-	.hps_io_hps_io_emac1_inst_RXD1(\hps_io_hps_io_emac1_inst_RXD1~input_o ),
-	.hps_io_hps_io_emac1_inst_RXD2(\hps_io_hps_io_emac1_inst_RXD2~input_o ),
-	.hps_io_hps_io_emac1_inst_RXD3(\hps_io_hps_io_emac1_inst_RXD3~input_o ),
-	.hps_io_hps_io_emac1_inst_RX_CLK(\hps_io_hps_io_emac1_inst_RX_CLK~input_o ),
-	.hps_io_hps_io_emac1_inst_RX_CTL(\hps_io_hps_io_emac1_inst_RX_CTL~input_o ),
-	.hps_io_hps_io_spim1_inst_MISO(\hps_io_hps_io_spim1_inst_MISO~input_o ),
-	.hps_io_hps_io_uart0_inst_RX(\hps_io_hps_io_uart0_inst_RX~input_o ),
-	.hps_io_hps_io_usb1_inst_CLK(\hps_io_hps_io_usb1_inst_CLK~input_o ),
-	.hps_io_hps_io_usb1_inst_DIR(\hps_io_hps_io_usb1_inst_DIR~input_o ),
-	.hps_io_hps_io_usb1_inst_NXT(\hps_io_hps_io_usb1_inst_NXT~input_o ),
-	.memory_oct_rzqin(\memory_oct_rzqin~input_o ));
+	.memory_oct_rzqin(\memory_oct_rzqin~input_o ),
+	.clk_clk(\clk_clk~input_o ));
 
 cyclonev_lcell_comb \~GND (
 	.dataa(gnd),
@@ -1745,75 +1464,9 @@ cyclonev_io_ibuf \hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|dq_ddio
 defparam \hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|dq_ddio[0].ubidir_dq_dqs|altdq_dqs2_inst|pad_gen[7].data_in .bus_hold = "false";
 defparam \hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|dq_ddio[0].ubidir_dq_dqs|altdq_dqs2_inst|pad_gen[7].data_in .simulate_z_as = "z";
 
-assign \hps_0|hps_io|border|hps_io_emac1_inst_MDIO[0]~input_o  = hps_io_hps_io_emac1_inst_MDIO;
-
-assign \hps_0|hps_io|border|hps_io_qspi_inst_IO0[0]~input_o  = hps_io_hps_io_qspi_inst_IO0;
-
-assign \hps_0|hps_io|border|hps_io_qspi_inst_IO1[0]~input_o  = hps_io_hps_io_qspi_inst_IO1;
-
-assign \hps_0|hps_io|border|hps_io_qspi_inst_IO2[0]~input_o  = hps_io_hps_io_qspi_inst_IO2;
-
-assign \hps_0|hps_io|border|hps_io_qspi_inst_IO3[0]~input_o  = hps_io_hps_io_qspi_inst_IO3;
-
-assign \hps_0|hps_io|border|hps_io_sdio_inst_CMD[0]~input_o  = hps_io_hps_io_sdio_inst_CMD;
-
-assign \hps_0|hps_io|border|hps_io_sdio_inst_D0[0]~input_o  = hps_io_hps_io_sdio_inst_D0;
-
-assign \hps_0|hps_io|border|hps_io_sdio_inst_D1[0]~input_o  = hps_io_hps_io_sdio_inst_D1;
-
-assign \hps_0|hps_io|border|hps_io_sdio_inst_D2[0]~input_o  = hps_io_hps_io_sdio_inst_D2;
-
-assign \hps_0|hps_io|border|hps_io_sdio_inst_D3[0]~input_o  = hps_io_hps_io_sdio_inst_D3;
-
-assign \hps_0|hps_io|border|hps_io_usb1_inst_D0[0]~input_o  = hps_io_hps_io_usb1_inst_D0;
-
-assign \hps_0|hps_io|border|hps_io_usb1_inst_D1[0]~input_o  = hps_io_hps_io_usb1_inst_D1;
-
-assign \hps_0|hps_io|border|hps_io_usb1_inst_D2[0]~input_o  = hps_io_hps_io_usb1_inst_D2;
-
-assign \hps_0|hps_io|border|hps_io_usb1_inst_D3[0]~input_o  = hps_io_hps_io_usb1_inst_D3;
-
-assign \hps_0|hps_io|border|hps_io_usb1_inst_D4[0]~input_o  = hps_io_hps_io_usb1_inst_D4;
-
-assign \hps_0|hps_io|border|hps_io_usb1_inst_D5[0]~input_o  = hps_io_hps_io_usb1_inst_D5;
-
-assign \hps_0|hps_io|border|hps_io_usb1_inst_D6[0]~input_o  = hps_io_hps_io_usb1_inst_D6;
-
-assign \hps_0|hps_io|border|hps_io_usb1_inst_D7[0]~input_o  = hps_io_hps_io_usb1_inst_D7;
-
-assign \hps_0|hps_io|border|hps_io_i2c0_inst_SDA[0]~input_o  = hps_io_hps_io_i2c0_inst_SDA;
-
-assign \hps_0|hps_io|border|hps_io_i2c0_inst_SCL[0]~input_o  = hps_io_hps_io_i2c0_inst_SCL;
-
-assign \hps_0|hps_io|border|hps_io_i2c1_inst_SDA[0]~input_o  = hps_io_hps_io_i2c1_inst_SDA;
-
-assign \hps_0|hps_io|border|hps_io_i2c1_inst_SCL[0]~input_o  = hps_io_hps_io_i2c1_inst_SCL;
+assign \memory_oct_rzqin~input_o  = memory_oct_rzqin;
 
 assign \clk_clk~input_o  = clk_clk;
-
-assign \hps_io_hps_io_emac1_inst_RXD0~input_o  = hps_io_hps_io_emac1_inst_RXD0;
-
-assign \hps_io_hps_io_emac1_inst_RXD1~input_o  = hps_io_hps_io_emac1_inst_RXD1;
-
-assign \hps_io_hps_io_emac1_inst_RXD2~input_o  = hps_io_hps_io_emac1_inst_RXD2;
-
-assign \hps_io_hps_io_emac1_inst_RXD3~input_o  = hps_io_hps_io_emac1_inst_RXD3;
-
-assign \hps_io_hps_io_emac1_inst_RX_CLK~input_o  = hps_io_hps_io_emac1_inst_RX_CLK;
-
-assign \hps_io_hps_io_emac1_inst_RX_CTL~input_o  = hps_io_hps_io_emac1_inst_RX_CTL;
-
-assign \hps_io_hps_io_spim1_inst_MISO~input_o  = hps_io_hps_io_spim1_inst_MISO;
-
-assign \hps_io_hps_io_uart0_inst_RX~input_o  = hps_io_hps_io_uart0_inst_RX;
-
-assign \hps_io_hps_io_usb1_inst_CLK~input_o  = hps_io_hps_io_usb1_inst_CLK;
-
-assign \hps_io_hps_io_usb1_inst_DIR~input_o  = hps_io_hps_io_usb1_inst_DIR;
-
-assign \hps_io_hps_io_usb1_inst_NXT~input_o  = hps_io_hps_io_usb1_inst_NXT;
-
-assign \memory_oct_rzqin~input_o  = memory_oct_rzqin;
 
 assign \ram_conduit_chipselect~input_o  = ram_conduit_chipselect;
 
@@ -1979,46 +1632,6 @@ defparam \hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|uaddr_cmd_pads|
 defparam \hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|uaddr_cmd_pads|clock_gen[0].uclk_generator|obufa_0 .open_drain_output = "false";
 defparam \hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|uaddr_cmd_pads|clock_gen[0].uclk_generator|obufa_0 .shift_series_termination_control = "false";
 
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_spim1_inst_MOSI[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[36] ),
-	.oe(\hps_0|hps_io|border|intermediate[37] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_spim1_inst_MOSI),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_spim1_inst_MOSI[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_spim1_inst_MOSI[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_spim1_inst_MOSI[0]~output .shift_series_termination_control = "false";
-
-assign hps_io_hps_io_emac1_inst_TX_CLK = \hps_0|hps_io|border|emac1_inst~O_EMAC_CLK_TX ;
-
-assign hps_io_hps_io_emac1_inst_TXD0 = \hps_0|hps_io|border|emac1_inst~emac_phy_txd ;
-
-assign hps_io_hps_io_emac1_inst_TXD1 = \hps_0|hps_io|border|emac1_inst~O_EMAC_PHY_TXD1 ;
-
-assign hps_io_hps_io_emac1_inst_TXD2 = \hps_0|hps_io|border|emac1_inst~O_EMAC_PHY_TXD2 ;
-
-assign hps_io_hps_io_emac1_inst_TXD3 = \hps_0|hps_io|border|emac1_inst~O_EMAC_PHY_TXD3 ;
-
-assign hps_io_hps_io_emac1_inst_MDC = \hps_0|hps_io|border|emac1_inst~O_EMAC_GMII_MDC ;
-
-assign hps_io_hps_io_emac1_inst_TX_CTL = \hps_0|hps_io|border|emac1_inst~O_EMAC_PHY_TX_OE ;
-
-assign hps_io_hps_io_qspi_inst_SS0 = \hps_0|hps_io|border|qspi_inst~O_QSPI_SS_N0 ;
-
-assign hps_io_hps_io_qspi_inst_CLK = \hps_0|hps_io|border|qspi_inst~O_QSPI_SCLK ;
-
-assign hps_io_hps_io_sdio_inst_CLK = \hps_0|hps_io|border|sdio_inst~sdmmc_cclk ;
-
-assign hps_io_hps_io_usb1_inst_STP = \hps_0|hps_io|border|usb1_inst~usb_ulpi_stp ;
-
-assign hps_io_hps_io_spim1_inst_CLK = \hps_0|hps_io|border|spim1_inst~O_SPI_MASTER_SCLK ;
-
-assign hps_io_hps_io_spim1_inst_SS0 = \hps_0|hps_io|border|spim1_inst~O_SPI_MASTER_SS_0_N ;
-
-assign hps_io_hps_io_uart0_inst_TX = \hps_0|hps_io|border|uart0_inst~uart_txd ;
-
 assign memory_mem_a[0] = \hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|uaddr_cmd_pads|uaddress_pad|dataout[0] ;
 
 assign memory_mem_a[1] = \hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|uaddr_cmd_pads|uaddress_pad|dataout[1] ;
@@ -2104,270 +1717,6 @@ assign ram_conduit_readdata[15] = \ram|the_altsyncram|auto_generated|q_b[15] ;
 assign vga_clk_ext_clk = \pll_0|altera_pll_i|outclk_wire[1] ;
 
 assign vga_clk_int_clk = \pll_0|altera_pll_i|outclk_wire[0] ;
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_emac1_inst_MDIO[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[0] ),
-	.oe(\hps_0|hps_io|border|intermediate[1] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_emac1_inst_MDIO),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_emac1_inst_MDIO[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_emac1_inst_MDIO[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_emac1_inst_MDIO[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_qspi_inst_IO0[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[2] ),
-	.oe(\hps_0|hps_io|border|intermediate[3] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_qspi_inst_IO0),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_qspi_inst_IO0[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_qspi_inst_IO0[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_qspi_inst_IO0[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_qspi_inst_IO1[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[4] ),
-	.oe(\hps_0|hps_io|border|intermediate[5] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_qspi_inst_IO1),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_qspi_inst_IO1[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_qspi_inst_IO1[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_qspi_inst_IO1[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_qspi_inst_IO2[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[6] ),
-	.oe(\hps_0|hps_io|border|intermediate[7] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_qspi_inst_IO2),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_qspi_inst_IO2[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_qspi_inst_IO2[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_qspi_inst_IO2[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_qspi_inst_IO3[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[8] ),
-	.oe(\hps_0|hps_io|border|intermediate[9] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_qspi_inst_IO3),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_qspi_inst_IO3[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_qspi_inst_IO3[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_qspi_inst_IO3[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_sdio_inst_CMD[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[10] ),
-	.oe(\hps_0|hps_io|border|intermediate[11] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_sdio_inst_CMD),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_sdio_inst_CMD[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_sdio_inst_CMD[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_sdio_inst_CMD[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_sdio_inst_D0[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[12] ),
-	.oe(\hps_0|hps_io|border|intermediate[13] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_sdio_inst_D0),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_sdio_inst_D0[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_sdio_inst_D0[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_sdio_inst_D0[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_sdio_inst_D1[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[14] ),
-	.oe(\hps_0|hps_io|border|intermediate[15] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_sdio_inst_D1),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_sdio_inst_D1[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_sdio_inst_D1[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_sdio_inst_D1[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_sdio_inst_D2[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[16] ),
-	.oe(\hps_0|hps_io|border|intermediate[17] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_sdio_inst_D2),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_sdio_inst_D2[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_sdio_inst_D2[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_sdio_inst_D2[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_sdio_inst_D3[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[18] ),
-	.oe(\hps_0|hps_io|border|intermediate[19] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_sdio_inst_D3),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_sdio_inst_D3[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_sdio_inst_D3[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_sdio_inst_D3[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_usb1_inst_D0[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[20] ),
-	.oe(\hps_0|hps_io|border|intermediate[21] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_usb1_inst_D0),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D0[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D0[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D0[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_usb1_inst_D1[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[22] ),
-	.oe(\hps_0|hps_io|border|intermediate[23] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_usb1_inst_D1),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D1[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D1[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D1[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_usb1_inst_D2[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[24] ),
-	.oe(\hps_0|hps_io|border|intermediate[25] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_usb1_inst_D2),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D2[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D2[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D2[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_usb1_inst_D3[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[26] ),
-	.oe(\hps_0|hps_io|border|intermediate[27] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_usb1_inst_D3),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D3[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D3[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D3[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_usb1_inst_D4[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[28] ),
-	.oe(\hps_0|hps_io|border|intermediate[29] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_usb1_inst_D4),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D4[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D4[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D4[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_usb1_inst_D5[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[30] ),
-	.oe(\hps_0|hps_io|border|intermediate[31] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_usb1_inst_D5),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D5[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D5[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D5[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_usb1_inst_D6[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[32] ),
-	.oe(\hps_0|hps_io|border|intermediate[33] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_usb1_inst_D6),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D6[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D6[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D6[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_usb1_inst_D7[0]~output (
-	.i(\hps_0|hps_io|border|intermediate[34] ),
-	.oe(\hps_0|hps_io|border|intermediate[35] ),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_usb1_inst_D7),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D7[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D7[0]~output .open_drain_output = "false";
-defparam \hps_0|hps_io|border|hps_io_usb1_inst_D7[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_i2c0_inst_SDA[0]~output (
-	.i(!\hps_0|hps_io|border|intermediate[38] ),
-	.oe(vcc),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_i2c0_inst_SDA),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_i2c0_inst_SDA[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_i2c0_inst_SDA[0]~output .open_drain_output = "true";
-defparam \hps_0|hps_io|border|hps_io_i2c0_inst_SDA[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_i2c0_inst_SCL[0]~output (
-	.i(!\hps_0|hps_io|border|intermediate[39] ),
-	.oe(vcc),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_i2c0_inst_SCL),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_i2c0_inst_SCL[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_i2c0_inst_SCL[0]~output .open_drain_output = "true";
-defparam \hps_0|hps_io|border|hps_io_i2c0_inst_SCL[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_i2c1_inst_SDA[0]~output (
-	.i(!\hps_0|hps_io|border|intermediate[40] ),
-	.oe(vcc),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_i2c1_inst_SDA),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_i2c1_inst_SDA[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_i2c1_inst_SDA[0]~output .open_drain_output = "true";
-defparam \hps_0|hps_io|border|hps_io_i2c1_inst_SDA[0]~output .shift_series_termination_control = "false";
-
-cyclonev_io_obuf \hps_0|hps_io|border|hps_io_i2c1_inst_SCL[0]~output (
-	.i(!\hps_0|hps_io|border|intermediate[41] ),
-	.oe(vcc),
-	.dynamicterminationcontrol(gnd),
-	.seriesterminationcontrol(16'b0000000000000000),
-	.parallelterminationcontrol(16'b0000000000000000),
-	.o(hps_io_hps_io_i2c1_inst_SCL),
-	.obar());
-defparam \hps_0|hps_io|border|hps_io_i2c1_inst_SCL[0]~output .bus_hold = "false";
-defparam \hps_0|hps_io|border|hps_io_i2c1_inst_SCL[0]~output .open_drain_output = "true";
-defparam \hps_0|hps_io|border|hps_io_i2c1_inst_SCL[0]~output .shift_series_termination_control = "false";
 
 cyclonev_io_obuf \hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|dq_ddio[0].ubidir_dq_dqs|altdq_dqs2_inst|pad_gen[0].data_out (
 	.i(\hps_0|hps_io|border|hps_sdram_inst|p0|umemphy|uio_pads|dq_ddio[0].ubidir_dq_dqs|altdq_dqs2_inst|pad_gen[0].delayed_data_out ),
@@ -3291,12 +2640,12 @@ defparam \merged_reset~0 .shared_arith = "off";
 endmodule
 
 module system_altera_reset_controller_1 (
+	h2f_rst_n_0,
 	r_early_rst1,
-	merged_reset,
 	r_sync_rst1,
 	clk_clk)/* synthesis synthesis_greybox=0 */;
+input 	h2f_rst_n_0;
 output 	r_early_rst1;
-input 	merged_reset;
 output 	r_sync_rst1;
 input 	clk_clk;
 
@@ -3331,7 +2680,7 @@ system_altera_reset_synchronizer alt_rst_req_sync_uq1(
 	.clk(clk_clk));
 
 system_altera_reset_synchronizer_1 alt_rst_sync_uq1(
-	.merged_reset(merged_reset),
+	.h2f_rst_n_0(h2f_rst_n_0),
 	.altera_reset_synchronizer_int_chain_out1(\alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out~q ),
 	.clk(clk_clk));
 
@@ -3650,97 +2999,6 @@ defparam \altera_reset_synchronizer_int_chain[0] .power_up = "low";
 endmodule
 
 module system_altera_reset_synchronizer_1 (
-	merged_reset,
-	altera_reset_synchronizer_int_chain_out1,
-	clk)/* synthesis synthesis_greybox=0 */;
-input 	merged_reset;
-output 	altera_reset_synchronizer_int_chain_out1;
-input 	clk;
-
-wire gnd;
-wire vcc;
-wire unknown;
-
-assign gnd = 1'b0;
-assign vcc = 1'b1;
-// unknown value (1'bx) is not needed for this tool. Default to 1'b0
-assign unknown = 1'b0;
-
-wire \altera_reset_synchronizer_int_chain[1]~q ;
-wire \altera_reset_synchronizer_int_chain[0]~q ;
-
-
-dffeas altera_reset_synchronizer_int_chain_out(
-	.clk(clk),
-	.d(\altera_reset_synchronizer_int_chain[0]~q ),
-	.asdata(vcc),
-	.clrn(!merged_reset),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.q(altera_reset_synchronizer_int_chain_out1),
-	.prn(vcc));
-defparam altera_reset_synchronizer_int_chain_out.is_wysiwyg = "true";
-defparam altera_reset_synchronizer_int_chain_out.power_up = "low";
-
-dffeas \altera_reset_synchronizer_int_chain[1] (
-	.clk(clk),
-	.d(vcc),
-	.asdata(vcc),
-	.clrn(!merged_reset),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.q(\altera_reset_synchronizer_int_chain[1]~q ),
-	.prn(vcc));
-defparam \altera_reset_synchronizer_int_chain[1] .is_wysiwyg = "true";
-defparam \altera_reset_synchronizer_int_chain[1] .power_up = "low";
-
-dffeas \altera_reset_synchronizer_int_chain[0] (
-	.clk(clk),
-	.d(\altera_reset_synchronizer_int_chain[1]~q ),
-	.asdata(vcc),
-	.clrn(!merged_reset),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.q(\altera_reset_synchronizer_int_chain[0]~q ),
-	.prn(vcc));
-defparam \altera_reset_synchronizer_int_chain[0] .is_wysiwyg = "true";
-defparam \altera_reset_synchronizer_int_chain[0] .power_up = "low";
-
-endmodule
-
-module system_altera_reset_controller_2 (
-	h2f_rst_n_0,
-	altera_reset_synchronizer_int_chain_out,
-	clk_clk)/* synthesis synthesis_greybox=0 */;
-input 	h2f_rst_n_0;
-output 	altera_reset_synchronizer_int_chain_out;
-input 	clk_clk;
-
-wire gnd;
-wire vcc;
-wire unknown;
-
-assign gnd = 1'b0;
-assign vcc = 1'b1;
-// unknown value (1'bx) is not needed for this tool. Default to 1'b0
-assign unknown = 1'b0;
-
-
-
-system_altera_reset_synchronizer_3 alt_rst_sync_uq1(
-	.h2f_rst_n_0(h2f_rst_n_0),
-	.altera_reset_synchronizer_int_chain_out1(altera_reset_synchronizer_int_chain_out),
-	.clk(clk_clk));
-
-endmodule
-
-module system_altera_reset_synchronizer_3 (
 	h2f_rst_n_0,
 	altera_reset_synchronizer_int_chain_out1,
 	clk)/* synthesis synthesis_greybox=0 */;
@@ -3951,62 +3209,6 @@ module system_system_hps_0 (
 	ShiftLeft213,
 	ShiftLeft214,
 	ShiftLeft215,
-	emac1_inst,
-	emac1_inst1,
-	intermediate_0,
-	intermediate_1,
-	emac1_inst2,
-	emac1_inst3,
-	emac1_inst4,
-	emac1_inst5,
-	emac1_inst6,
-	qspi_inst,
-	intermediate_2,
-	intermediate_4,
-	intermediate_6,
-	intermediate_8,
-	intermediate_3,
-	intermediate_5,
-	intermediate_7,
-	intermediate_9,
-	qspi_inst1,
-	sdio_inst,
-	intermediate_10,
-	intermediate_11,
-	intermediate_12,
-	intermediate_14,
-	intermediate_16,
-	intermediate_18,
-	intermediate_13,
-	intermediate_15,
-	intermediate_17,
-	intermediate_19,
-	usb1_inst,
-	intermediate_20,
-	intermediate_22,
-	intermediate_24,
-	intermediate_26,
-	intermediate_28,
-	intermediate_30,
-	intermediate_32,
-	intermediate_34,
-	intermediate_21,
-	intermediate_23,
-	intermediate_25,
-	intermediate_27,
-	intermediate_29,
-	intermediate_31,
-	intermediate_33,
-	intermediate_35,
-	spim1_inst,
-	spim1_inst1,
-	intermediate_36,
-	intermediate_37,
-	uart0_inst,
-	intermediate_39,
-	intermediate_38,
-	intermediate_41,
-	intermediate_40,
 	parallelterminationcontrol_0,
 	parallelterminationcontrol_1,
 	parallelterminationcontrol_2,
@@ -4200,41 +3402,8 @@ module system_system_hps_0 (
 	diff_oe_bar3,
 	diff_dtc3,
 	diff_dtc_bar3,
-	hps_io_emac1_inst_MDIO_0,
-	hps_io_qspi_inst_IO0_0,
-	hps_io_qspi_inst_IO1_0,
-	hps_io_qspi_inst_IO2_0,
-	hps_io_qspi_inst_IO3_0,
-	hps_io_sdio_inst_CMD_0,
-	hps_io_sdio_inst_D0_0,
-	hps_io_sdio_inst_D1_0,
-	hps_io_sdio_inst_D2_0,
-	hps_io_sdio_inst_D3_0,
-	hps_io_usb1_inst_D0_0,
-	hps_io_usb1_inst_D1_0,
-	hps_io_usb1_inst_D2_0,
-	hps_io_usb1_inst_D3_0,
-	hps_io_usb1_inst_D4_0,
-	hps_io_usb1_inst_D5_0,
-	hps_io_usb1_inst_D6_0,
-	hps_io_usb1_inst_D7_0,
-	hps_io_i2c0_inst_SDA_0,
-	hps_io_i2c0_inst_SCL_0,
-	hps_io_i2c1_inst_SDA_0,
-	hps_io_i2c1_inst_SCL_0,
-	clk_clk,
-	hps_io_hps_io_emac1_inst_RXD0,
-	hps_io_hps_io_emac1_inst_RXD1,
-	hps_io_hps_io_emac1_inst_RXD2,
-	hps_io_hps_io_emac1_inst_RXD3,
-	hps_io_hps_io_emac1_inst_RX_CLK,
-	hps_io_hps_io_emac1_inst_RX_CTL,
-	hps_io_hps_io_spim1_inst_MISO,
-	hps_io_hps_io_uart0_inst_RX,
-	hps_io_hps_io_usb1_inst_CLK,
-	hps_io_hps_io_usb1_inst_DIR,
-	hps_io_hps_io_usb1_inst_NXT,
-	memory_oct_rzqin)/* synthesis synthesis_greybox=0 */;
+	memory_oct_rzqin,
+	clk_clk)/* synthesis synthesis_greybox=0 */;
 output 	h2f_rst_n_0;
 output 	h2f_lw_ARVALID_0;
 output 	h2f_lw_AWVALID_0;
@@ -4380,62 +3549,6 @@ input 	ShiftLeft212;
 input 	ShiftLeft213;
 input 	ShiftLeft214;
 input 	ShiftLeft215;
-output 	emac1_inst;
-output 	emac1_inst1;
-output 	intermediate_0;
-output 	intermediate_1;
-output 	emac1_inst2;
-output 	emac1_inst3;
-output 	emac1_inst4;
-output 	emac1_inst5;
-output 	emac1_inst6;
-output 	qspi_inst;
-output 	intermediate_2;
-output 	intermediate_4;
-output 	intermediate_6;
-output 	intermediate_8;
-output 	intermediate_3;
-output 	intermediate_5;
-output 	intermediate_7;
-output 	intermediate_9;
-output 	qspi_inst1;
-output 	sdio_inst;
-output 	intermediate_10;
-output 	intermediate_11;
-output 	intermediate_12;
-output 	intermediate_14;
-output 	intermediate_16;
-output 	intermediate_18;
-output 	intermediate_13;
-output 	intermediate_15;
-output 	intermediate_17;
-output 	intermediate_19;
-output 	usb1_inst;
-output 	intermediate_20;
-output 	intermediate_22;
-output 	intermediate_24;
-output 	intermediate_26;
-output 	intermediate_28;
-output 	intermediate_30;
-output 	intermediate_32;
-output 	intermediate_34;
-output 	intermediate_21;
-output 	intermediate_23;
-output 	intermediate_25;
-output 	intermediate_27;
-output 	intermediate_29;
-output 	intermediate_31;
-output 	intermediate_33;
-output 	intermediate_35;
-output 	spim1_inst;
-output 	spim1_inst1;
-output 	intermediate_36;
-output 	intermediate_37;
-output 	uart0_inst;
-output 	intermediate_39;
-output 	intermediate_38;
-output 	intermediate_41;
-output 	intermediate_40;
 output 	parallelterminationcontrol_0;
 output 	parallelterminationcontrol_1;
 output 	parallelterminationcontrol_2;
@@ -4629,41 +3742,8 @@ output 	diff_oe3;
 output 	diff_oe_bar3;
 output 	diff_dtc3;
 output 	diff_dtc_bar3;
-input 	hps_io_emac1_inst_MDIO_0;
-input 	hps_io_qspi_inst_IO0_0;
-input 	hps_io_qspi_inst_IO1_0;
-input 	hps_io_qspi_inst_IO2_0;
-input 	hps_io_qspi_inst_IO3_0;
-input 	hps_io_sdio_inst_CMD_0;
-input 	hps_io_sdio_inst_D0_0;
-input 	hps_io_sdio_inst_D1_0;
-input 	hps_io_sdio_inst_D2_0;
-input 	hps_io_sdio_inst_D3_0;
-input 	hps_io_usb1_inst_D0_0;
-input 	hps_io_usb1_inst_D1_0;
-input 	hps_io_usb1_inst_D2_0;
-input 	hps_io_usb1_inst_D3_0;
-input 	hps_io_usb1_inst_D4_0;
-input 	hps_io_usb1_inst_D5_0;
-input 	hps_io_usb1_inst_D6_0;
-input 	hps_io_usb1_inst_D7_0;
-input 	hps_io_i2c0_inst_SDA_0;
-input 	hps_io_i2c0_inst_SCL_0;
-input 	hps_io_i2c1_inst_SDA_0;
-input 	hps_io_i2c1_inst_SCL_0;
-input 	clk_clk;
-input 	hps_io_hps_io_emac1_inst_RXD0;
-input 	hps_io_hps_io_emac1_inst_RXD1;
-input 	hps_io_hps_io_emac1_inst_RXD2;
-input 	hps_io_hps_io_emac1_inst_RXD3;
-input 	hps_io_hps_io_emac1_inst_RX_CLK;
-input 	hps_io_hps_io_emac1_inst_RX_CTL;
-input 	hps_io_hps_io_spim1_inst_MISO;
-input 	hps_io_hps_io_uart0_inst_RX;
-input 	hps_io_hps_io_usb1_inst_CLK;
-input 	hps_io_hps_io_usb1_inst_DIR;
-input 	hps_io_hps_io_usb1_inst_NXT;
 input 	memory_oct_rzqin;
+input 	clk_clk;
 
 wire gnd;
 wire vcc;
@@ -4677,62 +3757,6 @@ assign unknown = 1'b0;
 
 
 system_system_hps_0_hps_io hps_io(
-	.emac1_inst(emac1_inst),
-	.emac1_inst1(emac1_inst1),
-	.intermediate_0(intermediate_0),
-	.intermediate_1(intermediate_1),
-	.emac1_inst2(emac1_inst2),
-	.emac1_inst3(emac1_inst3),
-	.emac1_inst4(emac1_inst4),
-	.emac1_inst5(emac1_inst5),
-	.emac1_inst6(emac1_inst6),
-	.qspi_inst(qspi_inst),
-	.intermediate_2(intermediate_2),
-	.intermediate_4(intermediate_4),
-	.intermediate_6(intermediate_6),
-	.intermediate_8(intermediate_8),
-	.intermediate_3(intermediate_3),
-	.intermediate_5(intermediate_5),
-	.intermediate_7(intermediate_7),
-	.intermediate_9(intermediate_9),
-	.qspi_inst1(qspi_inst1),
-	.sdio_inst(sdio_inst),
-	.intermediate_10(intermediate_10),
-	.intermediate_11(intermediate_11),
-	.intermediate_12(intermediate_12),
-	.intermediate_14(intermediate_14),
-	.intermediate_16(intermediate_16),
-	.intermediate_18(intermediate_18),
-	.intermediate_13(intermediate_13),
-	.intermediate_15(intermediate_15),
-	.intermediate_17(intermediate_17),
-	.intermediate_19(intermediate_19),
-	.usb1_inst(usb1_inst),
-	.intermediate_20(intermediate_20),
-	.intermediate_22(intermediate_22),
-	.intermediate_24(intermediate_24),
-	.intermediate_26(intermediate_26),
-	.intermediate_28(intermediate_28),
-	.intermediate_30(intermediate_30),
-	.intermediate_32(intermediate_32),
-	.intermediate_34(intermediate_34),
-	.intermediate_21(intermediate_21),
-	.intermediate_23(intermediate_23),
-	.intermediate_25(intermediate_25),
-	.intermediate_27(intermediate_27),
-	.intermediate_29(intermediate_29),
-	.intermediate_31(intermediate_31),
-	.intermediate_33(intermediate_33),
-	.intermediate_35(intermediate_35),
-	.spim1_inst(spim1_inst),
-	.spim1_inst1(spim1_inst1),
-	.intermediate_36(intermediate_36),
-	.intermediate_37(intermediate_37),
-	.uart0_inst(uart0_inst),
-	.intermediate_39(intermediate_39),
-	.intermediate_38(intermediate_38),
-	.intermediate_41(intermediate_41),
-	.intermediate_40(intermediate_40),
 	.parallelterminationcontrol_0(parallelterminationcontrol_0),
 	.parallelterminationcontrol_1(parallelterminationcontrol_1),
 	.parallelterminationcontrol_2(parallelterminationcontrol_2),
@@ -4926,39 +3950,6 @@ system_system_hps_0_hps_io hps_io(
 	.diff_oe_bar3(diff_oe_bar3),
 	.diff_dtc3(diff_dtc3),
 	.diff_dtc_bar3(diff_dtc_bar3),
-	.hps_io_emac1_inst_MDIO_0(hps_io_emac1_inst_MDIO_0),
-	.hps_io_qspi_inst_IO0_0(hps_io_qspi_inst_IO0_0),
-	.hps_io_qspi_inst_IO1_0(hps_io_qspi_inst_IO1_0),
-	.hps_io_qspi_inst_IO2_0(hps_io_qspi_inst_IO2_0),
-	.hps_io_qspi_inst_IO3_0(hps_io_qspi_inst_IO3_0),
-	.hps_io_sdio_inst_CMD_0(hps_io_sdio_inst_CMD_0),
-	.hps_io_sdio_inst_D0_0(hps_io_sdio_inst_D0_0),
-	.hps_io_sdio_inst_D1_0(hps_io_sdio_inst_D1_0),
-	.hps_io_sdio_inst_D2_0(hps_io_sdio_inst_D2_0),
-	.hps_io_sdio_inst_D3_0(hps_io_sdio_inst_D3_0),
-	.hps_io_usb1_inst_D0_0(hps_io_usb1_inst_D0_0),
-	.hps_io_usb1_inst_D1_0(hps_io_usb1_inst_D1_0),
-	.hps_io_usb1_inst_D2_0(hps_io_usb1_inst_D2_0),
-	.hps_io_usb1_inst_D3_0(hps_io_usb1_inst_D3_0),
-	.hps_io_usb1_inst_D4_0(hps_io_usb1_inst_D4_0),
-	.hps_io_usb1_inst_D5_0(hps_io_usb1_inst_D5_0),
-	.hps_io_usb1_inst_D6_0(hps_io_usb1_inst_D6_0),
-	.hps_io_usb1_inst_D7_0(hps_io_usb1_inst_D7_0),
-	.hps_io_i2c0_inst_SDA_0(hps_io_i2c0_inst_SDA_0),
-	.hps_io_i2c0_inst_SCL_0(hps_io_i2c0_inst_SCL_0),
-	.hps_io_i2c1_inst_SDA_0(hps_io_i2c1_inst_SDA_0),
-	.hps_io_i2c1_inst_SCL_0(hps_io_i2c1_inst_SCL_0),
-	.hps_io_hps_io_emac1_inst_RXD0(hps_io_hps_io_emac1_inst_RXD0),
-	.hps_io_hps_io_emac1_inst_RXD1(hps_io_hps_io_emac1_inst_RXD1),
-	.hps_io_hps_io_emac1_inst_RXD2(hps_io_hps_io_emac1_inst_RXD2),
-	.hps_io_hps_io_emac1_inst_RXD3(hps_io_hps_io_emac1_inst_RXD3),
-	.hps_io_hps_io_emac1_inst_RX_CLK(hps_io_hps_io_emac1_inst_RX_CLK),
-	.hps_io_hps_io_emac1_inst_RX_CTL(hps_io_hps_io_emac1_inst_RX_CTL),
-	.hps_io_hps_io_spim1_inst_MISO(hps_io_hps_io_spim1_inst_MISO),
-	.hps_io_hps_io_uart0_inst_RX(hps_io_hps_io_uart0_inst_RX),
-	.hps_io_hps_io_usb1_inst_CLK(hps_io_hps_io_usb1_inst_CLK),
-	.hps_io_hps_io_usb1_inst_DIR(hps_io_hps_io_usb1_inst_DIR),
-	.hps_io_hps_io_usb1_inst_NXT(hps_io_hps_io_usb1_inst_NXT),
 	.memory_oct_rzqin(memory_oct_rzqin));
 
 system_system_hps_0_fpga_interfaces fpga_interfaces(
@@ -4996,8 +3987,6 @@ h2f_lw_WDATA_14,h2f_lw_WDATA_13,h2f_lw_WDATA_12,h2f_lw_WDATA_11,h2f_lw_WDATA_10,
 	.h2f_lw_RID({mem_81_0,mem_80_0,mem_79_0,mem_78_0,mem_77_0,mem_76_0,mem_75_0,mem_74_0,mem_73_0,mem_72_0,mem_71_0,mem_70_0}),
 	.h2f_lw_RDATA({ShiftLeft215,ShiftLeft214,ShiftLeft213,ShiftLeft212,ShiftLeft211,ShiftLeft210,ShiftLeft29,ShiftLeft28,ShiftLeft27,ShiftLeft26,ShiftLeft25,ShiftLeft24,ShiftLeft23,ShiftLeft22,ShiftLeft21,ShiftLeft2,out_data_15,out_data_14,out_data_13,out_data_12,out_data_11,out_data_10,
 out_data_9,out_data_8,out_data_7,out_data_6,out_data_5,out_data_4,out_data_3,out_data_2,out_data_1,out_data_0}),
-	.f2h_axi_clk({clk_clk}),
-	.h2f_axi_clk({clk_clk}),
 	.h2f_lw_axi_clk({clk_clk}));
 
 endmodule
@@ -5031,8 +4020,6 @@ module system_system_hps_0_fpga_interfaces (
 	h2f_lw_BID,
 	h2f_lw_RID,
 	h2f_lw_RDATA,
-	f2h_axi_clk,
-	h2f_axi_clk,
 	h2f_lw_axi_clk)/* synthesis synthesis_greybox=0 */;
 output 	[0:0] h2f_rst_n;
 output 	[0:0] h2f_lw_ARVALID;
@@ -5062,8 +4049,6 @@ input 	[0:0] h2f_lw_WREADY;
 input 	[11:0] h2f_lw_BID;
 input 	[11:0] h2f_lw_RID;
 input 	[31:0] h2f_lw_RDATA;
-input 	[0:0] f2h_axi_clk;
-input 	[0:0] h2f_axi_clk;
 input 	[0:0] h2f_lw_axi_clk;
 
 wire gnd;
@@ -5109,42 +4094,41 @@ wire \tpiu~O_TRACE_DATA29 ;
 wire \tpiu~O_TRACE_DATA30 ;
 wire \tpiu~O_TRACE_DATA31 ;
 wire \boot_from_fpga~fake_dout ;
-wire \f2h_ARREADY[0] ;
-wire \h2f_ARADDR[0] ;
-wire \h2f_ARADDR[1] ;
-wire \h2f_ARADDR[2] ;
-wire \h2f_ARADDR[3] ;
-wire \h2f_ARADDR[4] ;
-wire \h2f_ARADDR[5] ;
-wire \h2f_ARADDR[6] ;
-wire \h2f_ARADDR[7] ;
-wire \h2f_ARADDR[8] ;
-wire \h2f_ARADDR[9] ;
-wire \h2f_ARADDR[10] ;
-wire \h2f_ARADDR[11] ;
-wire \h2f_ARADDR[12] ;
-wire \h2f_ARADDR[13] ;
-wire \h2f_ARADDR[14] ;
-wire \h2f_ARADDR[15] ;
-wire \h2f_ARADDR[16] ;
-wire \h2f_ARADDR[17] ;
-wire \h2f_ARADDR[18] ;
-wire \h2f_ARADDR[19] ;
-wire \h2f_ARADDR[20] ;
-wire \h2f_ARADDR[21] ;
-wire \h2f_ARADDR[22] ;
-wire \h2f_ARADDR[23] ;
-wire \h2f_ARADDR[24] ;
-wire \h2f_ARADDR[25] ;
-wire \h2f_ARADDR[26] ;
-wire \h2f_ARADDR[27] ;
-wire \h2f_ARADDR[28] ;
-wire \h2f_ARADDR[29] ;
+wire \fpga2hps~arready ;
+wire \hps2fpga~araddr ;
+wire \hps2fpga~O_ARADDR1 ;
+wire \hps2fpga~O_ARADDR2 ;
+wire \hps2fpga~O_ARADDR3 ;
+wire \hps2fpga~O_ARADDR4 ;
+wire \hps2fpga~O_ARADDR5 ;
+wire \hps2fpga~O_ARADDR6 ;
+wire \hps2fpga~O_ARADDR7 ;
+wire \hps2fpga~O_ARADDR8 ;
+wire \hps2fpga~O_ARADDR9 ;
+wire \hps2fpga~O_ARADDR10 ;
+wire \hps2fpga~O_ARADDR11 ;
+wire \hps2fpga~O_ARADDR12 ;
+wire \hps2fpga~O_ARADDR13 ;
+wire \hps2fpga~O_ARADDR14 ;
+wire \hps2fpga~O_ARADDR15 ;
+wire \hps2fpga~O_ARADDR16 ;
+wire \hps2fpga~O_ARADDR17 ;
+wire \hps2fpga~O_ARADDR18 ;
+wire \hps2fpga~O_ARADDR19 ;
+wire \hps2fpga~O_ARADDR20 ;
+wire \hps2fpga~O_ARADDR21 ;
+wire \hps2fpga~O_ARADDR22 ;
+wire \hps2fpga~O_ARADDR23 ;
+wire \hps2fpga~O_ARADDR24 ;
+wire \hps2fpga~O_ARADDR25 ;
+wire \hps2fpga~O_ARADDR26 ;
+wire \hps2fpga~O_ARADDR27 ;
+wire \hps2fpga~O_ARADDR28 ;
+wire \hps2fpga~O_ARADDR29 ;
 wire \f2sdram~O_BONDING_OUT_10 ;
 wire \f2sdram~O_BONDING_OUT_11 ;
 wire \f2sdram~O_BONDING_OUT_12 ;
 wire \f2sdram~O_BONDING_OUT_13 ;
-wire \interrupts~fake_dout ;
 wire \clocks_resets~h2f_cold_rst_n ;
 wire \h2f_lw_ARADDR[5] ;
 wire \h2f_lw_ARADDR[6] ;
@@ -5212,36 +4196,36 @@ assign \tpiu~O_TRACE_DATA29  = tpiu_TRACE_DATA_bus[29];
 assign \tpiu~O_TRACE_DATA30  = tpiu_TRACE_DATA_bus[30];
 assign \tpiu~O_TRACE_DATA31  = tpiu_TRACE_DATA_bus[31];
 
-assign \h2f_ARADDR[0]  = hps2fpga_ARADDR_bus[0];
-assign \h2f_ARADDR[1]  = hps2fpga_ARADDR_bus[1];
-assign \h2f_ARADDR[2]  = hps2fpga_ARADDR_bus[2];
-assign \h2f_ARADDR[3]  = hps2fpga_ARADDR_bus[3];
-assign \h2f_ARADDR[4]  = hps2fpga_ARADDR_bus[4];
-assign \h2f_ARADDR[5]  = hps2fpga_ARADDR_bus[5];
-assign \h2f_ARADDR[6]  = hps2fpga_ARADDR_bus[6];
-assign \h2f_ARADDR[7]  = hps2fpga_ARADDR_bus[7];
-assign \h2f_ARADDR[8]  = hps2fpga_ARADDR_bus[8];
-assign \h2f_ARADDR[9]  = hps2fpga_ARADDR_bus[9];
-assign \h2f_ARADDR[10]  = hps2fpga_ARADDR_bus[10];
-assign \h2f_ARADDR[11]  = hps2fpga_ARADDR_bus[11];
-assign \h2f_ARADDR[12]  = hps2fpga_ARADDR_bus[12];
-assign \h2f_ARADDR[13]  = hps2fpga_ARADDR_bus[13];
-assign \h2f_ARADDR[14]  = hps2fpga_ARADDR_bus[14];
-assign \h2f_ARADDR[15]  = hps2fpga_ARADDR_bus[15];
-assign \h2f_ARADDR[16]  = hps2fpga_ARADDR_bus[16];
-assign \h2f_ARADDR[17]  = hps2fpga_ARADDR_bus[17];
-assign \h2f_ARADDR[18]  = hps2fpga_ARADDR_bus[18];
-assign \h2f_ARADDR[19]  = hps2fpga_ARADDR_bus[19];
-assign \h2f_ARADDR[20]  = hps2fpga_ARADDR_bus[20];
-assign \h2f_ARADDR[21]  = hps2fpga_ARADDR_bus[21];
-assign \h2f_ARADDR[22]  = hps2fpga_ARADDR_bus[22];
-assign \h2f_ARADDR[23]  = hps2fpga_ARADDR_bus[23];
-assign \h2f_ARADDR[24]  = hps2fpga_ARADDR_bus[24];
-assign \h2f_ARADDR[25]  = hps2fpga_ARADDR_bus[25];
-assign \h2f_ARADDR[26]  = hps2fpga_ARADDR_bus[26];
-assign \h2f_ARADDR[27]  = hps2fpga_ARADDR_bus[27];
-assign \h2f_ARADDR[28]  = hps2fpga_ARADDR_bus[28];
-assign \h2f_ARADDR[29]  = hps2fpga_ARADDR_bus[29];
+assign \hps2fpga~araddr  = hps2fpga_ARADDR_bus[0];
+assign \hps2fpga~O_ARADDR1  = hps2fpga_ARADDR_bus[1];
+assign \hps2fpga~O_ARADDR2  = hps2fpga_ARADDR_bus[2];
+assign \hps2fpga~O_ARADDR3  = hps2fpga_ARADDR_bus[3];
+assign \hps2fpga~O_ARADDR4  = hps2fpga_ARADDR_bus[4];
+assign \hps2fpga~O_ARADDR5  = hps2fpga_ARADDR_bus[5];
+assign \hps2fpga~O_ARADDR6  = hps2fpga_ARADDR_bus[6];
+assign \hps2fpga~O_ARADDR7  = hps2fpga_ARADDR_bus[7];
+assign \hps2fpga~O_ARADDR8  = hps2fpga_ARADDR_bus[8];
+assign \hps2fpga~O_ARADDR9  = hps2fpga_ARADDR_bus[9];
+assign \hps2fpga~O_ARADDR10  = hps2fpga_ARADDR_bus[10];
+assign \hps2fpga~O_ARADDR11  = hps2fpga_ARADDR_bus[11];
+assign \hps2fpga~O_ARADDR12  = hps2fpga_ARADDR_bus[12];
+assign \hps2fpga~O_ARADDR13  = hps2fpga_ARADDR_bus[13];
+assign \hps2fpga~O_ARADDR14  = hps2fpga_ARADDR_bus[14];
+assign \hps2fpga~O_ARADDR15  = hps2fpga_ARADDR_bus[15];
+assign \hps2fpga~O_ARADDR16  = hps2fpga_ARADDR_bus[16];
+assign \hps2fpga~O_ARADDR17  = hps2fpga_ARADDR_bus[17];
+assign \hps2fpga~O_ARADDR18  = hps2fpga_ARADDR_bus[18];
+assign \hps2fpga~O_ARADDR19  = hps2fpga_ARADDR_bus[19];
+assign \hps2fpga~O_ARADDR20  = hps2fpga_ARADDR_bus[20];
+assign \hps2fpga~O_ARADDR21  = hps2fpga_ARADDR_bus[21];
+assign \hps2fpga~O_ARADDR22  = hps2fpga_ARADDR_bus[22];
+assign \hps2fpga~O_ARADDR23  = hps2fpga_ARADDR_bus[23];
+assign \hps2fpga~O_ARADDR24  = hps2fpga_ARADDR_bus[24];
+assign \hps2fpga~O_ARADDR25  = hps2fpga_ARADDR_bus[25];
+assign \hps2fpga~O_ARADDR26  = hps2fpga_ARADDR_bus[26];
+assign \hps2fpga~O_ARADDR27  = hps2fpga_ARADDR_bus[27];
+assign \hps2fpga~O_ARADDR28  = hps2fpga_ARADDR_bus[28];
+assign \hps2fpga~O_ARADDR29  = hps2fpga_ARADDR_bus[29];
 
 assign \f2sdram~O_BONDING_OUT_10  = f2sdram_BONDING_OUT_1_bus[0];
 assign \f2sdram~O_BONDING_OUT_11  = f2sdram_BONDING_OUT_1_bus[1];
@@ -5386,7 +4370,7 @@ cyclonev_hps_interface_hps2fpga_light_weight hps2fpga_light_weight(
 	.arready(h2f_lw_ARREADY[0]),
 	.awready(h2f_lw_AWREADY[0]),
 	.bvalid(h2f_lw_BVALID[0]),
-	.clk(f2h_axi_clk[0]),
+	.clk(h2f_lw_axi_clk[0]),
 	.rlast(h2f_lw_RLAST[0]),
 	.rvalid(h2f_lw_RVALID[0]),
 	.wready(h2f_lw_WREADY[0]),
@@ -5457,34 +4441,33 @@ cyclonev_hps_interface_fpga2hps fpga2hps(
 	.arvalid(gnd),
 	.awvalid(gnd),
 	.bready(gnd),
-	.clk(f2h_axi_clk[0]),
+	.clk(gnd),
 	.rready(gnd),
 	.wlast(gnd),
 	.wvalid(gnd),
-	.araddr({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd}),
-	.arburst({gnd,gnd}),
-	.arcache({gnd,gnd,gnd,gnd}),
-	.arid({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd}),
-	.arlen({gnd,gnd,gnd,gnd}),
-	.arlock({gnd,gnd}),
-	.arprot({gnd,gnd,gnd}),
-	.arsize({gnd,gnd,gnd}),
-	.aruser({gnd,gnd,gnd,gnd,gnd}),
-	.awaddr({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd}),
-	.awburst({gnd,gnd}),
-	.awcache({gnd,gnd,gnd,gnd}),
-	.awid({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd}),
-	.awlen({gnd,gnd,gnd,gnd}),
-	.awlock({gnd,gnd}),
-	.awprot({gnd,gnd,gnd}),
-	.awsize({gnd,gnd,gnd}),
-	.awuser({gnd,gnd,gnd,gnd,gnd}),
-	.port_size_config({gnd,vcc}),
-	.wdata({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
-gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd}),
-	.wid({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd}),
-	.wstrb({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd}),
-	.arready(\f2h_ARREADY[0] ),
+	.araddr(32'b00000000000000000000000000000000),
+	.arburst(2'b00),
+	.arcache(4'b0000),
+	.arid(8'b00000000),
+	.arlen(4'b0000),
+	.arlock(2'b00),
+	.arprot(3'b000),
+	.arsize(3'b000),
+	.aruser(5'b00000),
+	.awaddr(32'b00000000000000000000000000000000),
+	.awburst(2'b00),
+	.awcache(4'b0000),
+	.awid(8'b00000000),
+	.awlen(4'b0000),
+	.awlock(2'b00),
+	.awprot(3'b000),
+	.awsize(3'b000),
+	.awuser(5'b00000),
+	.port_size_config({vcc,vcc}),
+	.wdata(128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000),
+	.wid(8'b00000000),
+	.wstrb(16'b0000000000000000),
+	.arready(\fpga2hps~arready ),
 	.awready(),
 	.bvalid(),
 	.rlast(),
@@ -5501,17 +4484,16 @@ cyclonev_hps_interface_hps2fpga hps2fpga(
 	.arready(gnd),
 	.awready(gnd),
 	.bvalid(gnd),
-	.clk(f2h_axi_clk[0]),
+	.clk(gnd),
 	.rlast(gnd),
 	.rvalid(gnd),
 	.wready(gnd),
-	.bid({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd}),
-	.bresp({gnd,gnd}),
-	.port_size_config({vcc,gnd}),
-	.rdata({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,
-gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd}),
-	.rid({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd}),
-	.rresp({gnd,gnd}),
+	.bid(12'b000000000000),
+	.bresp(2'b00),
+	.port_size_config({vcc,vcc}),
+	.rdata(128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000),
+	.rid(12'b000000000000),
+	.rresp(2'b00),
 	.arvalid(),
 	.awvalid(),
 	.bready(),
@@ -5624,111 +4606,9 @@ cyclonev_hps_interface_fpga2sdram f2sdram(
 	.wrack_data_4(),
 	.wrack_data_5());
 
-cyclonev_hps_interface_interrupts interrupts(
-	.irq({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd}),
-	.fake_dout(\interrupts~fake_dout ),
-	.h2f_can0_irq(),
-	.h2f_can1_irq(),
-	.h2f_clkmgr_irq(),
-	.h2f_cti_irq0_n(),
-	.h2f_cti_irq1_n(),
-	.h2f_dma_abort_irq(),
-	.h2f_dma_irq0(),
-	.h2f_dma_irq1(),
-	.h2f_dma_irq2(),
-	.h2f_dma_irq3(),
-	.h2f_dma_irq4(),
-	.h2f_dma_irq5(),
-	.h2f_dma_irq6(),
-	.h2f_dma_irq7(),
-	.h2f_emac0_irq(),
-	.h2f_emac1_irq(),
-	.h2f_fpga_man_irq(),
-	.h2f_gpio0_irq(),
-	.h2f_gpio1_irq(),
-	.h2f_gpio2_irq(),
-	.h2f_i2c0_irq(),
-	.h2f_i2c1_irq(),
-	.h2f_i2c_emac0_irq(),
-	.h2f_i2c_emac1_irq(),
-	.h2f_l4sp0_irq(),
-	.h2f_l4sp1_irq(),
-	.h2f_mpuwakeup_irq(),
-	.h2f_nand_irq(),
-	.h2f_osc0_irq(),
-	.h2f_osc1_irq(),
-	.h2f_qspi_irq(),
-	.h2f_sdmmc_irq(),
-	.h2f_spi0_irq(),
-	.h2f_spi1_irq(),
-	.h2f_spi2_irq(),
-	.h2f_spi3_irq(),
-	.h2f_uart0_irq(),
-	.h2f_uart1_irq(),
-	.h2f_usb0_irq(),
-	.h2f_usb1_irq(),
-	.h2f_wdog0_irq(),
-	.h2f_wdog1_irq());
-
 endmodule
 
 module system_system_hps_0_hps_io (
-	emac1_inst,
-	emac1_inst1,
-	intermediate_0,
-	intermediate_1,
-	emac1_inst2,
-	emac1_inst3,
-	emac1_inst4,
-	emac1_inst5,
-	emac1_inst6,
-	qspi_inst,
-	intermediate_2,
-	intermediate_4,
-	intermediate_6,
-	intermediate_8,
-	intermediate_3,
-	intermediate_5,
-	intermediate_7,
-	intermediate_9,
-	qspi_inst1,
-	sdio_inst,
-	intermediate_10,
-	intermediate_11,
-	intermediate_12,
-	intermediate_14,
-	intermediate_16,
-	intermediate_18,
-	intermediate_13,
-	intermediate_15,
-	intermediate_17,
-	intermediate_19,
-	usb1_inst,
-	intermediate_20,
-	intermediate_22,
-	intermediate_24,
-	intermediate_26,
-	intermediate_28,
-	intermediate_30,
-	intermediate_32,
-	intermediate_34,
-	intermediate_21,
-	intermediate_23,
-	intermediate_25,
-	intermediate_27,
-	intermediate_29,
-	intermediate_31,
-	intermediate_33,
-	intermediate_35,
-	spim1_inst,
-	spim1_inst1,
-	intermediate_36,
-	intermediate_37,
-	uart0_inst,
-	intermediate_39,
-	intermediate_38,
-	intermediate_41,
-	intermediate_40,
 	parallelterminationcontrol_0,
 	parallelterminationcontrol_1,
 	parallelterminationcontrol_2,
@@ -5922,96 +4802,7 @@ module system_system_hps_0_hps_io (
 	diff_oe_bar3,
 	diff_dtc3,
 	diff_dtc_bar3,
-	hps_io_emac1_inst_MDIO_0,
-	hps_io_qspi_inst_IO0_0,
-	hps_io_qspi_inst_IO1_0,
-	hps_io_qspi_inst_IO2_0,
-	hps_io_qspi_inst_IO3_0,
-	hps_io_sdio_inst_CMD_0,
-	hps_io_sdio_inst_D0_0,
-	hps_io_sdio_inst_D1_0,
-	hps_io_sdio_inst_D2_0,
-	hps_io_sdio_inst_D3_0,
-	hps_io_usb1_inst_D0_0,
-	hps_io_usb1_inst_D1_0,
-	hps_io_usb1_inst_D2_0,
-	hps_io_usb1_inst_D3_0,
-	hps_io_usb1_inst_D4_0,
-	hps_io_usb1_inst_D5_0,
-	hps_io_usb1_inst_D6_0,
-	hps_io_usb1_inst_D7_0,
-	hps_io_i2c0_inst_SDA_0,
-	hps_io_i2c0_inst_SCL_0,
-	hps_io_i2c1_inst_SDA_0,
-	hps_io_i2c1_inst_SCL_0,
-	hps_io_hps_io_emac1_inst_RXD0,
-	hps_io_hps_io_emac1_inst_RXD1,
-	hps_io_hps_io_emac1_inst_RXD2,
-	hps_io_hps_io_emac1_inst_RXD3,
-	hps_io_hps_io_emac1_inst_RX_CLK,
-	hps_io_hps_io_emac1_inst_RX_CTL,
-	hps_io_hps_io_spim1_inst_MISO,
-	hps_io_hps_io_uart0_inst_RX,
-	hps_io_hps_io_usb1_inst_CLK,
-	hps_io_hps_io_usb1_inst_DIR,
-	hps_io_hps_io_usb1_inst_NXT,
 	memory_oct_rzqin)/* synthesis synthesis_greybox=0 */;
-output 	emac1_inst;
-output 	emac1_inst1;
-output 	intermediate_0;
-output 	intermediate_1;
-output 	emac1_inst2;
-output 	emac1_inst3;
-output 	emac1_inst4;
-output 	emac1_inst5;
-output 	emac1_inst6;
-output 	qspi_inst;
-output 	intermediate_2;
-output 	intermediate_4;
-output 	intermediate_6;
-output 	intermediate_8;
-output 	intermediate_3;
-output 	intermediate_5;
-output 	intermediate_7;
-output 	intermediate_9;
-output 	qspi_inst1;
-output 	sdio_inst;
-output 	intermediate_10;
-output 	intermediate_11;
-output 	intermediate_12;
-output 	intermediate_14;
-output 	intermediate_16;
-output 	intermediate_18;
-output 	intermediate_13;
-output 	intermediate_15;
-output 	intermediate_17;
-output 	intermediate_19;
-output 	usb1_inst;
-output 	intermediate_20;
-output 	intermediate_22;
-output 	intermediate_24;
-output 	intermediate_26;
-output 	intermediate_28;
-output 	intermediate_30;
-output 	intermediate_32;
-output 	intermediate_34;
-output 	intermediate_21;
-output 	intermediate_23;
-output 	intermediate_25;
-output 	intermediate_27;
-output 	intermediate_29;
-output 	intermediate_31;
-output 	intermediate_33;
-output 	intermediate_35;
-output 	spim1_inst;
-output 	spim1_inst1;
-output 	intermediate_36;
-output 	intermediate_37;
-output 	uart0_inst;
-output 	intermediate_39;
-output 	intermediate_38;
-output 	intermediate_41;
-output 	intermediate_40;
 output 	parallelterminationcontrol_0;
 output 	parallelterminationcontrol_1;
 output 	parallelterminationcontrol_2;
@@ -6205,39 +4996,6 @@ output 	diff_oe3;
 output 	diff_oe_bar3;
 output 	diff_dtc3;
 output 	diff_dtc_bar3;
-input 	hps_io_emac1_inst_MDIO_0;
-input 	hps_io_qspi_inst_IO0_0;
-input 	hps_io_qspi_inst_IO1_0;
-input 	hps_io_qspi_inst_IO2_0;
-input 	hps_io_qspi_inst_IO3_0;
-input 	hps_io_sdio_inst_CMD_0;
-input 	hps_io_sdio_inst_D0_0;
-input 	hps_io_sdio_inst_D1_0;
-input 	hps_io_sdio_inst_D2_0;
-input 	hps_io_sdio_inst_D3_0;
-input 	hps_io_usb1_inst_D0_0;
-input 	hps_io_usb1_inst_D1_0;
-input 	hps_io_usb1_inst_D2_0;
-input 	hps_io_usb1_inst_D3_0;
-input 	hps_io_usb1_inst_D4_0;
-input 	hps_io_usb1_inst_D5_0;
-input 	hps_io_usb1_inst_D6_0;
-input 	hps_io_usb1_inst_D7_0;
-input 	hps_io_i2c0_inst_SDA_0;
-input 	hps_io_i2c0_inst_SCL_0;
-input 	hps_io_i2c1_inst_SDA_0;
-input 	hps_io_i2c1_inst_SCL_0;
-input 	hps_io_hps_io_emac1_inst_RXD0;
-input 	hps_io_hps_io_emac1_inst_RXD1;
-input 	hps_io_hps_io_emac1_inst_RXD2;
-input 	hps_io_hps_io_emac1_inst_RXD3;
-input 	hps_io_hps_io_emac1_inst_RX_CLK;
-input 	hps_io_hps_io_emac1_inst_RX_CTL;
-input 	hps_io_hps_io_spim1_inst_MISO;
-input 	hps_io_hps_io_uart0_inst_RX;
-input 	hps_io_hps_io_usb1_inst_CLK;
-input 	hps_io_hps_io_usb1_inst_DIR;
-input 	hps_io_hps_io_usb1_inst_NXT;
 input 	memory_oct_rzqin;
 
 wire gnd;
@@ -6252,62 +5010,6 @@ assign unknown = 1'b0;
 
 
 system_system_hps_0_hps_io_border border(
-	.hps_io_emac1_inst_TX_CLK({emac1_inst}),
-	.hps_io_emac1_inst_TX_CTL({emac1_inst1}),
-	.intermediate_0(intermediate_0),
-	.intermediate_1(intermediate_1),
-	.hps_io_emac1_inst_MDC({emac1_inst2}),
-	.hps_io_emac1_inst_TXD0({emac1_inst3}),
-	.hps_io_emac1_inst_TXD1({emac1_inst4}),
-	.hps_io_emac1_inst_TXD2({emac1_inst5}),
-	.hps_io_emac1_inst_TXD3({emac1_inst6}),
-	.hps_io_qspi_inst_CLK({qspi_inst}),
-	.intermediate_2(intermediate_2),
-	.intermediate_4(intermediate_4),
-	.intermediate_6(intermediate_6),
-	.intermediate_8(intermediate_8),
-	.intermediate_3(intermediate_3),
-	.intermediate_5(intermediate_5),
-	.intermediate_7(intermediate_7),
-	.intermediate_9(intermediate_9),
-	.hps_io_qspi_inst_SS0({qspi_inst1}),
-	.hps_io_sdio_inst_CLK({sdio_inst}),
-	.intermediate_10(intermediate_10),
-	.intermediate_11(intermediate_11),
-	.intermediate_12(intermediate_12),
-	.intermediate_14(intermediate_14),
-	.intermediate_16(intermediate_16),
-	.intermediate_18(intermediate_18),
-	.intermediate_13(intermediate_13),
-	.intermediate_15(intermediate_15),
-	.intermediate_17(intermediate_17),
-	.intermediate_19(intermediate_19),
-	.hps_io_usb1_inst_STP({usb1_inst}),
-	.intermediate_20(intermediate_20),
-	.intermediate_22(intermediate_22),
-	.intermediate_24(intermediate_24),
-	.intermediate_26(intermediate_26),
-	.intermediate_28(intermediate_28),
-	.intermediate_30(intermediate_30),
-	.intermediate_32(intermediate_32),
-	.intermediate_34(intermediate_34),
-	.intermediate_21(intermediate_21),
-	.intermediate_23(intermediate_23),
-	.intermediate_25(intermediate_25),
-	.intermediate_27(intermediate_27),
-	.intermediate_29(intermediate_29),
-	.intermediate_31(intermediate_31),
-	.intermediate_33(intermediate_33),
-	.intermediate_35(intermediate_35),
-	.hps_io_spim1_inst_CLK({spim1_inst}),
-	.hps_io_spim1_inst_SS0({spim1_inst1}),
-	.intermediate_36(intermediate_36),
-	.intermediate_37(intermediate_37),
-	.hps_io_uart0_inst_TX({uart0_inst}),
-	.intermediate_39(intermediate_39),
-	.intermediate_38(intermediate_38),
-	.intermediate_41(intermediate_41),
-	.intermediate_40(intermediate_40),
 	.parallelterminationcontrol_0(parallelterminationcontrol_0),
 	.parallelterminationcontrol_1(parallelterminationcontrol_1),
 	.parallelterminationcontrol_2(parallelterminationcontrol_2),
@@ -6501,100 +5203,11 @@ system_system_hps_0_hps_io_border border(
 	.diff_oe_bar3(diff_oe_bar3),
 	.diff_dtc3(diff_dtc3),
 	.diff_dtc_bar3(diff_dtc_bar3),
-	.hps_io_emac1_inst_MDIO_0(hps_io_emac1_inst_MDIO_0),
-	.hps_io_qspi_inst_IO0_0(hps_io_qspi_inst_IO0_0),
-	.hps_io_qspi_inst_IO1_0(hps_io_qspi_inst_IO1_0),
-	.hps_io_qspi_inst_IO2_0(hps_io_qspi_inst_IO2_0),
-	.hps_io_qspi_inst_IO3_0(hps_io_qspi_inst_IO3_0),
-	.hps_io_sdio_inst_CMD_0(hps_io_sdio_inst_CMD_0),
-	.hps_io_sdio_inst_D0_0(hps_io_sdio_inst_D0_0),
-	.hps_io_sdio_inst_D1_0(hps_io_sdio_inst_D1_0),
-	.hps_io_sdio_inst_D2_0(hps_io_sdio_inst_D2_0),
-	.hps_io_sdio_inst_D3_0(hps_io_sdio_inst_D3_0),
-	.hps_io_usb1_inst_D0_0(hps_io_usb1_inst_D0_0),
-	.hps_io_usb1_inst_D1_0(hps_io_usb1_inst_D1_0),
-	.hps_io_usb1_inst_D2_0(hps_io_usb1_inst_D2_0),
-	.hps_io_usb1_inst_D3_0(hps_io_usb1_inst_D3_0),
-	.hps_io_usb1_inst_D4_0(hps_io_usb1_inst_D4_0),
-	.hps_io_usb1_inst_D5_0(hps_io_usb1_inst_D5_0),
-	.hps_io_usb1_inst_D6_0(hps_io_usb1_inst_D6_0),
-	.hps_io_usb1_inst_D7_0(hps_io_usb1_inst_D7_0),
-	.hps_io_i2c0_inst_SDA_0(hps_io_i2c0_inst_SDA_0),
-	.hps_io_i2c0_inst_SCL_0(hps_io_i2c0_inst_SCL_0),
-	.hps_io_i2c1_inst_SDA_0(hps_io_i2c1_inst_SDA_0),
-	.hps_io_i2c1_inst_SCL_0(hps_io_i2c1_inst_SCL_0),
-	.hps_io_emac1_inst_RXD0({hps_io_hps_io_emac1_inst_RXD0}),
-	.hps_io_emac1_inst_RXD1({hps_io_hps_io_emac1_inst_RXD1}),
-	.hps_io_emac1_inst_RXD2({hps_io_hps_io_emac1_inst_RXD2}),
-	.hps_io_emac1_inst_RXD3({hps_io_hps_io_emac1_inst_RXD3}),
-	.hps_io_emac1_inst_RX_CLK({hps_io_hps_io_emac1_inst_RX_CLK}),
-	.hps_io_emac1_inst_RX_CTL({hps_io_hps_io_emac1_inst_RX_CTL}),
-	.hps_io_spim1_inst_MISO({hps_io_hps_io_spim1_inst_MISO}),
-	.hps_io_uart0_inst_RX({hps_io_hps_io_uart0_inst_RX}),
-	.hps_io_usb1_inst_CLK({hps_io_hps_io_usb1_inst_CLK}),
-	.hps_io_usb1_inst_DIR({hps_io_hps_io_usb1_inst_DIR}),
-	.hps_io_usb1_inst_NXT({hps_io_hps_io_usb1_inst_NXT}),
 	.memory_oct_rzqin(memory_oct_rzqin));
 
 endmodule
 
 module system_system_hps_0_hps_io_border (
-	hps_io_emac1_inst_TX_CLK,
-	hps_io_emac1_inst_TX_CTL,
-	intermediate_0,
-	intermediate_1,
-	hps_io_emac1_inst_MDC,
-	hps_io_emac1_inst_TXD0,
-	hps_io_emac1_inst_TXD1,
-	hps_io_emac1_inst_TXD2,
-	hps_io_emac1_inst_TXD3,
-	hps_io_qspi_inst_CLK,
-	intermediate_2,
-	intermediate_4,
-	intermediate_6,
-	intermediate_8,
-	intermediate_3,
-	intermediate_5,
-	intermediate_7,
-	intermediate_9,
-	hps_io_qspi_inst_SS0,
-	hps_io_sdio_inst_CLK,
-	intermediate_10,
-	intermediate_11,
-	intermediate_12,
-	intermediate_14,
-	intermediate_16,
-	intermediate_18,
-	intermediate_13,
-	intermediate_15,
-	intermediate_17,
-	intermediate_19,
-	hps_io_usb1_inst_STP,
-	intermediate_20,
-	intermediate_22,
-	intermediate_24,
-	intermediate_26,
-	intermediate_28,
-	intermediate_30,
-	intermediate_32,
-	intermediate_34,
-	intermediate_21,
-	intermediate_23,
-	intermediate_25,
-	intermediate_27,
-	intermediate_29,
-	intermediate_31,
-	intermediate_33,
-	intermediate_35,
-	hps_io_spim1_inst_CLK,
-	hps_io_spim1_inst_SS0,
-	intermediate_36,
-	intermediate_37,
-	hps_io_uart0_inst_TX,
-	intermediate_39,
-	intermediate_38,
-	intermediate_41,
-	intermediate_40,
 	parallelterminationcontrol_0,
 	parallelterminationcontrol_1,
 	parallelterminationcontrol_2,
@@ -6788,96 +5401,7 @@ module system_system_hps_0_hps_io_border (
 	diff_oe_bar3,
 	diff_dtc3,
 	diff_dtc_bar3,
-	hps_io_emac1_inst_MDIO_0,
-	hps_io_qspi_inst_IO0_0,
-	hps_io_qspi_inst_IO1_0,
-	hps_io_qspi_inst_IO2_0,
-	hps_io_qspi_inst_IO3_0,
-	hps_io_sdio_inst_CMD_0,
-	hps_io_sdio_inst_D0_0,
-	hps_io_sdio_inst_D1_0,
-	hps_io_sdio_inst_D2_0,
-	hps_io_sdio_inst_D3_0,
-	hps_io_usb1_inst_D0_0,
-	hps_io_usb1_inst_D1_0,
-	hps_io_usb1_inst_D2_0,
-	hps_io_usb1_inst_D3_0,
-	hps_io_usb1_inst_D4_0,
-	hps_io_usb1_inst_D5_0,
-	hps_io_usb1_inst_D6_0,
-	hps_io_usb1_inst_D7_0,
-	hps_io_i2c0_inst_SDA_0,
-	hps_io_i2c0_inst_SCL_0,
-	hps_io_i2c1_inst_SDA_0,
-	hps_io_i2c1_inst_SCL_0,
-	hps_io_emac1_inst_RXD0,
-	hps_io_emac1_inst_RXD1,
-	hps_io_emac1_inst_RXD2,
-	hps_io_emac1_inst_RXD3,
-	hps_io_emac1_inst_RX_CLK,
-	hps_io_emac1_inst_RX_CTL,
-	hps_io_spim1_inst_MISO,
-	hps_io_uart0_inst_RX,
-	hps_io_usb1_inst_CLK,
-	hps_io_usb1_inst_DIR,
-	hps_io_usb1_inst_NXT,
 	memory_oct_rzqin)/* synthesis synthesis_greybox=0 */;
-output 	[0:0] hps_io_emac1_inst_TX_CLK;
-output 	[0:0] hps_io_emac1_inst_TX_CTL;
-output 	intermediate_0;
-output 	intermediate_1;
-output 	[0:0] hps_io_emac1_inst_MDC;
-output 	[0:0] hps_io_emac1_inst_TXD0;
-output 	[0:0] hps_io_emac1_inst_TXD1;
-output 	[0:0] hps_io_emac1_inst_TXD2;
-output 	[0:0] hps_io_emac1_inst_TXD3;
-output 	[0:0] hps_io_qspi_inst_CLK;
-output 	intermediate_2;
-output 	intermediate_4;
-output 	intermediate_6;
-output 	intermediate_8;
-output 	intermediate_3;
-output 	intermediate_5;
-output 	intermediate_7;
-output 	intermediate_9;
-output 	[0:0] hps_io_qspi_inst_SS0;
-output 	[0:0] hps_io_sdio_inst_CLK;
-output 	intermediate_10;
-output 	intermediate_11;
-output 	intermediate_12;
-output 	intermediate_14;
-output 	intermediate_16;
-output 	intermediate_18;
-output 	intermediate_13;
-output 	intermediate_15;
-output 	intermediate_17;
-output 	intermediate_19;
-output 	[0:0] hps_io_usb1_inst_STP;
-output 	intermediate_20;
-output 	intermediate_22;
-output 	intermediate_24;
-output 	intermediate_26;
-output 	intermediate_28;
-output 	intermediate_30;
-output 	intermediate_32;
-output 	intermediate_34;
-output 	intermediate_21;
-output 	intermediate_23;
-output 	intermediate_25;
-output 	intermediate_27;
-output 	intermediate_29;
-output 	intermediate_31;
-output 	intermediate_33;
-output 	intermediate_35;
-output 	[0:0] hps_io_spim1_inst_CLK;
-output 	[0:0] hps_io_spim1_inst_SS0;
-output 	intermediate_36;
-output 	intermediate_37;
-output 	[0:0] hps_io_uart0_inst_TX;
-output 	intermediate_39;
-output 	intermediate_38;
-output 	intermediate_41;
-output 	intermediate_40;
 output 	parallelterminationcontrol_0;
 output 	parallelterminationcontrol_1;
 output 	parallelterminationcontrol_2;
@@ -7071,39 +5595,6 @@ output 	diff_oe3;
 output 	diff_oe_bar3;
 output 	diff_dtc3;
 output 	diff_dtc_bar3;
-input 	hps_io_emac1_inst_MDIO_0;
-input 	hps_io_qspi_inst_IO0_0;
-input 	hps_io_qspi_inst_IO1_0;
-input 	hps_io_qspi_inst_IO2_0;
-input 	hps_io_qspi_inst_IO3_0;
-input 	hps_io_sdio_inst_CMD_0;
-input 	hps_io_sdio_inst_D0_0;
-input 	hps_io_sdio_inst_D1_0;
-input 	hps_io_sdio_inst_D2_0;
-input 	hps_io_sdio_inst_D3_0;
-input 	hps_io_usb1_inst_D0_0;
-input 	hps_io_usb1_inst_D1_0;
-input 	hps_io_usb1_inst_D2_0;
-input 	hps_io_usb1_inst_D3_0;
-input 	hps_io_usb1_inst_D4_0;
-input 	hps_io_usb1_inst_D5_0;
-input 	hps_io_usb1_inst_D6_0;
-input 	hps_io_usb1_inst_D7_0;
-input 	hps_io_i2c0_inst_SDA_0;
-input 	hps_io_i2c0_inst_SCL_0;
-input 	hps_io_i2c1_inst_SDA_0;
-input 	hps_io_i2c1_inst_SCL_0;
-input 	[0:0] hps_io_emac1_inst_RXD0;
-input 	[0:0] hps_io_emac1_inst_RXD1;
-input 	[0:0] hps_io_emac1_inst_RXD2;
-input 	[0:0] hps_io_emac1_inst_RXD3;
-input 	[0:0] hps_io_emac1_inst_RX_CLK;
-input 	[0:0] hps_io_emac1_inst_RX_CTL;
-input 	[0:0] hps_io_spim1_inst_MISO;
-input 	[0:0] hps_io_uart0_inst_RX;
-input 	[0:0] hps_io_usb1_inst_CLK;
-input 	[0:0] hps_io_usb1_inst_DIR;
-input 	[0:0] hps_io_usb1_inst_NXT;
 input 	memory_oct_rzqin;
 
 wire gnd;
@@ -7115,57 +5606,8 @@ assign vcc = 1'b1;
 // unknown value (1'bx) is not needed for this tool. Default to 1'b0
 assign unknown = 1'b0;
 
-wire \sdio_inst~O_SDMMC_PWR_EN ;
-wire \uart0_inst~UARTRTSN ;
 wire \~GND~combout ;
 
-wire [3:0] emac1_inst_EMAC_PHY_TXD_bus;
-wire [3:0] qspi_inst_QSPI_SS_N_bus;
-wire [3:0] qspi_inst_QSPI_MO_EN_N_bus;
-wire [7:0] sdio_inst_SDMMC_DATA_OE_bus;
-wire [7:0] sdio_inst_SDMMC_DATA_O_bus;
-wire [7:0] usb1_inst_USB_ULPI_DATA_O_bus;
-wire [7:0] usb1_inst_USB_ULPI_DATA_OE_bus;
-
-assign hps_io_emac1_inst_TXD0[0] = emac1_inst_EMAC_PHY_TXD_bus[0];
-assign hps_io_emac1_inst_TXD1[0] = emac1_inst_EMAC_PHY_TXD_bus[1];
-assign hps_io_emac1_inst_TXD2[0] = emac1_inst_EMAC_PHY_TXD_bus[2];
-assign hps_io_emac1_inst_TXD3[0] = emac1_inst_EMAC_PHY_TXD_bus[3];
-
-assign hps_io_qspi_inst_SS0[0] = qspi_inst_QSPI_SS_N_bus[0];
-
-assign intermediate_3 = qspi_inst_QSPI_MO_EN_N_bus[0];
-assign intermediate_5 = qspi_inst_QSPI_MO_EN_N_bus[1];
-assign intermediate_7 = qspi_inst_QSPI_MO_EN_N_bus[2];
-assign intermediate_9 = qspi_inst_QSPI_MO_EN_N_bus[3];
-
-assign intermediate_13 = sdio_inst_SDMMC_DATA_OE_bus[0];
-assign intermediate_15 = sdio_inst_SDMMC_DATA_OE_bus[1];
-assign intermediate_17 = sdio_inst_SDMMC_DATA_OE_bus[2];
-assign intermediate_19 = sdio_inst_SDMMC_DATA_OE_bus[3];
-
-assign intermediate_12 = sdio_inst_SDMMC_DATA_O_bus[0];
-assign intermediate_14 = sdio_inst_SDMMC_DATA_O_bus[1];
-assign intermediate_16 = sdio_inst_SDMMC_DATA_O_bus[2];
-assign intermediate_18 = sdio_inst_SDMMC_DATA_O_bus[3];
-
-assign intermediate_20 = usb1_inst_USB_ULPI_DATA_O_bus[0];
-assign intermediate_22 = usb1_inst_USB_ULPI_DATA_O_bus[1];
-assign intermediate_24 = usb1_inst_USB_ULPI_DATA_O_bus[2];
-assign intermediate_26 = usb1_inst_USB_ULPI_DATA_O_bus[3];
-assign intermediate_28 = usb1_inst_USB_ULPI_DATA_O_bus[4];
-assign intermediate_30 = usb1_inst_USB_ULPI_DATA_O_bus[5];
-assign intermediate_32 = usb1_inst_USB_ULPI_DATA_O_bus[6];
-assign intermediate_34 = usb1_inst_USB_ULPI_DATA_O_bus[7];
-
-assign intermediate_21 = usb1_inst_USB_ULPI_DATA_OE_bus[0];
-assign intermediate_23 = usb1_inst_USB_ULPI_DATA_OE_bus[1];
-assign intermediate_25 = usb1_inst_USB_ULPI_DATA_OE_bus[2];
-assign intermediate_27 = usb1_inst_USB_ULPI_DATA_OE_bus[3];
-assign intermediate_29 = usb1_inst_USB_ULPI_DATA_OE_bus[4];
-assign intermediate_31 = usb1_inst_USB_ULPI_DATA_OE_bus[5];
-assign intermediate_33 = usb1_inst_USB_ULPI_DATA_OE_bus[6];
-assign intermediate_35 = usb1_inst_USB_ULPI_DATA_OE_bus[7];
 
 system_hps_sdram hps_sdram_inst(
 	.parallelterminationcontrol_0(parallelterminationcontrol_0),
@@ -7381,85 +5823,6 @@ cyclonev_lcell_comb \~GND (
 defparam \~GND .extended_lut = "off";
 defparam \~GND .lut_mask = 64'h0000000000000000;
 defparam \~GND .shared_arith = "off";
-
-cyclonev_hps_peripheral_emac emac1_inst(
-	.emac_clk_rx(hps_io_emac1_inst_RX_CLK[0]),
-	.emac_phy_rxdv(hps_io_emac1_inst_RX_CTL[0]),
-	.emac_gmii_mdo_i(hps_io_emac1_inst_MDIO_0),
-	.emac_phy_rxd({hps_io_emac1_inst_RXD3[0],hps_io_emac1_inst_RXD2[0],hps_io_emac1_inst_RXD1[0],hps_io_emac1_inst_RXD0[0]}),
-	.emac_clk_tx(hps_io_emac1_inst_TX_CLK[0]),
-	.emac_phy_tx_oe(hps_io_emac1_inst_TX_CTL[0]),
-	.emac_gmii_mdo_o(intermediate_0),
-	.emac_gmii_mdo_oe(intermediate_1),
-	.emac_gmii_mdc(hps_io_emac1_inst_MDC[0]),
-	.emac_phy_txd(emac1_inst_EMAC_PHY_TXD_bus));
-defparam emac1_inst.dummy_param = 256;
-
-cyclonev_hps_peripheral_qspi qspi_inst(
-	.qspi_mi0(hps_io_qspi_inst_IO0_0),
-	.qspi_mi1(hps_io_qspi_inst_IO1_0),
-	.qspi_mi2(hps_io_qspi_inst_IO2_0),
-	.qspi_mi3(hps_io_qspi_inst_IO3_0),
-	.qspi_sclk(hps_io_qspi_inst_CLK[0]),
-	.qspi_mo0(intermediate_2),
-	.qspi_mo1(intermediate_4),
-	.qspi_mo2(intermediate_6),
-	.qspi_mo3(intermediate_8),
-	.qspi_mo_en_n(qspi_inst_QSPI_MO_EN_N_bus),
-	.qspi_ss_n(qspi_inst_QSPI_SS_N_bus));
-defparam qspi_inst.dummy_param = 256;
-
-cyclonev_hps_peripheral_sdmmc sdio_inst(
-	.sdmmc_fb_clk(gnd),
-	.sdmmc_cmd_i(hps_io_sdio_inst_CMD_0),
-	.sdmmc_data_i({gnd,gnd,gnd,gnd,hps_io_sdio_inst_D3_0,hps_io_sdio_inst_D2_0,hps_io_sdio_inst_D1_0,hps_io_sdio_inst_D0_0}),
-	.sdmmc_pwr_en(\sdio_inst~O_SDMMC_PWR_EN ),
-	.sdmmc_cclk(hps_io_sdio_inst_CLK[0]),
-	.sdmmc_cmd_o(intermediate_10),
-	.sdmmc_cmd_oe(intermediate_11),
-	.sdmmc_data_o(sdio_inst_SDMMC_DATA_O_bus),
-	.sdmmc_data_oe(sdio_inst_SDMMC_DATA_OE_bus));
-defparam sdio_inst.dummy_param = 256;
-
-cyclonev_hps_peripheral_usb usb1_inst(
-	.usb_ulpi_clk(hps_io_usb1_inst_CLK[0]),
-	.usb_ulpi_dir(hps_io_usb1_inst_DIR[0]),
-	.usb_ulpi_nxt(hps_io_usb1_inst_NXT[0]),
-	.usb_ulpi_data_i({hps_io_usb1_inst_D7_0,hps_io_usb1_inst_D6_0,hps_io_usb1_inst_D5_0,hps_io_usb1_inst_D4_0,hps_io_usb1_inst_D3_0,hps_io_usb1_inst_D2_0,hps_io_usb1_inst_D1_0,hps_io_usb1_inst_D0_0}),
-	.usb_ulpi_stp(hps_io_usb1_inst_STP[0]),
-	.usb_ulpi_data_o(usb1_inst_USB_ULPI_DATA_O_bus),
-	.usb_ulpi_data_oe(usb1_inst_USB_ULPI_DATA_OE_bus));
-defparam usb1_inst.dummy_param = 256;
-
-cyclonev_hps_peripheral_spi_master spim1_inst(
-	.spi_master_rxd(hps_io_spim1_inst_MISO[0]),
-	.spi_master_sclk(hps_io_spim1_inst_CLK[0]),
-	.spi_master_ss_0_n(hps_io_spim1_inst_SS0[0]),
-	.spi_master_ss_1_n(),
-	.spi_master_txd(intermediate_36),
-	.spi_master_ssi_oe_n(intermediate_37));
-defparam spim1_inst.dummy_param = 256;
-
-cyclonev_hps_peripheral_uart uart0_inst(
-	.uart_cts_n(gnd),
-	.uart_rxd(hps_io_uart0_inst_RX[0]),
-	.uart_rts_n(\uart0_inst~UARTRTSN ),
-	.uart_txd(hps_io_uart0_inst_TX[0]));
-defparam uart0_inst.dummy_param = 256;
-
-cyclonev_hps_peripheral_i2c i2c0_inst(
-	.i2c_clk(hps_io_i2c0_inst_SCL_0),
-	.i2c_data(hps_io_i2c0_inst_SDA_0),
-	.i2c_clk_oe(intermediate_39),
-	.i2c_data_oe(intermediate_38));
-defparam i2c0_inst.dummy_param = 256;
-
-cyclonev_hps_peripheral_i2c i2c1_inst(
-	.i2c_clk(hps_io_i2c1_inst_SCL_0),
-	.i2c_data(hps_io_i2c1_inst_SDA_0),
-	.i2c_clk_oe(intermediate_41),
-	.i2c_data_oe(intermediate_40));
-defparam i2c1_inst.dummy_param = 256;
 
 endmodule
 
@@ -14827,6 +13190,299 @@ assign unknown = 1'b0;
 
 
 
+system_hps_sdram_p0_acv_hard_addr_cmd_pads uaddr_cmd_pads(
+	.afi_clk(afi_clk),
+	.dataout_0(dataout_0),
+	.dataout_1(dataout_1),
+	.dataout_2(dataout_2),
+	.dataout_3(dataout_3),
+	.dataout_4(dataout_4),
+	.dataout_5(dataout_5),
+	.dataout_6(dataout_6),
+	.dataout_7(dataout_7),
+	.dataout_8(dataout_8),
+	.dataout_9(dataout_9),
+	.dataout_10(dataout_10),
+	.dataout_11(dataout_11),
+	.dataout_12(dataout_12),
+	.dataout_13(dataout_13),
+	.dataout_14(dataout_14),
+	.dataout_01(dataout_01),
+	.dataout_15(dataout_15),
+	.dataout_21(dataout_21),
+	.dataout_16(dataout_16),
+	.dataout_02(dataout_02),
+	.dataout_31(dataout_31),
+	.dataout_41(dataout_41),
+	.dataout_51(dataout_51),
+	.dataout_03(dataout_03),
+	.dataout_22(dataout_22),
+	.wire_pseudo_diffa_o_0(wire_pseudo_diffa_o_0),
+	.wire_pseudo_diffa_obar_0(wire_pseudo_diffa_obar_0),
+	.wire_pseudo_diffa_oeout_0(wire_pseudo_diffa_oeout_0),
+	.wire_pseudo_diffa_oebout_0(wire_pseudo_diffa_oebout_0),
+	.phy_ddio_address_0(phy_ddio_address_0),
+	.phy_ddio_address_1(phy_ddio_address_1),
+	.phy_ddio_address_2(phy_ddio_address_2),
+	.phy_ddio_address_3(phy_ddio_address_3),
+	.phy_ddio_address_4(phy_ddio_address_4),
+	.phy_ddio_address_5(phy_ddio_address_5),
+	.phy_ddio_address_6(phy_ddio_address_6),
+	.phy_ddio_address_7(phy_ddio_address_7),
+	.phy_ddio_address_8(phy_ddio_address_8),
+	.phy_ddio_address_9(phy_ddio_address_9),
+	.phy_ddio_address_10(phy_ddio_address_10),
+	.phy_ddio_address_11(phy_ddio_address_11),
+	.phy_ddio_address_12(phy_ddio_address_12),
+	.phy_ddio_address_13(phy_ddio_address_13),
+	.phy_ddio_address_14(phy_ddio_address_14),
+	.phy_ddio_address_15(phy_ddio_address_15),
+	.phy_ddio_address_16(phy_ddio_address_16),
+	.phy_ddio_address_17(phy_ddio_address_17),
+	.phy_ddio_address_18(phy_ddio_address_18),
+	.phy_ddio_address_19(phy_ddio_address_19),
+	.phy_ddio_address_20(phy_ddio_address_20),
+	.phy_ddio_address_21(phy_ddio_address_21),
+	.phy_ddio_address_22(phy_ddio_address_22),
+	.phy_ddio_address_23(phy_ddio_address_23),
+	.phy_ddio_address_24(phy_ddio_address_24),
+	.phy_ddio_address_25(phy_ddio_address_25),
+	.phy_ddio_address_26(phy_ddio_address_26),
+	.phy_ddio_address_27(phy_ddio_address_27),
+	.phy_ddio_address_28(phy_ddio_address_28),
+	.phy_ddio_address_29(phy_ddio_address_29),
+	.phy_ddio_address_30(phy_ddio_address_30),
+	.phy_ddio_address_31(phy_ddio_address_31),
+	.phy_ddio_address_32(phy_ddio_address_32),
+	.phy_ddio_address_33(phy_ddio_address_33),
+	.phy_ddio_address_34(phy_ddio_address_34),
+	.phy_ddio_address_35(phy_ddio_address_35),
+	.phy_ddio_address_36(phy_ddio_address_36),
+	.phy_ddio_address_37(phy_ddio_address_37),
+	.phy_ddio_address_38(phy_ddio_address_38),
+	.phy_ddio_address_39(phy_ddio_address_39),
+	.phy_ddio_address_40(phy_ddio_address_40),
+	.phy_ddio_address_41(phy_ddio_address_41),
+	.phy_ddio_address_42(phy_ddio_address_42),
+	.phy_ddio_address_43(phy_ddio_address_43),
+	.phy_ddio_address_44(phy_ddio_address_44),
+	.phy_ddio_address_45(phy_ddio_address_45),
+	.phy_ddio_address_46(phy_ddio_address_46),
+	.phy_ddio_address_47(phy_ddio_address_47),
+	.phy_ddio_address_48(phy_ddio_address_48),
+	.phy_ddio_address_49(phy_ddio_address_49),
+	.phy_ddio_address_50(phy_ddio_address_50),
+	.phy_ddio_address_51(phy_ddio_address_51),
+	.phy_ddio_address_52(phy_ddio_address_52),
+	.phy_ddio_address_53(phy_ddio_address_53),
+	.phy_ddio_address_54(phy_ddio_address_54),
+	.phy_ddio_address_55(phy_ddio_address_55),
+	.phy_ddio_address_56(phy_ddio_address_56),
+	.phy_ddio_address_57(phy_ddio_address_57),
+	.phy_ddio_address_58(phy_ddio_address_58),
+	.phy_ddio_address_59(phy_ddio_address_59),
+	.phy_ddio_bank_0(phy_ddio_bank_0),
+	.phy_ddio_bank_1(phy_ddio_bank_1),
+	.phy_ddio_bank_2(phy_ddio_bank_2),
+	.phy_ddio_bank_3(phy_ddio_bank_3),
+	.phy_ddio_bank_4(phy_ddio_bank_4),
+	.phy_ddio_bank_5(phy_ddio_bank_5),
+	.phy_ddio_bank_6(phy_ddio_bank_6),
+	.phy_ddio_bank_7(phy_ddio_bank_7),
+	.phy_ddio_bank_8(phy_ddio_bank_8),
+	.phy_ddio_bank_9(phy_ddio_bank_9),
+	.phy_ddio_bank_10(phy_ddio_bank_10),
+	.phy_ddio_bank_11(phy_ddio_bank_11),
+	.phy_ddio_cas_n_0(phy_ddio_cas_n_0),
+	.phy_ddio_cas_n_1(phy_ddio_cas_n_1),
+	.phy_ddio_cas_n_2(phy_ddio_cas_n_2),
+	.phy_ddio_cas_n_3(phy_ddio_cas_n_3),
+	.phy_ddio_ck_0(phy_ddio_ck_0),
+	.phy_ddio_ck_1(phy_ddio_ck_1),
+	.phy_ddio_cke_0(phy_ddio_cke_0),
+	.phy_ddio_cke_1(phy_ddio_cke_1),
+	.phy_ddio_cke_2(phy_ddio_cke_2),
+	.phy_ddio_cke_3(phy_ddio_cke_3),
+	.phy_ddio_cs_n_0(phy_ddio_cs_n_0),
+	.phy_ddio_cs_n_1(phy_ddio_cs_n_1),
+	.phy_ddio_cs_n_2(phy_ddio_cs_n_2),
+	.phy_ddio_cs_n_3(phy_ddio_cs_n_3),
+	.phy_ddio_odt_0(phy_ddio_odt_0),
+	.phy_ddio_odt_1(phy_ddio_odt_1),
+	.phy_ddio_odt_2(phy_ddio_odt_2),
+	.phy_ddio_odt_3(phy_ddio_odt_3),
+	.phy_ddio_ras_n_0(phy_ddio_ras_n_0),
+	.phy_ddio_ras_n_1(phy_ddio_ras_n_1),
+	.phy_ddio_ras_n_2(phy_ddio_ras_n_2),
+	.phy_ddio_ras_n_3(phy_ddio_ras_n_3),
+	.phy_ddio_reset_n_0(phy_ddio_reset_n_0),
+	.phy_ddio_reset_n_1(phy_ddio_reset_n_1),
+	.phy_ddio_reset_n_2(phy_ddio_reset_n_2),
+	.phy_ddio_reset_n_3(phy_ddio_reset_n_3),
+	.phy_ddio_we_n_0(phy_ddio_we_n_0),
+	.phy_ddio_we_n_1(phy_ddio_we_n_1),
+	.phy_ddio_we_n_2(phy_ddio_we_n_2),
+	.phy_ddio_we_n_3(phy_ddio_we_n_3),
+	.dll_delayctrl_0(dll_delayctrl_0),
+	.dll_delayctrl_1(dll_delayctrl_1),
+	.dll_delayctrl_2(dll_delayctrl_2),
+	.dll_delayctrl_3(dll_delayctrl_3),
+	.dll_delayctrl_4(dll_delayctrl_4),
+	.dll_delayctrl_5(dll_delayctrl_5),
+	.dll_delayctrl_6(dll_delayctrl_6));
+
+system_hps_sdram_p0_altdqdqs \dq_ddio[0].ubidir_dq_dqs (
+	.dqsin(dqsin3),
+	.pad_gen0raw_input(pad_gen0raw_input3),
+	.pad_gen1raw_input(pad_gen1raw_input3),
+	.pad_gen2raw_input(pad_gen2raw_input3),
+	.pad_gen3raw_input(pad_gen3raw_input3),
+	.pad_gen4raw_input(pad_gen4raw_input3),
+	.pad_gen5raw_input(pad_gen5raw_input3),
+	.pad_gen6raw_input(pad_gen6raw_input3),
+	.pad_gen7raw_input(pad_gen7raw_input3),
+	.afi_clk(afi_clk),
+	.pll_write_clk(pll_write_clk),
+	.extra_output_pad_gen0delayed_data_out(extra_output_pad_gen0delayed_data_out3),
+	.phy_ddio_dmdout_0(phy_ddio_dmdout_0),
+	.phy_ddio_dmdout_1(phy_ddio_dmdout_1),
+	.phy_ddio_dmdout_2(phy_ddio_dmdout_2),
+	.phy_ddio_dmdout_3(phy_ddio_dmdout_3),
+	.phy_ddio_dqdout_0(phy_ddio_dqdout_0),
+	.phy_ddio_dqdout_1(phy_ddio_dqdout_1),
+	.phy_ddio_dqdout_2(phy_ddio_dqdout_2),
+	.phy_ddio_dqdout_3(phy_ddio_dqdout_3),
+	.phy_ddio_dqdout_4(phy_ddio_dqdout_4),
+	.phy_ddio_dqdout_5(phy_ddio_dqdout_5),
+	.phy_ddio_dqdout_6(phy_ddio_dqdout_6),
+	.phy_ddio_dqdout_7(phy_ddio_dqdout_7),
+	.phy_ddio_dqdout_8(phy_ddio_dqdout_8),
+	.phy_ddio_dqdout_9(phy_ddio_dqdout_9),
+	.phy_ddio_dqdout_10(phy_ddio_dqdout_10),
+	.phy_ddio_dqdout_11(phy_ddio_dqdout_11),
+	.phy_ddio_dqdout_12(phy_ddio_dqdout_12),
+	.phy_ddio_dqdout_13(phy_ddio_dqdout_13),
+	.phy_ddio_dqdout_14(phy_ddio_dqdout_14),
+	.phy_ddio_dqdout_15(phy_ddio_dqdout_15),
+	.phy_ddio_dqdout_16(phy_ddio_dqdout_16),
+	.phy_ddio_dqdout_17(phy_ddio_dqdout_17),
+	.phy_ddio_dqdout_18(phy_ddio_dqdout_18),
+	.phy_ddio_dqdout_19(phy_ddio_dqdout_19),
+	.phy_ddio_dqdout_20(phy_ddio_dqdout_20),
+	.phy_ddio_dqdout_21(phy_ddio_dqdout_21),
+	.phy_ddio_dqdout_22(phy_ddio_dqdout_22),
+	.phy_ddio_dqdout_23(phy_ddio_dqdout_23),
+	.phy_ddio_dqdout_24(phy_ddio_dqdout_24),
+	.phy_ddio_dqdout_25(phy_ddio_dqdout_25),
+	.phy_ddio_dqdout_26(phy_ddio_dqdout_26),
+	.phy_ddio_dqdout_27(phy_ddio_dqdout_27),
+	.phy_ddio_dqdout_28(phy_ddio_dqdout_28),
+	.phy_ddio_dqdout_29(phy_ddio_dqdout_29),
+	.phy_ddio_dqdout_30(phy_ddio_dqdout_30),
+	.phy_ddio_dqdout_31(phy_ddio_dqdout_31),
+	.phy_ddio_dqoe_0(phy_ddio_dqoe_0),
+	.phy_ddio_dqoe_1(phy_ddio_dqoe_1),
+	.phy_ddio_dqoe_2(phy_ddio_dqoe_2),
+	.phy_ddio_dqoe_3(phy_ddio_dqoe_3),
+	.phy_ddio_dqoe_4(phy_ddio_dqoe_4),
+	.phy_ddio_dqoe_5(phy_ddio_dqoe_5),
+	.phy_ddio_dqoe_6(phy_ddio_dqoe_6),
+	.phy_ddio_dqoe_7(phy_ddio_dqoe_7),
+	.phy_ddio_dqoe_8(phy_ddio_dqoe_8),
+	.phy_ddio_dqoe_9(phy_ddio_dqoe_9),
+	.phy_ddio_dqoe_10(phy_ddio_dqoe_10),
+	.phy_ddio_dqoe_11(phy_ddio_dqoe_11),
+	.phy_ddio_dqoe_12(phy_ddio_dqoe_12),
+	.phy_ddio_dqoe_13(phy_ddio_dqoe_13),
+	.phy_ddio_dqoe_14(phy_ddio_dqoe_14),
+	.phy_ddio_dqoe_15(phy_ddio_dqoe_15),
+	.phy_ddio_dqs_dout_0(phy_ddio_dqs_dout_0),
+	.phy_ddio_dqs_dout_1(phy_ddio_dqs_dout_1),
+	.phy_ddio_dqs_dout_2(phy_ddio_dqs_dout_2),
+	.phy_ddio_dqs_dout_3(phy_ddio_dqs_dout_3),
+	.phy_ddio_dqslogic_aclr_fifoctrl_0(phy_ddio_dqslogic_aclr_fifoctrl_0),
+	.phy_ddio_dqslogic_aclr_pstamble_0(phy_ddio_dqslogic_aclr_pstamble_0),
+	.phy_ddio_dqslogic_dqsena_0(phy_ddio_dqslogic_dqsena_0),
+	.phy_ddio_dqslogic_dqsena_1(phy_ddio_dqslogic_dqsena_1),
+	.phy_ddio_dqslogic_fiforeset_0(phy_ddio_dqslogic_fiforeset_0),
+	.phy_ddio_dqslogic_incrdataen_0(phy_ddio_dqslogic_incrdataen_0),
+	.phy_ddio_dqslogic_incrdataen_1(phy_ddio_dqslogic_incrdataen_1),
+	.phy_ddio_dqslogic_incwrptr_0(phy_ddio_dqslogic_incwrptr_0),
+	.phy_ddio_dqslogic_incwrptr_1(phy_ddio_dqslogic_incwrptr_1),
+	.phy_ddio_dqslogic_oct_0(phy_ddio_dqslogic_oct_0),
+	.phy_ddio_dqslogic_oct_1(phy_ddio_dqslogic_oct_1),
+	.phy_ddio_dqslogic_readlatency_0(phy_ddio_dqslogic_readlatency_0),
+	.phy_ddio_dqslogic_readlatency_1(phy_ddio_dqslogic_readlatency_1),
+	.phy_ddio_dqslogic_readlatency_2(phy_ddio_dqslogic_readlatency_2),
+	.phy_ddio_dqslogic_readlatency_3(phy_ddio_dqslogic_readlatency_3),
+	.phy_ddio_dqslogic_readlatency_4(phy_ddio_dqslogic_readlatency_4),
+	.phy_ddio_dqs_oe_0(phy_ddio_dqs_oe_0),
+	.phy_ddio_dqs_oe_1(phy_ddio_dqs_oe_1),
+	.pad_gen0delayed_data_out(pad_gen0delayed_data_out),
+	.pad_gen0delayed_oe_1(pad_gen0delayed_oe_1),
+	.delayed_oct(delayed_oct),
+	.pad_gen1delayed_data_out(pad_gen1delayed_data_out),
+	.pad_gen1delayed_oe_1(pad_gen1delayed_oe_1),
+	.pad_gen2delayed_data_out(pad_gen2delayed_data_out),
+	.pad_gen2delayed_oe_1(pad_gen2delayed_oe_1),
+	.pad_gen3delayed_data_out(pad_gen3delayed_data_out),
+	.pad_gen3delayed_oe_1(pad_gen3delayed_oe_1),
+	.pad_gen4delayed_data_out(pad_gen4delayed_data_out),
+	.pad_gen4delayed_oe_1(pad_gen4delayed_oe_1),
+	.pad_gen5delayed_data_out(pad_gen5delayed_data_out),
+	.pad_gen5delayed_oe_1(pad_gen5delayed_oe_1),
+	.pad_gen6delayed_data_out(pad_gen6delayed_data_out),
+	.pad_gen6delayed_oe_1(pad_gen6delayed_oe_1),
+	.pad_gen7delayed_data_out(pad_gen7delayed_data_out),
+	.pad_gen7delayed_oe_1(pad_gen7delayed_oe_1),
+	.os(os),
+	.os_bar(os_bar),
+	.diff_oe(diff_oe),
+	.diff_oe_bar(diff_oe_bar),
+	.diff_dtc(diff_dtc),
+	.diff_dtc_bar(diff_dtc_bar),
+	.input_path_gen0read_fifo_out_0(input_path_gen0read_fifo_out_0),
+	.input_path_gen0read_fifo_out_1(input_path_gen0read_fifo_out_1),
+	.input_path_gen0read_fifo_out_2(input_path_gen0read_fifo_out_2),
+	.input_path_gen0read_fifo_out_3(input_path_gen0read_fifo_out_3),
+	.input_path_gen1read_fifo_out_0(input_path_gen1read_fifo_out_0),
+	.input_path_gen1read_fifo_out_1(input_path_gen1read_fifo_out_1),
+	.input_path_gen1read_fifo_out_2(input_path_gen1read_fifo_out_2),
+	.input_path_gen1read_fifo_out_3(input_path_gen1read_fifo_out_3),
+	.input_path_gen2read_fifo_out_0(input_path_gen2read_fifo_out_0),
+	.input_path_gen2read_fifo_out_1(input_path_gen2read_fifo_out_1),
+	.input_path_gen2read_fifo_out_2(input_path_gen2read_fifo_out_2),
+	.input_path_gen2read_fifo_out_3(input_path_gen2read_fifo_out_3),
+	.input_path_gen3read_fifo_out_0(input_path_gen3read_fifo_out_0),
+	.input_path_gen3read_fifo_out_1(input_path_gen3read_fifo_out_1),
+	.input_path_gen3read_fifo_out_2(input_path_gen3read_fifo_out_2),
+	.input_path_gen3read_fifo_out_3(input_path_gen3read_fifo_out_3),
+	.input_path_gen4read_fifo_out_0(input_path_gen4read_fifo_out_0),
+	.input_path_gen4read_fifo_out_1(input_path_gen4read_fifo_out_1),
+	.input_path_gen4read_fifo_out_2(input_path_gen4read_fifo_out_2),
+	.input_path_gen4read_fifo_out_3(input_path_gen4read_fifo_out_3),
+	.input_path_gen5read_fifo_out_0(input_path_gen5read_fifo_out_0),
+	.input_path_gen5read_fifo_out_1(input_path_gen5read_fifo_out_1),
+	.input_path_gen5read_fifo_out_2(input_path_gen5read_fifo_out_2),
+	.input_path_gen5read_fifo_out_3(input_path_gen5read_fifo_out_3),
+	.input_path_gen6read_fifo_out_0(input_path_gen6read_fifo_out_0),
+	.input_path_gen6read_fifo_out_1(input_path_gen6read_fifo_out_1),
+	.input_path_gen6read_fifo_out_2(input_path_gen6read_fifo_out_2),
+	.input_path_gen6read_fifo_out_3(input_path_gen6read_fifo_out_3),
+	.input_path_gen7read_fifo_out_0(input_path_gen7read_fifo_out_0),
+	.input_path_gen7read_fifo_out_1(input_path_gen7read_fifo_out_1),
+	.input_path_gen7read_fifo_out_2(input_path_gen7read_fifo_out_2),
+	.input_path_gen7read_fifo_out_3(input_path_gen7read_fifo_out_3),
+	.lfifo_rdata_valid(ddio_phy_dqslogic_rdatavalid[0]),
+	.dll_delayctrl_0(dll_delayctrl_0),
+	.dll_delayctrl_1(dll_delayctrl_1),
+	.dll_delayctrl_2(dll_delayctrl_2),
+	.dll_delayctrl_3(dll_delayctrl_3),
+	.dll_delayctrl_4(dll_delayctrl_4),
+	.dll_delayctrl_5(dll_delayctrl_5),
+	.dll_delayctrl_6(dll_delayctrl_6),
+	.GND_port(GND_port));
+
 system_hps_sdram_p0_altdqdqs_3 \dq_ddio[3].ubidir_dq_dqs (
 	.dqsin(dqsin),
 	.pad_gen0raw_input(pad_gen0raw_input),
@@ -15283,299 +13939,6 @@ system_hps_sdram_p0_altdqdqs_1 \dq_ddio[1].ubidir_dq_dqs (
 	.dll_delayctrl_6(dll_delayctrl_6),
 	.GND_port(GND_port));
 
-system_hps_sdram_p0_altdqdqs \dq_ddio[0].ubidir_dq_dqs (
-	.dqsin(dqsin3),
-	.pad_gen0raw_input(pad_gen0raw_input3),
-	.pad_gen1raw_input(pad_gen1raw_input3),
-	.pad_gen2raw_input(pad_gen2raw_input3),
-	.pad_gen3raw_input(pad_gen3raw_input3),
-	.pad_gen4raw_input(pad_gen4raw_input3),
-	.pad_gen5raw_input(pad_gen5raw_input3),
-	.pad_gen6raw_input(pad_gen6raw_input3),
-	.pad_gen7raw_input(pad_gen7raw_input3),
-	.afi_clk(afi_clk),
-	.pll_write_clk(pll_write_clk),
-	.extra_output_pad_gen0delayed_data_out(extra_output_pad_gen0delayed_data_out3),
-	.phy_ddio_dmdout_0(phy_ddio_dmdout_0),
-	.phy_ddio_dmdout_1(phy_ddio_dmdout_1),
-	.phy_ddio_dmdout_2(phy_ddio_dmdout_2),
-	.phy_ddio_dmdout_3(phy_ddio_dmdout_3),
-	.phy_ddio_dqdout_0(phy_ddio_dqdout_0),
-	.phy_ddio_dqdout_1(phy_ddio_dqdout_1),
-	.phy_ddio_dqdout_2(phy_ddio_dqdout_2),
-	.phy_ddio_dqdout_3(phy_ddio_dqdout_3),
-	.phy_ddio_dqdout_4(phy_ddio_dqdout_4),
-	.phy_ddio_dqdout_5(phy_ddio_dqdout_5),
-	.phy_ddio_dqdout_6(phy_ddio_dqdout_6),
-	.phy_ddio_dqdout_7(phy_ddio_dqdout_7),
-	.phy_ddio_dqdout_8(phy_ddio_dqdout_8),
-	.phy_ddio_dqdout_9(phy_ddio_dqdout_9),
-	.phy_ddio_dqdout_10(phy_ddio_dqdout_10),
-	.phy_ddio_dqdout_11(phy_ddio_dqdout_11),
-	.phy_ddio_dqdout_12(phy_ddio_dqdout_12),
-	.phy_ddio_dqdout_13(phy_ddio_dqdout_13),
-	.phy_ddio_dqdout_14(phy_ddio_dqdout_14),
-	.phy_ddio_dqdout_15(phy_ddio_dqdout_15),
-	.phy_ddio_dqdout_16(phy_ddio_dqdout_16),
-	.phy_ddio_dqdout_17(phy_ddio_dqdout_17),
-	.phy_ddio_dqdout_18(phy_ddio_dqdout_18),
-	.phy_ddio_dqdout_19(phy_ddio_dqdout_19),
-	.phy_ddio_dqdout_20(phy_ddio_dqdout_20),
-	.phy_ddio_dqdout_21(phy_ddio_dqdout_21),
-	.phy_ddio_dqdout_22(phy_ddio_dqdout_22),
-	.phy_ddio_dqdout_23(phy_ddio_dqdout_23),
-	.phy_ddio_dqdout_24(phy_ddio_dqdout_24),
-	.phy_ddio_dqdout_25(phy_ddio_dqdout_25),
-	.phy_ddio_dqdout_26(phy_ddio_dqdout_26),
-	.phy_ddio_dqdout_27(phy_ddio_dqdout_27),
-	.phy_ddio_dqdout_28(phy_ddio_dqdout_28),
-	.phy_ddio_dqdout_29(phy_ddio_dqdout_29),
-	.phy_ddio_dqdout_30(phy_ddio_dqdout_30),
-	.phy_ddio_dqdout_31(phy_ddio_dqdout_31),
-	.phy_ddio_dqoe_0(phy_ddio_dqoe_0),
-	.phy_ddio_dqoe_1(phy_ddio_dqoe_1),
-	.phy_ddio_dqoe_2(phy_ddio_dqoe_2),
-	.phy_ddio_dqoe_3(phy_ddio_dqoe_3),
-	.phy_ddio_dqoe_4(phy_ddio_dqoe_4),
-	.phy_ddio_dqoe_5(phy_ddio_dqoe_5),
-	.phy_ddio_dqoe_6(phy_ddio_dqoe_6),
-	.phy_ddio_dqoe_7(phy_ddio_dqoe_7),
-	.phy_ddio_dqoe_8(phy_ddio_dqoe_8),
-	.phy_ddio_dqoe_9(phy_ddio_dqoe_9),
-	.phy_ddio_dqoe_10(phy_ddio_dqoe_10),
-	.phy_ddio_dqoe_11(phy_ddio_dqoe_11),
-	.phy_ddio_dqoe_12(phy_ddio_dqoe_12),
-	.phy_ddio_dqoe_13(phy_ddio_dqoe_13),
-	.phy_ddio_dqoe_14(phy_ddio_dqoe_14),
-	.phy_ddio_dqoe_15(phy_ddio_dqoe_15),
-	.phy_ddio_dqs_dout_0(phy_ddio_dqs_dout_0),
-	.phy_ddio_dqs_dout_1(phy_ddio_dqs_dout_1),
-	.phy_ddio_dqs_dout_2(phy_ddio_dqs_dout_2),
-	.phy_ddio_dqs_dout_3(phy_ddio_dqs_dout_3),
-	.phy_ddio_dqslogic_aclr_fifoctrl_0(phy_ddio_dqslogic_aclr_fifoctrl_0),
-	.phy_ddio_dqslogic_aclr_pstamble_0(phy_ddio_dqslogic_aclr_pstamble_0),
-	.phy_ddio_dqslogic_dqsena_0(phy_ddio_dqslogic_dqsena_0),
-	.phy_ddio_dqslogic_dqsena_1(phy_ddio_dqslogic_dqsena_1),
-	.phy_ddio_dqslogic_fiforeset_0(phy_ddio_dqslogic_fiforeset_0),
-	.phy_ddio_dqslogic_incrdataen_0(phy_ddio_dqslogic_incrdataen_0),
-	.phy_ddio_dqslogic_incrdataen_1(phy_ddio_dqslogic_incrdataen_1),
-	.phy_ddio_dqslogic_incwrptr_0(phy_ddio_dqslogic_incwrptr_0),
-	.phy_ddio_dqslogic_incwrptr_1(phy_ddio_dqslogic_incwrptr_1),
-	.phy_ddio_dqslogic_oct_0(phy_ddio_dqslogic_oct_0),
-	.phy_ddio_dqslogic_oct_1(phy_ddio_dqslogic_oct_1),
-	.phy_ddio_dqslogic_readlatency_0(phy_ddio_dqslogic_readlatency_0),
-	.phy_ddio_dqslogic_readlatency_1(phy_ddio_dqslogic_readlatency_1),
-	.phy_ddio_dqslogic_readlatency_2(phy_ddio_dqslogic_readlatency_2),
-	.phy_ddio_dqslogic_readlatency_3(phy_ddio_dqslogic_readlatency_3),
-	.phy_ddio_dqslogic_readlatency_4(phy_ddio_dqslogic_readlatency_4),
-	.phy_ddio_dqs_oe_0(phy_ddio_dqs_oe_0),
-	.phy_ddio_dqs_oe_1(phy_ddio_dqs_oe_1),
-	.pad_gen0delayed_data_out(pad_gen0delayed_data_out),
-	.pad_gen0delayed_oe_1(pad_gen0delayed_oe_1),
-	.delayed_oct(delayed_oct),
-	.pad_gen1delayed_data_out(pad_gen1delayed_data_out),
-	.pad_gen1delayed_oe_1(pad_gen1delayed_oe_1),
-	.pad_gen2delayed_data_out(pad_gen2delayed_data_out),
-	.pad_gen2delayed_oe_1(pad_gen2delayed_oe_1),
-	.pad_gen3delayed_data_out(pad_gen3delayed_data_out),
-	.pad_gen3delayed_oe_1(pad_gen3delayed_oe_1),
-	.pad_gen4delayed_data_out(pad_gen4delayed_data_out),
-	.pad_gen4delayed_oe_1(pad_gen4delayed_oe_1),
-	.pad_gen5delayed_data_out(pad_gen5delayed_data_out),
-	.pad_gen5delayed_oe_1(pad_gen5delayed_oe_1),
-	.pad_gen6delayed_data_out(pad_gen6delayed_data_out),
-	.pad_gen6delayed_oe_1(pad_gen6delayed_oe_1),
-	.pad_gen7delayed_data_out(pad_gen7delayed_data_out),
-	.pad_gen7delayed_oe_1(pad_gen7delayed_oe_1),
-	.os(os),
-	.os_bar(os_bar),
-	.diff_oe(diff_oe),
-	.diff_oe_bar(diff_oe_bar),
-	.diff_dtc(diff_dtc),
-	.diff_dtc_bar(diff_dtc_bar),
-	.input_path_gen0read_fifo_out_0(input_path_gen0read_fifo_out_0),
-	.input_path_gen0read_fifo_out_1(input_path_gen0read_fifo_out_1),
-	.input_path_gen0read_fifo_out_2(input_path_gen0read_fifo_out_2),
-	.input_path_gen0read_fifo_out_3(input_path_gen0read_fifo_out_3),
-	.input_path_gen1read_fifo_out_0(input_path_gen1read_fifo_out_0),
-	.input_path_gen1read_fifo_out_1(input_path_gen1read_fifo_out_1),
-	.input_path_gen1read_fifo_out_2(input_path_gen1read_fifo_out_2),
-	.input_path_gen1read_fifo_out_3(input_path_gen1read_fifo_out_3),
-	.input_path_gen2read_fifo_out_0(input_path_gen2read_fifo_out_0),
-	.input_path_gen2read_fifo_out_1(input_path_gen2read_fifo_out_1),
-	.input_path_gen2read_fifo_out_2(input_path_gen2read_fifo_out_2),
-	.input_path_gen2read_fifo_out_3(input_path_gen2read_fifo_out_3),
-	.input_path_gen3read_fifo_out_0(input_path_gen3read_fifo_out_0),
-	.input_path_gen3read_fifo_out_1(input_path_gen3read_fifo_out_1),
-	.input_path_gen3read_fifo_out_2(input_path_gen3read_fifo_out_2),
-	.input_path_gen3read_fifo_out_3(input_path_gen3read_fifo_out_3),
-	.input_path_gen4read_fifo_out_0(input_path_gen4read_fifo_out_0),
-	.input_path_gen4read_fifo_out_1(input_path_gen4read_fifo_out_1),
-	.input_path_gen4read_fifo_out_2(input_path_gen4read_fifo_out_2),
-	.input_path_gen4read_fifo_out_3(input_path_gen4read_fifo_out_3),
-	.input_path_gen5read_fifo_out_0(input_path_gen5read_fifo_out_0),
-	.input_path_gen5read_fifo_out_1(input_path_gen5read_fifo_out_1),
-	.input_path_gen5read_fifo_out_2(input_path_gen5read_fifo_out_2),
-	.input_path_gen5read_fifo_out_3(input_path_gen5read_fifo_out_3),
-	.input_path_gen6read_fifo_out_0(input_path_gen6read_fifo_out_0),
-	.input_path_gen6read_fifo_out_1(input_path_gen6read_fifo_out_1),
-	.input_path_gen6read_fifo_out_2(input_path_gen6read_fifo_out_2),
-	.input_path_gen6read_fifo_out_3(input_path_gen6read_fifo_out_3),
-	.input_path_gen7read_fifo_out_0(input_path_gen7read_fifo_out_0),
-	.input_path_gen7read_fifo_out_1(input_path_gen7read_fifo_out_1),
-	.input_path_gen7read_fifo_out_2(input_path_gen7read_fifo_out_2),
-	.input_path_gen7read_fifo_out_3(input_path_gen7read_fifo_out_3),
-	.lfifo_rdata_valid(ddio_phy_dqslogic_rdatavalid[0]),
-	.dll_delayctrl_0(dll_delayctrl_0),
-	.dll_delayctrl_1(dll_delayctrl_1),
-	.dll_delayctrl_2(dll_delayctrl_2),
-	.dll_delayctrl_3(dll_delayctrl_3),
-	.dll_delayctrl_4(dll_delayctrl_4),
-	.dll_delayctrl_5(dll_delayctrl_5),
-	.dll_delayctrl_6(dll_delayctrl_6),
-	.GND_port(GND_port));
-
-system_hps_sdram_p0_acv_hard_addr_cmd_pads uaddr_cmd_pads(
-	.afi_clk(afi_clk),
-	.dataout_0(dataout_0),
-	.dataout_1(dataout_1),
-	.dataout_2(dataout_2),
-	.dataout_3(dataout_3),
-	.dataout_4(dataout_4),
-	.dataout_5(dataout_5),
-	.dataout_6(dataout_6),
-	.dataout_7(dataout_7),
-	.dataout_8(dataout_8),
-	.dataout_9(dataout_9),
-	.dataout_10(dataout_10),
-	.dataout_11(dataout_11),
-	.dataout_12(dataout_12),
-	.dataout_13(dataout_13),
-	.dataout_14(dataout_14),
-	.dataout_01(dataout_01),
-	.dataout_15(dataout_15),
-	.dataout_21(dataout_21),
-	.dataout_16(dataout_16),
-	.dataout_02(dataout_02),
-	.dataout_31(dataout_31),
-	.dataout_41(dataout_41),
-	.dataout_51(dataout_51),
-	.dataout_03(dataout_03),
-	.dataout_22(dataout_22),
-	.wire_pseudo_diffa_o_0(wire_pseudo_diffa_o_0),
-	.wire_pseudo_diffa_obar_0(wire_pseudo_diffa_obar_0),
-	.wire_pseudo_diffa_oeout_0(wire_pseudo_diffa_oeout_0),
-	.wire_pseudo_diffa_oebout_0(wire_pseudo_diffa_oebout_0),
-	.phy_ddio_address_0(phy_ddio_address_0),
-	.phy_ddio_address_1(phy_ddio_address_1),
-	.phy_ddio_address_2(phy_ddio_address_2),
-	.phy_ddio_address_3(phy_ddio_address_3),
-	.phy_ddio_address_4(phy_ddio_address_4),
-	.phy_ddio_address_5(phy_ddio_address_5),
-	.phy_ddio_address_6(phy_ddio_address_6),
-	.phy_ddio_address_7(phy_ddio_address_7),
-	.phy_ddio_address_8(phy_ddio_address_8),
-	.phy_ddio_address_9(phy_ddio_address_9),
-	.phy_ddio_address_10(phy_ddio_address_10),
-	.phy_ddio_address_11(phy_ddio_address_11),
-	.phy_ddio_address_12(phy_ddio_address_12),
-	.phy_ddio_address_13(phy_ddio_address_13),
-	.phy_ddio_address_14(phy_ddio_address_14),
-	.phy_ddio_address_15(phy_ddio_address_15),
-	.phy_ddio_address_16(phy_ddio_address_16),
-	.phy_ddio_address_17(phy_ddio_address_17),
-	.phy_ddio_address_18(phy_ddio_address_18),
-	.phy_ddio_address_19(phy_ddio_address_19),
-	.phy_ddio_address_20(phy_ddio_address_20),
-	.phy_ddio_address_21(phy_ddio_address_21),
-	.phy_ddio_address_22(phy_ddio_address_22),
-	.phy_ddio_address_23(phy_ddio_address_23),
-	.phy_ddio_address_24(phy_ddio_address_24),
-	.phy_ddio_address_25(phy_ddio_address_25),
-	.phy_ddio_address_26(phy_ddio_address_26),
-	.phy_ddio_address_27(phy_ddio_address_27),
-	.phy_ddio_address_28(phy_ddio_address_28),
-	.phy_ddio_address_29(phy_ddio_address_29),
-	.phy_ddio_address_30(phy_ddio_address_30),
-	.phy_ddio_address_31(phy_ddio_address_31),
-	.phy_ddio_address_32(phy_ddio_address_32),
-	.phy_ddio_address_33(phy_ddio_address_33),
-	.phy_ddio_address_34(phy_ddio_address_34),
-	.phy_ddio_address_35(phy_ddio_address_35),
-	.phy_ddio_address_36(phy_ddio_address_36),
-	.phy_ddio_address_37(phy_ddio_address_37),
-	.phy_ddio_address_38(phy_ddio_address_38),
-	.phy_ddio_address_39(phy_ddio_address_39),
-	.phy_ddio_address_40(phy_ddio_address_40),
-	.phy_ddio_address_41(phy_ddio_address_41),
-	.phy_ddio_address_42(phy_ddio_address_42),
-	.phy_ddio_address_43(phy_ddio_address_43),
-	.phy_ddio_address_44(phy_ddio_address_44),
-	.phy_ddio_address_45(phy_ddio_address_45),
-	.phy_ddio_address_46(phy_ddio_address_46),
-	.phy_ddio_address_47(phy_ddio_address_47),
-	.phy_ddio_address_48(phy_ddio_address_48),
-	.phy_ddio_address_49(phy_ddio_address_49),
-	.phy_ddio_address_50(phy_ddio_address_50),
-	.phy_ddio_address_51(phy_ddio_address_51),
-	.phy_ddio_address_52(phy_ddio_address_52),
-	.phy_ddio_address_53(phy_ddio_address_53),
-	.phy_ddio_address_54(phy_ddio_address_54),
-	.phy_ddio_address_55(phy_ddio_address_55),
-	.phy_ddio_address_56(phy_ddio_address_56),
-	.phy_ddio_address_57(phy_ddio_address_57),
-	.phy_ddio_address_58(phy_ddio_address_58),
-	.phy_ddio_address_59(phy_ddio_address_59),
-	.phy_ddio_bank_0(phy_ddio_bank_0),
-	.phy_ddio_bank_1(phy_ddio_bank_1),
-	.phy_ddio_bank_2(phy_ddio_bank_2),
-	.phy_ddio_bank_3(phy_ddio_bank_3),
-	.phy_ddio_bank_4(phy_ddio_bank_4),
-	.phy_ddio_bank_5(phy_ddio_bank_5),
-	.phy_ddio_bank_6(phy_ddio_bank_6),
-	.phy_ddio_bank_7(phy_ddio_bank_7),
-	.phy_ddio_bank_8(phy_ddio_bank_8),
-	.phy_ddio_bank_9(phy_ddio_bank_9),
-	.phy_ddio_bank_10(phy_ddio_bank_10),
-	.phy_ddio_bank_11(phy_ddio_bank_11),
-	.phy_ddio_cas_n_0(phy_ddio_cas_n_0),
-	.phy_ddio_cas_n_1(phy_ddio_cas_n_1),
-	.phy_ddio_cas_n_2(phy_ddio_cas_n_2),
-	.phy_ddio_cas_n_3(phy_ddio_cas_n_3),
-	.phy_ddio_ck_0(phy_ddio_ck_0),
-	.phy_ddio_ck_1(phy_ddio_ck_1),
-	.phy_ddio_cke_0(phy_ddio_cke_0),
-	.phy_ddio_cke_1(phy_ddio_cke_1),
-	.phy_ddio_cke_2(phy_ddio_cke_2),
-	.phy_ddio_cke_3(phy_ddio_cke_3),
-	.phy_ddio_cs_n_0(phy_ddio_cs_n_0),
-	.phy_ddio_cs_n_1(phy_ddio_cs_n_1),
-	.phy_ddio_cs_n_2(phy_ddio_cs_n_2),
-	.phy_ddio_cs_n_3(phy_ddio_cs_n_3),
-	.phy_ddio_odt_0(phy_ddio_odt_0),
-	.phy_ddio_odt_1(phy_ddio_odt_1),
-	.phy_ddio_odt_2(phy_ddio_odt_2),
-	.phy_ddio_odt_3(phy_ddio_odt_3),
-	.phy_ddio_ras_n_0(phy_ddio_ras_n_0),
-	.phy_ddio_ras_n_1(phy_ddio_ras_n_1),
-	.phy_ddio_ras_n_2(phy_ddio_ras_n_2),
-	.phy_ddio_ras_n_3(phy_ddio_ras_n_3),
-	.phy_ddio_reset_n_0(phy_ddio_reset_n_0),
-	.phy_ddio_reset_n_1(phy_ddio_reset_n_1),
-	.phy_ddio_reset_n_2(phy_ddio_reset_n_2),
-	.phy_ddio_reset_n_3(phy_ddio_reset_n_3),
-	.phy_ddio_we_n_0(phy_ddio_we_n_0),
-	.phy_ddio_we_n_1(phy_ddio_we_n_1),
-	.phy_ddio_we_n_2(phy_ddio_we_n_2),
-	.phy_ddio_we_n_3(phy_ddio_we_n_3),
-	.dll_delayctrl_0(dll_delayctrl_0),
-	.dll_delayctrl_1(dll_delayctrl_1),
-	.dll_delayctrl_2(dll_delayctrl_2),
-	.dll_delayctrl_3(dll_delayctrl_3),
-	.dll_delayctrl_4(dll_delayctrl_4),
-	.dll_delayctrl_5(dll_delayctrl_5),
-	.dll_delayctrl_6(dll_delayctrl_6));
-
 endmodule
 
 module system_hps_sdram_p0_acv_hard_addr_cmd_pads (
@@ -15906,6 +14269,131 @@ assign \clock_gen[0].leveled_dqs_clocks[1]  = \clock_gen[0].leveling_delay_chain
 assign \clock_gen[0].leveled_dqs_clocks[2]  = \clock_gen[0].leveling_delay_chain_dqs_CLKOUT_bus [2];
 assign \clock_gen[0].leveled_dqs_clocks[3]  = \clock_gen[0].leveling_delay_chain_dqs_CLKOUT_bus [3];
 
+system_hps_sdram_p0_acv_ldc_21 \address_gen[6].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[6].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_20 \address_gen[5].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[5].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_19 \address_gen[4].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[4].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_18 \address_gen[3].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[3].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_17 \address_gen[2].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[2].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_11 \address_gen[1].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[1].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc \address_gen[0].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[0].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_6 \address_gen[15].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[15].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_5 \address_gen[14].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[14].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_4 \address_gen[13].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[13].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_3 \address_gen[12].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[12].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_2 \address_gen[11].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[11].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_1 \address_gen[10].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[10].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_24 \address_gen[9].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[9].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_23 \address_gen[8].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[8].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_22 \address_gen[7].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[7].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_16 \address_gen[24].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[24].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_15 \address_gen[23].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[23].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_14 \address_gen[22].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[22].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_13 \address_gen[21].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[21].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_12 \address_gen[20].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[20].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_10 \address_gen[19].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[19].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_9 \address_gen[18].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[18].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_8 \address_gen[17].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[17].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
+system_hps_sdram_p0_acv_ldc_7 \address_gen[16].acv_ac_ldc (
+	.pll_dqs_clk(afi_clk),
+	.adc_clk_cps(\address_gen[16].acv_ac_ldc|adc_clk_cps ),
+	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
+
 system_hps_sdram_p0_clock_pair_generator \clock_gen[0].uclk_generator (
 	.wire_pseudo_diffa_o_0(wire_pseudo_diffa_o_0),
 	.wire_pseudo_diffa_obar_0(wire_pseudo_diffa_obar_0),
@@ -15954,131 +14442,6 @@ phy_ddio_address_46,phy_ddio_address_45,phy_ddio_address_44,phy_ddio_address_43,
 phy_ddio_address_33,phy_ddio_address_32,phy_ddio_address_31,phy_ddio_address_30,phy_ddio_address_29,phy_ddio_address_28,phy_ddio_address_27,phy_ddio_address_26,phy_ddio_address_25,phy_ddio_address_24,phy_ddio_address_23,phy_ddio_address_22,phy_ddio_address_21,
 phy_ddio_address_20,phy_ddio_address_19,phy_ddio_address_18,phy_ddio_address_17,phy_ddio_address_16,phy_ddio_address_15,phy_ddio_address_14,phy_ddio_address_13,phy_ddio_address_12,phy_ddio_address_11,phy_ddio_address_10,phy_ddio_address_9,phy_ddio_address_8,
 phy_ddio_address_7,phy_ddio_address_6,phy_ddio_address_5,phy_ddio_address_4,phy_ddio_address_3,phy_ddio_address_2,phy_ddio_address_1,phy_ddio_address_0}));
-
-system_hps_sdram_p0_acv_ldc_16 \address_gen[24].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[24].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_15 \address_gen[23].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[23].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_14 \address_gen[22].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[22].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_13 \address_gen[21].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[21].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_12 \address_gen[20].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[20].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_10 \address_gen[19].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[19].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_9 \address_gen[18].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[18].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_8 \address_gen[17].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[17].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_7 \address_gen[16].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[16].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_6 \address_gen[15].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[15].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_5 \address_gen[14].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[14].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_4 \address_gen[13].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[13].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_3 \address_gen[12].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[12].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_2 \address_gen[11].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[11].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_1 \address_gen[10].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[10].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_24 \address_gen[9].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[9].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_23 \address_gen[8].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[8].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_22 \address_gen[7].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[7].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_21 \address_gen[6].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[6].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_20 \address_gen[5].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[5].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_19 \address_gen[4].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[4].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_18 \address_gen[3].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[3].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_17 \address_gen[2].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[2].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc_11 \address_gen[1].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[1].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
-
-system_hps_sdram_p0_acv_ldc \address_gen[0].acv_ac_ldc (
-	.pll_dqs_clk(afi_clk),
-	.adc_clk_cps(\address_gen[0].acv_ac_ldc|adc_clk_cps ),
-	.dll_phy_delayctrl({dll_delayctrl_6,dll_delayctrl_5,dll_delayctrl_4,dll_delayctrl_3,dll_delayctrl_2,dll_delayctrl_1,dll_delayctrl_0}));
 
 cyclonev_clk_phase_select \clock_gen[0].clk_phase_select_dqs (
 	.phaseinvertctrl(gnd),
@@ -32282,7 +30645,6 @@ module system_system_mm_interconnect_0 (
 	source0_data_16,
 	source0_data_17,
 	r_sync_rst,
-	altera_reset_synchronizer_int_chain_out,
 	GND_port,
 	clk_clk)/* synthesis synthesis_greybox=0 */;
 input 	h2f_lw_ARVALID_0;
@@ -32469,7 +30831,6 @@ output 	m0_write;
 output 	source0_data_16;
 output 	source0_data_17;
 input 	r_sync_rst;
-input 	altera_reset_synchronizer_int_chain_out;
 input 	GND_port;
 input 	clk_clk;
 
@@ -32703,261 +31064,6 @@ wire \ram_s1_agent_rsp_fifo|mem[0][18]~q ;
 wire \ram_s1_agent_rsp_fifo|mem[0][52]~q ;
 wire \ram_s1_agent|cp_ready~1_combout ;
 
-
-system_altera_avalon_sc_fifo ram_s1_agent_rdata_fifo(
-	.h2f_lw_BREADY_0(h2f_lw_BREADY_0),
-	.h2f_lw_RREADY_0(h2f_lw_RREADY_0),
-	.q_a_0(q_a_0),
-	.q_a_1(q_a_1),
-	.q_a_2(q_a_2),
-	.q_a_3(q_a_3),
-	.q_a_4(q_a_4),
-	.q_a_5(q_a_5),
-	.q_a_6(q_a_6),
-	.q_a_7(q_a_7),
-	.q_a_8(q_a_8),
-	.q_a_9(q_a_9),
-	.q_a_10(q_a_10),
-	.q_a_11(q_a_11),
-	.q_a_12(q_a_12),
-	.q_a_13(q_a_13),
-	.q_a_14(q_a_14),
-	.q_a_15(q_a_15),
-	.read_latency_shift_reg_0(\ram_s1_translator|read_latency_shift_reg[0]~q ),
-	.mem_used_0(\ram_s1_agent_rdata_fifo|mem_used[0]~q ),
-	.mem_94_0(\ram_s1_agent_rsp_fifo|mem[0][94]~q ),
-	.mem_used_01(\ram_s1_agent_rsp_fifo|mem_used[0]~q ),
-	.src0_valid(\rsp_demux|src0_valid~0_combout ),
-	.mem_0_0(\ram_s1_agent_rdata_fifo|mem[0][0]~q ),
-	.mem_1_0(\ram_s1_agent_rdata_fifo|mem[0][1]~q ),
-	.mem_2_0(\ram_s1_agent_rdata_fifo|mem[0][2]~q ),
-	.mem_3_0(\ram_s1_agent_rdata_fifo|mem[0][3]~q ),
-	.mem_4_0(\ram_s1_agent_rdata_fifo|mem[0][4]~q ),
-	.mem_5_0(\ram_s1_agent_rdata_fifo|mem[0][5]~q ),
-	.mem_6_0(\ram_s1_agent_rdata_fifo|mem[0][6]~q ),
-	.mem_7_0(\ram_s1_agent_rdata_fifo|mem[0][7]~q ),
-	.mem_8_0(\ram_s1_agent_rdata_fifo|mem[0][8]~q ),
-	.mem_9_0(\ram_s1_agent_rdata_fifo|mem[0][9]~q ),
-	.mem_10_0(\ram_s1_agent_rdata_fifo|mem[0][10]~q ),
-	.mem_11_0(\ram_s1_agent_rdata_fifo|mem[0][11]~q ),
-	.mem_12_0(\ram_s1_agent_rdata_fifo|mem[0][12]~q ),
-	.mem_13_0(\ram_s1_agent_rdata_fifo|mem[0][13]~q ),
-	.mem_14_0(\ram_s1_agent_rdata_fifo|mem[0][14]~q ),
-	.mem_15_0(\ram_s1_agent_rdata_fifo|mem[0][15]~q ),
-	.reset(r_sync_rst),
-	.p1_ready(\ram_s1_rsp_width_adapter|p1_ready~0_combout ),
-	.out_valid(\ram_s1_rsp_width_adapter|out_valid~1_combout ),
-	.clk(clk_clk));
-
-system_altera_avalon_sc_fifo_1 ram_s1_agent_rsp_fifo(
-	.int_nxt_addr_reg_dly_1(int_nxt_addr_reg_dly_1),
-	.out_uncomp_byte_cnt_reg_1(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_uncomp_byte_cnt_reg[1]~q ),
-	.out_uncomp_byte_cnt_reg_0(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_uncomp_byte_cnt_reg[0]~q ),
-	.out_uncomp_byte_cnt_reg_5(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_uncomp_byte_cnt_reg[5]~q ),
-	.out_uncomp_byte_cnt_reg_6(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_uncomp_byte_cnt_reg[6]~q ),
-	.out_uncomp_byte_cnt_reg_4(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_uncomp_byte_cnt_reg[4]~q ),
-	.out_uncomp_byte_cnt_reg_3(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_uncomp_byte_cnt_reg[3]~q ),
-	.out_uncomp_byte_cnt_reg_2(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_uncomp_byte_cnt_reg[2]~q ),
-	.out_burstwrap_reg_1(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_burstwrap_reg[1]~q ),
-	.out_addr_reg_0(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_addr_reg[0]~q ),
-	.out_burstwrap_reg_0(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_burstwrap_reg[0]~q ),
-	.nxt_out_eop(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|nxt_out_eop~0_combout ),
-	.in_data_reg_59(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[59]~q ),
-	.WideOr0(\ram_s1_agent|WideOr0~combout ),
-	.mem_used_1(\ram_s1_agent_rsp_fifo|mem_used[1]~q ),
-	.nxt_out_eop1(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|nxt_out_eop~1_combout ),
-	.out_valid_reg(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_valid_reg~q ),
-	.stateST_UNCOMP_WR_SUBBURST(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state.ST_UNCOMP_WR_SUBBURST~q ),
-	.mem_94_0(\ram_s1_agent_rsp_fifo|mem[0][94]~q ),
-	.mem_used_0(\ram_s1_agent_rsp_fifo|mem_used[0]~q ),
-	.mem_95_0(\ram_s1_agent_rsp_fifo|mem[0][95]~q ),
-	.comb(\ram_s1_agent|comb~0_combout ),
-	.mem_39_0(\ram_s1_agent_rsp_fifo|mem[0][39]~q ),
-	.mem_51_0(\ram_s1_agent_rsp_fifo|mem[0][51]~q ),
-	.mem_50_0(\ram_s1_agent_rsp_fifo|mem[0][50]~q ),
-	.mem_49_0(\ram_s1_agent_rsp_fifo|mem[0][49]~q ),
-	.mem_48_0(\ram_s1_agent_rsp_fifo|mem[0][48]~q ),
-	.mem_47_0(\ram_s1_agent_rsp_fifo|mem[0][47]~q ),
-	.mem_46_0(\ram_s1_agent_rsp_fifo|mem[0][46]~q ),
-	.mem_45_0(\ram_s1_agent_rsp_fifo|mem[0][45]~q ),
-	.last_packet_beat(\ram_s1_agent|uncompressor|last_packet_beat~4_combout ),
-	.mem_19_0(\ram_s1_agent_rsp_fifo|mem[0][19]~q ),
-	.mem_91_0(\ram_s1_agent_rsp_fifo|mem[0][91]~q ),
-	.mem_92_0(\ram_s1_agent_rsp_fifo|mem[0][92]~q ),
-	.mem_93_0(\ram_s1_agent_rsp_fifo|mem[0][93]~q ),
-	.mem_59_0(\ram_s1_agent_rsp_fifo|mem[0][59]~q ),
-	.mem_41_0(\ram_s1_agent_rsp_fifo|mem[0][41]~q ),
-	.mem_70_0(mem_70_0),
-	.mem_71_0(mem_71_0),
-	.mem_72_0(mem_72_0),
-	.mem_73_0(mem_73_0),
-	.mem_74_0(mem_74_0),
-	.mem_75_0(mem_75_0),
-	.mem_76_0(mem_76_0),
-	.mem_77_0(mem_77_0),
-	.mem_78_0(mem_78_0),
-	.mem_79_0(mem_79_0),
-	.mem_80_0(mem_80_0),
-	.mem_81_0(mem_81_0),
-	.in_data_reg_41(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[41]~q ),
-	.m0_write(\ram_s1_agent|m0_write~0_combout ),
-	.reset(r_sync_rst),
-	.p1_ready(\ram_s1_rsp_width_adapter|p1_ready~0_combout ),
-	.sink_ready(\ram_s1_agent|uncompressor|sink_ready~0_combout ),
-	.in_data_reg_42(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[42]~q ),
-	.out_byte_cnt_reg_1(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_byte_cnt_reg[1]~q ),
-	.out_valid(\ram_s1_rsp_width_adapter|out_valid~1_combout ),
-	.mem_53_0(\ram_s1_agent_rsp_fifo|mem[0][53]~q ),
-	.in_data_reg_91(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[91]~q ),
-	.in_data_reg_92(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[92]~q ),
-	.in_data_reg_93(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[93]~q ),
-	.in_data_reg_70(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[70]~q ),
-	.in_data_reg_71(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[71]~q ),
-	.in_data_reg_72(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[72]~q ),
-	.in_data_reg_73(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[73]~q ),
-	.in_data_reg_74(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[74]~q ),
-	.in_data_reg_75(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[75]~q ),
-	.in_data_reg_76(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[76]~q ),
-	.in_data_reg_77(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[77]~q ),
-	.in_data_reg_78(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[78]~q ),
-	.in_data_reg_79(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[79]~q ),
-	.in_data_reg_80(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[80]~q ),
-	.in_data_reg_81(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[81]~q ),
-	.mem_18_0(\ram_s1_agent_rsp_fifo|mem[0][18]~q ),
-	.mem_52_0(\ram_s1_agent_rsp_fifo|mem[0][52]~q ),
-	.cp_ready(\ram_s1_agent|cp_ready~1_combout ),
-	.clk(clk_clk));
-
-system_altera_merlin_slave_agent ram_s1_agent(
-	.always10(\ram_s1_rsp_width_adapter|always10~1_combout ),
-	.stateST_COMP_TRANS(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state.ST_COMP_TRANS~q ),
-	.in_narrow_reg(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_narrow_reg~q ),
-	.in_byteen_reg_1(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_byteen_reg[1]~q ),
-	.in_byteen_reg_0(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_byteen_reg[0]~q ),
-	.WideOr01(\ram_s1_agent|WideOr0~combout ),
-	.in_ready_hold(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_ready_hold~q ),
-	.mem_used_1(\ram_s1_agent_rsp_fifo|mem_used[1]~q ),
-	.out_valid_reg(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_valid_reg~q ),
-	.read_latency_shift_reg_0(\ram_s1_translator|read_latency_shift_reg[0]~q ),
-	.mem_used_0(\ram_s1_agent_rdata_fifo|mem_used[0]~q ),
-	.mem_94_0(\ram_s1_agent_rsp_fifo|mem[0][94]~q ),
-	.mem_used_01(\ram_s1_agent_rsp_fifo|mem_used[0]~q ),
-	.out_valid(\ram_s1_rsp_width_adapter|out_valid~0_combout ),
-	.mem_95_0(\ram_s1_agent_rsp_fifo|mem[0][95]~q ),
-	.comb(\ram_s1_agent|comb~0_combout ),
-	.mem_39_0(\ram_s1_agent_rsp_fifo|mem[0][39]~q ),
-	.mem_51_0(\ram_s1_agent_rsp_fifo|mem[0][51]~q ),
-	.mem_50_0(\ram_s1_agent_rsp_fifo|mem[0][50]~q ),
-	.mem_49_0(\ram_s1_agent_rsp_fifo|mem[0][49]~q ),
-	.mem_48_0(\ram_s1_agent_rsp_fifo|mem[0][48]~q ),
-	.mem_47_0(\ram_s1_agent_rsp_fifo|mem[0][47]~q ),
-	.mem_46_0(\ram_s1_agent_rsp_fifo|mem[0][46]~q ),
-	.mem_45_0(\ram_s1_agent_rsp_fifo|mem[0][45]~q ),
-	.last_packet_beat(\ram_s1_agent|uncompressor|last_packet_beat~4_combout ),
-	.source_addr_1(\ram_s1_agent|uncompressor|source_addr[1]~0_combout ),
-	.source_addr_11(\ram_s1_agent|uncompressor|source_addr[1]~1_combout ),
-	.mem_19_0(\ram_s1_agent_rsp_fifo|mem[0][19]~q ),
-	.mem_59_0(\ram_s1_agent_rsp_fifo|mem[0][59]~q ),
-	.source_endofpacket(source_endofpacket),
-	.in_data_reg_41(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[41]~q ),
-	.m0_write(\ram_s1_agent|m0_write~0_combout ),
-	.m0_write1(m0_write),
-	.r_sync_rst(r_sync_rst),
-	.p1_ready(\ram_s1_rsp_width_adapter|p1_ready~0_combout ),
-	.rf_sink_ready(\ram_s1_agent|uncompressor|sink_ready~0_combout ),
-	.cp_ready(\ram_s1_agent|cp_ready~0_combout ),
-	.out_valid1(\ram_s1_rsp_width_adapter|out_valid~1_combout ),
-	.mem_53_0(\ram_s1_agent_rsp_fifo|mem[0][53]~q ),
-	.mem_18_0(\ram_s1_agent_rsp_fifo|mem[0][18]~q ),
-	.mem_52_0(\ram_s1_agent_rsp_fifo|mem[0][52]~q ),
-	.cp_ready1(\ram_s1_agent|cp_ready~1_combout ),
-	.clk_clk(clk_clk));
-
-system_altera_merlin_axi_master_ni hps_0_h2f_lw_axi_master_agent(
-	.h2f_lw_AWVALID_0(h2f_lw_AWVALID_0),
-	.h2f_lw_WLAST_0(h2f_lw_WLAST_0),
-	.h2f_lw_WVALID_0(h2f_lw_WVALID_0),
-	.h2f_lw_ARLEN_0(h2f_lw_ARLEN_0),
-	.h2f_lw_ARLEN_1(h2f_lw_ARLEN_1),
-	.h2f_lw_ARLEN_2(h2f_lw_ARLEN_2),
-	.h2f_lw_ARLEN_3(h2f_lw_ARLEN_3),
-	.h2f_lw_ARSIZE_0(h2f_lw_ARSIZE_0),
-	.h2f_lw_ARSIZE_1(h2f_lw_ARSIZE_1),
-	.h2f_lw_ARSIZE_2(h2f_lw_ARSIZE_2),
-	.h2f_lw_AWADDR_0(h2f_lw_AWADDR_0),
-	.h2f_lw_AWADDR_1(h2f_lw_AWADDR_1),
-	.h2f_lw_AWADDR_2(h2f_lw_AWADDR_2),
-	.h2f_lw_AWADDR_3(h2f_lw_AWADDR_3),
-	.h2f_lw_AWADDR_4(h2f_lw_AWADDR_4),
-	.h2f_lw_AWBURST_0(h2f_lw_AWBURST_0),
-	.h2f_lw_AWBURST_1(h2f_lw_AWBURST_1),
-	.h2f_lw_AWLEN_0(h2f_lw_AWLEN_0),
-	.h2f_lw_AWLEN_1(h2f_lw_AWLEN_1),
-	.h2f_lw_AWLEN_2(h2f_lw_AWLEN_2),
-	.h2f_lw_AWLEN_3(h2f_lw_AWLEN_3),
-	.h2f_lw_AWSIZE_0(h2f_lw_AWSIZE_0),
-	.h2f_lw_AWSIZE_1(h2f_lw_AWSIZE_1),
-	.h2f_lw_AWSIZE_2(h2f_lw_AWSIZE_2),
-	.Add4(\hps_0_h2f_lw_axi_master_agent|Add4~1_sumout ),
-	.Add5(\hps_0_h2f_lw_axi_master_agent|Add5~1_sumout ),
-	.Add41(\hps_0_h2f_lw_axi_master_agent|Add4~5_sumout ),
-	.Add51(\hps_0_h2f_lw_axi_master_agent|Add5~5_sumout ),
-	.Add42(\hps_0_h2f_lw_axi_master_agent|Add4~9_sumout ),
-	.Add52(\hps_0_h2f_lw_axi_master_agent|Add5~9_sumout ),
-	.Add43(\hps_0_h2f_lw_axi_master_agent|Add4~13_sumout ),
-	.Add53(\hps_0_h2f_lw_axi_master_agent|Add5~13_sumout ),
-	.Add44(\hps_0_h2f_lw_axi_master_agent|Add4~17_sumout ),
-	.Add54(\hps_0_h2f_lw_axi_master_agent|Add5~17_sumout ),
-	.in_ready(\ram_s1_cmd_width_adapter|in_ready~0_combout ),
-	.nxt_out_eop(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|nxt_out_eop~0_combout ),
-	.nxt_out_eop1(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|nxt_out_eop~1_combout ),
-	.nxt_in_ready(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|nxt_in_ready~0_combout ),
-	.nxt_in_ready1(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|nxt_in_ready~2_combout ),
-	.nxt_in_ready2(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|nxt_in_ready~3_combout ),
-	.src_valid(\cmd_mux|src_valid~0_combout ),
-	.awready(hps_0_h2f_lw_axi_master_awready),
-	.wready(hps_0_h2f_lw_axi_master_wready),
-	.write_addr_data_both_valid1(\hps_0_h2f_lw_axi_master_agent|write_addr_data_both_valid~combout ),
-	.Add1(\hps_0_h2f_lw_axi_master_agent|Add1~0_combout ),
-	.src_payload(\cmd_mux|src_payload~3_combout ),
-	.Add3(\hps_0_h2f_lw_axi_master_agent|Add3~0_combout ),
-	.sop_enable1(\hps_0_h2f_lw_axi_master_agent|sop_enable~q ),
-	.address_burst_0(\hps_0_h2f_lw_axi_master_agent|align_address_to_size|address_burst[0]~q ),
-	.address_burst_1(\hps_0_h2f_lw_axi_master_agent|align_address_to_size|address_burst[1]~q ),
-	.write_cp_data_69(\hps_0_h2f_lw_axi_master_agent|write_cp_data[69]~0_combout ),
-	.burst_bytecount_5(\hps_0_h2f_lw_axi_master_agent|burst_bytecount[5]~q ),
-	.Add6(\hps_0_h2f_lw_axi_master_agent|Add6~0_combout ),
-	.Add2(\hps_0_h2f_lw_axi_master_agent|Add2~0_combout ),
-	.burst_bytecount_4(\hps_0_h2f_lw_axi_master_agent|burst_bytecount[4]~q ),
-	.Add61(\hps_0_h2f_lw_axi_master_agent|Add6~1_combout ),
-	.Add21(\hps_0_h2f_lw_axi_master_agent|Add2~1_combout ),
-	.burst_bytecount_3(\hps_0_h2f_lw_axi_master_agent|burst_bytecount[3]~q ),
-	.Add22(\hps_0_h2f_lw_axi_master_agent|Add2~2_combout ),
-	.burst_bytecount_2(\hps_0_h2f_lw_axi_master_agent|burst_bytecount[2]~q ),
-	.write_cp_data_66(\hps_0_h2f_lw_axi_master_agent|write_cp_data[66]~1_combout ),
-	.write_cp_data_67(\hps_0_h2f_lw_axi_master_agent|write_cp_data[67]~2_combout ),
-	.write_cp_data_68(\hps_0_h2f_lw_axi_master_agent|write_cp_data[68]~3_combout ),
-	.Add11(\hps_0_h2f_lw_axi_master_agent|Add1~1_combout ),
-	.src_payload1(\cmd_mux|src_payload~9_combout ),
-	.Add31(\hps_0_h2f_lw_axi_master_agent|Add3~1_combout ),
-	.LessThan12(\hps_0_h2f_lw_axi_master_agent|LessThan12~0_combout ),
-	.src_payload2(\cmd_mux|src_payload~11_combout ),
-	.address_burst_2(\hps_0_h2f_lw_axi_master_agent|align_address_to_size|address_burst[2]~q ),
-	.address_burst_3(\hps_0_h2f_lw_axi_master_agent|align_address_to_size|address_burst[3]~q ),
-	.src_payload3(\cmd_mux|src_payload~14_combout ),
-	.out_data_4(\hps_0_h2f_lw_axi_master_agent|align_address_to_size|out_data[4]~0_combout ),
-	.altera_reset_synchronizer_int_chain_out(altera_reset_synchronizer_int_chain_out),
-	.src_payload4(\cmd_mux|src_payload~17_combout ),
-	.clk_clk(clk_clk));
-
-system_altera_merlin_slave_translator ram_s1_translator(
-	.WideOr0(\ram_s1_agent|WideOr0~combout ),
-	.in_ready_hold(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_ready_hold~q ),
-	.read_latency_shift_reg_0(\ram_s1_translator|read_latency_shift_reg[0]~q ),
-	.m0_write(\ram_s1_agent|m0_write~0_combout ),
-	.reset(r_sync_rst),
-	.in_data_reg_42(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[42]~q ),
-	.clk(clk_clk));
 
 system_altera_merlin_width_adapter ram_s1_cmd_width_adapter(
 	.h2f_lw_WLAST_0(h2f_lw_WLAST_0),
@@ -33472,6 +31578,261 @@ system_altera_merlin_burst_adapter ram_s1_burst_adapter(
 	.cp_ready1(\ram_s1_agent|cp_ready~1_combout ),
 	.GND_port(GND_port),
 	.clk_clk(clk_clk));
+
+system_altera_avalon_sc_fifo ram_s1_agent_rdata_fifo(
+	.h2f_lw_BREADY_0(h2f_lw_BREADY_0),
+	.h2f_lw_RREADY_0(h2f_lw_RREADY_0),
+	.q_a_0(q_a_0),
+	.q_a_1(q_a_1),
+	.q_a_2(q_a_2),
+	.q_a_3(q_a_3),
+	.q_a_4(q_a_4),
+	.q_a_5(q_a_5),
+	.q_a_6(q_a_6),
+	.q_a_7(q_a_7),
+	.q_a_8(q_a_8),
+	.q_a_9(q_a_9),
+	.q_a_10(q_a_10),
+	.q_a_11(q_a_11),
+	.q_a_12(q_a_12),
+	.q_a_13(q_a_13),
+	.q_a_14(q_a_14),
+	.q_a_15(q_a_15),
+	.read_latency_shift_reg_0(\ram_s1_translator|read_latency_shift_reg[0]~q ),
+	.mem_used_0(\ram_s1_agent_rdata_fifo|mem_used[0]~q ),
+	.mem_94_0(\ram_s1_agent_rsp_fifo|mem[0][94]~q ),
+	.mem_used_01(\ram_s1_agent_rsp_fifo|mem_used[0]~q ),
+	.src0_valid(\rsp_demux|src0_valid~0_combout ),
+	.mem_0_0(\ram_s1_agent_rdata_fifo|mem[0][0]~q ),
+	.mem_1_0(\ram_s1_agent_rdata_fifo|mem[0][1]~q ),
+	.mem_2_0(\ram_s1_agent_rdata_fifo|mem[0][2]~q ),
+	.mem_3_0(\ram_s1_agent_rdata_fifo|mem[0][3]~q ),
+	.mem_4_0(\ram_s1_agent_rdata_fifo|mem[0][4]~q ),
+	.mem_5_0(\ram_s1_agent_rdata_fifo|mem[0][5]~q ),
+	.mem_6_0(\ram_s1_agent_rdata_fifo|mem[0][6]~q ),
+	.mem_7_0(\ram_s1_agent_rdata_fifo|mem[0][7]~q ),
+	.mem_8_0(\ram_s1_agent_rdata_fifo|mem[0][8]~q ),
+	.mem_9_0(\ram_s1_agent_rdata_fifo|mem[0][9]~q ),
+	.mem_10_0(\ram_s1_agent_rdata_fifo|mem[0][10]~q ),
+	.mem_11_0(\ram_s1_agent_rdata_fifo|mem[0][11]~q ),
+	.mem_12_0(\ram_s1_agent_rdata_fifo|mem[0][12]~q ),
+	.mem_13_0(\ram_s1_agent_rdata_fifo|mem[0][13]~q ),
+	.mem_14_0(\ram_s1_agent_rdata_fifo|mem[0][14]~q ),
+	.mem_15_0(\ram_s1_agent_rdata_fifo|mem[0][15]~q ),
+	.reset(r_sync_rst),
+	.p1_ready(\ram_s1_rsp_width_adapter|p1_ready~0_combout ),
+	.out_valid(\ram_s1_rsp_width_adapter|out_valid~1_combout ),
+	.clk(clk_clk));
+
+system_altera_avalon_sc_fifo_1 ram_s1_agent_rsp_fifo(
+	.int_nxt_addr_reg_dly_1(int_nxt_addr_reg_dly_1),
+	.out_uncomp_byte_cnt_reg_1(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_uncomp_byte_cnt_reg[1]~q ),
+	.out_uncomp_byte_cnt_reg_0(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_uncomp_byte_cnt_reg[0]~q ),
+	.out_uncomp_byte_cnt_reg_5(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_uncomp_byte_cnt_reg[5]~q ),
+	.out_uncomp_byte_cnt_reg_6(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_uncomp_byte_cnt_reg[6]~q ),
+	.out_uncomp_byte_cnt_reg_4(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_uncomp_byte_cnt_reg[4]~q ),
+	.out_uncomp_byte_cnt_reg_3(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_uncomp_byte_cnt_reg[3]~q ),
+	.out_uncomp_byte_cnt_reg_2(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_uncomp_byte_cnt_reg[2]~q ),
+	.out_burstwrap_reg_1(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_burstwrap_reg[1]~q ),
+	.out_addr_reg_0(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_addr_reg[0]~q ),
+	.out_burstwrap_reg_0(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_burstwrap_reg[0]~q ),
+	.nxt_out_eop(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|nxt_out_eop~0_combout ),
+	.in_data_reg_59(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[59]~q ),
+	.WideOr0(\ram_s1_agent|WideOr0~combout ),
+	.mem_used_1(\ram_s1_agent_rsp_fifo|mem_used[1]~q ),
+	.nxt_out_eop1(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|nxt_out_eop~1_combout ),
+	.out_valid_reg(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_valid_reg~q ),
+	.stateST_UNCOMP_WR_SUBBURST(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state.ST_UNCOMP_WR_SUBBURST~q ),
+	.mem_94_0(\ram_s1_agent_rsp_fifo|mem[0][94]~q ),
+	.mem_used_0(\ram_s1_agent_rsp_fifo|mem_used[0]~q ),
+	.mem_95_0(\ram_s1_agent_rsp_fifo|mem[0][95]~q ),
+	.comb(\ram_s1_agent|comb~0_combout ),
+	.mem_39_0(\ram_s1_agent_rsp_fifo|mem[0][39]~q ),
+	.mem_51_0(\ram_s1_agent_rsp_fifo|mem[0][51]~q ),
+	.mem_50_0(\ram_s1_agent_rsp_fifo|mem[0][50]~q ),
+	.mem_49_0(\ram_s1_agent_rsp_fifo|mem[0][49]~q ),
+	.mem_48_0(\ram_s1_agent_rsp_fifo|mem[0][48]~q ),
+	.mem_47_0(\ram_s1_agent_rsp_fifo|mem[0][47]~q ),
+	.mem_46_0(\ram_s1_agent_rsp_fifo|mem[0][46]~q ),
+	.mem_45_0(\ram_s1_agent_rsp_fifo|mem[0][45]~q ),
+	.last_packet_beat(\ram_s1_agent|uncompressor|last_packet_beat~4_combout ),
+	.mem_19_0(\ram_s1_agent_rsp_fifo|mem[0][19]~q ),
+	.mem_91_0(\ram_s1_agent_rsp_fifo|mem[0][91]~q ),
+	.mem_92_0(\ram_s1_agent_rsp_fifo|mem[0][92]~q ),
+	.mem_93_0(\ram_s1_agent_rsp_fifo|mem[0][93]~q ),
+	.mem_59_0(\ram_s1_agent_rsp_fifo|mem[0][59]~q ),
+	.mem_41_0(\ram_s1_agent_rsp_fifo|mem[0][41]~q ),
+	.mem_70_0(mem_70_0),
+	.mem_71_0(mem_71_0),
+	.mem_72_0(mem_72_0),
+	.mem_73_0(mem_73_0),
+	.mem_74_0(mem_74_0),
+	.mem_75_0(mem_75_0),
+	.mem_76_0(mem_76_0),
+	.mem_77_0(mem_77_0),
+	.mem_78_0(mem_78_0),
+	.mem_79_0(mem_79_0),
+	.mem_80_0(mem_80_0),
+	.mem_81_0(mem_81_0),
+	.in_data_reg_41(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[41]~q ),
+	.m0_write(\ram_s1_agent|m0_write~0_combout ),
+	.reset(r_sync_rst),
+	.p1_ready(\ram_s1_rsp_width_adapter|p1_ready~0_combout ),
+	.sink_ready(\ram_s1_agent|uncompressor|sink_ready~0_combout ),
+	.in_data_reg_42(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[42]~q ),
+	.out_byte_cnt_reg_1(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_byte_cnt_reg[1]~q ),
+	.out_valid(\ram_s1_rsp_width_adapter|out_valid~1_combout ),
+	.mem_53_0(\ram_s1_agent_rsp_fifo|mem[0][53]~q ),
+	.in_data_reg_91(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[91]~q ),
+	.in_data_reg_92(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[92]~q ),
+	.in_data_reg_93(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[93]~q ),
+	.in_data_reg_70(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[70]~q ),
+	.in_data_reg_71(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[71]~q ),
+	.in_data_reg_72(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[72]~q ),
+	.in_data_reg_73(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[73]~q ),
+	.in_data_reg_74(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[74]~q ),
+	.in_data_reg_75(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[75]~q ),
+	.in_data_reg_76(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[76]~q ),
+	.in_data_reg_77(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[77]~q ),
+	.in_data_reg_78(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[78]~q ),
+	.in_data_reg_79(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[79]~q ),
+	.in_data_reg_80(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[80]~q ),
+	.in_data_reg_81(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[81]~q ),
+	.mem_18_0(\ram_s1_agent_rsp_fifo|mem[0][18]~q ),
+	.mem_52_0(\ram_s1_agent_rsp_fifo|mem[0][52]~q ),
+	.cp_ready(\ram_s1_agent|cp_ready~1_combout ),
+	.clk(clk_clk));
+
+system_altera_merlin_slave_agent ram_s1_agent(
+	.always10(\ram_s1_rsp_width_adapter|always10~1_combout ),
+	.stateST_COMP_TRANS(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|state.ST_COMP_TRANS~q ),
+	.in_narrow_reg(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_narrow_reg~q ),
+	.in_byteen_reg_1(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_byteen_reg[1]~q ),
+	.in_byteen_reg_0(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_byteen_reg[0]~q ),
+	.WideOr01(\ram_s1_agent|WideOr0~combout ),
+	.in_ready_hold(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_ready_hold~q ),
+	.mem_used_1(\ram_s1_agent_rsp_fifo|mem_used[1]~q ),
+	.out_valid_reg(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|out_valid_reg~q ),
+	.read_latency_shift_reg_0(\ram_s1_translator|read_latency_shift_reg[0]~q ),
+	.mem_used_0(\ram_s1_agent_rdata_fifo|mem_used[0]~q ),
+	.mem_94_0(\ram_s1_agent_rsp_fifo|mem[0][94]~q ),
+	.mem_used_01(\ram_s1_agent_rsp_fifo|mem_used[0]~q ),
+	.out_valid(\ram_s1_rsp_width_adapter|out_valid~0_combout ),
+	.mem_95_0(\ram_s1_agent_rsp_fifo|mem[0][95]~q ),
+	.comb(\ram_s1_agent|comb~0_combout ),
+	.mem_39_0(\ram_s1_agent_rsp_fifo|mem[0][39]~q ),
+	.mem_51_0(\ram_s1_agent_rsp_fifo|mem[0][51]~q ),
+	.mem_50_0(\ram_s1_agent_rsp_fifo|mem[0][50]~q ),
+	.mem_49_0(\ram_s1_agent_rsp_fifo|mem[0][49]~q ),
+	.mem_48_0(\ram_s1_agent_rsp_fifo|mem[0][48]~q ),
+	.mem_47_0(\ram_s1_agent_rsp_fifo|mem[0][47]~q ),
+	.mem_46_0(\ram_s1_agent_rsp_fifo|mem[0][46]~q ),
+	.mem_45_0(\ram_s1_agent_rsp_fifo|mem[0][45]~q ),
+	.last_packet_beat(\ram_s1_agent|uncompressor|last_packet_beat~4_combout ),
+	.source_addr_1(\ram_s1_agent|uncompressor|source_addr[1]~0_combout ),
+	.source_addr_11(\ram_s1_agent|uncompressor|source_addr[1]~1_combout ),
+	.mem_19_0(\ram_s1_agent_rsp_fifo|mem[0][19]~q ),
+	.mem_59_0(\ram_s1_agent_rsp_fifo|mem[0][59]~q ),
+	.source_endofpacket(source_endofpacket),
+	.in_data_reg_41(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[41]~q ),
+	.m0_write(\ram_s1_agent|m0_write~0_combout ),
+	.m0_write1(m0_write),
+	.r_sync_rst(r_sync_rst),
+	.p1_ready(\ram_s1_rsp_width_adapter|p1_ready~0_combout ),
+	.rf_sink_ready(\ram_s1_agent|uncompressor|sink_ready~0_combout ),
+	.cp_ready(\ram_s1_agent|cp_ready~0_combout ),
+	.out_valid1(\ram_s1_rsp_width_adapter|out_valid~1_combout ),
+	.mem_53_0(\ram_s1_agent_rsp_fifo|mem[0][53]~q ),
+	.mem_18_0(\ram_s1_agent_rsp_fifo|mem[0][18]~q ),
+	.mem_52_0(\ram_s1_agent_rsp_fifo|mem[0][52]~q ),
+	.cp_ready1(\ram_s1_agent|cp_ready~1_combout ),
+	.clk_clk(clk_clk));
+
+system_altera_merlin_axi_master_ni hps_0_h2f_lw_axi_master_agent(
+	.h2f_lw_AWVALID_0(h2f_lw_AWVALID_0),
+	.h2f_lw_WLAST_0(h2f_lw_WLAST_0),
+	.h2f_lw_WVALID_0(h2f_lw_WVALID_0),
+	.h2f_lw_ARLEN_0(h2f_lw_ARLEN_0),
+	.h2f_lw_ARLEN_1(h2f_lw_ARLEN_1),
+	.h2f_lw_ARLEN_2(h2f_lw_ARLEN_2),
+	.h2f_lw_ARLEN_3(h2f_lw_ARLEN_3),
+	.h2f_lw_ARSIZE_0(h2f_lw_ARSIZE_0),
+	.h2f_lw_ARSIZE_1(h2f_lw_ARSIZE_1),
+	.h2f_lw_ARSIZE_2(h2f_lw_ARSIZE_2),
+	.h2f_lw_AWADDR_0(h2f_lw_AWADDR_0),
+	.h2f_lw_AWADDR_1(h2f_lw_AWADDR_1),
+	.h2f_lw_AWADDR_2(h2f_lw_AWADDR_2),
+	.h2f_lw_AWADDR_3(h2f_lw_AWADDR_3),
+	.h2f_lw_AWADDR_4(h2f_lw_AWADDR_4),
+	.h2f_lw_AWBURST_0(h2f_lw_AWBURST_0),
+	.h2f_lw_AWBURST_1(h2f_lw_AWBURST_1),
+	.h2f_lw_AWLEN_0(h2f_lw_AWLEN_0),
+	.h2f_lw_AWLEN_1(h2f_lw_AWLEN_1),
+	.h2f_lw_AWLEN_2(h2f_lw_AWLEN_2),
+	.h2f_lw_AWLEN_3(h2f_lw_AWLEN_3),
+	.h2f_lw_AWSIZE_0(h2f_lw_AWSIZE_0),
+	.h2f_lw_AWSIZE_1(h2f_lw_AWSIZE_1),
+	.h2f_lw_AWSIZE_2(h2f_lw_AWSIZE_2),
+	.Add4(\hps_0_h2f_lw_axi_master_agent|Add4~1_sumout ),
+	.Add5(\hps_0_h2f_lw_axi_master_agent|Add5~1_sumout ),
+	.Add41(\hps_0_h2f_lw_axi_master_agent|Add4~5_sumout ),
+	.Add51(\hps_0_h2f_lw_axi_master_agent|Add5~5_sumout ),
+	.Add42(\hps_0_h2f_lw_axi_master_agent|Add4~9_sumout ),
+	.Add52(\hps_0_h2f_lw_axi_master_agent|Add5~9_sumout ),
+	.Add43(\hps_0_h2f_lw_axi_master_agent|Add4~13_sumout ),
+	.Add53(\hps_0_h2f_lw_axi_master_agent|Add5~13_sumout ),
+	.Add44(\hps_0_h2f_lw_axi_master_agent|Add4~17_sumout ),
+	.Add54(\hps_0_h2f_lw_axi_master_agent|Add5~17_sumout ),
+	.in_ready(\ram_s1_cmd_width_adapter|in_ready~0_combout ),
+	.nxt_out_eop(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|nxt_out_eop~0_combout ),
+	.nxt_out_eop1(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|nxt_out_eop~1_combout ),
+	.nxt_in_ready(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|nxt_in_ready~0_combout ),
+	.nxt_in_ready1(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|nxt_in_ready~2_combout ),
+	.nxt_in_ready2(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|nxt_in_ready~3_combout ),
+	.src_valid(\cmd_mux|src_valid~0_combout ),
+	.awready(hps_0_h2f_lw_axi_master_awready),
+	.wready(hps_0_h2f_lw_axi_master_wready),
+	.write_addr_data_both_valid1(\hps_0_h2f_lw_axi_master_agent|write_addr_data_both_valid~combout ),
+	.r_sync_rst(r_sync_rst),
+	.Add1(\hps_0_h2f_lw_axi_master_agent|Add1~0_combout ),
+	.src_payload(\cmd_mux|src_payload~3_combout ),
+	.Add3(\hps_0_h2f_lw_axi_master_agent|Add3~0_combout ),
+	.sop_enable1(\hps_0_h2f_lw_axi_master_agent|sop_enable~q ),
+	.address_burst_0(\hps_0_h2f_lw_axi_master_agent|align_address_to_size|address_burst[0]~q ),
+	.address_burst_1(\hps_0_h2f_lw_axi_master_agent|align_address_to_size|address_burst[1]~q ),
+	.write_cp_data_69(\hps_0_h2f_lw_axi_master_agent|write_cp_data[69]~0_combout ),
+	.burst_bytecount_5(\hps_0_h2f_lw_axi_master_agent|burst_bytecount[5]~q ),
+	.Add6(\hps_0_h2f_lw_axi_master_agent|Add6~0_combout ),
+	.Add2(\hps_0_h2f_lw_axi_master_agent|Add2~0_combout ),
+	.burst_bytecount_4(\hps_0_h2f_lw_axi_master_agent|burst_bytecount[4]~q ),
+	.Add61(\hps_0_h2f_lw_axi_master_agent|Add6~1_combout ),
+	.Add21(\hps_0_h2f_lw_axi_master_agent|Add2~1_combout ),
+	.burst_bytecount_3(\hps_0_h2f_lw_axi_master_agent|burst_bytecount[3]~q ),
+	.Add22(\hps_0_h2f_lw_axi_master_agent|Add2~2_combout ),
+	.burst_bytecount_2(\hps_0_h2f_lw_axi_master_agent|burst_bytecount[2]~q ),
+	.write_cp_data_66(\hps_0_h2f_lw_axi_master_agent|write_cp_data[66]~1_combout ),
+	.write_cp_data_67(\hps_0_h2f_lw_axi_master_agent|write_cp_data[67]~2_combout ),
+	.write_cp_data_68(\hps_0_h2f_lw_axi_master_agent|write_cp_data[68]~3_combout ),
+	.Add11(\hps_0_h2f_lw_axi_master_agent|Add1~1_combout ),
+	.src_payload1(\cmd_mux|src_payload~9_combout ),
+	.Add31(\hps_0_h2f_lw_axi_master_agent|Add3~1_combout ),
+	.LessThan12(\hps_0_h2f_lw_axi_master_agent|LessThan12~0_combout ),
+	.src_payload2(\cmd_mux|src_payload~11_combout ),
+	.address_burst_2(\hps_0_h2f_lw_axi_master_agent|align_address_to_size|address_burst[2]~q ),
+	.address_burst_3(\hps_0_h2f_lw_axi_master_agent|align_address_to_size|address_burst[3]~q ),
+	.src_payload3(\cmd_mux|src_payload~14_combout ),
+	.out_data_4(\hps_0_h2f_lw_axi_master_agent|align_address_to_size|out_data[4]~0_combout ),
+	.src_payload4(\cmd_mux|src_payload~17_combout ),
+	.clk_clk(clk_clk));
+
+system_altera_merlin_slave_translator ram_s1_translator(
+	.WideOr0(\ram_s1_agent|WideOr0~combout ),
+	.in_ready_hold(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_ready_hold~q ),
+	.read_latency_shift_reg_0(\ram_s1_translator|read_latency_shift_reg[0]~q ),
+	.m0_write(\ram_s1_agent|m0_write~0_combout ),
+	.reset(r_sync_rst),
+	.in_data_reg_42(\ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1.burst_adapter|in_data_reg[42]~q ),
+	.clk(clk_clk));
 
 endmodule
 
@@ -36293,6 +34654,7 @@ module system_altera_merlin_axi_master_ni (
 	awready,
 	wready,
 	write_addr_data_both_valid1,
+	r_sync_rst,
 	Add1,
 	src_payload,
 	Add3,
@@ -36321,7 +34683,6 @@ module system_altera_merlin_axi_master_ni (
 	address_burst_3,
 	src_payload3,
 	out_data_4,
-	altera_reset_synchronizer_int_chain_out,
 	src_payload4,
 	clk_clk)/* synthesis synthesis_greybox=0 */;
 input 	h2f_lw_AWVALID_0;
@@ -36368,6 +34729,7 @@ input 	src_valid;
 output 	awready;
 output 	wready;
 output 	write_addr_data_both_valid1;
+input 	r_sync_rst;
 output 	Add1;
 input 	src_payload;
 output 	Add3;
@@ -36396,7 +34758,6 @@ output 	address_burst_2;
 output 	address_burst_3;
 input 	src_payload3;
 output 	out_data_4;
-input 	altera_reset_synchronizer_int_chain_out;
 input 	src_payload4;
 input 	clk_clk;
 
@@ -36447,6 +34808,7 @@ system_altera_merlin_address_alignment align_address_to_size(
 	.h2f_lw_AWSIZE_1(h2f_lw_AWSIZE_1),
 	.h2f_lw_AWSIZE_2(h2f_lw_AWSIZE_2),
 	.wready(wready),
+	.reset(r_sync_rst),
 	.src_payload(src_payload),
 	.sop_enable(sop_enable1),
 	.address_burst_0(address_burst_0),
@@ -36458,7 +34820,6 @@ system_altera_merlin_address_alignment align_address_to_size(
 	.src_payload3(src_payload3),
 	.out_data_4(out_data_4),
 	.Decoder0(\Decoder0~0_combout ),
-	.reset(altera_reset_synchronizer_int_chain_out),
 	.Decoder01(\Decoder0~1_combout ),
 	.Decoder02(\Decoder0~2_combout ),
 	.Decoder03(\Decoder0~3_combout ),
@@ -36740,7 +35101,7 @@ dffeas sop_enable(
 	.clk(clk_clk),
 	.d(\sop_enable~0_combout ),
 	.asdata(vcc),
-	.clrn(altera_reset_synchronizer_int_chain_out),
+	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -36772,7 +35133,7 @@ dffeas \burst_bytecount[5] (
 	.clk(clk_clk),
 	.d(\Add7~1_combout ),
 	.asdata(vcc),
-	.clrn(altera_reset_synchronizer_int_chain_out),
+	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -36822,7 +35183,7 @@ dffeas \burst_bytecount[4] (
 	.clk(clk_clk),
 	.d(\Add7~2_combout ),
 	.asdata(vcc),
-	.clrn(altera_reset_synchronizer_int_chain_out),
+	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -36872,7 +35233,7 @@ dffeas \burst_bytecount[3] (
 	.clk(clk_clk),
 	.d(\Add7~3_combout ),
 	.asdata(vcc),
-	.clrn(altera_reset_synchronizer_int_chain_out),
+	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -36904,7 +35265,7 @@ dffeas \burst_bytecount[2] (
 	.clk(clk_clk),
 	.d(\write_cp_data[65]~4_combout ),
 	.asdata(vcc),
-	.clrn(altera_reset_synchronizer_int_chain_out),
+	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -37260,7 +35621,7 @@ dffeas \burst_bytecount[6] (
 	.clk(clk_clk),
 	.d(\Add7~0_combout ),
 	.asdata(vcc),
-	.clrn(altera_reset_synchronizer_int_chain_out),
+	.clrn(!r_sync_rst),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -37337,6 +35698,7 @@ module system_altera_merlin_address_alignment (
 	h2f_lw_AWSIZE_1,
 	h2f_lw_AWSIZE_2,
 	wready,
+	reset,
 	src_payload,
 	sop_enable,
 	address_burst_0,
@@ -37348,7 +35710,6 @@ module system_altera_merlin_address_alignment (
 	src_payload3,
 	out_data_4,
 	Decoder0,
-	reset,
 	Decoder01,
 	Decoder02,
 	Decoder03,
@@ -37365,6 +35726,7 @@ input 	h2f_lw_AWBURST_1;
 input 	h2f_lw_AWSIZE_1;
 input 	h2f_lw_AWSIZE_2;
 input 	wready;
+input 	reset;
 input 	src_payload;
 input 	sop_enable;
 output 	address_burst_0;
@@ -37376,7 +35738,6 @@ output 	address_burst_3;
 input 	src_payload3;
 output 	out_data_4;
 input 	Decoder0;
-input 	reset;
 input 	Decoder01;
 input 	Decoder02;
 input 	Decoder03;
@@ -37428,7 +35789,7 @@ dffeas \address_burst[0] (
 	.clk(clk),
 	.d(\Selector20~0_combout ),
 	.asdata(vcc),
-	.clrn(reset),
+	.clrn(!reset),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -37442,7 +35803,7 @@ dffeas \address_burst[1] (
 	.clk(clk),
 	.d(\Selector19~0_combout ),
 	.asdata(vcc),
-	.clrn(reset),
+	.clrn(!reset),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -37456,7 +35817,7 @@ dffeas \address_burst[2] (
 	.clk(clk),
 	.d(\Selector18~0_combout ),
 	.asdata(vcc),
-	.clrn(reset),
+	.clrn(!reset),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -37470,7 +35831,7 @@ dffeas \address_burst[3] (
 	.clk(clk),
 	.d(\Selector17~0_combout ),
 	.asdata(vcc),
-	.clrn(reset),
+	.clrn(!reset),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
@@ -37862,7 +36223,7 @@ dffeas \address_burst[4] (
 	.clk(clk),
 	.d(\Selector16~0_combout ),
 	.asdata(vcc),
-	.clrn(reset),
+	.clrn(!reset),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
