@@ -1,17 +1,44 @@
-# *.v.swp
-# verilog/db/*
-# verilog/incremental_db/*
-# verilog/*.map.*
-# verilog/*.fit.*
-# *.rpt
-# *.done
-# *summary
-# *_info
-# *_lib*
-# *.xrf
-# *.xml
-# *.nlv
-# *.bsf
-# *.cdf
-# *.jdi
-# *transcript
+*.v.swp
+db/
+incremental_db/
+*/*.map.*
+*/*.fit.*
+*.rpt
+*.done
+*summary
+*_info
+*_lib*
+*.xrf
+*.xml
+*.nlv
+*.bsf
+*.cdf
+*.jdi
+*transcript
+*.smsg
+*.sld
+*.sopcinfo
+*.cmp
+*.csv
+*.html
+*.spd
+*.sip
+*.debuginfo
+*.sh
+*.lib
+*PLLJ_PLLSPE_INFO.txt
+aldec/
+mentor/
+synopsys/
+*.bak
+*.pin
+work/
+*.v~
+*.sdc~
+*.hex
+*.mti
+*.wlf
+greybox_tmp/
+*.qws
+*.regmap
+*.setup
