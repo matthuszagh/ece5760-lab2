@@ -1,4 +1,4 @@
-/* spring_mass.c
+/* spring_mass.cpp
  *
  * A program running on the ARM cortex with linux to control the operation of
  * the spring-mass system on FPGA.
@@ -57,8 +57,8 @@ int main() {
   *x2_0 = (char16_t)(300);
   *d1 = (char16_t)(1);
   *d2 = (char16_t)(1);
-  *dt = (char16_t)(5);
-  *d_scale_fact = (char16_t)(2);
+  *dt = (char16_t)(4);
+  *d_scale_fact = (char16_t)(1);
 
   printf("\nFeel free to redefine any of the parameters in this system.\n"
          "By default, the parameters are as follows:\n"
@@ -73,9 +73,9 @@ int main() {
          "d1=1\t\t(damping coefficient of mass 1),\n"
          "d2=1\t\t(damping coefficient of mass 2),\n"
          "dt=5\t\t(adjust the time interval -- as a bit shift),\n"
-         "d_scale_fact=2\t(decreases damping coefficients -- as a bit shift).\n\n"
+         "d_scale_fact=1\t(decreases damping coefficients -- as a bit shift).\n\n"
 
-         "Please enter these one by one in exactly the syntax above. Enter as parameter <ENT> value <ENT>. All values must be integers.\n");
+         "Please enter these one by one in exactly the syntax above. Enter as parameter=value <ENT>. All values must be integers.\n");
 
   while(1) {
     std::string entry;
