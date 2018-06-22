@@ -1,6 +1,12 @@
 /* i2c.v
  *
  * Controls the operation of the I2C interface.
+ *
+ * In order to use this module, a top level module must supply it with a 50MHz reference clock, a
+ * start signal (a bit pulse of 1, which does not need to be left on), and the data to write to
+ * the slave. It must then wait for the `configured` pin to be pulled high before engaging with the
+ * slave if I2C is used as a control interface (`configured` indicates that data transmission has
+ * completed successfully).
  */
 
 module i2c (
@@ -8,7 +14,6 @@ module i2c (
             input        clk_50, // 50 MHz reference clock
             input        start, // Signal to tell module to begin operation.
             input [0:87] data, // Data to transmit over SDA line.
-
             // I2C output
             inout        sda, // I2C interface is operated by pulling the signals low,
             output reg   scl = 1'b1, // so we initialize them to high.
