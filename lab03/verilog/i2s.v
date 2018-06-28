@@ -16,7 +16,9 @@ module i2s (
             // Data
             input [23:0] data, /* Parallel data from top level module to be serialized. */
             output       dacdat, /* Serialized data to drive the DAC at the bit clock. */
-            // Reset
+            // Configuration / Reset
+            input        configured, /* Ensure I2C configuration has completed before serializing
+                                      data */
             input        reset /* Asynchronous reset from top level module. */
             );
 
@@ -48,7 +50,12 @@ module i2s (
    // Generate a start condition for each sample.
    reg commence=0;
    always @(negedge daclrck_) begin
-      commence <= 1;
+      if (configured==1) begin
+         commence <= 1;
+      end
+      else begin
+         commence <= 0;
+      end
    end
 
    // Serialize data to dacdat.

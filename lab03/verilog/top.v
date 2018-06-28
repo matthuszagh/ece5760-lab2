@@ -24,7 +24,7 @@ module top (
    wire            daclrck; /* Sampling frequency of the DAC. All combinational logic must be
                              completed in one clock cycle. */
    reg             start=0; /* High signal triggers audio DAC configuration to start. */
-   wire            configured=0; /* Pulled high by I2C when configuration is complete. */
+   wire            configured; /* Pulled high by I2C when configuration is complete. */
 
    assign config_data = {8'b0011_0100,                 // Address frame.
                          8'b0000_1010, 8'b0000_0110,   // 48kHz sampling frequency.
@@ -61,6 +61,7 @@ module top (
                  .daclrck(daclrck),
                  .data(data),
                  .dacdat(AUD_DACDAT),
+                 .configured(configured),
                  .reset(reset)
                  );
 endmodule // top
