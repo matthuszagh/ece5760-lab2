@@ -3,7 +3,7 @@
  * Controls the operation of the I2C interface.
  *
  * In order to use this module, a top level module must supply it with a 50MHz reference clock, a
- * start signal (a bit pulse of 1, which does not need to be left on), and the data to write to
+ * start signal (a bit pulse of 1, which should only last one period), and the data to write to
  * the slave. It must then wait for the `configured` pin to be pulled high before engaging with the
  * slave if I2C is used as a control interface (`configured` indicates that data transmission has
  * completed successfully).
@@ -14,6 +14,7 @@ module i2c (
             input        clk_50, // 50 MHz reference clock
             input        start, // Signal to tell module to begin operation.
             input [0:87] data, // Data to transmit over SDA line.
+            input        reset_n, // Active-low reset from controlling module.
             // I2C output
             inout        sda, // I2C interface is operated by pulling the signals low,
             output reg   scl = 1'b1, // so we initialize them to high.
@@ -21,102 +22,175 @@ module i2c (
             output reg   configured = 1'b0  // Set this to 1 when configuration is complete
             );
 
-   reg [5:0]             count = 0;     // Used to generate I2C clock.
-   reg                   start_ = 0;    /* Internal reg to take over start condition once internal
-                                        start is triggered */
-   reg                   commence = 0;  // Indicates middle of operation.
-   reg                   stop = 0;      // Stop condition once data transfer is complete.
+   reg [5:0]             count=0;       // Used to generate I2C clock.
    reg [0:87]            data_;         // Store data to transmit.
-   integer               data_count=0;  // Keeps track of current transmitted SDA.
-   integer               ack_count=0;   // Keeps track of ACK/NACK signals.
-   reg                   ack_nack=0;    // ACK/NACK signal transmitted by slave. ACK=0.
-   reg                   pre_config=0;  /* If this is set and the stop condition is triggered,
-                                         set `configured` to 1*/
-   reg                   we=0;          // write enable - 0 for a write and 1 for read.
+   integer               bit_count=0;   // Keeps track of bit in each byte.
+   integer               bit_count_reg=0;
+   integer               byte_count=0;  // Keeps track of byte.
+   integer               byte_count_reg=0;
+   reg                   ack=1;         // Holds ACK signal.
    reg                   sda_reg=1;     // Holds SDA value to write.
+   reg                   i2c_clk=1;     // I2C clock.
+   reg [2:0]             pr_state=0;    /* State of FSM.
+                                         000 - idle
+                                         001 - start
+                                         010 - address frame
+                                         011 - ack1 (whether slave receives address correctly)
+                                         100 - write data
+                                         101 - ack2 (write acknowledge)
+                                         110 - stop
+                                         111 - hold (state until start is deasserted)
+                                         */
+   reg [2:0]             nx_state=0;
 
-   assign sda = (we) ? 1'bz : sda_reg;
-
-   // Pass over start and stop control to internal logic.
-   always @(start) begin
-      if (start==1'b1) begin
-         start_ <= 1'b1;
-         configured <= 1'b0;  // If we begin a new data transfer, set the configured flag to 0.
-      end
-   end
+   assign sda = sda_reg;
 
    // Pass over data to internal logic.
-   always @(posedge start_) begin
+   always @(posedge start) begin
       data_ <= data;
    end
 
-   // Generate SCL.
+   // Generate I2C clock.
    always @(posedge clk_50) begin
-      if (stop==1'b1 && count!=6'd63) begin  // Check for count prevents situation where
-         scl <= 1'b1;                         // count could increment over 63.
+      if (count!=63) begin
          count <= count + 1;
+         i2c_clk <= i2c_clk;
       end
-      else if (stop==1'b1 && count==6'd63) begin
-         if (scl <= 1'b1) begin
-            sda_reg <= 1'b1;      // Stop condition.
-            if (pre_config==1'b1) begin  // Flag the top level module that configuration is
-               configured <= 1'b1;       // complete if all data has been transmitted.
-            end
-            stop <= 1'b0;     // Clear stop condition since it has already been triggered.
-            commence <= 1'b0;
-            ack_nack <= 1'b0;
-         end else begin
-            scl <= 1'b1;
-         end
-      end
-      else if (start_==1'b1) begin
-         if (scl==1'b1) begin
-            sda_reg <= 1'b0;  // Start condition.
-            start_ <= 1'b0;
-            commence <= 1'b1;
-         end else begin
-            scl <= 1'b1;
-         end
-      end
-      else if (commence==1'b1) begin  // Increment counter to drive SCL.
-         if (ack_nack==1'b1) begin
-            stop <= 1'b1;  // Initiate stop sequence since the slave is non-responsive.
-         end else if (count==6'd63) begin
-            count <= 0;
-            scl <= !scl;
-         end else begin
-            count <= count + 1;
-         end
+      else begin
+         count <= 0;
+         i2c_clk <= !i2c_clk;
       end
    end
 
-   // Drive SDA when SCL is low.
-   always @(negedge scl) begin
-      if (commence==1'b1) begin   // Ensure that all initialization has completed successfully.
-         if (ack_count==8) begin  // If the ACK/NACK bit is being transmitted, read that
-            ack_count <= 0;       // value and reset the ACK counter.
-            we <= 1;              // Prepare SDA to be written to.
-         end else if (data_count==7'd88) begin  // If all data has been transmitted, trigger
-            pre_config <= 1'b1;                 // a stop condition and set all the appropriate
-            data_count <= 7'd0;                 // flags.
-            ack_count <= 0;
-            stop <= 1'b1;
-            we <= 0;
-         end else begin  // If the ACK/NACK bit is not being transmitted, write the next data
-            we <= 0;     // value to SDA and update the counters.
-            sda_reg <= data_[data_count];
-            ack_count <= ack_count + 1;
-            data_count <= data_count + 1;
-         end
-      end // if (commence==1'b1)
-   end // always @ (negedge scl)
-
-   // SDA data should be written at the positive activating edge of SCL.
-   always @(posedge scl) begin
-      if (commence==1'b1) begin
-         if (ack_count==0) begin
-            ack_nack <= sda;
-         end
-      end
+   // Register ACK signal from SDA.
+   always @(posedge i2c_clk) begin
+      ack <= sda;
    end
+
+   // Update state
+   always @(negedge i2c_clk or negedge reset_n) begin
+      if (reset_n==0) begin
+         pr_state <= 0;
+         bit_count_reg <= 0;
+         byte_count_reg <= 0;
+      end
+      else begin
+         pr_state <= nx_state;
+         bit_count_reg <= bit_count;
+         byte_count_reg <= byte_count;
+      end
+   end // always @ (negedge i2c_clk or negedge reset_n)
+
+   // Drive outputs on negative edge of I2C clock.
+   always @(*) begin
+      case (pr_state)
+        // Idle state.
+        0 : begin
+           scl = 1;
+           sda_reg = 0;
+           bit_count = 0;
+           byte_count = 0;
+           configured = 0;
+           if (start==1) begin  // Transition to start state.
+              nx_state = 1;
+           end
+           else begin  // Stay in idle state.
+              nx_state = 0;
+           end
+        end // case: 0
+        // Start state.
+        1 : begin
+           scl = 1;
+           sda_reg = 0;
+           bit_count = 0;
+           byte_count = 0;
+           configured = 0;
+           nx_state = 2;  // Unconditionally transition to address frame state.
+        end
+        // Address frame state.
+        2 : begin
+           scl = i2c_clk;
+           sda_reg = data_[byte_count_reg<<<3 + bit_count_reg];
+           byte_count = 0;
+           configured = 0;
+           if (bit_count_reg==8) begin  // If all 8 bits transmitted transition to address ACK.
+              bit_count = 0;
+              nx_state = 3;
+           end
+           else begin  // Else increment bit count and stay in current state.
+              bit_count = bit_count_reg + 1;
+              nx_state = 2;
+           end
+        end // case: 2
+        // Address ACK state.
+        3 : begin
+           scl = i2c_clk;
+           sda_reg = 1'bz;
+           bit_count = 0;
+           byte_count = 1;
+           configured = 0;
+           if (ack==0) begin  // If slave is responsive transition to write data state.
+              nx_state = 4;
+           end
+           else begin  // Else return to idle state.
+              nx_state = 0;
+           end
+        end // case: 3
+        // Write data state.
+        4 : begin
+           scl = i2c_clk;
+           sda_reg = data_[byte_count_reg<<<3 + bit_count_reg];
+           byte_count = byte_count_reg;
+           configured = 0;
+           if (bit_count==8) begin
+              bit_count = 0;
+              nx_state = 5;
+           end
+           else begin
+              bit_count = bit_count_reg + 1;
+              nx_state = 4;
+           end
+        end // case: 4
+        // Data ACK state.
+        5 : begin
+           scl = i2c_clk;
+           sda_reg = 1'bz;
+           bit_count = 0;
+           byte_count = byte_count_reg + 1;
+           configured = 0;
+           if (ack==1) begin
+              nx_state = 0;
+           end
+           else if (byte_count_reg<10) begin
+              nx_state = 4;
+           end
+           else begin
+              nx_state = 6;
+           end
+        end // case: 5
+        // Stop state.
+        6 : begin
+           scl = i2c_clk;
+           sda_reg = 0;
+           bit_count = 0;
+           byte_count = 0;
+           configured = 0;
+           nx_state = 7;
+        end
+        // Hold state.
+        7 : begin
+           scl = 1;
+           sda_reg = 1;
+           bit_count = 0;
+           byte_count = 0;
+           configured = 1;
+           if (start==0) begin
+              nx_state = 0;
+           end
+           else begin
+              nx_state = 7;
+           end
+        end // case: 7
+      endcase // case (state)
+   end // always @ (negedge i2c_clk)
 endmodule // i2c

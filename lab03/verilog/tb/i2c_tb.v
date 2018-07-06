@@ -6,7 +6,7 @@
 `timescale 10ns/1ns
 module i2c_tb;
    reg clk_50_tb = 0;
-   reg start_tb = 1'b1;
+   reg start_tb = 0;
    wire [0:87] data_tb = {8'b0011_0100,                 // address frame
                           8'b0000_1010, 8'b0000_0110,   // 48kHz sampling frequency
                           8'b0000_1000, 8'b0001_0000,   // DAC for line out
@@ -25,6 +25,7 @@ module i2c_tb;
           .clk_50(clk_50_tb),
           .start(start_tb),
           .data(data_tb),
+          .reset_n(1'b1),
           .sda(sda_tb),
           .scl(scl_tb),
           .configured(configured_tb)
@@ -45,5 +46,10 @@ module i2c_tb;
 
    always begin
       #2 clk_50_tb <= !clk_50_tb;
+   end
+
+   initial begin
+      #0 start_tb <= 1;
+      #510 start_tb <= 0;
    end
 endmodule // i2c_tb
