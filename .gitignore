@@ -42,3 +42,6 @@ greybox_tmp/
 *.qws
 *.regmap
 *.setup
+*.vstf
+*.sft
+*c5_pin_model_dump.txt

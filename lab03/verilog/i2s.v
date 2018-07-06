@@ -15,7 +15,7 @@ module i2s (
             output       daclrck, /* 48kHz clock that synchronizes a full sample of data. */
             // Data
             input [23:0] data, /* Parallel data from top level module to be serialized. */
-            output       dacdat, /* Serialized data to drive the DAC at the bit clock. */
+            output reg   dacdat, /* Serialized data to drive the DAC at the bit clock. */
             // Configuration / Reset
             input        configured, /* Ensure I2C configuration has completed before serializing
                                       data */
@@ -27,29 +27,15 @@ module i2s (
    wire                  bclk_;
    reg                   daclrck_=1; /* Start high and pull low to signal left channel data. */
    reg [23:0]            data_;
-   reg                   dacdat_;
 
    // Assign outputs.
    assign mclk = mclk_;
    assign bclk = bclk_;
    assign daclrck = daclrck_;
-   assign dacdat = dacdat_;
-
-   // Generate 48kHz clock.
-   integer               count=0; /* 54 2.592MHz clock signals fit into 1 48kHz clock */
-   always @(negedge bclk_) begin
-      if (count==27) begin
-         count <= 0;
-         daclrck_ <= !daclrck_;
-      end
-      else begin
-        count <= count + 1;
-      end
-   end
 
    // Generate a start condition for each sample.
-   reg commence=0;
-   always @(negedge daclrck_) begin
+   reg commence=1;
+   always @(posedge configured) begin
       if (configured==1) begin
          commence <= 1;
       end
@@ -59,17 +45,32 @@ module i2s (
    end
 
    // Serialize data to dacdat.
+   always @(*) begin
+      if (bclk_count>=1 && bclk_count<=24) begin
+         dacdat <= data[bclk_count-1];
+      end
+      else begin
+         dacdat <= 0;
+      end
+   end
+
+   // Generate counter for dac data and 48kHz clock.
    integer bclk_count=0;
    always @(negedge bclk_) begin
       if (commence==1) begin
          if (bclk_count==27) begin
             bclk_count <= 0;
+            daclrck_ <= !daclrck_;  /* 54 2.592MHz clock signals fit into 1 48kHz clock */
          end
-         else if (bclk_count>=1 && bclk_count<=24) begin
+         else begin
             bclk_count <= bclk_count + 1;
-            dacdat_ <= data_[bclk_count-1];
+            daclrck_ <= daclrck_;
          end
       end
+      else begin
+         bclk_count <= 0;
+         daclrck_ <= 0;
+      end // else: !if(commence==1)
    end // always @ (negedge bclk_)
 
 

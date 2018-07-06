@@ -23,7 +23,9 @@ module comp (
       if (count==99) begin
          count <= 0;
       end
-      count <= count + 1;
+      else begin
+         count <= count + 1;
+      end
       data <= data_[count];
    end
 
