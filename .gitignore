@@ -45,3 +45,8 @@ greybox_tmp/
 *.vstf
 *.sft
 *c5_pin_model_dump.txt
+/TAGS
+*.stp
+output_files/
+**/*.vo
+**/*.vo

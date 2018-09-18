@@ -8,6 +8,7 @@ module comp (
              input             clk_fast, /* Fast clock to perform serial computations. */
              input             clk_sample, /* Slow clock at which data is sampled. Everything must
                                         be completed in one cycle of this clock. */
+             input             configured,
              // Data
              output reg [23:0] data /* Data to drive the audio DAC. */
              );
@@ -19,7 +20,7 @@ module comp (
 
    integer                 count = 0;
 
-   always @(posedge clk_sample) begin
+   always @(posedge clk_sample && configured) begin
       if (count==99) begin
          count <= 0;
       end

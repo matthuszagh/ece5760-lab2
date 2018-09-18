@@ -7,12 +7,11 @@
 module i2c_tb;
    reg clk_50_tb = 0;
    reg start_tb = 0;
-   wire [0:87] data_tb = {8'b0011_0100,                 // address frame
-                          8'b0000_1010, 8'b0000_0110,   // 48kHz sampling frequency
-                          8'b0000_1000, 8'b0001_0000,   // DAC for line out
-                          8'b0000_0101, 8'b0111_1001,   // sound volume
-                          8'b0000_1110, 8'b0000_1010,   // data transfer interface
-                          8'b0001_0000, 8'b0000_0000};  // DAC sampling rate
+   wire [0:119] data_tb = {8'b0011_0100, 8'b0000_1010, 8'b0000_0110,   // 48kHz sampling frequency.
+                           8'b0011_0100, 8'b0000_1000, 8'b0001_0000,   // DAC for line out.
+                           8'b0011_0100, 8'b0000_0101, 8'b0111_1001,   // Sound volume.
+                           8'b0011_0100, 8'b0000_1110, 8'b0000_1010,   // Data transfer interface.
+                           8'b0011_0100, 8'b0001_0000, 8'b0000_0000};  // DAC sampling rate.
    wire        sda_tb;
    wire        scl_tb;
    wire        scl_ref_tb;
@@ -35,7 +34,6 @@ module i2c_tb;
 
    integer     ack_count = 0;
    always @(negedge scl_tb) begin
-
       if (ack_count==8) begin
          ack_count <= 0;
          sda_reg_tb <= 0;  // Assume connection with slave is fine - send ACK signals.

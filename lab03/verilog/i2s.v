@@ -33,17 +33,6 @@ module i2s (
    assign bclk = bclk_;
    assign daclrck = daclrck_;
 
-   // Generate a start condition for each sample.
-   reg commence=1;
-   always @(posedge configured) begin
-      if (configured==1) begin
-         commence <= 1;
-      end
-      else begin
-         commence <= 0;
-      end
-   end
-
    // Serialize data to dacdat.
    always @(*) begin
       if (bclk_count>=1 && bclk_count<=24) begin
@@ -55,9 +44,9 @@ module i2s (
    end
 
    // Generate counter for dac data and 48kHz clock.
-   integer bclk_count=0;
+   reg [4:0] bclk_count=0;
    always @(negedge bclk_) begin
-      if (commence==1) begin
+      if (configured) begin
          if (bclk_count==27) begin
             bclk_count <= 0;
             daclrck_ <= !daclrck_;  /* 54 2.592MHz clock signals fit into 1 48kHz clock */
@@ -70,7 +59,7 @@ module i2s (
       else begin
          bclk_count <= 0;
          daclrck_ <= 0;
-      end // else: !if(commence==1)
+      end // else: !if(configured)
    end // always @ (negedge bclk_)
 
 
